@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3dkMA2LjoEevy7GLQxdCIw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="6335bcbc-891d-4c7a-8921-ee17fc92ea29" CvElementArea="448, 290, 578, 26" CvType="InputBox" DesignTimeRectangle="447, 292, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtpartyname2' tag='INPUT' type='text' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4d83d9a3-52f7-4a4b-b5c9-c81e7b9ad4fc" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6335bcbc-891d-4c7a-8921-ee17fc92ea29" CvTextArea="224, 297, 141, 13" CvTextArgument="Name of Second Party *" CvType="Text" DesignTimeRectangle="219, 282, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Name of Second Party' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Name of Second Party *' /&gt;" Guid="9bd2f25e-7fbc-4d28-9a0e-c3ef8abab298" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="aa084dc4d1a189daeb4e3db11ffaa04a.png" xmlns="">0mwnGguxiMU6wm9G-Cz4o5Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

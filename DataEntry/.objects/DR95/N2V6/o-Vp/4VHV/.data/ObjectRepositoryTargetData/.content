@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="3AUBNShmVUqZRitbLtZXQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="d999942d-b3f3-4b96-8334-3eda74696f61" CvElementArea="447, 271, 499, 27" CvType="InputBox" DesignTimeRectangle="447, 272, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbFormID' tag='SELECT' /&gt;" Guid="470f7d62-2346-45d3-bd9e-83dce07d5663" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d999942d-b3f3-4b96-8334-3eda74696f61" CvTextArea="223, 276, 83, 14" CvTextArgument="Article Code *" CvType="Text" DesignTimeRectangle="219, 262, 222, 75" FuzzySelectorArgument="&lt;webctrl parentid='artical_code_div' tag='DIV' type='' class='pay-tin-col2' aaname='Article Code  ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Article Code *' /&gt;" Guid="d29097be-e63c-40a7-812f-9d26c0846a80" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="e63181f52b83f749612fb1e421673ae6.png" xmlns="">0XqAMJVS9j0Cph3s_2b7WFA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

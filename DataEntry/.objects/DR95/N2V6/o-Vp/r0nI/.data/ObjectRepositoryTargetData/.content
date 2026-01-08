@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5QUHr42ST0-nydhGVsL0Lg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="f815a215-7773-44d9-94e5-6c9fea7523bf" CvType="AnyWordGroup" DesignTimeRectangle="1004, 387, 206, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='collapseOrderSummary' tag='DIV' type='' class='txt subtxt' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="4d6a1b5f-9842-47e9-a6bf-c8dd447089cd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f815a215-7773-44d9-94e5-6c9fea7523bf" CvTextArea="1003, 366, 78, 16" CvTextArgument="Order No.:" CvType="Text" DesignTimeRectangle="1004, 363, 206, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Order No.:' parentid='collapseOrderSummary' tag='DIV' type='' class='sub txt headtxt' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Order No.:' /&gt;" Guid="007be589-88c2-4ad8-a4ac-a62842ab122e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f1cdcca2ccaa0f338ba90cf838448c82.png" xmlns="">0raGqreQhlEeCbl6nZvu9Pg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

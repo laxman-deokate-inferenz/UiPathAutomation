@@ -1,0 +1,163 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_1",
+      "resource": "Connection",
+      "key": "cd4a055a-0e67-4e44-92ed-8a176851e117",
+      "id": "Connectioncd4a055a-0e67-4e44-92ed-8a176851e117cd4a055a-0e67-4e44-92ed-8a176851e117False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "cd4a055a-0e67-4e44-92ed-8a176851e117",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "UnAttended.FilesPath",
+      "id": "assetUnAttended.FilesPathUnAttendedFalseFilesPathFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "FilesPath",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_2",
+      "resource": "asset",
+      "key": "UnAttended.FileName",
+      "id": "assetUnAttended.FileNameUnAttendedFalseFileNameFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "FileName",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_5",
+      "resource": "asset",
+      "key": "UnAttended.FileName2",
+      "id": "assetUnAttended.FileName2UnAttendedFalseFileName2False",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "FileName2",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_3",
+      "resource": "asset",
+      "key": "UnAttended.Sheet1",
+      "id": "assetUnAttended.Sheet1UnAttendedFalseSheet1False",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Sheet1",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_4",
+      "resource": "asset",
+      "key": "UnAttended.Sheet2",
+      "id": "assetUnAttended.Sheet2UnAttendedFalseSheet2False",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Sheet2",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Connector activity",
+      "activityId": "ConnectorActivity_3",
+      "resource": "Connection",
+      "key": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+      "id": "Connectiond4693297-4791-4bb1-aaa4-35a7e05ac10ad4693297-4791-4bb1-aaa4-35a7e05ac10aFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Connector activity"
+      }
+    },
+    {
+      "activityDisplayName": "Get Credential",
+      "activityId": "GetRobotCredential_2",
+      "resource": "asset",
+      "key": "UnAttended.Password",
+      "id": "assetUnAttended.PasswordUnAttendedFalsePasswordFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Password",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}

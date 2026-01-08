@@ -1,0 +1,206 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Sequence" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="662,1930" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge SBIePay" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1907" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1713" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'UPI'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="ce6bc087-8fef-41b6-a295-76b5e766185d" ContentHash="7BF4v9DNjEyayUUr_rG6Yw" CvTextArea="232, 419, 68, 15" CvTextArgument="U paytm" CvType="Text" DesignTimeRectangle="198, 411, 150, 32" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='activeUPI' tag='IMG' /&gt;" Guid="9c537c24-ddf1-4e01-a9d9-2e45738ca207" InformativeScreenshot="1187dc84ea37403296cec8a93c9a286c.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/XpvDiY2NKUqX6A7ZuE6ZUw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Radiobutton'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="bdf74ec3-c86c-4f85-9cd0-d85d8b353019" ContentHash="0k_m_3mGpk2Iy6Z3w8U83g" DesignTimeRectangle="575, 389, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='upiQR1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='upiQR1' tag='INPUT' type='radio' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b3fc2a95-39b2-480a-a896-2f5cfbda68f0" InformativeScreenshot="0fa5ad4e1e3bcd594be04eec53d541e1.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/kcOGWoSaDUKxMcb0ys0byQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="bdf74ec3-c86c-4f85-9cd0-d85d8b353019" CvElementArea="552, 388, 18, 18" CvTextArea="574, 389, 46, 14" CvTextArgument="UPI QR" CvType="RadioButton" DesignTimeRectangle="575, 385, 65, 20" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='collapseup' tag='LABEL' class='radio-inline' aaname='&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9; &amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;&amp;#x9;' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='UPI QR' /&gt;" Guid="e08010ca-ee0e-4eee-b0b2-f26306a29b2e" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay Now'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V5">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="b9984fca-2a3f-4c5e-b48a-59d9f9a109de" ContentHash="BBiHg7mqTEKIUNxxpc3rpQ" CvElementArea="405, 483, 525, 36" CvTextArea="640, 493, 57, 16" CvTextArgument="Pay Now" CvType="Button" DesignTimeRectangle="426, 482, 525, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='upiButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='upiButton' tag='BUTTON' type='button' class='btn pay_btn' aaname='Pay Now' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay Now' /&gt;" Guid="1da5459f-2ae7-4ebd-8ccd-c9fa6d425f15" InformativeScreenshot="23fa9ab8271885a599c09a5d604bd3b7.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/99u_ad-3yka-Mw0xWw8zjg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="6b20960b-8e3e-4f1e-9491-7a9fb9074c57" CvTextArea="151, 283, 134, 21" CvTextArgument="Payment Details" CvType="Text" DesignTimeRectangle="119, 273, 1140, 43" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='H1' class='' aaname='Payment Details' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Payment Details' /&gt;" Guid="5eb4c774-352e-401c-8b13-fe538ab4b4c0" SearchSteps="FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'IMG'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,758" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V5">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Waiting For Payment&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Payment Completed&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="epay.sbi.bank.in/secure/upiQRWait.jsp" ContentHash="pKfWADwp0kOgswR2cpYYdA" DesignTimeRectangle="509, 294, 350, 350" ElementType="Icon" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl src='data:image/png;base64,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' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='data:image/png;base64,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' tag='IMG' type='' class='' aaname='' matching:src='fuzzy' fuzzylevel:src='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e3cb89a3-9ac0-47a6-a5df-0b366adb5edb" InformativeScreenshot="d2f29e8af24c1d75a3b93ec315d15012.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/w4vRZbsArky-UC1d4M3Odg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay UPI QR Wait' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive" />
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+            <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,127" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,170" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Payment Process Completed&quot;]" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.OCREngine>
+        <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+          <ActivityFunc.Argument>
+            <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+          </ActivityFunc.Argument>
+        </ActivityFunc>
+      </uix:NApplicationCard.OCREngine>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="evxoSjFTF0eRVGac6Qd3cg" IconBase64="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" InformativeScreenshot="603f0bdfee5186053833c4538b5541b8.jpg" Reference="zHM_MHonYECrlrhSQ6-q1Q/47b8YXm9uke-rYpjHAPUoA" Selector="&lt;html app='msedge.exe' title='SBIePay' /&gt;" Url="[in_config(&quot;PaymentPageURL&quot;).ToString]" Version="V2">
+          <uix:TargetApp.Arguments>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.Arguments>
+          <uix:TargetApp.WorkingDirectory>
+            <InArgument x:TypeArguments="x:String" />
+          </uix:TargetApp.WorkingDirectory>
+        </uix:TargetApp>
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

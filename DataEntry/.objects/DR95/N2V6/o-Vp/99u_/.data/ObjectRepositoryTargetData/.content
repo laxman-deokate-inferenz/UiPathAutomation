@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BBiHg7mqTEKIUNxxpc3rpQ" Reference="zHM_MHonYECrlrhSQ6-q1Q/99u_ad-3yka-Mw0xWw8zjg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="b9984fca-2a3f-4c5e-b48a-59d9f9a109de" CvElementArea="405, 483, 525, 36" CvTextArea="640, 493, 57, 16" CvTextArgument="Pay Now" CvType="Button" DesignTimeRectangle="426, 482, 525, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='upiButton' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='upiButton' tag='BUTTON' type='button' class='btn pay_btn' aaname='Pay Now' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay Now' /&gt;" Guid="1da5459f-2ae7-4ebd-8ccd-c9fa6d425f15" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6b20960b-8e3e-4f1e-9491-7a9fb9074c57" CvTextArea="151, 283, 134, 21" CvTextArgument="Payment Details" CvType="Text" DesignTimeRectangle="119, 273, 1140, 43" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' tag='H1' class='' aaname='Payment Details' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Payment Details' /&gt;" Guid="5eb4c774-352e-401c-8b13-fe538ab4b4c0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="23fa9ab8271885a599c09a5d604bd3b7.png" xmlns="">0jvEv-Fl0VkeBfmX5nlFZVg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

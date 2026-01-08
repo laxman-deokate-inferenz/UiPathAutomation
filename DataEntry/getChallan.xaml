@@ -1,0 +1,1076 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PoliceVerification" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
+    <x:Property Name="in_TokenTable" Type="InArgument(sd:DataTable)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>PoliceVerification_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>UiPath.IntegrationService.Activities.SWEntities.C176851E117_v2_sub_generateChatCompletion_Create.Bundle</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI.Core</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>C176851E117_v2_sub_g.DjgJR1OpKiG1SKAaE1n4LAs1</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
+      <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PoliceVerification" sap:VirtualizedContainerService.HintSize="660,9530" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="Token" />
+      <Variable x:TypeArguments="x:String" Name="captchaText" />
+      <Variable x:TypeArguments="x:String" Name="captchaText2" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtIndexII_F" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtPartyDetails_F" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Assign sap:VirtualizedContainerService.HintSize="660,175" sap2010:WorkflowViewState.IdRef="Assign_2">
+      <Assign.To>
+        <OutArgument x:TypeArguments="x:String">[Token]</OutArgument>
+      </Assign.To>
+      <Assign.Value>
+        <InArgument x:TypeArguments="x:String">["26010499902939"]</InArgument>
+      </Assign.Value>
+    </Assign>
+    <Sequence DisplayName="Read Data From Table" sap:VirtualizedContainerService.HintSize="660,888" sap2010:WorkflowViewState.IdRef="Sequence_59">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="sd:DataTable" Name="dtPartyDetails" />
+        <Variable x:TypeArguments="sd:DataTable" Name="dtIndexII" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtIndexII]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_Config(&quot;IndexIISheet&quot;).ToString]" WorkbookPath="[system.io.Path.Combine(in_Config(&quot;DocsPath&quot;).ToString, in_Config(&quot;ExcelFileName&quot;).ToString)]" />
+      <ui:FilterDataTable DataTable="[dtIndexII]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[dtIndexII_F]" SelectColumnsMode="Remove">
+        <ui:FilterDataTable.Filters>
+          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+            <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+              <ui:FilterOperationArgument.Column>
+                <InArgument x:TypeArguments="x:String">["Token"]</InArgument>
+              </ui:FilterOperationArgument.Column>
+              <ui:FilterOperationArgument.Operand>
+                <InArgument x:TypeArguments="x:String">[Token]</InArgument>
+              </ui:FilterOperationArgument.Operand>
+            </ui:FilterOperationArgument>
+          </scg:List>
+        </ui:FilterDataTable.Filters>
+        <ui:FilterDataTable.SelectColumns>
+          <scg:List x:TypeArguments="InArgument" Capacity="4">
+            <x:Null />
+          </scg:List>
+        </ui:FilterDataTable.SelectColumns>
+      </ui:FilterDataTable>
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtPartyDetails]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="[in_Config(&quot;PartyDetailsSheet&quot;).ToString]" WorkbookPath="[system.io.Path.Combine(in_Config(&quot;DocsPath&quot;).ToString, in_Config(&quot;ExcelFileName&quot;).ToString)]" />
+      <ui:FilterDataTable DataTable="[dtPartyDetails]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dtPartyDetails_F]" SelectColumnsMode="Remove">
+        <ui:FilterDataTable.Filters>
+          <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+            <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+              <ui:FilterOperationArgument.Column>
+                <InArgument x:TypeArguments="x:String">["Token"]</InArgument>
+              </ui:FilterOperationArgument.Column>
+              <ui:FilterOperationArgument.Operand>
+                <InArgument x:TypeArguments="x:String">[Token]</InArgument>
+              </ui:FilterOperationArgument.Operand>
+            </ui:FilterOperationArgument>
+          </scg:List>
+        </ui:FilterDataTable.Filters>
+        <ui:FilterDataTable.SelectColumns>
+          <scg:List x:TypeArguments="InArgument" Capacity="4">
+            <x:Null />
+          </scg:List>
+        </ui:FilterDataTable.SelectColumns>
+      </ui:FilterDataTable>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;&quot;]" />
+    </Sequence>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="660,57" sap2010:WorkflowViewState.IdRef="CommentOut_18">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_45">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Login - Invoke Workflow File (Login.xaml)" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Login.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="sd:DataTable" x:Key="in_TokenTable">[in_TokenTable]</InArgument>
+              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="660,57" sap2010:WorkflowViewState.IdRef="CommentOut_12">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="488,1201" sap2010:WorkflowViewState.IdRef="Sequence_38">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="454,1141" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <TryCatch.Try>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Main Page(2)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,622" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="aa5b93bd-6cf6-48c9-90e6-d95130e11932" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,451" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="txtIndia" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next Party Details'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa5b93bd-6cf6-48c9-90e6-d95130e11932" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="2d89d690-8beb-447f-a374-4cde8bb88098" ContentHash="OBdUxN1cQEqGZBYWcGN-iw" CvElementArea="666, 627, 135, 32" CvTextArea="668, 636, 130, 14" CvTextArgument="Next :Party Details" CvType="Button" DesignTimeRectangle="668, 628, 131, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' tableRow='39' tag='INPUT' /&gt;" Guid="4d952d79-f0b6-4d1b-a66a-4cf5828a3eeb" InformativeScreenshot="160479feba44f885b8061a4f7922692c.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/QFua3zezX0-0Yu994r0L0w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next Rent &amp; Other Terms'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa5b93bd-6cf6-48c9-90e6-d95130e11932" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="73e4996c-d424-4453-bac9-ea5b6ddeb5a6" ContentHash="FnEd2ma28E2EG82w5lHF1w" CvElementArea="672, 616, 183, 32" CvTextArea="673, 625, 179, 14" CvTextArgument="Next: Rent &amp; Other Terms" CvType="Button" DesignTimeRectangle="673, 617, 180, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' tableRow='32' tag='INPUT' /&gt;" Guid="5be1b389-a4c4-4040-bb87-22cad9dd92a2" InformativeScreenshot="7a0c3f4173f98891eb80ca194711d269.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/LVsRYZjR30Kn1DycC4BsMg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.OCREngine>
+                  <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                    <ActivityFunc.Argument>
+                      <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                    </ActivityFunc.Argument>
+                  </ActivityFunc>
+                </uix:NApplicationCard.OCREngine>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="klEA1dRdoU-deKZ5k_XqnA" IconBase64="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" InformativeScreenshot="bf95e4f6938d3baf55d421708e024e70.jpg" Reference="zHM_MHonYECrlrhSQ6-q1Q/vjypwcTyMUawYkz4OHGMyg" Selector="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" Url="[in_config(&quot;url&quot;).ToString]" Version="V2">
+                    <uix:TargetApp.Arguments>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.Arguments>
+                    <uix:TargetApp.WorkingDirectory>
+                      <InArgument x:TypeArguments="x:String" />
+                    </uix:TargetApp.WorkingDirectory>
+                  </uix:TargetApp>
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </TryCatch.Try>
+            <TryCatch.Catches>
+              <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                <ActivityAction x:TypeArguments="s:Exception">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,234" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="418,170" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[exception.message]" />
+                  </Sequence>
+                </ActivityAction>
+              </Catch>
+            </TryCatch.Catches>
+            <TryCatch.Finally>
+              <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="452,94" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Sequence>
+            </TryCatch.Finally>
+          </TryCatch>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <Sequence sap:VirtualizedContainerService.HintSize="660,8330" sap2010:WorkflowViewState.IdRef="Sequence_47">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="626,57" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+        <ui:CommentOut.Body>
+          <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_46">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge Lease Details Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="bc53e6b1-8fac-4b6c-9baf-5921e787cb40" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,380" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay Now'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_32" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="bc53e6b1-8fac-4b6c-9baf-5921e787cb40" Version="V5">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="fbe59bca-5ae9-4af4-ace8-502e0c8d1b34" ContentHash="WeBBCpyNIkuNS0h5Qav3-g" CvTextArea="987, 354, 52, 16" CvTextArgument="Pay Now" CvType="Text" DesignTimeRectangle="988, 354, 70, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='23' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Pay Now' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay Now' /&gt;" Guid="3cd4c33e-c0eb-464a-9339-c1e02f6cf666" InformativeScreenshot="4f30242cd449bef9ec49ab037adc6335.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/B6_vO6AejUq3Ce5y8Ktoqg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="fbe59bca-5ae9-4af4-ace8-502e0c8d1b34" CvTextArea="650, 356, 62, 14" CvTextArgument="GRN No." CvType="Text" DesignTimeRectangle="651, 354, 150, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='23' tag='TABLE' /&gt;&lt;webctrl aaname='GRN No.' tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='GRN No.' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='GRN No.' /&gt;" Guid="10f4a7ff-0297-4244-9d5c-6910700740c5" SearchSteps="Selector, FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.OCREngine>
+                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                </ActivityFunc>
+              </uix:NApplicationCard.OCREngine>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="vRj3kMVjHkerSONSulJiaQ" IconBase64="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" InformativeScreenshot="ade34abdd461c2b2e31cb28a9111c617.jpg" Reference="zHM_MHonYECrlrhSQ6-q1Q/GmsvC5l_wEOouGVsklfveg" Selector="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" Url="[in_config(&quot;url&quot;).ToString]" Version="V2">
+                  <uix:TargetApp.Arguments>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Arguments>
+                  <uix:TargetApp.WorkingDirectory>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.WorkingDirectory>
+                </uix:TargetApp>
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
+          </Sequence>
+        </ui:CommentOut.Body>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:CommentOut>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Edge GRAS-Government Receipt Accounting Syste" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="626,8190" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="624,8222" sap2010:WorkflowViewState.IdRef="Sequence_27">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataRow" Name="OwnerRow" />
+                <Variable x:TypeArguments="sd:DataRow" Name="TenantRow" />
+                <Variable x:TypeArguments="sd:DataRow" Name="IndexIIrow" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence sap:VirtualizedContainerService.HintSize="590,1197" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registered User Login'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="laxmanigr" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="439499e4-061f-4b7f-9b6e-62f12551b50d" ContentHash="Llp8ncBiOUKIjWHffkM2lw" CvElementArea="242, 391, 247, 27" CvType="InputBox" DesignTimeRectangle="243, 392, 245, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtUserName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtUserName' tag='INPUT' type='text' class='' placeholder='Username' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b5323dd-bc83-459d-a9b7-b35772ceb16a" InformativeScreenshot="02c5a6f88319b738bb0f7ba3f2239645.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UMZie-Rz0E-yzt2MmkttLA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="439499e4-061f-4b7f-9b6e-62f12551b50d" CvTextArea="296, 352, 144, 15" CvTextArgument="Registered User Login" CvType="Text" DesignTimeRectangle="228, 342, 280, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='login-heading' parentid='frmIndexForm' tag='DIV' type='' aaname='Registered User Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registered User Login' /&gt;" Guid="360541f2-c3dd-4a2f-a69a-e8c557c491a5" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="4" Y="-2" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registered User Login'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="N@41909i" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="21692a77-1a29-4f1a-8601-e4d09b25cc71" ContentHash="pwQT5vFJtEeyFovVIaQoTw" CvElementArea="242, 424, 247, 27" CvType="InputBox" DesignTimeRectangle="243, 426, 245, 24" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtUserP' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtUserP' tag='INPUT' type='password' class='' placeholder='Password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="89e45f39-65db-4624-a60f-c63960798a6c" InformativeScreenshot="fe468800cd4e81268bc46db1431856af.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/XcvdlDACZEOFQRoDrY967g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="21692a77-1a29-4f1a-8601-e4d09b25cc71" CvTextArea="296, 352, 144, 15" CvTextArgument="Registered User Login" CvType="Text" DesignTimeRectangle="228, 342, 280, 35" ElementType="Text" FuzzySelectorArgument="&lt;webctrl class='login-heading' parentid='frmIndexForm' tag='DIV' type='' aaname='Registered User Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registered User Login' /&gt;" Guid="809b5e36-7ece-4ce4-b50b-0fef5258d897" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="captchaProcess_Challan - Invoke Workflow File (captchaProcess_Challan.xaml)" sap:VirtualizedContainerService.HintSize="416,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="captchaProcess_Challan.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <OutArgument x:TypeArguments="x:String" x:Key="captchaText">[captchaText]</OutArgument>
+                    <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT txtCaptcha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,246" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[captchaText]" Version="V5">
+                  <uix:NTypeInto.Target>
+                    <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="590423cb-d807-433e-8b3c-d803246e61ba" ContentHash="oWsTke7oIkqgEv9lgIR-qw" CvElementArea="243, 524, 246, 26" CvType="InputBox" DesignTimeRectangle="243, 525, 245, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtCaptcha' tag='INPUT' /&gt;" Guid="ead5c0c8-31f1-4b57-96cd-e2cdbfc31398" InformativeScreenshot="d8a79cb191a7bf663f45b20f9bcf8ac9.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/9LjS7NuxWUSHthuxtWm7Xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="590423cb-d807-433e-8b3c-d803246e61ba" CvElementArea="321, 568, 94, 33" CvTextArea="350, 576, 35, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="323, 569, 90, 30" ElementType="Button" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='body-right-submit' aaname='  Login  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="a6c87327-696a-4bb3-98e7-1e8a562213be" SearchSteps="Selector, FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NTypeInto.Target>
+                </uix:NTypeInto>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="238fc5a9-b13d-48ea-8592-7a5ddf3984dc" ContentHash="zVQLtqBy10KFsMTYGq9K2g" CvElementArea="321, 567, 94, 33" CvTextArea="350, 576, 35, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="323, 569, 90, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="b4a4028f-4785-4f08-873f-6743175165ba" InformativeScreenshot="f96ceb0131a8ec9274126fdc68b1c189.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/-r_CSNcOT0uH9jiL4Wr6RA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="238fc5a9-b13d-48ea-8592-7a5ddf3984dc" CvTextArea="296, 382, 144, 15" CvTextArgument="Registered User Login" CvType="Text" DesignTimeRectangle="228, 372, 280, 35" ElementType="Text" FullSelectorArgument="&lt;webctrl class='login-heading' parentid='frmIndexForm' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='login-heading' parentid='frmIndexForm' tag='DIV' type='' aaname='Registered User Login' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registered User Login' /&gt;" Guid="e39cbd24-ccf1-41ac-9186-6b8eeaa8c573" SearchSteps="Selector, FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+              </Sequence>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make New Payment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmRegisterHome.php" CVScreenId="82e67e07-0ef3-482a-bbcb-e5d1147fcbc0" ContentHash="aD4nBv7jk065LcwfelL8_A" CvElementArea="642, 334, 154, 31" CvTextArea="653, 343, 131, 16" CvTextArgument="Make New Payment" CvType="Button" DesignTimeRectangle="644, 336, 149, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Make New Payment ' parentid='level1' tag='A' /&gt;" Guid="0b3ec861-e993-4aff-ab6c-4ed89204144e" InformativeScreenshot="dd1738c00963d02a275e785dea69ebd5.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/9bF2hwI7QU-bMQMvOKo6Nw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Citizen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_37" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.InteractionMode>
+                  <InArgument x:TypeArguments="uix:NChildInteractionMode">
+                    <Literal x:TypeArguments="uix:NChildInteractionMode" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
+                  </InArgument>
+                </uix:NClick.InteractionMode>
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="0b721a72-5d32-4bda-b13b-adca3d91fbd8" ContentHash="oQNkzCLL_EGpxK6kN8M4ug" CvTextArea="268, 394, 42, 13" CvTextArgument="Citizen" CvType="Text" DesignTimeRectangle="209, 384, 907, 34" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Citizen' parentid='level1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Citizen' parentid='level1' tag='A' type='' class='menuitem submenuheader' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Citizen' /&gt;" Guid="3c58c179-78e5-4a79-9ffd-66c73de670b6" InformativeScreenshot="d44d9471e8696e12e4e710c64095b4ca.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/L25DvPVeqki9AK66yO4z_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make Payment to Registe…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="79dd73dc-0c1e-4f1c-85db-4cd408314f23" ContentHash="6JjB0ZrY5USkuS3kIJNTsw" CvElementArea="267, 442, 19, 18" CvType="RadioButton" DesignTimeRectangle="270, 490, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='radio' /&gt;" Guid="38c751a6-6eab-450f-ac7f-92abeca6f099" InformativeScreenshot="9479f67469709171e7f792d30ad43119.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UnMQJAOHqU20rEojejA70A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="79dd73dc-0c1e-4f1c-85db-4cd408314f23" CvTextArea="293, 497, 264, 13" CvTextArgument="Make Payment for Penalties or Other Fee" CvType="Text" DesignTimeRectangle="294, 490, 269, 16" ElementType="Text" FuzzySelectorArgument="&lt;webctrl id='Y' tag='A' type='' class='main-question' aaname='Make Payment to Register Your Document' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Make Payment to Register Your Document' /&gt;" Guid="de90614e-c513-47ce-800d-9ba702ebd2a6" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay Stamp Duty &amp; Regist…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="87db77a3-16c4-4550-ba5e-7f82c2c6cb18" ContentHash="Yv0DTVvZbk-Th8ZaNTf9pg" CvElementArea="284, 527, 18, 18" CvType="RadioButton" DesignTimeRectangle="286, 529, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='cmbRec_Type' tag='INPUT' type='radio' class='' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d2568435-b7bf-4b92-95a3-70f02fc8ab14" InformativeScreenshot="9d3f6f081a2d730b1ae8c44f0f396a5f.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/EULbe5O_Ykq30phVYH7v1w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="87db77a3-16c4-4550-ba5e-7f82c2c6cb18" CvTextArea="305, 530, 292, 16" CvTextArgument="Pay Stamp Duty &amp; Registration Fee Together" CvType="Text" DesignTimeRectangle="306, 529, 290, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='d1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='d1' tag='A' type='' class='' aaname=' Pay Stamp Duty &amp;amp; Registration Fee Together' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay Stamp Duty &amp;amp; Registration Fee Together' /&gt;" Guid="688313c7-4f92-4cf7-971e-9407ccb81ae1" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NSelectItem DisplayName="Select Item 'District *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,200" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="PUNE" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="36">
+                    <x:String>--Select District--</x:String>
+                    <x:String>MUMBAI/MUMBAI-SUB-URBAN</x:String>
+                    <x:String>AHMEDNAGAR</x:String>
+                    <x:String>AKOLA</x:String>
+                    <x:String>AMRAVATI</x:String>
+                    <x:String>CHHATRAPATI SAMBHAJINAGAR</x:String>
+                    <x:String>BEED</x:String>
+                    <x:String>BHANDARA</x:String>
+                    <x:String>BULDHANA</x:String>
+                    <x:String>CHANDRAPUR</x:String>
+                    <x:String>DHULE</x:String>
+                    <x:String>GADCHIROLI</x:String>
+                    <x:String>GONDIA</x:String>
+                    <x:String>HINGOLI</x:String>
+                    <x:String>JALGAON</x:String>
+                    <x:String>JALNA</x:String>
+                    <x:String>KOLHAPUR</x:String>
+                    <x:String>LATUR</x:String>
+                    <x:String>NAGPUR</x:String>
+                    <x:String>NANDED</x:String>
+                    <x:String>NANDURBAR</x:String>
+                    <x:String>NASHIK</x:String>
+                    <x:String>DHARASHIV</x:String>
+                    <x:String>PALGHAR</x:String>
+                    <x:String>PARBHANI</x:String>
+                    <x:String>PUNE</x:String>
+                    <x:String>RAIGAD</x:String>
+                    <x:String>RATNAGIRI</x:String>
+                    <x:String>SANGLI</x:String>
+                    <x:String>SATARA</x:String>
+                    <x:String>SINDHUDURG</x:String>
+                    <x:String>SOLAPUR</x:String>
+                    <x:String>THANE</x:String>
+                    <x:String>WARDHA</x:String>
+                    <x:String>WASHIM</x:String>
+                    <x:String>YAVATMAL</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="4d04981c-08ea-49d3-8dfc-68bd46de5ddf" ContentHash="xYRZgESwy0uM7l7fthI1pA" CvElementArea="445, 482, 502, 28" CvType="InputBox" DesignTimeRectangle="447, 484, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbtrea_code' tag='SELECT' /&gt;" Guid="23ae36f9-50c5-41f4-a273-b9f716f734ba" InformativeScreenshot="5e0e770dac42079a57d95fbcc4247987.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/IhgA9DSU9UqrsNtpNDbcsA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="4d04981c-08ea-49d3-8dfc-68bd46de5ddf" DesignTimeRectangle="219, 474, 222, 55" FuzzySelectorArgument="&lt;webctrl class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' aaname='District' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='District *' /&gt;" Guid="ecc97651-71c6-4dd4-83a7-d478a27e826d" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PUNE CityPUNE Rural'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="d5b11de2-fb95-461b-ac2c-0aca63a9a66f" ContentHash="p7QNz1KMSE2Xbv9ODs2B_w" CvElementArea="450, 242, 17, 17" CvType="RadioButton" DesignTimeRectangle="452, 244, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='radio' /&gt;" Guid="56063f06-3217-47e0-9ae1-84e27059adee" InformativeScreenshot="676fb5c4b5f36fc204bbe19b2a3fb673.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/vKKCbhFnzk63Bbbhq12Uvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d5b11de2-fb95-461b-ac2c-0aca63a9a66f" CvTextArea="467, 245, 145, 13" CvTextArgument="PUNE City PUNE Rural" CvType="Text" DesignTimeRectangle="447, 240, 655, 24" Guid="e0078b74-edbf-4f22-82e4-4814c99742bc" SearchSteps="FuzzySelector, CV">
+                          <uix:Target.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;webctrl id='district_type_id' tag='DIV' type='' class='' aaname='PUNE CityPUNE Rural' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PUNE CityPUNE Rural' /&gt;</Literal>
+                            </InArgument>
+                          </uix:Target.FuzzySelectorArgument>
+                        </uix:Target>
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="590,57" sap2010:WorkflowViewState.IdRef="CommentOut_20">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State 'OK(2)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,253" sap2010:WorkflowViewState.IdRef="Sequence_39">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(2)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_53" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="1b02621d-b5be-4e44-8d09-3f36d7522f84" ContentHash="ADx0nzCCE06yE8mbfABieQ" CvElementArea="834, 154, 67, 35" CvTextArea="856, 165, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="835, 156, 64, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="48d24bb9-75ee-44f4-8c7b-6e57f4ba2f81" InformativeScreenshot="20ed4179748ae775c1884570c464b957.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/-G44E51X2E2mQk4UkACt0g" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoN*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="1b02621d-b5be-4e44-8d09-3f36d7522f84" CvTextArea="481, 97, 178, 16" CvTextArgument="gras.mahakosh.gov.in says" CvType="Text" DesignTimeRectangle="481, 97, 178, 16" ElementType="Text" Guid="b52f82a7-99ec-4e89-841a-1a03a9c261e0" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_40">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="1b02621d-b5be-4e44-8d09-3f36d7522f84" ContentHash="ADx0nzCCE06yE8mbfABieQ" CvElementArea="834, 154, 67, 35" CvTextArea="856, 165, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="835, 156, 64, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="48d24bb9-75ee-44f4-8c7b-6e57f4ba2f81" InformativeScreenshot="20ed4179748ae775c1884570c464b957.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/-G44E51X2E2mQk4UkACt0g" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoN*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="1b02621d-b5be-4e44-8d09-3f36d7522f84" CvTextArea="481, 97, 178, 16" CvTextArgument="gras.mahakosh.gov.in says" CvType="Text" DesignTimeRectangle="481, 97, 178, 16" ElementType="Text" Guid="b52f82a7-99ec-4e89-841a-1a03a9c261e0" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <uix:NSelectItem DisplayName="Select Item 'In which office you wan…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,200" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="HVL1_HAVELI NO1 SUB REGISTRAR" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="30">
+                    <x:String>--Select Office--</x:String>
+                    <x:String>HVL22_HAVELI 22 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL23_HAVELI 23 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL24_HAVELI 24 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL25_HAVELI 25 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL1_HAVELI NO1 SUB REGISTRAR</x:String>
+                    <x:String>HVL2_HAVELI 2 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL3_HAVELI 3 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL4_HAVELI 4 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL5_HAVELI 5 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL6_HAVELI 6 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL7_HAVELI 7 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL8_HAVELI 8 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL9_HAVELI 9 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL10_HAVELI 10 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL12_HAVELI 12 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL13_HAVELI 13 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL14_HAVELI 14 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL15_HAVELI 15 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL16_HAVELI 16 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL18_HAVELI 18 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL19_HAVELI 19 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL20_HAVELI 20 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL21_HAVELI 21 JOINT SUB REGISTRAR</x:String>
+                    <x:String>MOP_MARRIAGE REGISTRAR PUNE</x:String>
+                    <x:String>HVL11_HAVELI 11 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL17_HAVELI 17 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL26_HAVELI 26 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL27_HAVELI 27 JOINT SUB REGISTRAR</x:String>
+                    <x:String>HVL28_HAVELI 28 JOINT SUB REGISTRAR</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="63a8784f-f6c6-4b6f-8b49-64b6ad0ddbbd" ContentHash="4eQBrMgcdUmlMZug_PlHyA" CvElementArea="446, 295, 501, 27" CvType="InputBox" DesignTimeRectangle="447, 296, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbddo_code' tag='SELECT' /&gt;" Guid="3d803637-09ad-41e4-aef1-b48c88d7bb66" InformativeScreenshot="3037fc53f9839ae8cebde746322af0cc.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/TFCn_6hd-EGiNWed4gbyyw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="63a8784f-f6c6-4b6f-8b49-64b6ad0ddbbd" CvTextArea="223, 301, 208, 15" CvTextArgument="In which office you want to register" CvType="Text" DesignTimeRectangle="223, 301, 209, 15" ElementType="Text" Guid="47233990-9d92-421f-90df-aafb97117c04" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NSelectItem DisplayName="Select Item 'Article Code *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,200" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="36A -Leave and Licence Agreement" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NSelectItem.Items>
+                  <scg:List x:TypeArguments="x:String" Capacity="24">
+                    <x:String>--Select Article Code--</x:String>
+                    <x:String>25.1 -Conveyance/Sale/Transfer</x:String>
+                    <x:String>25.2 -Agreement to Sale/Transfer</x:String>
+                    <x:String>25.3 -Deed of Apartment</x:String>
+                    <x:String>25.4 -Cancellation of Sale deed</x:String>
+                    <x:String>32 -Exchange of Property</x:String>
+                    <x:String>33(a) -Further Charge-org morg posse</x:String>
+                    <x:String>33(b)(i) -Further Charge With Possesion</x:String>
+                    <x:String>33(b)(ii) -Further Charge With out Possesion</x:String>
+                    <x:String>34 -Gift Deed of immovable</x:String>
+                    <x:String>36 -Lease of term exceeding a year</x:String>
+                    <x:String>36A -Leave and Licence Agreement</x:String>
+                    <x:String>40(a) -Mortgage deed-with possession</x:String>
+                    <x:String>40(b) -Mortgage deed-with out possession</x:String>
+                    <x:String>40(c) -Mortgage deed (collateral)</x:String>
+                    <x:String>48(f) -Power of Attorney Authorizing to Sale</x:String>
+                    <x:String>52(a) -Release of ancestral property</x:String>
+                    <x:String>52(b) -Release not of ancestral prop</x:String>
+                    <x:String>55(A)(1) -Settlement religious/charity</x:String>
+                    <x:String>55(A)(2) -Settlement for other purpose</x:String>
+                    <x:String>58(a) -Surrender of Lease W/o consi</x:String>
+                    <x:String>58(b) -Surrender of Lease With consi</x:String>
+                    <x:String>6(1) -Agreement Relating to Deposit of Title Deed</x:String>
+                    <x:String>60 -Transfer of Lease</x:String>
+                  </scg:List>
+                </uix:NSelectItem.Items>
+                <uix:NSelectItem.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="d999942d-b3f3-4b96-8334-3eda74696f61" ContentHash="3AUBNShmVUqZRitbLtZXQw" CvElementArea="447, 271, 499, 27" CvType="InputBox" DesignTimeRectangle="447, 272, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbFormID' tag='SELECT' /&gt;" Guid="470f7d62-2346-45d3-bd9e-83dce07d5663" InformativeScreenshot="e63181f52b83f749612fb1e421673ae6.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/4VHVUJvww0-8xqP0h7lgYQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="d999942d-b3f3-4b96-8334-3eda74696f61" CvTextArea="223, 276, 83, 14" CvTextArgument="Article Code *" CvType="Text" DesignTimeRectangle="219, 262, 222, 75" Guid="d29097be-e63c-40a7-812f-9d26c0846a80" SearchSteps="FuzzySelector, CV">
+                          <uix:Target.FuzzySelectorArgument>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_1" xml:space="preserve">&lt;webctrl parentid='artical_code_div' tag='DIV' type='' class='pay-tin-col2' aaname='Article Code  ' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Article Code *' /&gt;</Literal>
+                            </InArgument>
+                          </uix:Target.FuzzySelectorArgument>
+                        </uix:Target>
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NSelectItem.Target>
+              </uix:NSelectItem>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Stamp Duty'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="100" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" ContentHash="83TwJd4qQUuXndr95zgOvg" CvElementArea="561, 339, 176, 27" CvType="InputBox" DesignTimeRectangle="563, 340, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='amount1' tag='INPUT' /&gt;" Guid="eb911f04-eb0f-4b34-9279-25edcb453218" InformativeScreenshot="fc3f92ddb6400e379f70b986d7d9c189.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/YIy7KNb_0UqBmoxy0KxVyg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" CvTextArea="339, 346, 71, 14" CvTextArgument="Stamp Duty" CvType="Text" DesignTimeRectangle="219, 330, 311, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='scheme1' tag='DIV' type='' class='pay-tin-col2' aaname='Stamp Duty' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Stamp Duty' /&gt;" Guid="7e9c1ddd-276e-435d-b1ef-a1588ae248a9" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registration Fee'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="1000" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" ContentHash="Nzm-0mT7cEmAhMnEp-7IIQ" CvElementArea="561, 394, 177, 27" CvType="InputBox" DesignTimeRectangle="563, 396, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='amount2' tag='INPUT' /&gt;" Guid="200e6fb7-1255-4bca-93b2-6eb48e992d8e" InformativeScreenshot="c1e2fc12cfd6b6d2fa49d779e9e5ed7a.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/dNXaPnDKLE2K2oxPJI0LUA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" CvTextArea="327, 401, 95, 15" CvTextArgument="Registration Fee" CvType="Text" DesignTimeRectangle="219, 386, 311, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='scheme2' tag='DIV' type='' class='pay-tin-col2' aaname='Registration Fee' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registration Fee' /&gt;" Guid="d18241ec-7c26-425d-879b-ad38b9d9eac2" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <Assign sap:VirtualizedContainerService.HintSize="590,175" sap2010:WorkflowViewState.IdRef="Assign_3">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataRow">[OwnerRow]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataRow" xml:space="preserve">[dtPartyDetails_F.AsEnumerable().Where(Function(r) r("Token").ToString = Token.ToString AndAlso
+                           r("Party").ToString = "own").FirstOrDefault()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of Payer *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[OwnerRow(&quot;FullName&quot;).ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="24cfc15d-df80-41ad-87c7-9ad6e93d1c86" ContentHash="IULFM5C6F0SjuiSr-bTYcQ" CvElementArea="447, 442, 579, 26" CvType="InputBox" DesignTimeRectangle="447, 444, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtpartyname' tag='INPUT' /&gt;" Guid="006c6cbe-2106-49cc-8208-12273981a285" InformativeScreenshot="09c00b41ee4a0a9c4ddef3a0e56ecdd2.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/Zx_1ALjdVEKXC5pnr7kSDw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="24cfc15d-df80-41ad-87c7-9ad6e93d1c86" CvTextArea="224, 449, 97, 13" CvTextArgument="Name of Payer *" CvType="Text" DesignTimeRectangle="219, 434, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Name of Payer' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Name of Payer *' /&gt;" Guid="b19a0ff9-0e25-4c93-a3ed-0f73bbad4b1d" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mobile Number of Payer *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="9011092282" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="b47dd920-caac-47e8-86c1-0529ab7ae213" ContentHash="7q7gKy2PaEKMICJCowp8kA" CvElementArea="890, 498, 177, 27" CvType="InputBox" DesignTimeRectangle="891, 500, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtMobileNo' tag='INPUT' /&gt;" Guid="63f82568-3874-4326-8cc6-e5d36a5f41be" InformativeScreenshot="16140a518ab16e3f020861f91c9ffa42.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/SlhYgUULN0uDI883MFGnvQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="b47dd920-caac-47e8-86c1-0529ab7ae213" CvTextArea="667, 505, 152, 13" CvTextArgument="Mobile Number of Payer *" CvType="Text" DesignTimeRectangle="663, 490, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Mobile Number of Payer ' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Mobile Number of Payer *' /&gt;" Guid="b9fb887b-c04a-47e8-93fd-e05f3cd62b1d" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_52" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="c1dfe54d-f74f-465b-be47-16ef6caaeece" ContentHash="mEY9Zr-6Q0WAPgaIwSgYwQ" CvElementArea="631, 507, 66, 31" CvTextArea="653, 515, 21, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="631, 507, 65, 31" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='cancel' tableRow='1' tag='INPUT' /&gt;" Guid="04b599b4-f58c-447e-8f26-3344c90f87cd" InformativeScreenshot="fbfcbc4d443342a6e928e183f55e0457.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/qSYLEUzL90GJ7u4BEzj1cQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Assign sap:VirtualizedContainerService.HintSize="590,175" sap2010:WorkflowViewState.IdRef="Assign_4">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataRow">[TenantRow]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataRow" xml:space="preserve">[dtPartyDetails_F.AsEnumerable().Where(Function(r) r("Token").ToString = Token.ToString AndAlso
+                           r("Party").ToString = "ten").FirstOrDefault()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of Second Party *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[TenantRow(&quot;FullName&quot;).ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="6335bcbc-891d-4c7a-8921-ee17fc92ea29" ContentHash="3dkMA2LjoEevy7GLQxdCIw" CvElementArea="448, 290, 578, 26" CvType="InputBox" DesignTimeRectangle="447, 292, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtpartyname2' tag='INPUT' type='text' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4d83d9a3-52f7-4a4b-b5c9-c81e7b9ad4fc" InformativeScreenshot="aa084dc4d1a189daeb4e3db11ffaa04a.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/p0OIhb6CWE2N7-w8WCRfbw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="6335bcbc-891d-4c7a-8921-ee17fc92ea29" CvTextArea="224, 297, 141, 13" CvTextArgument="Name of Second Party *" CvType="Text" DesignTimeRectangle="219, 282, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Name of Second Party' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Name of Second Party *' /&gt;" Guid="9bd2f25e-7fbc-4d28-9a0e-c3ef8abab298" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <Assign sap:VirtualizedContainerService.HintSize="590,175" sap2010:WorkflowViewState.IdRef="Assign_5">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="sd:DataRow">[IndexIIRow]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="sd:DataRow">[dtIndexII_F.AsEnumerable().Where(Function(r) r("Token").ToString = Token.ToString).FirstOrDefault()]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Flat/Survey Number*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[IndexIIrow(&quot;FlatNumber&quot;).ToString+&quot;,&quot;+IndexIIrow(&quot;BuildingName&quot;).ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="8b896098-68be-4de7-b89a-91f3c6c2918f" ContentHash="2gkrpRjdPE62b484CE6xuA" CvElementArea="446, 438, 580, 26" CvType="InputBox" DesignTimeRectangle="447, 440, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtprimise' tag='INPUT' /&gt;" Guid="d2731163-47f1-4f3d-b1a0-de1973a489b5" InformativeScreenshot="4c1c8acfeb17390b40db8cc863e651e2.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/MIB_OXvxjkORHJYYdr8KQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="8b896098-68be-4de7-b89a-91f3c6c2918f" CvTextArea="224, 445, 125, 15" CvTextArgument="Flat/Survey Number*" CvType="Text" DesignTimeRectangle="219, 430, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname=' Flat/Survey Number' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Flat/Survey Number*' /&gt;" Guid="84e3c85c-bbe7-497a-abb6-ca4629fcd805" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Locality/Road*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[IndexIIrow(&quot;Road&quot;).ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="1cf274a1-a38f-485c-9012-b863c418dcb1" ContentHash="p9vQyfWnr0in9CClfbQcRA" CvElementArea="446, 495, 580, 26" CvType="InputBox" DesignTimeRectangle="447, 496, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtroad' tag='INPUT' /&gt;" Guid="cb20055b-03b3-43c3-a074-07d275fb5d70" InformativeScreenshot="23c9cc907c248fe66759fcee270a68b3.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/R9aumrRm40iVeG-TJi1HVw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="1cf274a1-a38f-485c-9012-b863c418dcb1" CvTextArea="223, 501, 86, 15" CvTextArgument="Locality/Road*" CvType="Text" DesignTimeRectangle="219, 486, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Locality/Road' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Locality/Road*' /&gt;" Guid="35af0efe-b7f4-4110-b92d-14b8a7e1f8ae" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Area/City *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[IndexIIrow(&quot;City&quot;).ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="167c0d99-ca38-4d72-bf3d-12058539def7" ContentHash="txYcF7lHN0CxJ0nu7X5Ccw" CvElementArea="445, 551, 177, 27" CvType="InputBox" DesignTimeRectangle="447, 552, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtdist' tag='INPUT' /&gt;" Guid="68c6a04f-b324-4ec6-86ef-7a5e3994bfba" InformativeScreenshot="5cbeae17025a4306187fb2d17b88ffff.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/qOkIbqm3tUulayFUQNzmFw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="167c0d99-ca38-4d72-bf3d-12058539def7" CvTextArea="223, 557, 68, 15" CvTextArgument="Area/City *" CvType="Text" DesignTimeRectangle="219, 542, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Area/City' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Area/City *' /&gt;" Guid="f86b8b0d-ab01-447e-82e2-d8198f85328b" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Pin Code*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,246" sap2010:WorkflowViewState.IdRef="NTypeInto_10" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[IndexIIrow(&quot;PinCode&quot;).ToString]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="167c0d99-ca38-4d72-bf3d-12058539def7" ContentHash="Q7l0TskB9kG-_WJS7VZTtw" CvElementArea="889, 550, 177, 27" CvType="InputBox" DesignTimeRectangle="891, 552, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtPIN' tag='INPUT' /&gt;" Guid="21b0363d-c770-498a-a4c5-e6a9091398ff" InformativeScreenshot="c64185381e4b384e4e2216c9c654ae54.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/HJ0fOznKxUKuJCFQCbPhKg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="167c0d99-ca38-4d72-bf3d-12058539def7" CvTextArea="668, 557, 58, 13" CvTextArgument="Pin Code*" CvType="Text" DesignTimeRectangle="663, 542, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Pin Code' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Pin Code*' /&gt;" Guid="ad0b78ce-fb37-4884-bb16-774138ca42f5" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SBI epay Payment Gatewa…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,194" sap2010:WorkflowViewState.IdRef="NClick_42" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="45c4f936-4dc5-4d40-99dc-2766c318622e" ContentHash="9C4nYawLSkOBz1LkoV3hAw" CvElementArea="836, 456, 18, 18" CvType="RadioButton" DesignTimeRectangle="859, 372, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='PG' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='PG' tag='INPUT' type='radio' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3342d435-2bb0-441a-a6e2-4f99305d3504" InformativeScreenshot="82f75f5c9427e698275241ddf76336f9.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/ollQv2nc4EOcWaEAqArAUg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="879, 373, 161, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='SBI epay Payment Gateway  Customer will have to pay the payment gateway charges.' parentid='frmchallan_entry' tag='A' type='' class='tooltip' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='SBI epay Payment Gateway' /&gt;" Guid="430eb340-535a-4753-84d5-79d217a8ed07" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="590,123" sap2010:WorkflowViewState.IdRef="Delay_10" />
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="captchaProcess_Challan2 - Invoke Workflow File (captchaProcess_Challan2.xaml)" sap:VirtualizedContainerService.HintSize="590,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="captchaProcess_Challan2.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <OutArgument x:TypeArguments="x:String" x:Key="captchaText2">[captchaText2]</OutArgument>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT captcha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,250" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[captchaText2]" Version="V5">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="a1f3ef5f-23df-49f7-bfef-7a6c14ef63d5" ContentHash="eI7tvqhUhUqlAPcW-bynsw" CvElementArea="889, 508, 177, 27" CvType="InputBox" DesignTimeRectangle="911, 510, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='captcha' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d875ae01-404b-47dc-beda-5037189efcfb" InformativeScreenshot="fb124d3ef3da763c22762af44930ea19.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/x4JuKgeWDUGhHZauUviMGA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f860bebe-ef4e-4737-825b-8dad8ea581c6" CvTextArea="688, 515, 127, 13" CvTextArgument="Enter Captcha Code *" CvType="Text" DesignTimeRectangle="683, 500, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Enter Captcha Code  ' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Enter Captcha Code *' /&gt;" Guid="5335290b-3c63-49e8-aa06-80d3ccffbe23" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="590,61" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="486,529" sap2010:WorkflowViewState.IdRef="Sequence_55">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State 'Enter Captcha Code *'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,469" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="1ab3e24f-2376-40d2-b973-746d5edb0372" ContentHash="RSxO5GqsX0ShsogLeUUMjQ" CvElementArea="909, 509, 177, 27" CvType="InputBox" DesignTimeRectangle="911, 510, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' /&gt;" Guid="68a70667-1907-453f-bf96-28b025f03120" InformativeScreenshot="8dd974d5ef738fd383b936a36f3988d2.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UpIeC8RYFkO98oxHsFlT1A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="1ab3e24f-2376-40d2-b973-746d5edb0372" CvTextArea="688, 515, 127, 13" CvTextArgument="Enter Captcha Code *" CvType="Text" DesignTimeRectangle="683, 500, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Enter Captcha Code  ' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Enter Captcha Code *' /&gt;" Guid="413ff7a0-bc13-45cd-8a36-f9ed75aa887d" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="590,61" sap2010:WorkflowViewState.IdRef="CommentOut_15">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_42">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="Delay_6" />
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,198" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="a1f3ef5f-23df-49f7-bfef-7a6c14ef63d5" ContentHash="tjbJkQFrq0azzEwemoBeTg" CvElementArea="570, 602, 93, 33" CvTextArea="592, 612, 52, 13" CvTextArgument="Proceed" CvType="Button" DesignTimeRectangle="571, 604, 90, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" Guid="e78784bf-28c1-49f4-85de-ef7a1b858b5b" InformativeScreenshot="f5aa10c04a40d8bc20d128b4f3b71c25.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/kV2P4L2qv0mA-BfA1rTEsw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Agree'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,198" sap2010:WorkflowViewState.IdRef="NClick_44" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/user_registration_challan_draft.php" CVScreenId="52614ab7-07af-4816-8230-09886cf01358" ContentHash="Dekcvvpo6kqzZILWRFtkow" CvElementArea="601, 695, 17, 17" CvType="RadioButton" DesignTimeRectangle="603, 597, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='agree' type='radio' tag='INPUT' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="917c8102-e039-4c68-8c11-d21c48e8b511" InformativeScreenshot="bc07c8edf7236e811cab13619e23fae2.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/1G-H9RPMykKnndFzFAJ_OQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="52614ab7-07af-4816-8230-09886cf01358" CvTextArea="618, 700, 36, 13" CvTextArgument="Agree" CvType="Text" DesignTimeRectangle="619, 599, 34, 14" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='B' aaname='Agree' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Agree' /&gt;" Guid="8dc75b6e-32c7-4222-8bcd-768d975d2c0e" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,198" sap2010:WorkflowViewState.IdRef="NClick_45" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/user_registration_challan_draft.php" CVScreenId="f6c9927f-3d27-41a1-85dd-11e6652de28e" ContentHash="clkrwQKGYkCy26xNfG16Cw" CvElementArea="599, 618, 68, 24" CvTextArea="607, 623, 51, 13" CvTextArgument="Proceed" CvType="Button" DesignTimeRectangle="600, 620, 66, 21" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;table' idx='3' tag='TABLE' /&gt;&lt;webctrl id='Proceed' tableRow='3' tag='INPUT' /&gt;" Guid="7414a561-ebe1-43cc-ad29-d0abc92888f5" InformativeScreenshot="fab0712a566b8354cf95e56f684a4ff8.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/XgTEc8oK-UKhhg7G6yt82A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="f6c9927f-3d27-41a1-85dd-11e6652de28e" CvElementArea="668, 618, 59, 24" CvTextArea="676, 623, 43, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="669, 620, 58, 21" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='Cancel' type='button' tag='INPUT' class='grasBtn' aaname='Cancel' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Cancel' /&gt;" Guid="aa683e5c-869a-4f89-b9d2-e19782c7a22e" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,198" sap2010:WorkflowViewState.IdRef="NClick_46" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/user_registration_challan_draft.php" CVScreenId="7dab96f5-00a1-450d-905f-ecc6c1bd6b4c" ContentHash="a9KdZ6lv7U-_cMFRUUbz3w" CvElementArea="767, 223, 42, 35" CvTextArea="778, 234, 21, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="769, 225, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="63082fc9-9666-413c-85b8-e95ccede851d" InformativeScreenshot="3669b0db161098d833d42f1b51d7c5e4.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/qm_BegrWV0q5Ws8kHviwKQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='IGR Department and 3 more pages - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="7dab96f5-00a1-450d-905f-ecc6c1bd6b4c" CvTextArea="460, 105, 193, 19" CvTextArgument="gras.mahakosh.gov.in says" CvType="Text" DesignTimeRectangle="460, 105, 193, 19" ElementType="Text" Guid="daafb5a9-aafe-4203-a17c-cdc0e8ede8a9" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="590,198" sap2010:WorkflowViewState.IdRef="NClick_47" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/user_registration_challan_draft.php" CVScreenId="7dab96f5-00a1-450d-905f-ecc6c1bd6b4c" ContentHash="a9KdZ6lv7U-_cMFRUUbz3w" CvElementArea="767, 223, 42, 35" CvTextArea="778, 234, 21, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="769, 225, 39, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="63082fc9-9666-413c-85b8-e95ccede851d" InformativeScreenshot="3669b0db161098d833d42f1b51d7c5e4.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/qm_BegrWV0q5Ws8kHviwKQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='IGR Department and 3 more pages - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="7dab96f5-00a1-450d-905f-ecc6c1bd6b4c" CvTextArea="460, 105, 193, 19" CvTextArgument="gras.mahakosh.gov.in says" CvType="Text" DesignTimeRectangle="460, 105, 193, 19" ElementType="Text" Guid="daafb5a9-aafe-4203-a17c-cdc0e8ede8a9" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="590,61" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,194" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NGetText DisplayName="Get Text 'Order No.'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,134" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                      <uix:NGetText.Target>
+                        <uix:TargetAnchorable BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="f815a215-7773-44d9-94e5-6c9fea7523bf" ContentHash="5QUHr42ST0-nydhGVsL0Lg" CvType="AnyWordGroup" DesignTimeRectangle="1004, 387, 206, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='collapseOrderSummary' tag='DIV' type='' class='txt subtxt' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="4d6a1b5f-9842-47e9-a6bf-c8dd447089cd" InformativeScreenshot="f1cdcca2ccaa0f338ba90cf838448c82.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/r0nIKBoyV0iHyovxLXoX-g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="f815a215-7773-44d9-94e5-6c9fea7523bf" CvTextArea="1003, 366, 78, 16" CvTextArgument="Order No.:" CvType="Text" DesignTimeRectangle="1004, 363, 206, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Order No.:' parentid='collapseOrderSummary' tag='DIV' type='' class='sub txt headtxt' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Order No.:' /&gt;" Guid="007be589-88c2-4ad8-a4ac-a62842ab122e" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NGetText.Target>
+                    </uix:NGetText>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="590,179" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;Payment Page started&quot;]" />
+              <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="590,127" sap2010:WorkflowViewState.IdRef="Delay_8" />
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PaymentPage - Invoke Workflow File (PaymentPage.xaml)" sap:VirtualizedContainerService.HintSize="590,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="PaymentPage.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_config">[in_config]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.OCREngine>
+          <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+            </ActivityFunc.Argument>
+          </ActivityFunc>
+        </uix:NApplicationCard.OCREngine>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="21SDPJoe4UaGehhrFbmaQA" IconBase64="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" InformativeScreenshot="571c55caf8a6290227b457d3929c0b04.jpg" Reference="zHM_MHonYECrlrhSQ6-q1Q/o-Vp_E3EVECBoIS3wFU9mw" Selector="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" Url="[in_Config(&quot;ChallanPageURL&quot;).ToString]" Version="V2">
+            <uix:TargetApp.Arguments>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.Arguments>
+            <uix:TargetApp.WorkingDirectory>
+              <InArgument x:TypeArguments="x:String" />
+            </uix:TargetApp.WorkingDirectory>
+          </uix:TargetApp>
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>
