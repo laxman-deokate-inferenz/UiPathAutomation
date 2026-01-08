@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fcnddSVE0UyL54EFz5IWuQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="c0072ce5-55e4-4612-a749-53ef685764d4" CvTextArea="770, 443, 272, 15" CvTextArgument="Please enter valid verification code." CvType="Text" DesignTimeRectangle="771, 443, 271, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='SPAN' /&gt;" Guid="3150d09f-3e27-4185-8766-d50e0de5d511" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c0072ce5-55e4-4612-a749-53ef685764d4" CvElementArea="838, 410, 51, 31" CvTextArea="840, 418, 47, 17" CvTextArgument="Modify" CvType="Button" DesignTimeRectangle="840, 411, 48, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Modify' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Modify' /&gt;" Guid="a02fa8a4-f0a0-45af-a1cf-2782e5ec77eb" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c537af4e675b1dff94f769f08e89d86c.png" xmlns="">06XMujjFpukG5gz6BaioR9A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
