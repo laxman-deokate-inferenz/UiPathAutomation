@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NnMMQn9S80aiHlXu9nYlxA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="99610f6c-027b-4804-90b4-1981a725be13" CvElementArea="493, 584, 177, 26" CvType="InputBox" DesignTimeRectangle="495, 585, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="40d295c6-0bc2-47e1-92ea-9f06627f5956" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="99610f6c-027b-4804-90b4-1981a725be13" CvTextArea="308, 586, 115, 15" CvTextArgument="Mobile Number" CvType="Text" DesignTimeRectangle="309, 585, 184, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='41' tag='TABLE' /&gt;&lt;webctrl tableRow='9' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='labelFont' aaname='                                                 Mobile Number' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Mobile Number' /&gt;" Guid="93785843-c476-4ae9-acbd-c6b4496feec9" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0f572041306b5932f68889f1caffbc03.png" xmlns="">0T7lzSJ58S0C4HA7Heby2vg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
