@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="nfonpX1iCU6qSf5qmxI7eQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="6e92812b-6f3b-4702-87b1-6ae554d51c9d" CvElementArea="205, 235, 178, 26" CvType="InputBox" DesignTimeRectangle="207, 237, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtSurnameEng' type='text' tag='INPUT' class='textbox' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="891cbcc2-3a19-4b57-8bd7-70688bb344dd" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6e92812b-6f3b-4702-87b1-6ae554d51c9d" CvTextArea="39, 239, 68, 14" CvTextArgument="Surname" CvType="Text" DesignTimeRectangle="41, 237, 65, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Surname' type='' tag='SPAN' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Surname' /&gt;" Guid="408c5058-5d15-4ada-86bc-f4e41bf8ca43" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d13b25ce712a0118fc9267ff9b973866.png" xmlns="">0t-BlWXsmGkuB8EzzAJBuIw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetFocus</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

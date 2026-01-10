@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eUujmWCJ0kal_-sjp0ubOQ" Reference="pHzF6kLblkKADM8cX4PXEw/_Lsmoyl8wk2du8uWy0s8Ug" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="7bad0063-1917-41a6-a947-1023841924ac" CvElementArea="216, 109, 159, 33" CvTextArea="230, 119, 127, 15" CvTextArgument="Continue downloading" CvType="Button" DesignTimeRectangle="216, 110, 157, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Your file is still downloading' role='dialog' /&gt;&lt;ctrl name='Continue downloading' role='push button' /&gt;" Guid="8e83c608-00c4-4855-bbac-a242e58c884b" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Your file is still downloading' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="7bad0063-1917-41a6-a947-1023841924ac" CvTextArea="72, 51, 189, 16" CvTextArgument="Your file is still downloading" CvType="Text" DesignTimeRectangle="74, 47, 416, 19" FuzzySelectorArgument="&lt;ctrl name='Your file is still downloading' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Your file is still downloading' role='grouping' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Your file is still downloading' /&gt;" Guid="cc28c4b4-45e2-46b7-a216-1fbe5ea7afb8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="47aefb19b71d6f427d4ad1595fcc58dc.png" xmlns="">47aefb19b71d6f427d4ad1595fcc58dc.png</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

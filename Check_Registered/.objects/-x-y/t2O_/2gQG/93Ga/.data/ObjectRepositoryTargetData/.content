@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dmC4nFgXe0SNpQO8iSrh9w" Reference="zHM_MHonYECrlrhSQ6-q1Q/93Ga1ZdByUq6EcZve6ojgw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="625ae0c1-a712-4e5a-b1ae-dd54d9cbbe1e" CvElementArea="946, 580, 177, 26" CvType="InputBox" DesignTimeRectangle="948, 391, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='*' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtExecLaocation' tableRow='*' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' class='textbox' /&gt;" Guid="7ee23f17-6147-498e-ba2a-2c3c9dd67c91" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="625ae0c1-a712-4e5a-b1ae-dd54d9cbbe1e" CvTextArea="697, 585, 240, 14" CvTextArgument="Document Executed at Location" CvType="Text" DesignTimeRectangle="698, 393, 245, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='SPAN' innertext='Document Executed at Location' /&gt;" Guid="d196cc19-5f18-4db5-b142-8b2ddc8b4533" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="afaab72f5057bf57fecba809e8ad7b89.png" xmlns="">0ezwN5DCfWUyKpcEDrj0OFQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
