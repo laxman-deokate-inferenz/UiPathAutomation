@@ -126,7 +126,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="getToken" sap:VirtualizedContainerService.HintSize="706,813" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="getToken" sap:VirtualizedContainerService.HintSize="649,813" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strData" />
     </Sequence.Variables>
@@ -135,7 +135,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[out_TokenTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="450,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_Config(&quot;SheetName&quot;).ToString]" WorkbookPath="[path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;FileName&quot;).ToString)]" />
+    <ui:ReadRange AddHeaders="True" DataTable="[out_TokenTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="450,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" Password="{x:Null}" Range="{x:Null}" SheetName="[in_Config(&quot;TokenSheetName&quot;).ToString]" WorkbookPath="[path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;TokenFileName&quot;).ToString)]" WorkbookPathResource="{x:Null}" />
     <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="450,329" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select Token" Options="[out_TokenTable.AsEnumerable().&#xD;&#xA;Where(Function(r) _&#xD;&#xA;    Not IsDBNull(r(&quot;Token&quot;)) AndAlso _&#xD;&#xA;    Not IsDBNull(r(&quot;Name&quot;)) AndAlso _&#xD;&#xA;    Not IsDBNull(r(&quot;Status&quot;))&#xD;&#xA;).&#xD;&#xA;OrderByDescending(Function(r) r(&quot;Token&quot;).ToString()).&#xD;&#xA;Select(Function(r) _&#xD;&#xA;    String.Format(&quot;{0}  |  {1}  |  {2}&quot;, r(&quot;Token&quot;), r(&quot;Name&quot;), r(&quot;Status&quot;))&#xD;&#xA;).&#xD;&#xA;ToArray()]" Title="Select Token" TopMost="False">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[Token]</OutArgument>

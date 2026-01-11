@@ -1,4 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Activity mc:Ignorable="sap sap2010" x:Class="Property" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
@@ -168,7 +167,7 @@
       <AssemblyReference>System.Linq.Async.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="759,6672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="630,596" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="out_TokenTable" />
       <Variable x:TypeArguments="x:String" Name="strMiddleName" />
@@ -209,16 +208,16 @@
       <Variable x:TypeArguments="x:String" Name="out_captchaText" />
       <Variable x:TypeArguments="x:String" Name="retryMessage" />
       <Variable x:TypeArguments="x:String" Name="getText" />
-      <Variable x:TypeArguments="x:Int32" Name="cnt_InvalidCaptcha" />
-      <Variable x:TypeArguments="x:Int32" Name="cnt_InvalidPWD" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="cnt_InvalidCaptcha" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="cnt_InvalidPWD" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Enter into Login Workflow&quot;]" />
-    <Assign sap:VirtualizedContainerService.HintSize="596,175" sap2010:WorkflowViewState.IdRef="Assign_34">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="LogMessage_4" Message="[&quot;Enter into Login Workflow&quot;]" />
+    <Assign sap:VirtualizedContainerService.HintSize="450,175" sap2010:WorkflowViewState.IdRef="Assign_34">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[Token]</OutArgument>
       </Assign.To>
@@ -226,32 +225,46 @@
         <InArgument x:TypeArguments="x:String">[token]</InArgument>
       </Assign.Value>
     </Assign>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="596,6299" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="596,4886" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="594,5519" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+        <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="594,4117" sap2010:WorkflowViewState.IdRef="RetryScope_1">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="592,5344" sap2010:WorkflowViewState.IdRef="Sequence_161">
+              <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="592,3942" sap2010:WorkflowViewState.IdRef="Sequence_161">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Sequence-Login" sap:VirtualizedContainerService.HintSize="558,5280" sap2010:WorkflowViewState.IdRef="Sequence_151">
+                <Sequence DisplayName="Sequence-Login" sap:VirtualizedContainerService.HintSize="558,3878" sap2010:WorkflowViewState.IdRef="Sequence_151">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_38">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[getText]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">[""]</InArgument>
+                    </Assign.Value>
+                  </Assign>
                   <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="524,171" sap2010:WorkflowViewState.IdRef="KillProcess_6" ProcessName="msedge" />
-                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,4787" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="524,3206" sap2010:WorkflowViewState.IdRef="NApplicationCard_14" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,4580" sap2010:WorkflowViewState.IdRef="Sequence_157">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="522,2999" sap2010:WorkflowViewState.IdRef="Sequence_157">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -362,9 +375,9 @@
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NTypeInto>
                           <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="488,127" sap2010:WorkflowViewState.IdRef="Delay_10" />
-                          <uix:NCheckState DisplayName="Check App State 'Document is registered.'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,875" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V5">
+                          <uix:NCheckState DisplayName="Check App State 'Document is registered.'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,1310" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V5">
                             <uix:NCheckState.IfExists>
-                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,116" sap2010:WorkflowViewState.IdRef="Sequence_162">
+                              <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="486,116" sap2010:WorkflowViewState.IdRef="Sequence_162">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -401,13 +414,13 @@
                               </Sequence>
                             </uix:NCheckState.IfExists>
                             <uix:NCheckState.IfNotExists>
-                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,461" sap2010:WorkflowViewState.IdRef="Sequence_163">
+                              <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="486,900" sap2010:WorkflowViewState.IdRef="Sequence_163">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+                                <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="CommentOut_7">
                                   <ui:CommentOut.Body>
                                     <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_165">
                                       <sap:WorkflowViewStateService.ViewState>
@@ -441,7 +454,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:CommentOut>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Modify Status'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_46" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Modify Status'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_46" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="89da1afa-3abd-4a50-8783-e6e422f779f1" ContentHash="M6LN9VmWlUePnkzjwTVYNQ" CvElementArea="839, 380, 51, 32" CvTextArea="840, 388, 47, 16" CvTextArgument="Modify" CvType="Button" DesignTimeRectangle="866, 426, 82, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='labelFont' aaname='View Status' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='View Status' /&gt;" Guid="b8c63384-885b-44fa-90d3-e8a1ba7a6fe7" InformativeScreenshot="6bbfcace8050ed8fad3887dfbda07665.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/I3cIRTf7jUm22iLhy1jRUw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -455,17 +468,40 @@
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <uix:NGetText DisplayName="Get Text 'The Document is submitt…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,138" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" TextString="[getText]" Version="V5">
-                                  <uix:NGetText.Target>
-                                    <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="1c11db32-f978-40c3-8626-7f1c55ce78e6" ContentHash="sheXQBpDP0CjiEvNPDaazQ" CvType="AnyWordGroup" DesignTimeRectangle="722, 443, 521, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='SPAN' /&gt;" Guid="66a7e093-4c76-4030-bb5c-e3d9353004cf" InformativeScreenshot="2ddf7c9e3d9a686dd4627ca032cc87ac.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/kQnzwU6q4UWYHhFvNuaJ_g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                                      <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target CVScreenId="1c11db32-f978-40c3-8626-7f1c55ce78e6" CvElementArea="940, 410, 87, 31" CvTextArea="942, 418, 81, 14" CvTextArgument="View Status" CvType="Button" DesignTimeRectangle="942, 411, 82, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='labelFont' aaname='View Status' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='View Status' /&gt;" Guid="0e765ab8-834f-48e5-bfc2-d39cc2ca5e08" SearchSteps="FuzzySelector, CV" />
-                                        </scg:List>
-                                      </uix:TargetAnchorable.Anchors>
-                                    </uix:TargetAnchorable>
-                                  </uix:NGetText.Target>
-                                </uix:NGetText>
+                                <uix:NCheckState DisplayName="Check App State 'Modify'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="452,577" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V5">
+                                  <uix:NCheckState.IfExists>
+                                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_177">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </uix:NCheckState.IfExists>
+                                  <uix:NCheckState.IfNotExists>
+                                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="Sequence_178">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NGetText DisplayName="Get Text 'The Document is submitt…(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,138" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" TextString="[getText]" Version="V5">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="1c11db32-f978-40c3-8626-7f1c55ce78e6" ContentHash="sheXQBpDP0CjiEvNPDaazQ" CvType="AnyWordGroup" DesignTimeRectangle="722, 443, 521, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='SPAN' /&gt;" Guid="66a7e093-4c76-4030-bb5c-e3d9353004cf" InformativeScreenshot="2ddf7c9e3d9a686dd4627ca032cc87ac.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/kQnzwU6q4UWYHhFvNuaJ_g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="1c11db32-f978-40c3-8626-7f1c55ce78e6" CvElementArea="940, 410, 87, 31" CvTextArea="942, 418, 81, 14" CvTextArgument="View Status" CvType="Button" DesignTimeRectangle="942, 411, 82, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='labelFont' aaname='View Status' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='View Status' /&gt;" Guid="0e765ab8-834f-48e5-bfc2-d39cc2ca5e08" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                      </uix:NGetText>
+                                    </Sequence>
+                                  </uix:NCheckState.IfNotExists>
+                                  <uix:NCheckState.Target>
+                                    <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="135dbba7-f7b1-48f8-8a1a-a900d4018707" CvElementArea="838, 280, 52, 32" CvTextArea="840, 288, 47, 16" CvTextArgument="Modify" CvType="Button" DesignTimeRectangle="840, 281, 48, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" Guid="c70e0555-a41b-41d5-97b1-ec10667f7416" InformativeScreenshot="bab5f93c2e6bf345a01ca41287528000.png" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                  </uix:NCheckState.Target>
+                                </uix:NCheckState>
                               </Sequence>
                             </uix:NCheckState.IfNotExists>
                             <uix:NCheckState.Target>
@@ -484,10 +520,10 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </uix:NCheckState>
-                          <If Condition="[getText=&quot;Please enter valid verification code.&quot;]" sap:VirtualizedContainerService.HintSize="488,1069" sap2010:WorkflowViewState.IdRef="If_1">
+                          <If Condition="[getText=&quot;Please enter valid verification code.&quot;]" sap:VirtualizedContainerService.HintSize="488,61" sap2010:WorkflowViewState.IdRef="If_1">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -546,10 +582,10 @@
                               </Sequence>
                             </If.Else>
                           </If>
-                          <If Condition="[getText=&quot;Enter Password&quot;]" sap:VirtualizedContainerService.HintSize="488,1060" sap2010:WorkflowViewState.IdRef="If_3">
+                          <If Condition="[getText=&quot;Enter Password&quot;]" sap:VirtualizedContainerService.HintSize="488,52" sap2010:WorkflowViewState.IdRef="If_3">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
@@ -855,5 +891,6 @@
         </Sequence>
       </TryCatch.Finally>
     </TryCatch>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,166" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Out of Login Now&quot;]" />
   </Sequence>
 </Activity>
