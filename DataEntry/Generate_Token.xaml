@@ -99,7 +99,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="Token_Creation" sap:VirtualizedContainerService.HintSize="732,380" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Generate_Token" sap:VirtualizedContainerService.HintSize="636,380" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="s:String[]" Name="renewalFiles" />
       <Variable x:TypeArguments="x:String" Name="filePath" />
@@ -152,7 +152,7 @@
             <OutArgument x:TypeArguments="s:String[]">[index2Files]</OutArgument>
           </Assign.To>
           <Assign.Value>
-            <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles(filePath, "IndexII*.*")]</InArgument>
+            <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles(filePath, "Index*.*")]</InArgument>
           </Assign.Value>
         </Assign>
         <Assign sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="Assign_4">
@@ -163,7 +163,7 @@
             <InArgument x:TypeArguments="s:String[]">[System.IO.Directory.GetFiles(filePath, "LightBill*.*")]</InArgument>
           </Assign.Value>
         </Assign>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Renewal:&quot;+ renewalFiles.Length.ToString + &quot;Ind: &quot;+index2Files.Length.ToString + &quot;LightBill &quot;+LightBill.Length.ToString]" />
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Renewal:&quot;+ renewalFiles.Length.ToString + &quot;Ind: &quot;+index2Files.Length.ToString + &quot;LightBill &quot;+LightBill.Length.ToString]" />
       </Sequence>
       <FlowStep.Next>
         <FlowDecision x:Name="__ReferenceID0" Condition="[renewalFiles.Length &gt; 0]" DisplayName="Flow Decision" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
