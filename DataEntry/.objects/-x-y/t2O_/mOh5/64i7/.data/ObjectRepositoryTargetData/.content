@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="E7T7Y9mg8kOSkN0Ss5--mg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="6VfRSghioUGRuroDhJGW5A" Reference="zHM_MHonYECrlrhSQ6-q1Q/64i7rgvLbkCOgwvgX-ECHA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="135dbba7-f7b1-48f8-8a1a-a900d4018707" CvElementArea="838, 280, 52, 32" CvTextArea="840, 288, 47, 16" CvTextArgument="Modify" CvType="Button" DesignTimeRectangle="840, 281, 48, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" Guid="c70e0555-a41b-41d5-97b1-ec10667f7416" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="bab5f93c2e6bf345a01ca41287528000.png" xmlns="">0KtcdWVW23UqObkctuzxXLw</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="135dbba7-f7b1-48f8-8a1a-a900d4018707" CvElementArea="838, 280, 52, 32" CvTextArea="840, 288, 47, 16" CvTextArgument="Modify" CvType="Button" DesignTimeRectangle="840, 381, 48, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='4' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Modify' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Modify' /&gt;" Guid="c70e0555-a41b-41d5-97b1-ec10667f7416" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f336a60d-17ea-4aa0-ad7f-f5856e25bdc1" CvTextArea="927, 288, 196, 18" CvTextArgument="Modify Entryl View Status" CvType="Text" DesignTimeRectangle="927, 288, 196, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Modify Entry/ View Status' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Modify Entry/ View Status' /&gt;" Guid="f89a457a-3eb9-462f-b804-ecd2feed2485" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ad3bb1e000ceba379ebd734ce58051b3.png" xmlns="">0sBpwGAO_K0icPWMqGHoqIw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">CheckState</x:String>
   </ObjectRepositoryTargetData.Data>
