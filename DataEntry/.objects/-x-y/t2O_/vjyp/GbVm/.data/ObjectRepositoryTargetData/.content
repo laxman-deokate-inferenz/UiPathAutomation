@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UbyMwm4P_E-Y82ADuqxalg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="bb460d8c-c4d2-44d2-846b-e545f40b648e" CvElementArea="672, 616, 183, 32" CvTextArea="673, 625, 179, 14" CvTextArgument="Next: Rent &amp; Other Terms" CvType="Button" DesignTimeRectangle="673, 617, 180, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' tableRow='32' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' type='submit' tag='INPUT' class='' aaname='Next: Rent &amp;amp; Other Terms' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next: Rent &amp;amp; Other Terms' /&gt;" Guid="7b176f09-af00-4dd3-ad79-94a61f8afe59" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bb460d8c-c4d2-44d2-846b-e545f40b648e" CvElementArea="538, 615, 133, 32" CvTextArea="540, 625, 129, 14" CvTextArgument="Add : Party Details" CvType="Button" DesignTimeRectangle="540, 617, 129, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnMore' type='submit' tag='INPUT' class='' aaname='Add : Party Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add : Party Details' /&gt;" Guid="06629614-cbeb-499c-ac8a-4eb90b40fd32" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b267eeb86f06516f4c3afd07d803866c.png" xmlns="">0tZKcDVPRC0mtin-5EFshOA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
