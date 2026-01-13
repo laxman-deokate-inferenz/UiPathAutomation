@@ -60,13 +60,13 @@
     },
     {
       "activityDisplayName": "For Each File or Folder",
-      "activityId": "ForEachFileFolderConnections_2",
+      "activityId": "ForEachFileFolderConnections_3",
       "resource": "Connection",
-      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
-      "id": "Connection07d2357f-01e7-423f-b76d-b0c7b72314dd07d2357f-01e7-423f-b76d-b0c7b72314ddFalse",
+      "key": "c3bfc534-a117-4513-8158-794a805a8753",
+      "id": "Connectionc3bfc534-a117-4513-8158-794a805a8753c3bfc534-a117-4513-8158-794a805a8753False",
       "value": {
         "ConnectionId": {
-          "defaultValue": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+          "defaultValue": "c3bfc534-a117-4513-8158-794a805a8753",
           "isExpression": false,
           "displayName": "Connection",
           "description": "The connection to be used"
@@ -80,10 +80,10 @@
     },
     {
       "activityDisplayName": "For Each File or Folder",
-      "activityId": "ForEachFileFolderConnections_2",
+      "activityId": "ForEachFileFolderConnections_3",
       "resource": "Property",
-      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or Folder",
-      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or FolderPVFalsehttps://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzjFalse",
+      "key": "c3bfc534-a117-4513-8158-794a805a8753.For Each File or Folder",
+      "id": "Propertyc3bfc534-a117-4513-8158-794a805a8753.For Each File or FolderPVFalsehttps://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzjFalse",
       "value": {
         "FullName": {
           "defaultValue": "PV",
@@ -103,12 +103,32 @@
         "ActivityName": "For Each File or Folder",
         "ObjectName": "CuratedFolder",
         "DisplayLabel": "FullName",
-        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+        "ParentResourceKey": "Connection.c3bfc534-a117-4513-8158-794a805a8753"
       }
     },
     {
       "activityDisplayName": "Send Email",
       "activityId": "SendEmailConnections_3",
+      "resource": "Connection",
+      "key": "332032d4-3934-4c35-9d9d-430082ee5d80",
+      "id": "Connection332032d4-3934-4c35-9d9d-430082ee5d80332032d4-3934-4c35-9d9d-430082ee5d80False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "332032d4-3934-4c35-9d9d-430082ee5d80",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Send Email",
+      "activityId": "SendEmailConnections_4",
       "resource": "Connection",
       "key": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
       "id": "Connection8c6e332c-054b-4d91-acdf-550e7c2d278e8c6e332c-054b-4d91-acdf-550e7c2d278eFalse",
@@ -123,6 +143,26 @@
       "metadata": {
         "BindingsVersion": "2.2",
         "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Upload Files",
+      "activityId": "UploadFilesConnections_1",
+      "resource": "Connection",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+      "id": "Connection07d2357f-01e7-423f-b76d-b0c7b72314dd07d2357f-01e7-423f-b76d-b0c7b72314ddFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-drive",
         "UseConnectionService": "True"
       }
     },

@@ -1,7 +1,7 @@
 {
-  "name": "DataEntry",
-  "projectId": "853a1e0a-b194-4d8f-993f-90973de1cd75",
-  "description": "DataEntry",
+  "name": "Check_Registered",
+  "projectId": "9b1bdfd0-ffb1-46f7-9210-0f864ff87829",
+  "description": "Check_Registered",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[3.3.1]",
@@ -11,7 +11,7 @@
     "UiPath.MicrosoftOffice365.Activities": "[3.5.10]",
     "UiPath.OCR.Activities": "[3.24.2]",
     "UiPath.PDF.Activities": "[3.25.2]",
-    "UiPath.System.Activities": "[25.10.3]",
+    "UiPath.System.Activities": "[25.10.4]",
     "UiPath.UIAutomation.Activities": "[25.10.22]",
     "UiPath.WebAPI.Activities": "[2.3.2]"
   },
@@ -19,7 +19,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "26.0.182.0",
-  "projectVersion": "1.0.4",
+  "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
     "netFrameworkLazyLoading": false,
@@ -54,7 +54,7 @@
   "entryPoints": [
     {
       "filePath": "Main.xaml",
-      "uniqueId": "0997840f-bcfa-4d1f-a34c-ca991344bcc6",
+      "uniqueId": "7c3c00a1-d82f-4b60-95db-13bcc9322c56",
       "input": [],
       "output": []
     }
