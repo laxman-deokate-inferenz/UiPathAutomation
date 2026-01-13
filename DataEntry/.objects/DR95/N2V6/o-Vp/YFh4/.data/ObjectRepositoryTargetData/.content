@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yZS56rFpvEei7Em7qtP9zg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/user_registration_challan_draft.php" CVScreenId="801f1471-ecee-4244-853e-67918d0ccb89" DesignTimeRectangle="483, 140, 416, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' /&gt;&lt;ctrl name='MH015054035202526P' role='text' /&gt;" FuzzyMatches="10000" FuzzySelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='text' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="8732f75e-cad0-4505-a255-bcad22436504" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='IGR Department - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="801f1471-ecee-4244-853e-67918d0ccb89" CvTextArea="481, 97, 178, 16" CvTextArgument="gras.mahakosh.gov.in says" CvType="Text" DesignTimeRectangle="481, 97, 178, 16" ElementType="Text" Guid="de5403fa-5580-433c-a841-d43af43a6f14" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2e2d717e11d779c4e71709aa2a2342d9.png" xmlns="">0xTV__LksWE6yDbN33kxBBw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xYRZgESwy0uM7l7fthI1pA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="4d04981c-08ea-49d3-8dfc-68bd46de5ddf" CvElementArea="445, 482, 502, 28" CvType="InputBox" DesignTimeRectangle="447, 484, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbtrea_code' tag='SELECT' /&gt;" Guid="23ae36f9-50c5-41f4-a273-b9f716f734ba" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4d04981c-08ea-49d3-8dfc-68bd46de5ddf" DesignTimeRectangle="219, 474, 222, 55" FuzzySelectorArgument="&lt;webctrl class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' aaname='District' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='District *' /&gt;" Guid="ecc97651-71c6-4dd4-83a7-d478a27e826d" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="5e0e770dac42079a57d95fbcc4247987.png" xmlns="">0Sp8eorM150Svk8MR5wVVUg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

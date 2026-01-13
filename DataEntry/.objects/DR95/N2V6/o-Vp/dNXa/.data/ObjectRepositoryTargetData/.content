@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Nzm-0mT7cEmAhMnEp-7IIQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" CvElementArea="561, 394, 177, 27" CvType="InputBox" DesignTimeRectangle="563, 396, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='amount2' tag='INPUT' /&gt;" Guid="200e6fb7-1255-4bca-93b2-6eb48e992d8e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" CvTextArea="327, 401, 95, 15" CvTextArgument="Registration Fee" CvType="Text" DesignTimeRectangle="219, 386, 311, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='scheme2' tag='DIV' type='' class='pay-tin-col2' aaname='Registration Fee' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Registration Fee' /&gt;" Guid="d18241ec-7c26-425d-879b-ad38b9d9eac2" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c1e2fc12cfd6b6d2fa49d779e9e5ed7a.png" xmlns="">0wM64axZfB0qePs36NKSfPw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

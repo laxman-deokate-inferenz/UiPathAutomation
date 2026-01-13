@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="eI7tvqhUhUqlAPcW-bynsw" Reference="zHM_MHonYECrlrhSQ6-q1Q/x4JuKgeWDUGhHZauUviMGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="a1f3ef5f-23df-49f7-bfef-7a6c14ef63d5" CvElementArea="889, 508, 177, 27" CvType="InputBox" DesignTimeRectangle="911, 510, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='captcha' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d875ae01-404b-47dc-beda-5037189efcfb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f860bebe-ef4e-4737-825b-8dad8ea581c6" CvTextArea="688, 515, 127, 13" CvTextArgument="Enter Captcha Code *" CvType="Text" DesignTimeRectangle="683, 500, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Enter Captcha Code  ' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Enter Captcha Code *' /&gt;" Guid="5335290b-3c63-49e8-aa06-80d3ccffbe23" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fb124d3ef3da763c22762af44930ea19.png" xmlns="">02qKxygBoVEOFd2A27fkL3Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

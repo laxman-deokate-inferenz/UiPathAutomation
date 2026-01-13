@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2gkrpRjdPE62b484CE6xuA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="8b896098-68be-4de7-b89a-91f3c6c2918f" CvElementArea="446, 438, 580, 26" CvType="InputBox" DesignTimeRectangle="447, 440, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtprimise' tag='INPUT' /&gt;" Guid="d2731163-47f1-4f3d-b1a0-de1973a489b5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8b896098-68be-4de7-b89a-91f3c6c2918f" CvTextArea="224, 445, 125, 15" CvTextArgument="Flat/Survey Number*" CvType="Text" DesignTimeRectangle="219, 430, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname=' Flat/Survey Number' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Flat/Survey Number*' /&gt;" Guid="84e3c85c-bbe7-497a-abb6-ca4629fcd805" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="4c1c8acfeb17390b40db8cc863e651e2.png" xmlns="">0a9kPejKnIkGgB-BzR5Vcog</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

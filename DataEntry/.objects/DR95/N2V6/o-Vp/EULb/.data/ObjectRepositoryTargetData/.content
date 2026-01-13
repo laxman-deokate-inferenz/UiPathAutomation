@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Yv0DTVvZbk-Th8ZaNTf9pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="87db77a3-16c4-4550-ba5e-7f82c2c6cb18" CvElementArea="284, 527, 18, 18" CvType="RadioButton" DesignTimeRectangle="286, 529, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='cmbRec_Type' tag='INPUT' type='radio' class='' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d2568435-b7bf-4b92-95a3-70f02fc8ab14" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="87db77a3-16c4-4550-ba5e-7f82c2c6cb18" CvTextArea="305, 530, 292, 16" CvTextArgument="Pay Stamp Duty &amp; Registration Fee Together" CvType="Text" DesignTimeRectangle="306, 529, 290, 16" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='d1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='d1' tag='A' type='' class='' aaname=' Pay Stamp Duty &amp;amp; Registration Fee Together' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Pay Stamp Duty &amp;amp; Registration Fee Together' /&gt;" Guid="688313c7-4f92-4cf7-971e-9407ccb81ae1" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9d3f6f081a2d730b1ae8c44f0f396a5f.png" xmlns="">0SbZVRCZdTUeVYLt_bL55RA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

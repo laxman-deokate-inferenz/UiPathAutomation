@@ -1,0 +1,278 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_3",
+      "resource": "Connection",
+      "key": "cd4a055a-0e67-4e44-92ed-8a176851e117",
+      "id": "Connectioncd4a055a-0e67-4e44-92ed-8a176851e117cd4a055a-0e67-4e44-92ed-8a176851e117False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "cd4a055a-0e67-4e44-92ed-8a176851e117",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    },
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_1",
+      "resource": "Connection",
+      "key": "08a15877-de1f-4f2c-9584-8b2529fccac3",
+      "id": "Connection08a15877-de1f-4f2c-9584-8b2529fccac308a15877-de1f-4f2c-9584-8b2529fccac3False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "08a15877-de1f-4f2c-9584-8b2529fccac3",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    },
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_1",
+      "resource": "Connection",
+      "key": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+      "id": "Connectiond4693297-4791-4bb1-aaa4-35a7e05ac10ad4693297-4791-4bb1-aaa4-35a7e05ac10aFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    },
+    {
+      "activityDisplayName": "For Each File or Folder",
+      "activityId": "ForEachFileFolderConnections_2",
+      "resource": "Connection",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+      "id": "Connection07d2357f-01e7-423f-b76d-b0c7b72314dd07d2357f-01e7-423f-b76d-b0c7b72314ddFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-drive",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "For Each File or Folder",
+      "activityId": "ForEachFileFolderConnections_2",
+      "resource": "Property",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or Folder",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or FolderPVFalsehttps://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzjFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "PV",
+          "isExpression": false,
+          "displayName": "In location",
+          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+        },
+        "ID": {
+          "defaultValue": "https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj",
+          "isExpression": false,
+          "displayName": "In location",
+          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "For Each File or Folder",
+        "ObjectName": "CuratedFolder",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+      }
+    },
+    {
+      "activityDisplayName": "Send Email",
+      "activityId": "SendEmailConnections_3",
+      "resource": "Connection",
+      "key": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
+      "id": "Connection8c6e332c-054b-4d91-acdf-550e7c2d278e8c6e332c-054b-4d91-acdf-550e7c2d278eFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Upload Files",
+      "activityId": "UploadFilesConnections_1",
+      "resource": "Property",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload Files",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload FilesDocumentsFalsehttps://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJuFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "Documents",
+          "isExpression": false,
+          "displayName": "Destination folder",
+          "description": "The destination folder where to upload the files. If not specified, it defaults to Google Drive root folder"
+        },
+        "ID": {
+          "defaultValue": "https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu",
+          "isExpression": false,
+          "displayName": "Destination folder URL",
+          "description": "The destination folder where to upload the files. If not specified, it defaults to Google Drive root folder"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Upload Files",
+        "ObjectName": "CuratedFolder",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "UnAttended.FilesPath",
+      "id": "assetUnAttended.FilesPathUnAttendedFalseFilesPathFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "FilesPath",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_2",
+      "resource": "asset",
+      "key": "UnAttended.FileName",
+      "id": "assetUnAttended.FileNameUnAttendedFalseFileNameFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "FileName",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_5",
+      "resource": "asset",
+      "key": "UnAttended.FileName2",
+      "id": "assetUnAttended.FileName2UnAttendedFalseFileName2False",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "FileName2",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_3",
+      "resource": "asset",
+      "key": "UnAttended.Sheet1",
+      "id": "assetUnAttended.Sheet1UnAttendedFalseSheet1False",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Sheet1",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_4",
+      "resource": "asset",
+      "key": "UnAttended.Sheet2",
+      "id": "assetUnAttended.Sheet2UnAttendedFalseSheet2False",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Sheet2",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
+      "activityDisplayName": "Get Credential",
+      "activityId": "GetRobotCredential_2",
+      "resource": "asset",
+      "key": "UnAttended.Password",
+      "id": "assetUnAttended.PasswordUnAttendedFalsePasswordFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Password",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}

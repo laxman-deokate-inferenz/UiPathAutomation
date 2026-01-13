@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YFu8Na07DUCUXkjHTRdv2Q" Reference="zHM_MHonYECrlrhSQ6-q1Q/vZSquH0tOkOoGThAwvxdWw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="22a820b9-bbda-4f2f-bbcc-4ea2ca649ae6" CvElementArea="206, 284, 172, 23" CvType="InputBox" DesignTimeRectangle="207, 285, 170, 20" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="7bcc735f-24af-481e-97a0-0f12badc42aa" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="22a820b9-bbda-4f2f-bbcc-4ea2ca649ae6" CvTextArea="40, 287, 80, 17" CvTextArgument="Party Type" CvType="Text" DesignTimeRectangle="41, 285, 79, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Party Type' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' class='labelFont' matching:class='fuzzy' fuzzylevel:class='0.0' type='' tag='SPAN' innertext='Party Type' check:innerText='Party Type' /&gt;" Guid="0456fe31-df34-483b-974b-0cfae82fdad6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a39aad3f6747d9ec7863838a5dbf8afb.png" xmlns="">0mvdY5WAWB0SIsNnnRAbE5g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
