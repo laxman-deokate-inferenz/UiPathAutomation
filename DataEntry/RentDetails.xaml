@@ -136,23 +136,25 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="777,7521" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="714,7650" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:Boolean" Name="updatedToken" />
+      <Variable x:TypeArguments="x:String" Name="SaveDraftPath" />
+      <Variable x:TypeArguments="x:Boolean" Name="StatusDone" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="664,7498" sap2010:WorkflowViewState.IdRef="Sequence_39">
+    <Sequence sap:VirtualizedContainerService.HintSize="664,7627" sap2010:WorkflowViewState.IdRef="Sequence_39">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,7415" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,7544" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,68 +162,90 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="628,6778" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="628,6907" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="594,179" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Rent Entry Started&quot;]" />
-            <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="594,124" sap2010:WorkflowViewState.IdRef="ReadRange_1" Range="[Nothing]" SheetName="[in_Config(&quot;RentDetailsSheet&quot;).ToString]" WorkbookPath="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" />
-            <ui:FilterDataTable DataTable="[dtTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="594,199" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dtTable]" SelectColumnsMode="Remove">
-              <ui:FilterDataTable.Filters>
-                <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
-                  <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
-                    <ui:FilterOperationArgument.Column>
-                      <InArgument x:TypeArguments="x:String">["Token"]</InArgument>
-                    </ui:FilterOperationArgument.Column>
-                    <ui:FilterOperationArgument.Operand>
-                      <InArgument x:TypeArguments="x:String">[token]</InArgument>
-                    </ui:FilterOperationArgument.Operand>
-                  </ui:FilterOperationArgument>
-                </scg:List>
-              </ui:FilterDataTable.Filters>
-              <ui:FilterDataTable.SelectColumns>
-                <scg:List x:TypeArguments="InArgument" Capacity="4">
-                  <x:Null />
-                </scg:List>
-              </ui:FilterDataTable.SelectColumns>
-            </ui:FilterDataTable>
-            <If Condition="[dtTable.RowCount&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="594,6212" sap2010:WorkflowViewState.IdRef="If_5">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="isStatusDone - Invoke Workflow File (isStatusDone.xaml)" sap:VirtualizedContainerService.HintSize="594,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="get_Status.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="StatusColumn">RentDetailsStatus</InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="StatusDone">[StatusDone]</OutArgument>
+                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <If Condition="[Not StatusDone]" sap:VirtualizedContainerService.HintSize="594,4464" sap2010:WorkflowViewState.IdRef="If_6">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="592,5984" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="556,4227" sap2010:WorkflowViewState.IdRef="Sequence_44">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="558,5920" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="LogMessage_12" Message="[&quot;Rent Entry Started&quot;]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:LogMessage>
+                  <ui:ReadRange WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="ReadRange_2" Range="[Nothing]" SheetName="[in_Config(&quot;RentDetailsSheet&quot;).ToString]" WorkbookPath="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:ReadRange>
+                  <ui:FilterDataTable DataTable="[dtTable]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[dtTable]" SelectColumnsMode="Remove">
+                    <ui:FilterDataTable.Filters>
+                      <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
+                        <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
+                          <ui:FilterOperationArgument.Column>
+                            <InArgument x:TypeArguments="x:String">["Token"]</InArgument>
+                          </ui:FilterOperationArgument.Column>
+                          <ui:FilterOperationArgument.Operand>
+                            <InArgument x:TypeArguments="x:String">[token]</InArgument>
+                          </ui:FilterOperationArgument.Operand>
+                        </ui:FilterOperationArgument>
+                      </scg:List>
+                    </ui:FilterDataTable.Filters>
+                    <ui:FilterDataTable.SelectColumns>
+                      <scg:List x:TypeArguments="InArgument" Capacity="4">
+                        <x:Null />
+                      </scg:List>
+                    </ui:FilterDataTable.SelectColumns>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:FilterDataTable>
+                  <If Condition="[dtTable.RowCount&lt;&gt;0]" DisplayName="If-If Rent Details Available" sap:VirtualizedContainerService.HintSize="522,3980" sap2010:WorkflowViewState.IdRef="If_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <TryCatch.Try>
-                      <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="556,5419" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <If.Then>
+                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,3752" sap2010:WorkflowViewState.IdRef="Sequence_37">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" ContinueOnError="True" DisplayName="Edge Lease Details Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="522,5355" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V2">
+                        <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" ContinueOnError="True" DisplayName="Edge Lease Details Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="486,3692" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V2">
                           <uix:NApplicationCard.Body>
                             <ActivityAction x:TypeArguments="x:Object">
                               <ActivityAction.Argument>
                                 <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                               </ActivityAction.Argument>
-                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,5157" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,3494" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                 <Sequence.Variables>
                                   <Variable x:TypeArguments="x:String" Default="11" Name="strDuration" />
                                   <Variable x:TypeArguments="x:String" Default="21/12/2025" Name="startDate" />
@@ -233,7 +257,7 @@
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <Sequence sap:VirtualizedContainerService.HintSize="486,1987" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                <Sequence sap:VirtualizedContainerService.HintSize="450,1987" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -241,10 +265,10 @@
                                   </sap:WorkflowViewStateService.ViewState>
                                   <uix:NSetText DisplayName="Set Text 'License Period(months)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSetText_2" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Text="[dtTable(0)(&quot;Duration&quot;).ToString()]" Version="V5">
                                     <uix:NSetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" ContentHash="SBO764yQ1UmPk8eYroiQ0Q" CvElementArea="304, 184, 176, 26" CvType="InputBox" DesignTimeRectangle="306, 185, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txtPeriod' type='text' tag='INPUT' class='textbox' aaname='Select License Period (in months)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="91fb6244-002c-434c-91f3-e26ab14aa671" InformativeScreenshot="3ed9abd8d450510f59dc40df440ab955.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZPa63dlLUUS6VIP-kSvA4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" ContentHash="SBO764yQ1UmPk8eYroiQ0Q" CvElementArea="304, 184, 176, 26" CvType="InputBox" DesignTimeRectangle="306, 272, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txtPeriod' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txtPeriod' type='text' tag='INPUT' class='textbox' aaname='Select License Period (in months)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="91fb6244-002c-434c-91f3-e26ab14aa671" InformativeScreenshot="18f70925259c31856cc8c01cce3522aa.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZPa63dlLUUS6VIP-kSvA4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" CvTextArea="40, 186, 177, 18" CvTextArgument="License Period(months)" CvType="Text" DesignTimeRectangle="41, 185, 252, 24" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                      ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='License Period(months)' /&gt;" Guid="f1373122-7cda-424a-90c8-bd2f99a837ab" SearchSteps="FuzzySelector, CV" />
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" CvTextArea="40, 186, 177, 18" CvTextArgument="License Period(months)" CvType="Text" DesignTimeRectangle="41, 272, 252, 24" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                      ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='License Period(months)' /&gt;" Guid="f1373122-7cda-424a-90c8-bd2f99a837ab" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
@@ -263,10 +287,10 @@
                                   </uix:NSetText>
                                   <uix:NSetText DisplayName="Set Text 'Refundable (Deposit)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSetText_4" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Text="[dtTable(0)(&quot;Deposit&quot;).ToString()]" Version="V5">
                                     <uix:NSetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" ContentHash="hGuxa3qrhE-mlroOt6FSYA" CvElementArea="304, 239, 177, 26" CvType="InputBox" DesignTimeRectangle="306, 240, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Refundable Amount' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1db56312-0827-4009-bd8c-7ae41f4e2037" InformativeScreenshot="90b4663799a79957f4c7ce8d50907c67.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/KiL6AmQh306gZ-_Zl9o5KQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" ContentHash="hGuxa3qrhE-mlroOt6FSYA" DesignTimeRectangle="306, 327, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Refundable Amount' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1db56312-0827-4009-bd8c-7ae41f4e2037" InformativeScreenshot="039f79e9d616265d71d80b7bf6912d5d.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/KiL6AmQh306gZ-_Zl9o5KQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" CvTextArea="39, 241, 159, 18" CvTextArgument="Refundable (Deposit)" CvType="Text" DesignTimeRectangle="41, 240, 162, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Refundable (Deposit) ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refundable (Deposit)' /&gt;" Guid="351a1515-1ead-485f-b5fe-7b628ea7cc28" SearchSteps="FuzzySelector, CV" />
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <uix:Target CVScreenId="52e3fea2-9e7f-4592-887f-8e6d17da7e10" CvTextArea="103, 299, 142, 17" CvTextArgument="Refundable (Deposit)" CvType="Text" DesignTimeRectangle="41, 327, 162, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Refundable (Deposit) ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refundable (Deposit)' /&gt;" Guid="5c81d655-3b7e-40e5-b375-b97a034fa6fd" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
@@ -274,10 +298,10 @@
                                   </uix:NSetText>
                                   <uix:NSetText DisplayName="Set Text 'Amount'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSetText_5" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Text="[dtTable(0)(&quot;RentAmount&quot;).ToString()]" Version="V5">
                                     <uix:NSetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="ecdf8ea8-042f-4b82-8c67-4e7145ea9c07" ContentHash="NN_bHEL8PkWUNwMhmPVeOQ" CvElementArea="383, 420, 177, 27" CvType="InputBox" DesignTimeRectangle="385, 421, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='11' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="e230a7e5-abda-4238-befa-e170b319b389" InformativeScreenshot="3b0b7dd738a15e2e5afe07591e78040f.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UTepDArV0kuCtfRZu0AZCQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="ecdf8ea8-042f-4b82-8c67-4e7145ea9c07" ContentHash="NN_bHEL8PkWUNwMhmPVeOQ" DesignTimeRectangle="414, 338, 155, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='11' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Enter Average monthly Rent' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="e230a7e5-abda-4238-befa-e170b319b389" InformativeScreenshot="3cbe20452ff85bf5b0f7f94031bb4984.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UTepDArV0kuCtfRZu0AZCQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
                                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="ecdf8ea8-042f-4b82-8c67-4e7145ea9c07" CvTextArea="306, 436, 61, 13" CvTextArgument="Amount" CvType="Text" DesignTimeRectangle="308, 421, 75, 43" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' tag='TD' aaname='                                                 Amount                                             ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Amount' /&gt;" Guid="0e1d7460-6512-43b1-afa8-6dd8883a8ced" SearchSteps="FuzzySelector, CV" />
+                                            <uix:Target CVScreenId="ecdf8ea8-042f-4b82-8c67-4e7145ea9c07" CvTextArea="306, 436, 61, 13" CvTextArgument="Amount" CvType="Text" DesignTimeRectangle="346, 338, 67, 37" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' tag='TD' aaname='                                                 Amount                                             ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Amount' /&gt;" Guid="0e1d7460-6512-43b1-afa8-6dd8883a8ced" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
@@ -285,10 +309,10 @@
                                   </uix:NSetText>
                                   <uix:NSetText DisplayName="Set Text 'Document Executed at Lo…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSetText_1" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Text="Pune" Version="V5">
                                     <uix:NSetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="601d6773-914e-40d0-94a1-baf6262266f0" ContentHash="8uo-wzwYQEi1xHG9HIDh8w" CvElementArea="946, 324, 177, 26" CvType="InputBox" DesignTimeRectangle="948, 325, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtExecLaocation' matching:name='fuzzy' fuzzylevel:name='0.0' type='text' tag='INPUT' class='textbox' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="65516cee-ab1b-4113-acce-d27c18863f99" InformativeScreenshot="9964959a244083775cac37a2f1bc39cd.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/4sjBLKhZCkiqLcwFpS2RGw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
+                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="601d6773-914e-40d0-94a1-baf6262266f0" ContentHash="8uo-wzwYQEi1xHG9HIDh8w" CvElementArea="946, 324, 177, 26" CvType="InputBox" DesignTimeRectangle="923, 393, 155, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='56' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtExecLaocation' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtExecLaocation' matching:name='fuzzy' fuzzylevel:name='0.0' type='text' tag='INPUT' class='textbox' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="65516cee-ab1b-4113-acce-d27c18863f99" InformativeScreenshot="197366d105234f32140033ad601bc11c.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/4sjBLKhZCkiqLcwFpS2RGw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="None">
                                         <uix:TargetAnchorable.Anchors>
                                           <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="601d6773-914e-40d0-94a1-baf6262266f0" CvTextArea="697, 329, 240, 14" CvTextArgument="Document Executed at Location" CvType="Text" DesignTimeRectangle="698, 327, 245, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Document Executed at Location' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' type='' tag='SPAN' class='labelFont' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Document Executed at Location' /&gt;" Guid="0fa9b8e6-692e-45bd-a96e-6f7d03d6d364" SearchSteps="FuzzySelector, CV" />
+                                            <uix:Target CVScreenId="601d6773-914e-40d0-94a1-baf6262266f0" CvTextArea="697, 329, 240, 14" CvTextArgument="Document Executed at Location" CvType="Text" DesignTimeRectangle="698, 395, 220, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Document Executed at Location' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' type='' tag='SPAN' class='labelFont' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Document Executed at Location' /&gt;" Guid="0fa9b8e6-692e-45bd-a96e-6f7d03d6d364" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
                                       </uix:TargetAnchorable>
@@ -342,7 +366,7 @@
                                   </uix:NClick>
                                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_7" Message="[&quot;Deposit Entry Saved&quot;]" />
                                 </Sequence>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Terms &amp; conditions'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Terms &amp; conditions'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="cd5c30c4-b47f-4a83-aca0-8f2bed334b82" ContentHash="SHkBfBFnJECFhbskhDtgwQ" CvElementArea="311, 253, 14, 13" CvTextArea="313, 255, 8, 8" CvTextArgument="+" CvType="Button" DesignTimeRectangle="307, 249, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='Terms &amp;amp; conditions ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9ce517bc-2ab6-459a-8f11-5ce9e239fab8" InformativeScreenshot="0204e54b077e23de9e1606403f1bef4e.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/9AIfmRzamUCQGLzcNNRZcg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -359,7 +383,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '4)Maintenance charges'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '4)Maintenance charges'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="5d6593b1-8a32-405c-a575-0a8c8180ad8a" ContentHash="41Bhpn6eIEWOmLy_Eje_Nw" CvElementArea="331, 276, 13, 12" CvTextArea="333, 278, 8, 8" CvTextArgument="+" CvType="Button" DesignTimeRectangle="327, 272, 20, 20" ElementType="Icon" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='IMG' class='' aaname='Expand 4)Maintenance charges' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="75a1165e-0905-4e3e-9946-550a3e574aa8" InformativeScreenshot="cc75b7bdc6110847421449cf230e6e89.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/uPt-h3_B1kuZ3uJoy8H6-Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -376,7 +400,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '4.2) That the Licensee/…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '4.2) That the Licensee/…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="8e851c9c-a78d-4fbd-8051-8c8546520f0c" ContentHash="sKMsmsYpO0qThutXxn-Qpw" CvElementArea="365, 321, 15, 15" CvType="CheckBox" DesignTimeRectangle="367, 322, 13, 13" ElementType="CheckBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='checkbox' tag='INPUT' class='' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="796d4092-4be3-4e6b-a94a-902656530c45" InformativeScreenshot="1a3b6a2d8f9931deee4ad2e6eba12689.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/i2M0kXj6qUuhnAQ0XOR9Tg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -393,7 +417,7 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </uix:NClick>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View Selected Term &amp; co…(5)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,198" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
+                                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'View Selected Term &amp; co…(5)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
                                   <uix:NClick.Target>
                                     <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="02796fa8-e59d-41d8-9b2e-289753f5d614" ContentHash="yj29w7zr50W5jEx5nVW8-g" CvTextArea="334, 348, 219, 14" CvTextArgument="View Selected Term &amp; condition" CvType="Text" DesignTimeRectangle="334, 341, 221, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='*' aaname='*View Selected*condition*' /&gt;" Guid="a1d62bad-6d69-412c-ba5e-678ba8f82505" InformativeScreenshot="e8564f7648b313a7ec3168e3d6defd7f.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/c5HT_x85oE2CBQZvDgs-fQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                       <uix:TargetAnchorable.Anchors>
@@ -404,18 +428,15 @@
                                     </uix:TargetAnchorable>
                                   </uix:NClick.Target>
                                 </uix:NClick>
-                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;T&amp;C Saved&quot;]" />
-                                <Sequence sap:VirtualizedContainerService.HintSize="486,2135" sap2010:WorkflowViewState.IdRef="Sequence_13">
-                                  <Sequence.Variables>
-                                    <Variable x:TypeArguments="x:String" Name="SaveDraftPath" />
-                                  </Sequence.Variables>
+                                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,179" sap2010:WorkflowViewState.IdRef="LogMessage_8" Message="[&quot;T&amp;C Saved&quot;]" />
+                                <Sequence sap:VirtualizedContainerService.HintSize="450,472" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NSelectItem ContinueOnError="True" DisplayName="Select Item 'Stamp Duty &amp; Registrati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,204" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Licensee and Licensor equally" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
+                                  <uix:NSelectItem ContinueOnError="True" DisplayName="Select Item 'Stamp Duty &amp; Registrati…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,204" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="Licensee and Licensor equally" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
                                     <uix:NSelectItem.Items>
                                       <scg:List x:TypeArguments="x:String" Capacity="3">
                                         <x:String>Licensee</x:String>
@@ -433,92 +454,12 @@
                                       </uix:TargetAnchorable>
                                     </uix:NSelectItem.Target>
                                   </uix:NSelectItem>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'View Draft Document'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_7" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="506548a0-e71d-45cf-9bd0-f5682043b33c" ContentHash="hYnCDpacK0OmKfSuGjGWmA" CvElementArea="545, 595, 151, 32" CvTextArea="546, 603, 147, 14" CvTextArgument="View Draft Document" CvType="Button" DesignTimeRectangle="546, 596, 148, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$btnViewreport' tag='INPUT' /&gt;" Guid="81fb715e-2dd7-43c9-a25c-158867c855f0" InformativeScreenshot="5ad92d5d3599115485147104cb1123f0.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZIdHvcm1gkyg7tZPZffWBA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                                        <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="506548a0-e71d-45cf-9bd0-f5682043b33c" CvTextArea="470, 574, 313, 15" CvTextArgument="Note:-Please Kindly Update before execute" CvType="Text" DesignTimeRectangle="472, 573, 310, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname=' Note:-Please Kindly Update before execute' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Note:-Please Kindly Update before execute' /&gt;" Guid="b57cbcbb-b66f-4545-8489-6245fc6f3f5a" SearchSteps="FuzzySelector, CV" />
-                                          </scg:List>
-                                        </uix:TargetAnchorable.Anchors>
-                                      </uix:TargetAnchorable>
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
-                                  <uix:NGetText DisplayName="Get Text 'LEAVE AND LICENSE AGREE…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
-                                    <uix:NGetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="9009dc8e-9669-42f3-aca1-8de2c3023acd" ContentHash="NJHoMlHBxUimIqZjKtK70w" CvType="AnyWordGroup" DesignTimeRectangle="173, 172, 308, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl innertext='*LEAVE AND LICENSE AGREEMENT*' tag='*' /&gt;" FuzzySelectorArgument="&lt;webctrl innertext='*LEAVE AND LICENSE AGREEMENT*' tag='*' /&gt;" Guid="dfa2c756-5507-4bcb-9c24-a7a0968bfcfe" InformativeScreenshot="0lW4HnY8oXUGTo9_BdGwHBw" Reference="zHM_MHonYECrlrhSQ6-q1Q/x59HsMDgo0236PpZtDbOCw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                                    </uix:NGetText.Target>
-                                  </uix:NGetText>
-                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" InteractionMode="HardwareEvents" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Shortcuts="[d(hk)][d(ctrl)]p[u(ctrl)][u(hk)]" Version="V5">
-                                    <sap:WorkflowViewStateService.ViewState>
-                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                      </scg:Dictionary>
-                                    </sap:WorkflowViewStateService.ViewState>
-                                  </uix:NKeyboardShortcuts>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Print'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="5128204f-6d1f-4510-819d-40973855df0f" ContentHash="zF8PdsKQSE--qpdmg-Gfpg" CvElementArea="88, 596, 125, 34" CvTextArea="135, 606, 33, 13" CvTextArgument="Print" CvType="Button" DesignTimeRectangle="90, 597, 122, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' role='document' /&gt;&lt;ctrl name='Print' role='push button' /&gt;" Guid="58fd6114-0c37-4c1b-8322-0a9c46788299" InformativeScreenshot="edd0b73001f8ea83bf6b618596e927ab.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/QhNMP6bCCEisZM-o_gdDVA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx - Work - Micro*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                                        <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="5128204f-6d1f-4510-819d-40973855df0f" CvElementArea="218, 595, 125, 34" CvTextArea="259, 606, 43, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="220, 597, 122, 32" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Cancel' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Cancel' /&gt;" Guid="9841a340-8d48-4539-8db5-a5de262bf815" SearchSteps="FuzzySelector, CV" />
-                                          </scg:List>
-                                        </uix:TargetAnchorable.Anchors>
-                                      </uix:TargetAnchorable>
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
-                                  <If Condition="[token&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="452,471" sap2010:WorkflowViewState.IdRef="If_1">
-                                    <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_26">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_2">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:String">[SaveDraftPath]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config("DocsPath").ToString() &amp; "\Drafts\Draft_"&amp; dtTable(0)("Owner").
-ToString() &amp; "_"&amp; now.ToString("dd.MM.yy_HH:mm:ss")]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </Sequence>
-                                    </If.Then>
-                                    <If.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Sequence>
-                                    </If.Else>
-                                  </If>
-                                  <uix:NSetText DisplayName="Set Text 'File name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSetText_7" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Text="[SaveDraftPath]" Version="V5">
-                                    <uix:NSetText.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="f23400c5-4ad5-4c08-82e6-03395aaca330" ContentHash="igg8FqZEGEmFz_rnlx5_DQ" CvElementArea="131, 325, 539, 24" CvType="InputBox" DesignTimeRectangle="136, 329, 514, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="30d6f7e6-e953-41bd-bf79-3437b5769990" InformativeScreenshot="6b25afcc42dc0ac0afe38a94e9ab4ff3.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/6sDX2zvlgUOsV-PT_syVWQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Save Print Output As' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-                                        <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                            <uix:Target CVScreenId="f23400c5-4ad5-4c08-82e6-03395aaca330" CvTextArea="73, 331, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="18, 326, 115, 23" ElementType="Text" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Explorer Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Details Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='File name:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='File name:' /&gt;" Guid="fd040146-5f8e-46cf-9202-8809a2fa463e" SearchSteps="FuzzySelector, CV" />
-                                          </scg:List>
-                                        </uix:TargetAnchorable.Anchors>
-                                      </uix:TargetAnchorable>
-                                    </uix:NSetText.Target>
-                                  </uix:NSetText>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_9" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="6e482d0d-e8be-468b-8f57-2e9ce89ebe65" ContentHash="gg16Hhio-EGlmJE9nT9JOw" CvElementArea="471, 429, 88, 26" CvTextArea="501, 435, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="470, 429, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="409046f9-6701-4fa2-afce-559e11a658ee" InformativeScreenshot="bcd9fbca932e841fb291b2d9c49f9ebb.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/rjV5POjh50qOZDNRzkl4qw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Save Print Output As' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_9" Message="[&quot;Draft File Saved at : &quot;+SaveDraftPath]" />
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V5">
-                                    <uix:NClick.Target>
-                                      <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="0766ab61-fd3f-4e1f-94d0-90778cbf424d" ContentHash="O77FW3BhbkKlifP6-zMPxg" CvElementArea="60, 654, 68, 21" CvTextArea="79, 657, 31, 13" CvTextArgument="Back" CvType="Button" DesignTimeRectangle="62, 655, 65, 19" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnBack' tag='INPUT' /&gt;" Guid="984a1aaa-e43c-411f-9f34-4bdc177586a8" InformativeScreenshot="7216ab8d14e6635ce26159e833488d37.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/IZ5Tj78lrU6taYoJa8jxPg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
-                                    </uix:NClick.Target>
-                                  </uix:NClick>
+                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="set_Status - Invoke Workflow File (set_Status.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="set_Status.xaml">
+                                    <ui:InvokeWorkflowFile.Arguments>
+                                      <InArgument x:TypeArguments="x:String" x:Key="StatusColumn">RentDetailsStatus</InArgument>
+                                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                                    </ui:InvokeWorkflowFile.Arguments>
+                                  </ui:InvokeWorkflowFile>
                                 </Sequence>
                               </Sequence>
                             </ActivityAction>
@@ -540,48 +481,171 @@ ToString() &amp; "_"&amp; now.ToString("dd.MM.yy_HH:mm:ss")]</InArgument>
                               </uix:TargetApp.WorkingDirectory>
                             </uix:TargetApp>
                           </uix:NApplicationCard.TargetApp>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
                         </uix:NApplicationCard>
                       </Sequence>
-                    </TryCatch.Try>
-                    <TryCatch.Catches>
-                      <Catch x:TypeArguments="s:Exception" sap2010:WorkflowViewState.IdRef="Catch`1_1">
-                        <ActivityAction x:TypeArguments="s:Exception">
-                          <ActivityAction.Argument>
-                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                          </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="556,234" sap2010:WorkflowViewState.IdRef="Sequence_29">
-                            <sap:WorkflowViewStateService.ViewState>
-                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              </scg:Dictionary>
-                            </sap:WorkflowViewStateService.ViewState>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,170" sap2010:WorkflowViewState.IdRef="LogMessage_2" Message="[exception.Message]" />
-                          </Sequence>
-                        </ActivityAction>
-                      </Catch>
-                    </TryCatch.Catches>
-                    <TryCatch.Finally>
-                      <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="556,94" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    </If.Then>
+                    <If.Else>
+                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="520,94" sap2010:WorkflowViewState.IdRef="Sequence_38">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </Sequence>
-                    </TryCatch.Finally>
-                  </TryCatch>
+                    </If.Else>
+                  </If>
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="592,94" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="556,94" sap2010:WorkflowViewState.IdRef="Sequence_45">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </Sequence>
               </If.Else>
             </If>
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Lease Details Page(3)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="594,2193" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="520,1995" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="View &amp; Save Draft" sap:VirtualizedContainerService.HintSize="486,1931" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'View Draft Document'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_26" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="506548a0-e71d-45cf-9bd0-f5682043b33c" ContentHash="hYnCDpacK0OmKfSuGjGWmA" CvElementArea="545, 595, 151, 32" CvTextArea="546, 603, 147, 14" CvTextArgument="View Draft Document" CvType="Button" DesignTimeRectangle="546, 596, 148, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl name='ctl00$ContentPlaceHolder1$btnViewreport' tag='INPUT' /&gt;" Guid="81fb715e-2dd7-43c9-a25c-158867c855f0" InformativeScreenshot="5ad92d5d3599115485147104cb1123f0.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZIdHvcm1gkyg7tZPZffWBA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="506548a0-e71d-45cf-9bd0-f5682043b33c" CvTextArea="470, 574, 313, 15" CvTextArgument="Note:-Please Kindly Update before execute" CvType="Text" DesignTimeRectangle="472, 573, 310, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname=' Note:-Please Kindly Update before execute' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Note:-Please Kindly Update before execute' /&gt;" Guid="b57cbcbb-b66f-4545-8489-6245fc6f3f5a" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <uix:NGetText DisplayName="Get Text 'LEAVE AND LICENSE AGREE…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Version="V5">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="9009dc8e-9669-42f3-aca1-8de2c3023acd" ContentHash="NJHoMlHBxUimIqZjKtK70w" CvType="AnyWordGroup" DesignTimeRectangle="173, 172, 308, 20" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl innertext='*LEAVE AND LICENSE AGREEMENT*' tag='*' /&gt;" FuzzySelectorArgument="&lt;webctrl innertext='*LEAVE AND LICENSE AGREEMENT*' tag='*' /&gt;" Guid="dfa2c756-5507-4bcb-9c24-a7a0968bfcfe" InformativeScreenshot="0lW4HnY8oXUGTo9_BdGwHBw" Reference="zHM_MHonYECrlrhSQ6-q1Q/x59HsMDgo0236PpZtDbOCw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NGetText.Target>
+                      </uix:NGetText>
+                      <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_6" InteractionMode="HardwareEvents" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Shortcuts="[d(hk)][d(ctrl)]p[u(ctrl)][u(hk)]" Version="V5">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uix:NKeyboardShortcuts>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Print'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="5128204f-6d1f-4510-819d-40973855df0f" ContentHash="zF8PdsKQSE--qpdmg-Gfpg" CvElementArea="88, 596, 125, 34" CvTextArea="135, 606, 33, 13" CvTextArgument="Print" CvType="Button" DesignTimeRectangle="90, 597, 122, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' role='document' /&gt;&lt;ctrl name='Print' role='push button' /&gt;" Guid="58fd6114-0c37-4c1b-8322-0a9c46788299" InformativeScreenshot="edd0b73001f8ea83bf6b618596e927ab.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/QhNMP6bCCEisZM-o_gdDVA" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx - Work - Micro*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="5128204f-6d1f-4510-819d-40973855df0f" CvElementArea="218, 595, 125, 34" CvTextArea="259, 606, 43, 13" CvTextArgument="Cancel" CvType="Button" DesignTimeRectangle="220, 597, 122, 32" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' role='document' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Cancel' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Cancel' /&gt;" Guid="9841a340-8d48-4539-8db5-a5de262bf815" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <If Condition="[token&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="452,471" sap2010:WorkflowViewState.IdRef="If_8">
+                        <If.Then>
+                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_52">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <Assign sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="Assign_4">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[SaveDraftPath]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String" xml:space="preserve">[in_Config("DocsPath").ToString() &amp; "\Drafts\Draft_"&amp; in_Owner.Replace(" ", "_").
+ToString() &amp; "_"&amp; now.ToString("dd.MM.yy_HH.mm")]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_53">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <uix:NSetText DisplayName="Set Text 'File name'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,199" sap2010:WorkflowViewState.IdRef="NSetText_9" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Text="[SaveDraftPath]" Version="V5">
+                        <uix:NSetText.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="f23400c5-4ad5-4c08-82e6-03395aaca330" ContentHash="igg8FqZEGEmFz_rnlx5_DQ" CvElementArea="131, 325, 539, 24" CvType="InputBox" DesignTimeRectangle="136, 329, 514, 17" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;wnd ctrlid='1001' matching:ctrlid='fuzzy' fuzzylevel:ctrlid='0.0' /&gt;" Guid="30d6f7e6-e953-41bd-bf79-3437b5769990" InformativeScreenshot="6b25afcc42dc0ac0afe38a94e9ab4ff3.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/6sDX2zvlgUOsV-PT_syVWQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Save Print Output As' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target CVScreenId="f23400c5-4ad5-4c08-82e6-03395aaca330" CvTextArea="73, 331, 55, 12" CvTextArgument="File name:" CvType="Text" DesignTimeRectangle="18, 326, 115, 23" ElementType="Text" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;&lt;ctrl name='Explorer Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Details Pane' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='File name:' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='File name:' /&gt;" Guid="fd040146-5f8e-46cf-9202-8809a2fa463e" SearchSteps="FuzzySelector, CV" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NSetText.Target>
+                      </uix:NSetText>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '&amp;Save'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_28" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="6e482d0d-e8be-468b-8f57-2e9ce89ebe65" ContentHash="gg16Hhio-EGlmJE9nT9JOw" CvElementArea="471, 429, 88, 26" CvTextArea="501, 435, 26, 12" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="470, 429, 88, 26" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;wnd ctrlid='1' title='&amp;amp;Save' /&gt;" Guid="409046f9-6701-4fa2-afce-559e11a658ee" InformativeScreenshot="bcd9fbca932e841fb291b2d9c49f9ebb.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/rjV5POjh50qOZDNRzkl4qw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='#32770' title='Save Print Output As' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_11" Message="[&quot;Draft File Saved at : &quot;+SaveDraftPath]" />
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Back'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,189" sap2010:WorkflowViewState.IdRef="NClick_29" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="4c2fa40c-8202-4daa-9b65-355a8546ce2a" Version="V5">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx" CVScreenId="0766ab61-fd3f-4e1f-94d0-90778cbf424d" ContentHash="O77FW3BhbkKlifP6-zMPxg" CvElementArea="60, 654, 68, 21" CvTextArea="79, 657, 31, 13" CvTextArgument="Back" CvType="Button" DesignTimeRectangle="62, 655, 65, 19" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='btnBack' tag='INPUT' /&gt;" Guid="984a1aaa-e43c-411f-9f34-4bdc177586a8" InformativeScreenshot="7216ab8d14e6635ce26159e833488d37.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/IZ5Tj78lrU6taYoJa8jxPg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/viewdraft.aspx' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                </ActivityFunc>
+              </uix:NApplicationCard.OCREngine>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="cYkZ-fxBKUqXBXtBvquSOA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAh4SURBVFhHpdd7UFNnGgbwWBURCAQVtu0/OzudcXVFVEBATdWKLVvkIuEmWAoUtOttqsICIiqKiEQBoV4xut1O1d11lW4RvFTSQ0ggECABkhAIIF4QpXZTt1Pcdbt59j050QoBq+07804YhuT5fe/58p0D70XLi3kQM69mgJlb02+aU9OHObIeeMqMmCM3YI5Ci3n1Gmr1kE+jsptaskhd/WvrW39Z+TDfSnwY05BXzQNQOPVtsIDZsm7qLnjWdsBTrsWculYCNMOnQQn/phoINdfNS9oudy/TVgitH/Vy5cs8Evoy35t8mIfwrvkGXjWDFH6Hwm/Cs+YGZtewgA54yPSYLW+Dp6IVc+ub4KVUYUEzC7iGpW0VWK67iKCuM+qwXsmLT8SPeZTvywyZLeHMP+HFDGJezT0C3OVWT+EelnAO4FHbRgg1AVTwbqiHb5MMC1qqLYDAjnN413AGK3tPDMX158dYI8YuP+Y/Elo55jPfgQXQ+C2rn0fh7AQsq6fRz2KDLa2jn1lAK02hGfOUjfBVsRO4agWcRVh3GQsAAcyr+/PGRvgzj/MJAFo99fcU/i1N4AEB7lsAnjLu2nvIDJbVs8GzZO34nawVs2pZQAvtBRXtAxmE6itY1n4RgfrPCHAC0TcLQeFIGNhhTh5Mt90X/sx/hRRu9mP+bQHMZ/5F/ZCC2Wt/l177afUsoJNCtU+DR/ZseTMhGmgjfonFmgoEaM8juOsEIm4UIe52LpLuZ2HN16lD1tgfy495bKKm8EdWwHfwkpow84tbmFnRS92DGZe6CGCkcP2o4Wx7yFtoLyixsPkKAf6BgHYWUIaIXjFib+UhaSAVawY3YaMpRWKNtqxewoY/Wf30c31w230NLqnlEGRWwjXrCqZkVVFfwtSMcryaX4U3/t48BoD9KjLwbZRiUUsllmvPIMhQhugbuYi9mY3E/i1IubceGx7Em63xFsAQXX94fP4NBFnXwM+4BudsBi67FBDk1sM1rwFT8pSYmleHabkyTNstxbSdl/FqbhWmV2qGAWbLVZhbJ4e/6hIWt/wNAa2fYEVHCUI7xVjVtw0JdzYh+e5a/OF+PDY9iJRQ+A8xBMD0M/1wSL0Kp+214Oc0wnmvBi772yEQ6+B6UIcp1FMLdXArbIPbgRa47a+HW64UbtkVeOMCNw2P2hY6lBQEUGB+fRUWNV/EMs0pBHcUQ2TMQUxvBuJubMYH/Wvx4b14rB+MHuAtqn6kmXn+a0xOk8IhWwnH3Wrw83RwLjDARdwJQWEXXIuMmHLIiKnU00qoDxngXqyD+4EmuOfJ4LajEr+tUtKpKMdcuRReisvwbziPN5s+xTL1MQTr8hBu2I5o4xa835eCpNuJSOmPxYd3ReB5Vzz8H39nI+yzVXDY3QbHvA445XeCX2CE8wEjXA52Q1DUDdfiHkL0YGpJDyE68XppR/evSg0F7kXqdPd9CuVrBdfhwbCA6wSoxALlZ3hTdQpvNR9BiC4XIkMWAbZide9aJN5MRPKtKA4w4y+DmLS9Gfa72jA5Vw+HvE447qPe3zUcUcghBNl1+M2Wz0us2+dpuefVJk4vr4a3/AJ8FefgX/dnLFaVIaBJjOC2TIRqMxFp2Ij3ehKR0LfaAlhzJxw8t+Iu2GW3YlKOHva5Bkzea7AgHKwIpwKCiDmESzoDxyCx0pppUzM+ufrYW3aWAGexsP4kFisPYplKjCBNBkLb0yDSb0CsIQ7x3VFIuiFCys1Q8FwPGjFxpw52u/SYtNsA+z0cYvJIRKaCwgvgFFaabs2zKZ+/Xm33ln0Kv9ojWKQoxJIGMd5pzECgKg0hmnUIb09GlC4e7xkj8b4xBCl9gWbehGwtJhBg4q4O2OV0EKLDgrB/FrFXD8fQIgovAV90PNWaZ1PejCTfR3aKAIcJcABL6vYgoD6NABsQ0pIIUXsCYvTRNAUR4jt/j0RjQDdv/HYC7NATQm+LYC8Ji9hQBccQAoiOgR95ssCaZ1M+X5UMzK85goW1+6n34S1FKpYrUxHYuA4rGhMQpo6HSBOFWH0IYnXvIt4QIOS9sl2H8dm6URGTrAiHiKNwWnmYDQc/+nS3NW9YeUk/FnpLi+k0FcOfyYWwdieWyrciQLEegfUJHKBJBFFLKCI1QYjTBzKWN76SpTONhbBjJ5HVDIeQQlr9cfCjTrEAMz/qtM3DhXe1uNxbWghf6R4sZHZCyGzF0tqNCJAn4526BAQ1rEKoKhwidQgL4MLZGrdNxxACTxDjR04inQ6n0ENwiihjw6n/RJDTA9a3Dyvf6hy1nzTHvECaToBUAqwjwAd4Wx6HoPpwBDeEm8JUoZutf87VuG3aGELABkE9kb4Z9usq4RhWah0/hXMAdhrl1o+wKaF002Yh85FkCZPMBMhWM2/XrpIEyiPGfjYkxBCLGPcsIptD2KXVw3Hlx6MB4Bx5ctT98PKVqc0nBCw9AjExXUUTKIHT6AA4R5QNOYtODB/rc8p1RWGMa9DBUR5QM7Um3ggEB6EzIPww7YETFP50DzwLAAGojw+5hB8rd1l51OaZTxByKEYQXCwRBBeZCAACjDK5TK2Q2jwaYlLKF3AKP0qhEg4xOgAEAAGoj8Al7DAEoaXUJSAACEBdBAKYCTDGfqBLQY2RiPEZLXCMOEaXgb4J7FfxlwHyrWljVKZWYoOgtlt3jaZwhNuMkSziZwF+fA58bnGTMLOQZxH2SRe4S8GeCZESAlD4iwHMBPiJlY8sbk+YRiIsk6AAuilROBvMhTvTfWIMgIkAP+//Q0tx06BzgoVwiPHpLZicdBF8uj8400ScKZR95YKp6fcEGCLAS676eZXJnphahhCmJ6fmhKw22P2xge6WX8Lxo6/gmsr88Fpa9cPXU86PecseXjze/wGADjhbeB2rcwAAAABJRU5ErkJggg==" InformativeScreenshot="6599a9f0ccfdb2676891762822332f5f.jpg" Reference="zHM_MHonYECrlrhSQ6-q1Q/plYLGgxoSEW1hfw818zKEQ" Selector="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" Url="[in_Config(&quot;URL&quot;).ToString]" Version="V2">
+                  <uix:TargetApp.Arguments>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Arguments>
+                  <uix:TargetApp.WorkingDirectory>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.WorkingDirectory>
+                </uix:TargetApp>
+              </uix:NApplicationCard.TargetApp>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NApplicationCard>
           </Sequence>
         </TryCatch.Try>
         <TryCatch.Catches>

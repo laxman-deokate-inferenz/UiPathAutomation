@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="Bsi96tIAAE2V7DyqNKsXpQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="gRVxA2zN_kiqlFqrUtnyLQ" Reference="zHM_MHonYECrlrhSQ6-q1Q/aNTia7DffUWp3BEjAsZYUQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="02785a93-72a8-481f-9275-fe2447377bac" CvElementArea="753, 208, 71, 35" CvTextArea="778, 219, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="755, 210, 68, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" Guid="163debad-8e9f-49fa-bf31-7283cdc6afd9" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Party Details Page - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="8afc6ffd2f9cba4ff244197a3a51494f.png" xmlns="">084gd1FPbKU-4sxVGRxwHJg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="02785a93-72a8-481f-9275-fe2447377bac" CvElementArea="753, 208, 71, 35" CvTextArea="778, 219, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="755, 210, 68, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='OK' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='OK' /&gt;" Guid="163debad-8e9f-49fa-bf31-7283cdc6afd9" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Party Details Page - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="93cd7350-c897-4371-9f88-d081bf6f2d11" CvTextArea="480, 97, 226, 16" CvTextArgument="efilingigr.maharashtra.gov.in says" CvType="Text" DesignTimeRectangle="480, 97, 226, 16" ElementType="Text" Guid="3240b7af-d94a-4b29-a22a-4a08e7dc4e0b" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="4" Y="-4" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="5c41d415351d4302d62a226d236554f5.png" xmlns="">0PSgJ4c0-80iKmheZVduNDw</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

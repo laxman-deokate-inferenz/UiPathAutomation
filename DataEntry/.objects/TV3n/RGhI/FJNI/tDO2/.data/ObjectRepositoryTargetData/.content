@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="QSwTr5w_k0SEBarfN06g4g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="2507e716-a01e-4b4c-9a9e-ee6304990a36" CvElementArea="430, 416, 155, 20" CvType="InputBox" DesignTimeRectangle="432, 417, 153, 18" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='16' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' placeholder='Enter Security Code' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7a743473-ba18-4a04-9731-de625770cd7d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2507e716-a01e-4b4c-9a9e-ee6304990a36" CvElementArea="393, 436, 35, 30" CvTextArea="396, 443, 28, 13" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="395, 437, 31, 27" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Click on Next ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next' /&gt;" Guid="938388c4-7df0-4250-950e-f8fd9b5343c0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="808962fc494ded54aa26df2cd001d023.png" xmlns="">0JaIO80f98ESYY60PImo2sw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

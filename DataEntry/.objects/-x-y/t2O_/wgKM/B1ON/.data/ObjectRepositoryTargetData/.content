@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="ZmDvqi-4U0W884fCUvR5uA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="Wd4xv1wKLEKgBF_jO2r2QA" Reference="zHM_MHonYECrlrhSQ6-q1Q/B1ONDh8BukeAPvY3uzUOvw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
     <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="31c2201b-4bde-4719-b45b-29dd492cc205" CvType="AnyWordGroup" DesignTimeRectangle="483, 122, 416, 18" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='text' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="349cfc2d-cd3c-4da2-9922-4983b9773c99" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Property Details Page - Work - Microsoft​ Edge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="8b9bf9fe96e7b2c0462e58119e7cf655.png" xmlns="">0V1sb5ac_1k-63hKfJTsNIw</imageRef>
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2d5afcac-23b8-42f3-a81e-52a7a94b40e8" CvTextArea="481, 97, 225, 16" CvTextArgument="efilingigr.maharashtra.gov.in says" CvType="Text" DesignTimeRectangle="481, 97, 225, 16" ElementType="Text" Guid="ad8b3e18-abb4-40e5-9b9d-c7f2d5baadbf" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f77964bb85f8ffa9ad0be42724f0617b.png" xmlns="">0lt9LcumuNESxhrApGfzrbg</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">GetText</x:String>
   </ObjectRepositoryTargetData.Data>

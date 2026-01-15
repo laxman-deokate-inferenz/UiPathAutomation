@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="mXbjdx6yakK52ag4uNpStg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="BHFSaJ3pZUGKnXD1rWFRRw" Reference="zHM_MHonYECrlrhSQ6-q1Q/O8djRnarOEOmyiOdt8yXzw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="6a199c6e-5457-4d40-a699-d03c1e48ba62" CvElementArea="689, 498, 87, 33" CvTextArea="693, 507, 78, 17" CvTextArgument="Import Data" CvType="Button" DesignTimeRectangle="691, 500, 82, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='INPUT' /&gt;" Guid="92c7b7c9-3ecd-487e-9ab5-c908bf1d34bf" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="6b0174a2a22bc4efc602ea6588face2a.png" xmlns="">0qzktvYU5XU2xLN3wFhHfgg</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="f8f731e4-64fe-4475-821b-a65b5d43e9b5" CvElementArea="667, 441, 80, 29" CvTextArea="671, 448, 72, 16" CvTextArgument="Import Data" CvType="Button" DesignTimeRectangle="670, 442, 74, 27" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='2' tag='TABLE' /&gt;&lt;webctrl tableRow='7' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Import Data' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Import Data' /&gt;" Guid="56f7fc2c-ccf7-4ea1-8e3b-27a40ae71f79" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f8f731e4-64fe-4475-821b-a65b5d43e9b5" CvElementArea="646, 484, 123, 28" CvTextArea="646, 491, 122, 16" CvTextArgument="Exit without Import" CvType="Button" DesignTimeRectangle="646, 485, 122, 27" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='button' tag='INPUT' class='' aaname='Exit without Import' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Exit without Import' /&gt;" Guid="795c6861-a8a2-4645-b8eb-106199873ff4" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="dc8da560e2e1ae5da99cbd01b782284b.png" xmlns="">05J5wCaiJbk6gI_PO79rkHA</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>
