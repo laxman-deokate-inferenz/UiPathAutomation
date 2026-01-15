@@ -21,8 +21,8 @@
       }
     },
     {
-      "activityDisplayName": "For Each File or Folder",
-      "activityId": "ForEachFileFolderConnections_3",
+      "activityDisplayName": "Download File",
+      "activityId": "DownloadFileConnections_6",
       "resource": "Connection",
       "key": "c3bfc534-a117-4513-8158-794a805a8753",
       "id": "Connectionc3bfc534-a117-4513-8158-794a805a8753c3bfc534-a117-4513-8158-794a805a8753False",
@@ -38,6 +38,34 @@
         "BindingsVersion": "2.2",
         "Connector": "uipath-google-drive",
         "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Download File",
+      "activityId": "DownloadFileConnections_6",
+      "resource": "Property",
+      "key": "c3bfc534-a117-4513-8158-794a805a8753.Download File",
+      "id": "Propertyc3bfc534-a117-4513-8158-794a805a8753.Download FileDataEntry.xlsxFalsehttps://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=trueFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "DataEntry.xlsx",
+          "isExpression": false,
+          "displayName": "File to download",
+          "description": "The file to download"
+        },
+        "ID": {
+          "defaultValue": "https://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=true",
+          "isExpression": false,
+          "displayName": "File to download",
+          "description": "The URL or ID of the file to download"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Download File",
+        "ObjectName": "CuratedFile",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.c3bfc534-a117-4513-8158-794a805a8753"
       }
     },
     {
@@ -69,6 +97,26 @@
       }
     },
     {
+      "activityDisplayName": "Get Asset",
+      "activityId": "GetRobotAsset_1",
+      "resource": "asset",
+      "key": "UnAttended.lastSentDate",
+      "id": "assetUnAttended.lastSentDateUnAttendedFalselastSentDateFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "lastSentDate",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    },
+    {
       "activityDisplayName": "Send Email",
       "activityId": "SendEmailConnections_3",
       "resource": "Connection",
@@ -77,26 +125,6 @@
       "value": {
         "ConnectionId": {
           "defaultValue": "332032d4-3934-4c35-9d9d-430082ee5d80",
-          "isExpression": false,
-          "displayName": "Connection",
-          "description": "The connection to be used"
-        }
-      },
-      "metadata": {
-        "BindingsVersion": "2.2",
-        "Connector": "uipath-google-gmail",
-        "UseConnectionService": "True"
-      }
-    },
-    {
-      "activityDisplayName": "Send Email",
-      "activityId": "SendEmailConnections_4",
-      "resource": "Connection",
-      "key": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
-      "id": "Connection8c6e332c-054b-4d91-acdf-550e7c2d278e8c6e332c-054b-4d91-acdf-550e7c2d278eFalse",
-      "value": {
-        "ConnectionId": {
-          "defaultValue": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
           "isExpression": false,
           "displayName": "Connection",
           "description": "The connection to be used"

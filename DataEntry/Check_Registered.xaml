@@ -178,7 +178,7 @@
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="772,23495" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="777,22573" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:String" Name="out_captchaText" />
@@ -223,14 +223,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="772,23472" sap2010:WorkflowViewState.IdRef="Sequence_73">
+    <Sequence sap:VirtualizedContainerService.HintSize="772,22550" sap2010:WorkflowViewState.IdRef="Sequence_73">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="738,23389" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="738,22467" sap2010:WorkflowViewState.IdRef="TryCatch_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -238,7 +238,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="736,22978" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="736,22056" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -468,13 +468,13 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dtTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="702,18387" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dtTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="702,17465" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="700,18201" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="700,17279" sap2010:WorkflowViewState.IdRef="Sequence_97">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -554,10 +554,10 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="666,8342" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[Cint(in_Config(&quot;retryCaptcha&quot;))]" RetryInterval="00:00:02">
+                    <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="666,7420" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[Cint(in_Config(&quot;retryCaptcha&quot;))]" RetryInterval="00:00:02">
                       <ui:RetryScope.ActivityBody>
                         <ActivityAction>
-                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="664,8131" sap2010:WorkflowViewState.IdRef="Sequence_164">
+                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="664,7209" sap2010:WorkflowViewState.IdRef="Sequence_164">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -585,13 +585,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:KillProcess>
-                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="630,7827" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V2" WindowResize="Maximize">
+                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="630,6905" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V2" WindowResize="Maximize">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,7629" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="628,6707" sap2010:WorkflowViewState.IdRef="Sequence_110">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -699,10 +699,10 @@
                                           </ui:LogMessage>
                                           <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Enter Password'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,250" sap2010:WorkflowViewState.IdRef="NTypeInto_32" InteractionMode="SameAsCard" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Text="[in_Config(&quot;Password&quot;).ToString]" Version="V5">
                                             <uix:NTypeInto.Target>
-                                              <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="1e8e6fa2-292c-432c-b86a-6f25eb0b8e63" ContentHash="7qTGk5jozEWmqUJFivnDXg" CvElementArea="900, 379, 174, 23" CvType="InputBox" DesignTimeRectangle="903, 380, 170, 20" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='password' tag='INPUT' class='textbox' placeholder='Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2bd257d9-04f3-4135-a107-ede030091f5c" InformativeScreenshot="fc7e0d1ba0606a0c1b13b1ca938dabec.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/iN-CwD7gzUSszx2AsLOjMw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                              <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="1e8e6fa2-292c-432c-b86a-6f25eb0b8e63" ContentHash="5F6zQKcRvUOBTXimO0JqYg" CvElementArea="900, 379, 174, 23" CvType="InputBox" DesignTimeRectangle="903, 365, 170, 20" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='50' tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='password' tag='INPUT' class='textbox' placeholder='Enter Password' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="2bd257d9-04f3-4135-a107-ede030091f5c" InformativeScreenshot="65015c261bb3e5588c6ac509475353de.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/iN-CwD7gzUSszx2AsLOjMw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
                                                   <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                    <uix:Target CVScreenId="1e8e6fa2-292c-432c-b86a-6f25eb0b8e63" CvTextArea="771, 382, 122, 15" CvTextArgument="Enter Password" CvType="Text" DesignTimeRectangle="768, 379, 124, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Enter Password' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Enter Password' /&gt;" Guid="9d71bcad-be2c-4eac-be09-d1aa53eb4336" SearchSteps="FuzzySelector, CV" />
+                                                    <uix:Target CVScreenId="1e8e6fa2-292c-432c-b86a-6f25eb0b8e63" CvTextArea="771, 382, 122, 15" CvTextArgument="Enter Password" CvType="Text" DesignTimeRectangle="768, 364, 124, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='Enter Password' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Enter Password' /&gt;" Guid="9d71bcad-be2c-4eac-be09-d1aa53eb4336" SearchSteps="FuzzySelector, CV" />
                                                   </scg:List>
                                                 </uix:TargetAnchorable.Anchors>
                                               </uix:TargetAnchorable>
@@ -754,13 +754,13 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Assign>
-                                    <Sequence DisplayName="temporary" sap:VirtualizedContainerService.HintSize="594,983" sap2010:WorkflowViewState.IdRef="Sequence_211">
+                                    <Sequence DisplayName="temporary" sap:VirtualizedContainerService.HintSize="594,61" sap2010:WorkflowViewState.IdRef="Sequence_211">
                                       <Sequence.Variables>
                                         <Variable x:TypeArguments="x:String" Name="temp" />
                                       </Sequence.Variables>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -819,10 +819,10 @@
                                     </Sequence>
                                     <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Modify Entry View Stat…'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="594,250" sap2010:WorkflowViewState.IdRef="NTypeInto_21" InteractionMode="SameAsCard" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Text="[out_captchaText]" Version="V5">
                                       <uix:NTypeInto.Target>
-                                        <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="607f095f-eb46-4f51-a2bd-006552865732" ContentHash="aYk8Jhpac0mYhDj37unpvQ" CvElementArea="901, 358, 173, 23" CvType="InputBox" DesignTimeRectangle="903, 359, 170, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' placeholder='Enter Security Code' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a2acf288-6d5e-4f4d-a04a-82dd3980f854" InformativeScreenshot="7cfe2eb0b168f678938a9a2d09422b87.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/udfM3n-aA0CVL2YnCnMSmw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                        <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="e3937bf3-4e52-4bef-836a-6435889ec3a4" ContentHash="4jSXqfHMtUeke6Whgt0Eeg" CvElementArea="901, 324, 172, 22" CvType="InputBox" DesignTimeRectangle="903, 325, 170, 20" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' placeholder='Enter Security Code' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="993c9e67-d54b-4e16-9a75-5f194a970a56" InformativeScreenshot="a605f26d7160e73a7c530abcb29b846d.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/udfM3n-aA0CVL2YnCnMSmw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
                                             <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                              <uix:Target CVScreenId="607f095f-eb46-4f51-a2bd-006552865732" CvTextArea="927, 288, 196, 18" CvTextArgument="Modify Entryl View Status" CvType="Text" DesignTimeRectangle="927, 288, 196, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Modify Entry/ View Status' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Modify Entry/ View Status' /&gt;" Guid="f26d800d-c970-4b9f-93d7-41db3b1ab765" SearchSteps="FuzzySelector, CV" />
+                                              <uix:Target CVScreenId="e3937bf3-4e52-4bef-836a-6435889ec3a4" CvTextArea="927, 254, 196, 18" CvTextArgument="Modify Entryl View Status" CvType="Text" DesignTimeRectangle="927, 254, 196, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Modify Entry/ View Status' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Modify Entry/ View Status' /&gt;" Guid="d704d6cf-c0cc-46e6-a164-266f6735f7b2" SearchSteps="FuzzySelector, CV" />
                                             </scg:List>
                                           </uix:TargetAnchorable.Anchors>
                                         </uix:TargetAnchorable>
