@@ -136,7 +136,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="714,7650" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="714,7829" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:Boolean" Name="updatedToken" />
@@ -148,13 +148,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="664,7627" sap2010:WorkflowViewState.IdRef="Sequence_39">
+    <Sequence sap:VirtualizedContainerService.HintSize="664,7806" sap2010:WorkflowViewState.IdRef="Sequence_39">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,7544" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,7723" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -162,7 +162,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="628,6907" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="628,7086" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -175,6 +175,7 @@
                 <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
               </ui:InvokeWorkflowFile.Arguments>
             </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="594,179" sap2010:WorkflowViewState.IdRef="LogMessage_13" Message="[&quot;RentDetails Status: &quot;+StatusDone.ToString]" />
             <If Condition="[Not StatusDone]" sap:VirtualizedContainerService.HintSize="594,4464" sap2010:WorkflowViewState.IdRef="If_6">
               <If.Then>
                 <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="556,4227" sap2010:WorkflowViewState.IdRef="Sequence_44">
@@ -267,7 +268,7 @@
                                     <uix:NSetText.Target>
                                       <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" ContentHash="SBO764yQ1UmPk8eYroiQ0Q" CvElementArea="304, 184, 176, 26" CvType="InputBox" DesignTimeRectangle="306, 272, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txtPeriod' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='txtPeriod' type='text' tag='INPUT' class='textbox' aaname='Select License Period (in months)' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="91fb6244-002c-434c-91f3-e26ab14aa671" InformativeScreenshot="18f70925259c31856cc8c01cce3522aa.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZPa63dlLUUS6VIP-kSvA4w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" CvTextArea="40, 186, 177, 18" CvTextArgument="License Period(months)" CvType="Text" DesignTimeRectangle="41, 272, 252, 24" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                      ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='License Period(months)' /&gt;" Guid="f1373122-7cda-424a-90c8-bd2f99a837ab" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>
@@ -289,7 +290,7 @@
                                     <uix:NSetText.Target>
                                       <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="6816ba77-83ae-42ac-8be1-1d4bad036688" ContentHash="hGuxa3qrhE-mlroOt6FSYA" DesignTimeRectangle="306, 327, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='5' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Refundable Amount' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="1db56312-0827-4009-bd8c-7ae41f4e2037" InformativeScreenshot="039f79e9d616265d71d80b7bf6912d5d.png" IsResponsive="True" Reference="zHM_MHonYECrlrhSQ6-q1Q/KiL6AmQh306gZ-_Zl9o5KQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
                                         <uix:TargetAnchorable.Anchors>
-                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                             <uix:Target CVScreenId="52e3fea2-9e7f-4592-887f-8e6d17da7e10" CvTextArea="103, 299, 142, 17" CvTextArgument="Refundable (Deposit)" CvType="Text" DesignTimeRectangle="41, 327, 162, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Refundable (Deposit) ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Refundable (Deposit)' /&gt;" Guid="5c81d655-3b7e-40e5-b375-b97a034fa6fd" SearchSteps="FuzzySelector, CV" />
                                           </scg:List>
                                         </uix:TargetAnchorable.Anchors>

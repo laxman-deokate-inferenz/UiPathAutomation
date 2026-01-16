@@ -172,7 +172,7 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="777,5029" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="714,5029" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd2:DataTable" Name="out_TokenTable" />
       <Variable x:TypeArguments="x:String" Name="strMiddleName" />
@@ -478,7 +478,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="452,127" sap2010:WorkflowViewState.IdRef="Delay_11" />
-                            <uix:NGetText DisplayName="Get Text 'Modify Entry/ View Stat…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V5">
+                            <uix:NGetText DisplayName="Get Text 'Modify Entry/ View Stat…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="71be5d0b-a782-436a-b38a-1c6dac50247a" TextString="[temp]" Version="V5">
                               <uix:NGetText.Target>
                                 <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg" CVScreenId="8d67acfd-3046-4f29-b5c8-3eba2880c7ed" ContentHash="BbwXpnfWMUak5y8RvkLWsg" CvElementArea="878, 330, 156, 21" CvType="InputBox" DesignTimeRectangle="881, 331, 153, 18" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' placeholder='Enter Security Code' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="a5df4aa6-037d-4de9-bc29-1f5e017f3bb3" InformativeScreenshot="91628dcbfccabb48c18eb08949538481.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/Lp-HlLJzLUOIODQvyqE4vg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                   <uix:TargetAnchorable.Anchors>

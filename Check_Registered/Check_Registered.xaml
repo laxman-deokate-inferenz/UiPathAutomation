@@ -180,7 +180,7 @@
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="806,23119" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="854,24021" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:String" Name="out_captchaText" />
@@ -228,14 +228,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="806,23096" sap2010:WorkflowViewState.IdRef="Sequence_73">
+    <Sequence sap:VirtualizedContainerService.HintSize="806,23998" sap2010:WorkflowViewState.IdRef="Sequence_73">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="772,23013" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="772,23915" sap2010:WorkflowViewState.IdRef="TryCatch_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -243,21 +243,21 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="770,20691" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="770,21593" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="736,61" sap2010:WorkflowViewState.IdRef="Sequence_215">
+            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="736,963" sap2010:WorkflowViewState.IdRef="Sequence_215">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&amp;ouid=107487902836653202635&amp;rtpof=true&amp;sd=true" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="DataEntry.xlsx" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="452,159" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_6" UseConnectionService="True">
+              <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&amp;ouid=107487902836653202635&amp;rtpof=true&amp;sd=true" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="DataEntry.xlsx" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="452,190" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_6" UseConnectionService="True">
                 <uga:DownloadFileConnections.FileIdBackup>
                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                     <usau:BackupSlot.BackupValues>
@@ -283,7 +283,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,411" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_3" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
+              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,442" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_3" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
                 <uga:ForEachFileFolderConnections.Body>
                   <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem, x:Int32">
                     <ActivityAction.Argument1>
@@ -298,7 +298,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\PV&quot;]" DisplayName="Download File" DownloadDocumentAs="[UiPath.GSuite.Activities.Drive.Enums.EGDocExportFormat.Pdf]" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_5" ManualFileId="[CurrentItem.ID]" UseConnectionService="True">
+                      <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\PV&quot;]" DisplayName="Download File" DownloadDocumentAs="[UiPath.GSuite.Activities.Drive.Enums.EGDocExportFormat.Pdf]" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_5" ManualFileId="[CurrentItem.ID]" UseConnectionService="True">
                         <uga:DownloadFileConnections.FileIdBackup>
                           <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
                             <usau:BackupSlot.BackupValues>
@@ -1367,7 +1367,7 @@
                                                                     <InArgument x:TypeArguments="x:String">["&lt;br&gt;&lt;/br&gt;"]</InArgument>
                                                                   </Assign.Value>
                                                                 </Assign>
-                                                                <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&#xA;Respected Sir /madam,&lt;/SPAN&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Token :&lt;/SPAN&gt;&lt;SPAN&gt;{1}&lt;/SPAN&gt;&lt;SPAN&gt; &lt;/SPAN&gt;&lt;SPAN&gt;{2}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Password: &lt;/SPAN&gt;&lt;SPAN&gt;{3}&lt;/SPAN&gt;&lt;SPAN&gt;{4}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Submitted on: &lt;/SPAN&gt;&lt;SPAN&gt;{5}&lt;/SPAN&gt;&lt;SPAN&gt;{6}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Owner Name: &lt;/SPAN&gt;&lt;SPAN&gt;{7}&lt;/SPAN&gt;&lt;SPAN&gt;{8}&lt;/SPAN&gt;&lt;SPAN&gt;{9}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;&lt;/SPAN&gt;&lt;SPAN&gt;{10}&lt;/SPAN&gt;&lt;SPAN&gt; Woeking Days over Still Document not registered. &lt;/SPAN&gt;&lt;SPAN&gt;{11}&lt;/SPAN&gt;&lt;SPAN&gt;Request you to Please do needful and Please Share Name of Haveli where document went for registration.&lt;/SPAN&gt;&lt;SPAN&gt;{12}&lt;/SPAN&gt;&lt;SPAN&gt;From,&lt;/SPAN&gt;&lt;SPAN&gt;{13}&lt;/SPAN&gt;&lt;SPAN&gt;Laxman Deokate&lt;/SPAN&gt;&lt;SPAN&gt;{14}&lt;/SPAN&gt;&lt;SPAN&gt;9011092282&lt;/SPAN&gt;&lt;/P&gt;&quot;, newLine, row(&quot;Token&quot;).ToString, newLine, in_Config(&quot;Password&quot;).ToString , newLine, dateFormat, newLine, row(&quot;Name&quot;).ToString, newLine, newLine, workingDays, newLine, newLine, newLine, newLine)]" ConnectionId="8c6e332c-054b-4d91-acdf-550e7c2d278e" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,497" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Token NOT Registered: &quot;+row(&quot;Token&quot;).ToString]" To="[{ in_Config(&quot;ComplaintEmail&quot;).ToString }]" UseConnectionService="True">
+                                                                <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&#xA;Respected Sir /madam,&lt;/SPAN&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Token :&lt;/SPAN&gt;&lt;SPAN&gt;{1}&lt;/SPAN&gt;&lt;SPAN&gt; &lt;/SPAN&gt;&lt;SPAN&gt;{2}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Password: &lt;/SPAN&gt;&lt;SPAN&gt;{3}&lt;/SPAN&gt;&lt;SPAN&gt;{4}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Submitted on: &lt;/SPAN&gt;&lt;SPAN&gt;{5}&lt;/SPAN&gt;&lt;SPAN&gt;{6}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xA;Owner Name: &lt;/SPAN&gt;&lt;SPAN&gt;{7}&lt;/SPAN&gt;&lt;SPAN&gt;{8}&lt;/SPAN&gt;&lt;SPAN&gt;{9}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;&lt;/SPAN&gt;&lt;SPAN&gt;{10}&lt;/SPAN&gt;&lt;SPAN&gt; Woeking Days over Still Document not registered. &lt;/SPAN&gt;&lt;SPAN&gt;{11}&lt;/SPAN&gt;&lt;SPAN&gt;Request you to Please do needful and Please Share Name of Haveli where document went for registration.&lt;/SPAN&gt;&lt;SPAN&gt;{12}&lt;/SPAN&gt;&lt;SPAN&gt;From,&lt;/SPAN&gt;&lt;SPAN&gt;{13}&lt;/SPAN&gt;&lt;SPAN&gt;Laxman Deokate&lt;/SPAN&gt;&lt;SPAN&gt;{14}&lt;/SPAN&gt;&lt;SPAN&gt;9011092282&lt;/SPAN&gt;&lt;/P&gt;&quot;, newLine, row(&quot;Token&quot;).ToString, newLine, in_Config(&quot;Password&quot;).ToString , newLine, dateFormat, newLine, row(&quot;Name&quot;).ToString, newLine, newLine, workingDays, newLine, newLine, newLine, newLine)]" ConnectionId="8c6e332c-054b-4d91-acdf-550e7c2d278e" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,497" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Token NOT Registered: &quot;+row(&quot;Token&quot;).ToString]" To="[{ in_Config(&quot;ComplaintEmail&quot;).ToString }]" UseConnectionService="True">
                                                                   <uga:SendEmailConnections.Attachments>
                                                                     <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
                                                                   </uga:SendEmailConnections.Attachments>
