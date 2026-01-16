@@ -118,7 +118,7 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="PoliceVerification" sap:VirtualizedContainerService.HintSize="740,4856" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="PoliceVerification" sap:VirtualizedContainerService.HintSize="708,4856" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Token" />
     </Sequence.Variables>
@@ -159,7 +159,16 @@
                 </sap:WorkflowViewStateService.ViewState>
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next Party Details'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa5b93bd-6cf6-48c9-90e6-d95130e11932" Version="V5">
                   <uix:NClick.Target>
-                    <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="2d89d690-8beb-447f-a374-4cde8bb88098" ContentHash="OBdUxN1cQEqGZBYWcGN-iw" CvElementArea="666, 627, 135, 32" CvTextArea="668, 636, 130, 14" CvTextArgument="Next :Party Details" CvType="Button" DesignTimeRectangle="668, 628, 131, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' tableRow='39' tag='INPUT' /&gt;" Guid="4d952d79-f0b6-4d1b-a66a-4cf5828a3eeb" InformativeScreenshot="160479feba44f885b8061a4f7922692c.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/QFua3zezX0-0Yu994r0L0w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                    <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="5d8f1275-56ea-44be-86cf-a98645c723bf" ContentHash="CQLyogrsOEyCw3Jw-7LlVA" CvElementArea="671, 625, 165, 28" CvTextArea="672, 632, 160, 13" CvTextArgument="Next: Rent &amp; Other Terms" CvType="Button" DesignTimeRectangle="672, 626, 162, 27" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' tableRow='32' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' type='submit' tag='INPUT' class='' aaname='Next: Rent &amp;amp; Other Terms' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next: Rent &amp;amp; Other Terms' /&gt;" Guid="c1086065-12c2-403f-8bcb-93a0ba576166" InformativeScreenshot="721a9968c277ff66816d4b38bbc20b2e.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/QFua3zezX0-0Yu994r0L0w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                      <uix:TargetAnchorable.Anchors>
+                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                          <uix:Target CVScreenId="5d8f1275-56ea-44be-86cf-a98645c723bf" CvElementArea="551, 625, 120, 29" CvTextArea="552, 632, 116, 13" CvTextArgument="Add : Party Details" CvType="Button" DesignTimeRectangle="552, 626, 117, 27" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnMore' type='submit' tag='INPUT' class='' aaname='Add : Party Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add : Party Details' /&gt;" Guid="cb269edf-4299-42a6-a300-a13061c9f02a" SearchSteps="FuzzySelector, CV" />
+                        </scg:List>
+                      </uix:TargetAnchorable.Anchors>
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="3" Y="1" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
                   </uix:NClick.Target>
                 </uix:NClick>
                 <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Next Rent &amp; Other Terms'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,198" sap2010:WorkflowViewState.IdRef="NClick_16" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="aa5b93bd-6cf6-48c9-90e6-d95130e11932" Version="V5">

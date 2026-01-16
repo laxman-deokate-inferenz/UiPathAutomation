@@ -180,7 +180,7 @@
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="854,24021" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="806,26098" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:String" Name="out_captchaText" />
@@ -222,20 +222,22 @@
       <Variable x:TypeArguments="x:String" Name="strLastSentDate" />
       <Variable x:TypeArguments="s:DateTime" Name="lastSentDate" />
       <Variable x:TypeArguments="x:Int32" Name="emailSentCount" />
+      <Variable x:TypeArguments="x:String" Name="variable1" />
+      <Variable x:TypeArguments="sd:DataTable" Name="dtExcel" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="806,23998" sap2010:WorkflowViewState.IdRef="Sequence_73">
+    <Sequence sap:VirtualizedContainerService.HintSize="806,26075" sap2010:WorkflowViewState.IdRef="Sequence_73">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="772,23915" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="772,25992" sap2010:WorkflowViewState.IdRef="TryCatch_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -243,21 +245,21 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="770,21593" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="770,24887" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="736,963" sap2010:WorkflowViewState.IdRef="Sequence_215">
+            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="736,963" sap2010:WorkflowViewState.IdRef="Sequence_224">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&amp;ouid=107487902836653202635&amp;rtpof=true&amp;sd=true" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="DataEntry.xlsx" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="452,190" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_6" UseConnectionService="True">
+              <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&amp;ouid=107487902836653202635&amp;rtpof=true&amp;sd=true" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="DataEntry.xlsx" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="452,190" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_6" UseConnectionService="True">
                 <uga:DownloadFileConnections.FileIdBackup>
                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                     <usau:BackupSlot.BackupValues>
@@ -283,7 +285,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,442" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_3" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
+              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,442" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_3" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
                 <uga:ForEachFileFolderConnections.Body>
                   <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem, x:Int32">
                     <ActivityAction.Argument1>
@@ -298,7 +300,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\PV&quot;]" DisplayName="Download File" DownloadDocumentAs="[UiPath.GSuite.Activities.Drive.Enums.EGDocExportFormat.Pdf]" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_5" ManualFileId="[CurrentItem.ID]" UseConnectionService="True">
+                      <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\PV&quot;]" DisplayName="Download File" DownloadDocumentAs="[UiPath.GSuite.Activities.Drive.Enums.EGDocExportFormat.Pdf]" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,180" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_5" ManualFileId="[CurrentItem.ID]" UseConnectionService="True">
                         <uga:DownloadFileConnections.FileIdBackup>
                           <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
                             <usau:BackupSlot.BackupValues>
@@ -508,13 +510,13 @@
                 </If.Else>
               </If>
             </Sequence>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dtTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="736,20274" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dtTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="736,22232" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="734,20088" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="734,22046" sap2010:WorkflowViewState.IdRef="Sequence_97">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -594,10 +596,10 @@
                         </Sequence>
                       </If.Else>
                     </If>
-                    <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="700,8376" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[Cint(in_Config(&quot;retryCaptcha&quot;))]" RetryInterval="00:00:02">
+                    <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="700,8276" sap2010:WorkflowViewState.IdRef="RetryScope_1" NumberOfRetries="[Cint(in_Config(&quot;retryCaptcha&quot;))]" RetryInterval="00:00:02">
                       <ui:RetryScope.ActivityBody>
                         <ActivityAction>
-                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="698,8165" sap2010:WorkflowViewState.IdRef="Sequence_164">
+                          <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="698,8065" sap2010:WorkflowViewState.IdRef="Sequence_164">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -625,13 +627,13 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:KillProcess>
-                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="664,7861" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V2" WindowResize="Maximize">
+                            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.IfOpenedByAppBrowser]" DisplayName="Edge Main Page(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="664,7761" sap2010:WorkflowViewState.IdRef="NApplicationCard_11" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="71be5d0b-a782-436a-b38a-1c6dac50247a" Version="V2" WindowResize="Maximize">
                               <uix:NApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662,7663" sap2010:WorkflowViewState.IdRef="Sequence_110">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="662,7563" sap2010:WorkflowViewState.IdRef="Sequence_110">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1157,7 +1159,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <If Condition="[viewDocument=&quot;Document is registered.&quot;]" DisplayName="EMAIL -&gt;If-Registerd/Unregistered-Email send" sap:VirtualizedContainerService.HintSize="628,6198" sap2010:WorkflowViewState.IdRef="If_18">
+                                    <If Condition="[viewDocument=&quot;Document is registered.&quot;]" DisplayName="EMAIL -&gt;If-Registerd/Unregistered-Email send" sap:VirtualizedContainerService.HintSize="628,6098" sap2010:WorkflowViewState.IdRef="If_18">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1183,13 +1185,13 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="626,5642" sap2010:WorkflowViewState.IdRef="Sequence_104">
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="626,5542" sap2010:WorkflowViewState.IdRef="Sequence_104">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <If Condition="[viewDocument=&quot;The Document is submitted for registration. Hence cannot be edited.&quot;]" sap:VirtualizedContainerService.HintSize="592,5526" sap2010:WorkflowViewState.IdRef="If_25">
+                                          <If Condition="[viewDocument=&quot;The Document is submitted for registration. Hence cannot be edited.&quot;]" sap:VirtualizedContainerService.HintSize="592,5426" sap2010:WorkflowViewState.IdRef="If_25">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1197,7 +1199,7 @@
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
                                             <If.Then>
-                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="590,5289" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="590,5189" sap2010:WorkflowViewState.IdRef="Sequence_128">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1226,16 +1228,16 @@
                                                   </Assign.Value>
                                                 </Assign>
                                                 <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,179" sap2010:WorkflowViewState.IdRef="LogMessage_118" Message="[lastSentDate]" />
-                                                <If Condition="[lastSentDate&lt;&gt;now.Date]" sap:VirtualizedContainerService.HintSize="556,4319" sap2010:WorkflowViewState.IdRef="If_42">
+                                                <If Condition="[lastSentDate&lt;&gt;now.Date]" sap:VirtualizedContainerService.HintSize="556,4219" sap2010:WorkflowViewState.IdRef="If_42">
                                                   <If.Then>
-                                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="554,3951" sap2010:WorkflowViewState.IdRef="Sequence_216">
+                                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="554,3851" sap2010:WorkflowViewState.IdRef="Sequence_216">
                                                       <sap:WorkflowViewStateService.ViewState>
                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                         </scg:Dictionary>
                                                       </sap:WorkflowViewStateService.ViewState>
                                                       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="520,179" sap2010:WorkflowViewState.IdRef="LogMessage_120" Message="[&quot;Sending Email to &quot;+ in_Config(&quot;ComplaintEmail&quot;).ToString +&quot; Once A day&quot;]" />
-                                                      <Sequence DisplayName="Sending Email to Compaint Email if 3 days over" sap:VirtualizedContainerService.HintSize="520,3708" sap2010:WorkflowViewState.IdRef="Sequence_189">
+                                                      <Sequence DisplayName="Sending Email to Compaint Email if 3 days over" sap:VirtualizedContainerService.HintSize="520,3608" sap2010:WorkflowViewState.IdRef="Sequence_189">
                                                         <sap:WorkflowViewStateService.ViewState>
                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1336,16 +1338,16 @@
                                                             </scg:Dictionary>
                                                           </sap:WorkflowViewStateService.ViewState>
                                                         </ui:InterruptibleWhile>
-                                                        <If Condition="[workingDays&gt;=3]" sap:VirtualizedContainerService.HintSize="486,1906" sap2010:WorkflowViewState.IdRef="If_40">
+                                                        <If Condition="[workingDays&gt;=3]" sap:VirtualizedContainerService.HintSize="486,1806" sap2010:WorkflowViewState.IdRef="If_40">
                                                           <If.Then>
-                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1538" sap2010:WorkflowViewState.IdRef="Sequence_194">
+                                                            <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1438" sap2010:WorkflowViewState.IdRef="Sequence_194">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
                                                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,179" sap2010:WorkflowViewState.IdRef="LogMessage_103" Message="[workingDays.ToString+ &quot; working days have passed since submission date. Sending Email to: &quot;+in_Config(&quot;ComplaintEmail&quot;).ToString]" />
-                                                              <Sequence DisplayName="Email Sending" sap:VirtualizedContainerService.HintSize="450,1295" sap2010:WorkflowViewState.IdRef="Sequence_193">
+                                                              <Sequence DisplayName="Email Sending" sap:VirtualizedContainerService.HintSize="450,1195" sap2010:WorkflowViewState.IdRef="Sequence_193">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1367,7 +1369,7 @@
                                                                     <InArgument x:TypeArguments="x:String">["&lt;br&gt;&lt;/br&gt;"]</InArgument>
                                                                   </Assign.Value>
                                                                 </Assign>
-                                                                <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;&#xA;Respected Sir /madam,&lt;/SPAN&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Token :&lt;/SPAN&gt;&lt;SPAN&gt;{1}&lt;/SPAN&gt;&lt;SPAN&gt; &lt;/SPAN&gt;&lt;SPAN&gt;{2}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Password: &lt;/SPAN&gt;&lt;SPAN&gt;{3}&lt;/SPAN&gt;&lt;SPAN&gt;{4}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;Submitted on: &lt;/SPAN&gt;&lt;SPAN&gt;{5}&lt;/SPAN&gt;&lt;SPAN&gt;{6}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&#xA;Owner Name: &lt;/SPAN&gt;&lt;SPAN&gt;{7}&lt;/SPAN&gt;&lt;SPAN&gt;{8}&lt;/SPAN&gt;&lt;SPAN&gt;{9}&lt;/SPAN&gt;&lt;SPAN&gt;&#xA;&lt;/SPAN&gt;&lt;SPAN&gt;{10}&lt;/SPAN&gt;&lt;SPAN&gt; Woeking Days over Still Document not registered. &lt;/SPAN&gt;&lt;SPAN&gt;{11}&lt;/SPAN&gt;&lt;SPAN&gt;Request you to Please do needful and Please Share Name of Haveli where document went for registration.&lt;/SPAN&gt;&lt;SPAN&gt;{12}&lt;/SPAN&gt;&lt;SPAN&gt;From,&lt;/SPAN&gt;&lt;SPAN&gt;{13}&lt;/SPAN&gt;&lt;SPAN&gt;Laxman Deokate&lt;/SPAN&gt;&lt;SPAN&gt;{14}&lt;/SPAN&gt;&lt;SPAN&gt;9011092282&lt;/SPAN&gt;&lt;/P&gt;&quot;, newLine, row(&quot;Token&quot;).ToString, newLine, in_Config(&quot;Password&quot;).ToString , newLine, dateFormat, newLine, row(&quot;Name&quot;).ToString, newLine, newLine, workingDays, newLine, newLine, newLine, newLine)]" ConnectionId="8c6e332c-054b-4d91-acdf-550e7c2d278e" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,497" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Token NOT Registered: &quot;+row(&quot;Token&quot;).ToString]" To="[{ in_Config(&quot;ComplaintEmail&quot;).ToString }]" UseConnectionService="True">
+                                                                <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" AuthScopesInvalid="False" Body="[String.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected Sir /madam ,     &lt;/SPAN&gt;&lt;SPAN&gt;{0}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;Token:&lt;/b&gt;                 &lt;/SPAN&gt;&lt;SPAN&gt;{1}&lt;/SPAN&gt;&lt;SPAN&gt;{2}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Password:                      &lt;/SPAN&gt;&lt;SPAN&gt;{3}&lt;/SPAN&gt;&lt;SPAN&gt;{4}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;Submitted on:&lt;/b&gt;     &lt;/SPAN&gt;&lt;SPAN&gt;&lt;b&gt;{5}&lt;/b&gt;&lt;/SPAN&gt;&lt;SPAN&gt;{6}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;City:&lt;/b&gt;                      &lt;/SPAN&gt;&lt;SPAN&gt;{7}&lt;/SPAN&gt;&lt;SPAN&gt;{8}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;Owner Name:&lt;/b&gt;       &lt;/SPAN&gt;&lt;SPAN&gt;{9}&lt;/SPAN&gt;&lt;SPAN&gt;{10}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;{11}&lt;/b&gt;&lt;/SPAN&gt;&lt;SPAN&gt; Working Days over Still Document not registered. &lt;/SPAN&gt;&lt;SPAN&gt;{12}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Request you to Please do needful and Please Share Name of Haveli where document went for registration.&lt;/SPAN&gt;&lt;SPAN&gt;{13}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;From,&lt;/SPAN&gt;&lt;SPAN&gt;{14}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;Laxman Deokate&lt;/b&gt;&lt;/SPAN&gt;&lt;SPAN&gt;{15}&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;b&gt;{16}&lt;/b&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;, newLine, row(&quot;Token&quot;).ToString(), newLine, in_Config(&quot;Password&quot;).ToString(), newLine, CType(row(&quot;SubmissionDate&quot;), DateTime).ToString(&quot;dd/MM/yyyy&quot;), newLine, row(&quot;City&quot;).ToString(), newLine, row(&quot;Name&quot;).ToString(), newLine, workingDays.ToString(), newLine, newLine, newLine, newLine, in_Config(&quot;Mobile&quot;).ToString())]" Cc="[{ row(&quot;OwnerEmail&quot;).ToString }]" ConnectionId="332032d4-3934-4c35-9d9d-430082ee5d80" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,397" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Token NOT Registered: &quot;+row(&quot;Token&quot;).ToString]" To="[{ in_Config(&quot;ComplaintEmail&quot;).ToString }]" UseConnectionService="True">
                                                                   <uga:SendEmailConnections.Attachments>
                                                                     <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
                                                                   </uga:SendEmailConnections.Attachments>
@@ -1586,20 +1588,20 @@ Please find attached copy of Rent Agreement.
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:RetryScope>
-                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="I Love PDF Merge Files" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="700,10871" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="a7119bb5-6f23-41b2-b353-8425ff2110b6" Version="V2">
+                    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="I Love PDF Merge Files" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="700,12929" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" ScopeGuid="a7119bb5-6f23-41b2-b353-8425ff2110b6" Version="V2">
                       <uix:NApplicationCard.Body>
                         <ActivityAction x:TypeArguments="x:Object">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,10673" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="558,12731" sap2010:WorkflowViewState.IdRef="Sequence_123">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence DisplayName="Sequence-Front Page&amp;PV" sap:VirtualizedContainerService.HintSize="522,2525" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                            <Sequence DisplayName="Sequence-Front Page&amp;PV" sap:VirtualizedContainerService.HintSize="524,2525" sap2010:WorkflowViewState.IdRef="Sequence_111">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1797,7 +1799,7 @@ Please find attached copy of Rent Agreement.
                                 </If.Else>
                               </If>
                             </Sequence>
-                            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="522,127" sap2010:WorkflowViewState.IdRef="Delay_23">
+                            <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="524,127" sap2010:WorkflowViewState.IdRef="Delay_23">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1805,7 +1807,7 @@ Please find attached copy of Rent Agreement.
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </Delay>
-                            <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_30">
+                            <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_30">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:String[]">[latestTwoFiles]</OutArgument>
                               </Assign.To>
@@ -1818,7 +1820,7 @@ Please find attached copy of Rent Agreement.
     .ToArray()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_31">
+                            <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_31">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Boolean">[areBothLatest]</OutArgument>
                               </Assign.To>
@@ -1828,7 +1830,7 @@ latestTwoFiles.All(Function(f) _
     (DateTime.Now - File.GetLastWriteTime(f)).TotalSeconds &lt;= 60)]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <If Condition="[areBothLatest]" sap:VirtualizedContainerService.HintSize="522,2534" sap2010:WorkflowViewState.IdRef="If_21">
+                            <If Condition="[areBothLatest]" sap:VirtualizedContainerService.HintSize="524,2534" sap2010:WorkflowViewState.IdRef="If_21">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2034,7 +2036,7 @@ latestTwoFiles.All(Function(f) _
                                 </Sequence>
                               </If.Else>
                             </If>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Merge PDF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7119bb5-6f23-41b2-b353-8425ff2110b6" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Merge PDF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,198" sap2010:WorkflowViewState.IdRef="NClick_34" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7119bb5-6f23-41b2-b353-8425ff2110b6" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="ilovepdf.com/merge_pdf" CVScreenId="fd9ca035-ebfe-4ce0-8f27-a55bf1341edc" ContentHash="1l7t26yW_Ei1-qCaFuoJCw" CvElementArea="1091, 632, 258, 71" CvTextArea="1150, 658, 117, 25" CvTextArgument="Merge PDF" CvType="Button" DesignTimeRectangle="1094, 636, 252, 64" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='processTask' tag='BUTTON' type='' class='btn btn--process btn--red merge' aaname='Merge PDF ' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Merge PDF' /&gt;" Guid="9d12647f-67b2-41d2-bebb-a58a477c942d" InformativeScreenshot="df204b304032025c4b2e2f4221ae3d53.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/2j3veJMBEkGcWwIh0_ZPzA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Merge PDF files online. Free service to merge PDF' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                   <uix:TargetAnchorable.Anchors>
@@ -2045,8 +2047,8 @@ latestTwoFiles.All(Function(f) _
                                 </uix:TargetAnchorable>
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_44" Message="[&quot;Merge PDF Clicked&quot;]" />
-                            <ui:InterruptibleDoWhile Condition="[isPresent=False]" CurrentIndex="[index_1]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_44" Message="[&quot;Merge PDF Clicked&quot;]" />
+                            <ui:InterruptibleDoWhile Condition="[isPresent=False]" CurrentIndex="[index_1]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="524,61" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_7">
                               <ui:InterruptibleDoWhile.Body>
                                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,377" sap2010:WorkflowViewState.IdRef="Sequence_115">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -2077,12 +2079,12 @@ latestTwoFiles.All(Function(f) _
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InterruptibleDoWhile>
-                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download merged PDF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7119bb5-6f23-41b2-b353-8425ff2110b6" Version="V5">
+                            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Download merged PDF'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="524,198" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a7119bb5-6f23-41b2-b353-8425ff2110b6" Version="V5">
                               <uix:NClick.Target>
                                 <uix:TargetAnchorable BrowserURL="ilovepdf.com/download/fAp48A7xzqwjAjvrnzbg12t54rvd98r1rsx3t31xvb9wsAcbrvybz2bvx51m4gA1gp0clx1j5q18tq8ywk87fss8mbdq35mng5A43k37gAv2yp9v502gvgw30fbng9k7kxj5596r0zn4zbbkcmwfjtrkl7hjwvwdrqpjqd0700qlggtzt7t1/75" CVScreenId="63ba7f38-b095-4d2c-aeaa-90d384229089" ContentHash="0WEYRkmtEkqtUESxGK8aog" CvElementArea="484, 229, 397, 85" CvTextArea="570, 260, 265, 23" CvTextArgument="Download merged PDF" CvType="Button" DesignTimeRectangle="486, 232, 395, 80" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='pickfiles' tag='A' /&gt;" Guid="01250c3e-367f-4772-988b-a56856ae4efa" InformativeScreenshot="432f06507512dcc6ac0012b64007d619.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/6Q2QOWVpyUmWlgJLO6b4GQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Download file | iLovePDF' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                               </uix:NClick.Target>
                             </uix:NClick>
-                            <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_47">
+                            <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_47">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:DateTime">[startTime]</OutArgument>
                               </Assign.To>
@@ -2090,7 +2092,7 @@ latestTwoFiles.All(Function(f) _
                                 <InArgument x:TypeArguments="s:DateTime">[now]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_52">
+                            <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_52">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:DateTime">[lastLogTime]</OutArgument>
                               </Assign.To>
@@ -2098,8 +2100,8 @@ latestTwoFiles.All(Function(f) _
                                 <InArgument x:TypeArguments="s:DateTime">[startTime]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_46" Message="[&quot;Download Started&quot;]" />
-                            <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_14">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_46" Message="[&quot;Download Started&quot;]" />
+                            <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_14">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="s:DateTime">[OldTime]</OutArgument>
                               </Assign.To>
@@ -2107,7 +2109,7 @@ latestTwoFiles.All(Function(f) _
                                 <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_18">
+                            <Assign sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="Assign_18">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[filePath]</OutArgument>
                               </Assign.To>
@@ -2115,17 +2117,17 @@ latestTwoFiles.All(Function(f) _
                                 <InArgument x:TypeArguments="x:String">[path.Combine(in_Config("Downloads").ToString,row("Token").ToString)+"_merged.pdf"]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="LogMessage_64" Message="[&quot;Max Waiting Time to Download: &quot;+in_Config(&quot;WaitTime&quot;).ToString + &quot; Mins&quot;]" />
-                            <ui:InterruptibleDoWhile CurrentIndex="[index]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8">
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="524,179" sap2010:WorkflowViewState.IdRef="LogMessage_64" Message="[&quot;Max Waiting Time to Download: &quot;+in_Config(&quot;WaitTime&quot;).ToString + &quot; Mins&quot;]" />
+                            <ui:InterruptibleDoWhile CurrentIndex="[index]" DisplayName="Do While" sap:VirtualizedContainerService.HintSize="524,1940" sap2010:WorkflowViewState.IdRef="InterruptibleDoWhile_8">
                               <ui:InterruptibleDoWhile.Body>
-                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="520,1207" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                                <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="522,1805" sap2010:WorkflowViewState.IdRef="Sequence_120">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Assign sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_28">
+                                  <Assign sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="Assign_28">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:String">[latestFilePath]</OutArgument>
                                     </Assign.To>
@@ -2136,7 +2138,7 @@ latestTwoFiles.All(Function(f) _
     .FirstOrDefault()]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <Assign sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_29">
+                                  <Assign sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="Assign_29">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Boolean">[isLatestFile]</OutArgument>
                                     </Assign.To>
@@ -2145,7 +2147,7 @@ latestTwoFiles.All(Function(f) _
 (DateTime.Now - File.GetLastWriteTime(latestFilePath)).TotalSeconds &lt;= 120]</InArgument>
                                     </Assign.Value>
                                   </Assign>
-                                  <If Condition="[isLatestFile]" sap:VirtualizedContainerService.HintSize="486,785" sap2010:WorkflowViewState.IdRef="If_23">
+                                  <If Condition="[isLatestFile]" sap:VirtualizedContainerService.HintSize="488,1383" sap2010:WorkflowViewState.IdRef="If_23">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2153,14 +2155,14 @@ latestTwoFiles.All(Function(f) _
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,474" sap2010:WorkflowViewState.IdRef="Sequence_116">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,474" sap2010:WorkflowViewState.IdRef="Sequence_116">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,179" sap2010:WorkflowViewState.IdRef="LogMessage_47" Message="[&quot;Download Succesfull for merged file&quot;]" />
-                                        <Assign sap:VirtualizedContainerService.HintSize="450,179" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_47" Message="[&quot;Download Succesfull for merged file&quot;]" />
+                                        <Assign sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="Assign_16">
                                           <Assign.To>
                                             <OutArgument x:TypeArguments="x:Boolean">[isPresent]</OutArgument>
                                           </Assign.To>
@@ -2168,25 +2170,25 @@ latestTwoFiles.All(Function(f) _
                                             <InArgument x:TypeArguments="x:Boolean">[true]</InArgument>
                                           </Assign.Value>
                                         </Assign>
-                                        <ui:Break sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="Break_4" />
+                                        <ui:Break sap:VirtualizedContainerService.HintSize="452,52" sap2010:WorkflowViewState.IdRef="Break_4" />
                                       </Sequence>
                                     </If.Then>
                                     <If.Else>
-                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,177" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                      <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,775" sap2010:WorkflowViewState.IdRef="Sequence_119">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Time Calculation" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="Sequence_186">
+                                        <Sequence DisplayName="Time Calculation" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="Sequence_186">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Assign sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="Assign_54">
+                                          <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_54">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="s:DateTime">[endTime]</OutArgument>
                                             </Assign.To>
@@ -2194,7 +2196,7 @@ latestTwoFiles.All(Function(f) _
                                               <InArgument x:TypeArguments="s:DateTime">[now]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <Assign sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="Assign_55">
+                                          <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_55">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:TimeSpan">[timeTaken]</OutArgument>
                                             </Assign.To>
@@ -2202,9 +2204,9 @@ latestTwoFiles.All(Function(f) _
                                               <InArgument x:TypeArguments="x:TimeSpan">[endTime-startTime]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <If Condition="[(endTime-lastLogTime).TotalSeconds&gt;=30]" sap:VirtualizedContainerService.HintSize="452,629" sap2010:WorkflowViewState.IdRef="If_38">
+                                          <If Condition="[(endTime-lastLogTime).TotalSeconds&gt;=30]" sap:VirtualizedContainerService.HintSize="452,637" sap2010:WorkflowViewState.IdRef="If_38">
                                             <If.Then>
-                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,409" sap2010:WorkflowViewState.IdRef="Sequence_187">
+                                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_187">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2222,7 +2224,7 @@ latestTwoFiles.All(Function(f) _
                                               </Sequence>
                                             </If.Then>
                                             <If.Else>
-                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_188">
+                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_188">
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2232,10 +2234,10 @@ latestTwoFiles.All(Function(f) _
                                             </If.Else>
                                           </If>
                                         </Sequence>
-                                        <If Condition="[(Now - OldTime).TotalMinutes &gt; Cint(in_Config(&quot;WaitTime&quot;))]" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="If_22">
+                                        <If Condition="[(Now - OldTime).TotalMinutes &gt; Cint(in_Config(&quot;WaitTime&quot;))]" sap:VirtualizedContainerService.HintSize="452,650" sap2010:WorkflowViewState.IdRef="If_22">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -2254,8 +2256,25 @@ latestTwoFiles.All(Function(f) _
                                                   <InArgument x:TypeArguments="x:Boolean">[false]</InArgument>
                                                 </Assign.Value>
                                               </Assign>
-                                              <ui:Continue sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="Continue_6" />
-                                              <Throw Exception="[New System.Exception(&quot;File Not Present Skipped&quot;)]" sap:VirtualizedContainerService.HintSize="416,118" sap2010:WorkflowViewState.IdRef="Throw_16" />
+                                              <Throw Exception="[New System.Exception(&quot;File Not Present Skipped&quot;)]" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Throw_16" />
+                                              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="CommentOut_24">
+                                                <ui:CommentOut.Body>
+                                                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_223">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:Continue sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Continue_6" />
+                                                  </Sequence>
+                                                </ui:CommentOut.Body>
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                              </ui:CommentOut>
                                             </Sequence>
                                           </If.Then>
                                           <If.Else>
@@ -2282,12 +2301,12 @@ latestTwoFiles.All(Function(f) _
                               </ui:InterruptibleDoWhile.Condition>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InterruptibleDoWhile>
-                            <Sequence DisplayName="Time Calculation" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="Sequence_182">
+                            <Sequence DisplayName="Time Calculation" sap:VirtualizedContainerService.HintSize="524,61" sap2010:WorkflowViewState.IdRef="Sequence_182">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2312,7 +2331,7 @@ latestTwoFiles.All(Function(f) _
                               </Assign>
                               <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_95" Message="[&quot;Total Time Taken Download File is: &quot;+timeTaken.ToString]" />
                             </Sequence>
-                            <If Condition="[isPresent]" DisplayName="If-Rename , Email, Copy" sap:VirtualizedContainerService.HintSize="522,3233" sap2010:WorkflowViewState.IdRef="If_24">
+                            <If Condition="[isPresent]" DisplayName="If-Rename , Email, Copy" sap:VirtualizedContainerService.HintSize="524,3412" sap2010:WorkflowViewState.IdRef="If_24">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2320,7 +2339,7 @@ latestTwoFiles.All(Function(f) _
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                               <If.Then>
-                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,2738" sap2010:WorkflowViewState.IdRef="Sequence_121">
+                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,2917" sap2010:WorkflowViewState.IdRef="Sequence_121">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2334,15 +2353,15 @@ latestTwoFiles.All(Function(f) _
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:RenameFileX>
-                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="LogMessage_50" Message="[&quot;File Renamed Succesfully&quot;+row(&quot;Token&quot;).ToString+&quot;.&quot;+row(&quot;Name&quot;).ToString+&quot;.pdf&quot;]">
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_50" Message="[&quot;File Renamed Succesfully&quot;+row(&quot;Token&quot;).ToString+&quot;.&quot;+row(&quot;Name&quot;).ToString+&quot;.pdf&quot;]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:LogMessage>
-                                  <Assign sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="Assign_34">
+                                  <Assign sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="Assign_34">
                                     <Assign.To>
                                       <OutArgument x:TypeArguments="x:Object">[row("Status")]</OutArgument>
                                     </Assign.To>
@@ -2351,11 +2370,19 @@ latestTwoFiles.All(Function(f) _
                                     </Assign.Value>
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </Assign>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_124" Message="[&quot;Row Status Updated to Registered&quot;]">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </ui:LogMessage>
                                   <ui:CopyFile ContinueOnError="{x:Null}" DestinationResource="{x:Null}" PathResource="{x:Null}" Destination="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\RegisteredTokens&quot;]" DisplayName="Copy File" sap:VirtualizedContainerService.HintSize="486,228" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[in_Config(&quot;Downloads&quot;).ToString+&quot;\&quot;+row(&quot;Token&quot;).ToString+&quot;.&quot;+row(&quot;Name&quot;).ToString+&quot;.pdf&quot;]">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -2365,7 +2392,7 @@ latestTwoFiles.All(Function(f) _
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:CopyFile>
                                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_98" Message="[&quot;File Copy Completed&quot;]" />
-                                  <If Condition="[row(&quot;Email&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="If-Email Send" sap:VirtualizedContainerService.HintSize="486,1914" sap2010:WorkflowViewState.IdRef="If_32">
+                                  <If Condition="[row(&quot;OwnerEmail&quot;).ToString&lt;&gt;&quot;&quot;]" DisplayName="If-Email Send" sap:VirtualizedContainerService.HintSize="486,1678" sap2010:WorkflowViewState.IdRef="If_32">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2373,13 +2400,13 @@ latestTwoFiles.All(Function(f) _
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                     <If.Then>
-                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1537" sap2010:WorkflowViewState.IdRef="Sequence_159">
+                                      <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1301" sap2010:WorkflowViewState.IdRef="Sequence_159">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="450,1473" sap2010:WorkflowViewState.IdRef="Sequence_158">
+                                        <Sequence DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="450,1237" sap2010:WorkflowViewState.IdRef="Sequence_158">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2395,23 +2422,57 @@ latestTwoFiles.All(Function(f) _
                                             </Assign.Value>
                                           </Assign>
                                           <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,178" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[attachmentFilePath]" PathType="File" Resource="[fileResource]" />
-                                          <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_36">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:String">[row("Email").ToString]</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                          <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_42">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:String">[Email2]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:String">[row("Email2").ToString]</InArgument>
-                                            </Assign.Value>
-                                          </Assign>
-                                          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[{ fileResource }]" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected &lt;/SPAN&gt;&lt;SPAN&gt;Sir/Madam,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Please find attached copy of Rent Agreement&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;from,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;Laxman Deokate&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;9011092282&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[{ Email2 }]" ConnectionId="332032d4-3934-4c35-9d9d-430082ee5d80" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,497" sap2010:WorkflowViewState.IdRef="SendEmailConnections_4" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Registered Rent Agreement for Token: &quot;+row(&quot;Token&quot;).ToString]" To="[{ Email }]" UseConnectionService="True">
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="CommentOut_23">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_222">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_36">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Email]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[row("OwnerEmail").ToString]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:CommentOut>
+                                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="CommentOut_22">
+                                            <ui:CommentOut.Body>
+                                              <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,226" sap2010:WorkflowViewState.IdRef="Sequence_221">
+                                                <sap:WorkflowViewStateService.ViewState>
+                                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  </scg:Dictionary>
+                                                </sap:WorkflowViewStateService.ViewState>
+                                                <Assign sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="Assign_42">
+                                                  <Assign.To>
+                                                    <OutArgument x:TypeArguments="x:String">[Email2]</OutArgument>
+                                                  </Assign.To>
+                                                  <Assign.Value>
+                                                    <InArgument x:TypeArguments="x:String">[row("TenantEmail").ToString]</InArgument>
+                                                  </Assign.Value>
+                                                </Assign>
+                                              </Sequence>
+                                            </ui:CommentOut.Body>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                          </ui:CommentOut>
+                                          <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[{ fileResource }]" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected &lt;/SPAN&gt;&lt;SPAN&gt;Sir/Madam,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Please find attached copy of Rent Agreement&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;from,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;Laxman Deokate&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;9011092282&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[{ row(&quot;TenantEmail&quot;).ToString }]" ConnectionId="332032d4-3934-4c35-9d9d-430082ee5d80" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,497" sap2010:WorkflowViewState.IdRef="SendEmailConnections_4" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Registered Rent Agreement for Token: &quot;+row(&quot;Token&quot;).ToString]" To="[{ row(&quot;OwnerEmail&quot;).ToString }]" UseConnectionService="True">
                                             <uga:SendEmailConnections.AttachmentsBackup>
                                               <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
                                                 <usau:BackupSlot.BackupValues>
@@ -2427,7 +2488,7 @@ latestTwoFiles.All(Function(f) _
                                               </usau:BackupSlot>
                                             </uga:SendEmailConnections.InputTypeBackup>
                                           </uga:SendEmailConnections>
-                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_78" Message="[&quot;Email Sent Succesfully to: &quot;+&quot;Email: &quot;+row(&quot;Email&quot;).ToString]" />
+                                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_78" Message="[&quot;Email Sent Succesfully to: &quot; &amp; &quot;OwnerEmail: &quot; &amp; row(&quot;OwnerEmail&quot;).ToString() &amp; &quot; &amp; TenantEmail: &quot; &amp; row(&quot;TenantEmail&quot;).ToString()]" />
                                         </Sequence>
                                       </Sequence>
                                     </If.Then>
@@ -2509,29 +2570,29 @@ latestTwoFiles.All(Function(f) _
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <If Condition="[rowsAfftected&gt;0]" sap:VirtualizedContainerService.HintSize="736,52" sap2010:WorkflowViewState.IdRef="If_33">
+            <If Condition="[rowsAfftected&gt;0]" sap:VirtualizedContainerService.HintSize="736,1388" sap2010:WorkflowViewState.IdRef="If_33">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1075" sap2010:WorkflowViewState.IdRef="Sequence_162">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,1020" sap2010:WorkflowViewState.IdRef="Sequence_162">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Write Status-&gt; Registered to Token File" sap:VirtualizedContainerService.HintSize="450,841" sap2010:WorkflowViewState.IdRef="Sequence_157">
+                  <Sequence DisplayName="Write Status-&gt; Registered to Token File" sap:VirtualizedContainerService.HintSize="450,786" sap2010:WorkflowViewState.IdRef="Sequence_157">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_110" Message="[&quot;Before Rows Count: &quot; &amp; dtTable.RowCount.ToString()]" />
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dtTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                    <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtExcel]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="416,124" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="[in_Config(&quot;TokenSheet&quot;).ToString]" WorkbookPath="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="[index]" DataTable="[dtExcel]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
@@ -2543,7 +2604,7 @@ latestTwoFiles.All(Function(f) _
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="dtTable.AsEnumerable() _&#xA;    .Where(Function(r) r(&quot;Token&quot;).ToString.Trim = row(&quot;Token&quot;).ToString.Trim) _&#xA;    .ToList() _&#xA;    .ForEach(Sub(r) &#xA;        r(&quot;Status&quot;) = row(&quot;Status&quot;)&#xA;        ' Add more columns here if needed&#xA;        ' r(&quot;Amount&quot;) = CurrentRow(&quot;Amount&quot;)&#xA;        ' r(&quot;Comments&quot;) = CurrentRow(&quot;Comments&quot;)&#xA;    End Sub)&#xA;&#x9;Console.WriteLine(&quot;Status: &quot;+row(&quot;Status&quot;).ToString)" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,192" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim matchedRow = dtTable.AsEnumerable().FirstOrDefault(Function(r) r(&quot;Token&quot;).ToString.Trim = row(&quot;Token&quot;).ToString.Trim)&#xA;&#xA;If matchedRow IsNot Nothing Then&#xA;    row(&quot;Status&quot;) = matchedRow(&quot;Status&quot;)&#xA;    Console.WriteLine(&quot;Status: &quot; + row(&quot;Status&quot;).ToString)&#xA;End If&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,192" sap2010:WorkflowViewState.IdRef="InvokeCode_2">
                               <ui:InvokeCode.Arguments>
                                 <InArgument x:TypeArguments="sd:DataTable" x:Key="dtTable">[dtTable]</InArgument>
                                 <InArgument x:TypeArguments="sd:DataRow" x:Key="row">[row]</InArgument>
@@ -2559,8 +2620,8 @@ latestTwoFiles.All(Function(f) _
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachRow>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_111" Message="[&quot;After Rows Count: &quot; &amp; dtTable.RowCount.ToString()]" />
-                    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtTable]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,152" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[in_Config(&quot;TokenSheetName&quot;).ToString]" WorkbookPath="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;TokenFileName&quot;).ToString)]">
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_125" Message="[&quot;Updated Excel for Status Column&quot;]" />
+                    <ui:WriteRange StartingCell="{x:Null}" WorkbookPathResource="{x:Null}" DataTable="[dtExcel]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="416,152" sap2010:WorkflowViewState.IdRef="WriteRange_2" SheetName="[in_Config(&quot;TokenSheet&quot;).ToString]" WorkbookPath="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2667,52 +2728,107 @@ latestTwoFiles.All(Function(f) _
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="770,1936" sap2010:WorkflowViewState.IdRef="Sequence_77">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="770,719" sap2010:WorkflowViewState.IdRef="Sequence_77">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Google Drive upload" sap:VirtualizedContainerService.HintSize="736,690" sap2010:WorkflowViewState.IdRef="Sequence_214">
+            <If Condition="[cnt_Registered&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="736,481" sap2010:WorkflowViewState.IdRef="If_44">
+              <If.Then>
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,112" sap2010:WorkflowViewState.IdRef="Sequence_225">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Sequence DisplayName="Google Drive upload" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="Sequence_214">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,178" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" PathType="File" Resource="[fileResource]" />
+                    <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID3}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,61" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_3" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
+                      <uga:UploadFilesConnections.FilesBackup>
+                        <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:Dictionary x:TypeArguments="ugade:FilesInputMode, scg:List(x:Object)" />
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </uga:UploadFilesConnections.FilesBackup>
+                      <uga:UploadFilesConnections.Folder>
+                        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="Documents" FullPathHint="My Drive/Data/Documents" InputMode="Browse">
+                          <ugam:DriveItemArgument.Backup>
+                            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="Browse">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </ugam:DriveItemArgument.Backup>
+                          <ugam:DriveItemArgument.ParentIdFullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.ParentIdFullPathHint>
+                        </ugam:DriveItemArgument>
+                      </uga:UploadFilesConnections.Folder>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uga:UploadFilesConnections>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="LogMessage_116" Message="[&quot;DataEntry File Uploded to Google Drive&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
+                  </Sequence>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,230" sap2010:WorkflowViewState.IdRef="Sequence_226">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,170" sap2010:WorkflowViewState.IdRef="LogMessage_126" Message="[&quot;Nothing to Update. NOT upload to Google Drive&quot;]" />
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="736,61" sap2010:WorkflowViewState.IdRef="LogMessage_55" Message="[&quot;FINAL Execution OVER&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,178" sap2010:WorkflowViewState.IdRef="PathExists_3" Path="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" PathType="File" Resource="[fileResource]" />
-              <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID3}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,242" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_3" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
-                <uga:UploadFilesConnections.FilesBackup>
-                  <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
-                    <usau:BackupSlot.BackupValues>
-                      <scg:Dictionary x:TypeArguments="ugade:FilesInputMode, scg:List(x:Object)" />
-                    </usau:BackupSlot.BackupValues>
-                  </usau:BackupSlot>
-                </uga:UploadFilesConnections.FilesBackup>
-                <uga:UploadFilesConnections.Folder>
-                  <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="Documents" FullPathHint="My Drive/Data/Documents" InputMode="Browse">
-                    <ugam:DriveItemArgument.Backup>
-                      <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID3" StoredValue="Browse">
-                        <usau:BackupSlot.BackupValues>
-                          <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-                        </usau:BackupSlot.BackupValues>
-                      </usau:BackupSlot>
-                    </ugam:DriveItemArgument.Backup>
-                    <ugam:DriveItemArgument.ParentIdFullPathHint>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String" Value="" />
-                      </InArgument>
-                    </ugam:DriveItemArgument.ParentIdFullPathHint>
-                  </ugam:DriveItemArgument>
-                </uga:UploadFilesConnections.Folder>
-              </uga:UploadFilesConnections>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_116" Message="[&quot;DataEntry File Uploded to Google Drive&quot;]" />
-            </Sequence>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_55" Message="[&quot;FINAL Execution OVER&quot;]" />
-            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="452,171" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="msedge" />
-            <If Condition="[emailSentCount&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="452,832" sap2010:WorkflowViewState.IdRef="If_43">
+            </ui:LogMessage>
+            <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="736,61" sap2010:WorkflowViewState.IdRef="KillProcess_5" ProcessName="msedge">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </ui:KillProcess>
+            <If Condition="[emailSentCount&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="736,52" sap2010:WorkflowViewState.IdRef="If_43">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,472" sap2010:WorkflowViewState.IdRef="Sequence_218">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,476" sap2010:WorkflowViewState.IdRef="Sequence_218">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2723,7 +2839,7 @@ latestTwoFiles.All(Function(f) _
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,230" sap2010:WorkflowViewState.IdRef="Sequence_219">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,234" sap2010:WorkflowViewState.IdRef="Sequence_219">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
