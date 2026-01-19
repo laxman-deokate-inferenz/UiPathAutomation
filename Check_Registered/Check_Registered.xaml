@@ -180,7 +180,7 @@
       <AssemblyReference>UiPath.GSuite</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="806,26098" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="806,25879" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:String" Name="out_captchaText" />
@@ -230,14 +230,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="806,26075" sap2010:WorkflowViewState.IdRef="Sequence_73">
+    <Sequence sap:VirtualizedContainerService.HintSize="806,25856" sap2010:WorkflowViewState.IdRef="Sequence_73">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="772,25992" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="772,25773" sap2010:WorkflowViewState.IdRef="TryCatch_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -245,14 +245,14 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="770,24887" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="770,24656" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="736,963" sap2010:WorkflowViewState.IdRef="Sequence_224">
+            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="736,732" sap2010:WorkflowViewState.IdRef="Sequence_228">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -277,7 +277,7 @@
                   </ugam:DriveItemArgument>
                 </uga:DownloadFileConnections.Item>
               </uga:DownloadFileConnections>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_117" Message="[&quot;DataEntry File Downloaded from google drive&quot;]">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_117" Message="[&quot;DataEntry File Downloaded from google drive&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -285,7 +285,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,442" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_3" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
+              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,215" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_3" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
                 <uga:ForEachFileFolderConnections.Body>
                   <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem, x:Int32">
                     <ActivityAction.Argument1>
@@ -2728,16 +2728,16 @@ latestTwoFiles.All(Function(f) _
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="770,719" sap2010:WorkflowViewState.IdRef="Sequence_77">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="770,731" sap2010:WorkflowViewState.IdRef="Sequence_77">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If Condition="[cnt_Registered&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="736,481" sap2010:WorkflowViewState.IdRef="If_44">
+            <If Condition="[cnt_Registered&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="736,493" sap2010:WorkflowViewState.IdRef="If_44">
               <If.Then>
-                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,112" sap2010:WorkflowViewState.IdRef="Sequence_225">
+                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,116" sap2010:WorkflowViewState.IdRef="Sequence_225">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2794,7 +2794,7 @@ latestTwoFiles.All(Function(f) _
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,230" sap2010:WorkflowViewState.IdRef="Sequence_226">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="484,234" sap2010:WorkflowViewState.IdRef="Sequence_226">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
