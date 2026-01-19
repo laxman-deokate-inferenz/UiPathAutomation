@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="isRecent_Token" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_Name" Type="InArgument(x:String)" />
+    <x:Property Name="in_OwnerPAN" Type="InArgument(x:String)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <VisualBasic.Settings>
@@ -106,11 +106,16 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.Watcher</AssemblyReference>
+      <AssemblyReference>System.IO.Packaging</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.AccessControl</AssemblyReference>
+      <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="isRecent_Token" sap:VirtualizedContainerService.HintSize="735,1038" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="isRecent_Token" sap:VirtualizedContainerService.HintSize="829,1038" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
+      <Variable x:TypeArguments="sd:DataRow" Name="recentRow" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -123,16 +128,16 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[in_Config(&quot;TokenSheet&quot;).ToString]" WorkbookPath="[path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" />
-      <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,120" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="[in_Config(&quot;TokenSheet&quot;).ToString]" WorkbookPath="[path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" />
+      <Assign sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="Assign_3">
         <Assign.To>
-          <OutArgument x:TypeArguments="sd:DataTable">[dtTable]</OutArgument>
+          <OutArgument x:TypeArguments="sd:DataRow">[recentRow]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="sd:DataTable">[If(dtTable.AsEnumerable().Where(Function(r) r("Name").ToString().Trim() = in_Name AndAlso r("Status").ToString() = "Created" AndAlso Not String.IsNullOrWhiteSpace(r("TokenDate").ToString()) AndAlso DateTime.TryParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, Nothing) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).Date &gt;= DateTime.Today.AddDays(-5) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).Date &lt;= DateTime.Today).Any(), dtTable.AsEnumerable().Where(Function(r) (r("OwnerMobile").ToString().Trim() = in_Name OrElse r("Name").ToString().Trim() = in_Name) AndAlso r("Status").ToString() = "Created" AndAlso Not String.IsNullOrWhiteSpace(r("TokenDate").ToString()) AndAlso DateTime.TryParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture, System.Globalization.DateTimeStyles.None, Nothing) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).Date &gt;= DateTime.Today.AddDays(-5) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture).Date &lt;= DateTime.Today).CopyToDataTable(), dtTable.Clone())]</InArgument>
+          <InArgument x:TypeArguments="sd:DataRow">[dtTable.AsEnumerable().Where(Function(r) r("OwnerPAN").ToString().Trim() = in_OwnerPAN AndAlso r("Status").ToString().Trim() = "Created" AndAlso Not String.IsNullOrWhiteSpace(r("TokenDate").ToString()) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture) &gt;= DateTime.Today.AddDays(-2)).OrderByDescending(Function(r) DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)).FirstOrDefault()]</InArgument>
         </Assign.Value>
       </Assign>
-      <If Condition="[dtTable.RowCount&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="452,637" sap2010:WorkflowViewState.IdRef="If_1">
+      <If Condition="[recentRow IsNot Nothing]" sap:VirtualizedContainerService.HintSize="452,637" sap2010:WorkflowViewState.IdRef="If_1">
         <If.Then>
           <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
@@ -145,7 +150,7 @@
                 <OutArgument x:TypeArguments="x:String">[token]</OutArgument>
               </Assign.To>
               <Assign.Value>
-                <InArgument x:TypeArguments="x:String">[dtTable.Rows(0)("Token").ToString]</InArgument>
+                <InArgument x:TypeArguments="x:String">[recentRow("Token").ToString]</InArgument>
               </Assign.Value>
             </Assign>
             <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Existing Token Fetched: &quot;+token]" />

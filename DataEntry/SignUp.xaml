@@ -1,6 +1,6 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="Property" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:sd2="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uue="clr-namespace:UiPath.UIAutomationNext.Exceptions;assembly=UiPath.UIAutomationNext" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="District" Type="InArgument(x:String)" />
+    <x:Property Name="in_District" Type="InArgument(x:String)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <VisualBasic.Settings>
@@ -168,7 +168,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="705,3194" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="857,3194" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strMiddleName" />
       <Variable x:TypeArguments="x:String" Default="Laxman" Name="strFirstName" />
@@ -308,7 +308,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </uix:NCheckState>
-                    <uix:NSelectItem DisplayName="Select Item 'Select District of Prop…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSelectItem_24" Item="[District.ToString]" ScopeIdentifier="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V5">
+                    <uix:NSelectItem DisplayName="Select Item 'Select District of Prop…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,199" sap2010:WorkflowViewState.IdRef="NSelectItem_24" Item="[in_District.ToString]" ScopeIdentifier="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V5">
                       <uix:NSelectItem.Items>
                         <scg:List x:TypeArguments="x:String" Capacity="35">
                           <x:String>--Select--</x:String>
