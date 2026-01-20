@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-16"?>
-<ObjectRepositoryTargetData ContentHash="QhrZdIu_YECQQAU3ZBsKNw" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZlFWSa-TLEWZX_CCxLrtbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<ObjectRepositoryTargetData ContentHash="HU1iwskLlk-c78KGbuHJ-A" Reference="zHM_MHonYECrlrhSQ6-q1Q/ZlFWSa-TLEWZX_CCxLrtbA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <ObjectRepositoryTargetData.Data>
-    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="d69bcbfc-f83c-45c9-8fd9-f63993da7fe2" CvElementArea="650, 430, 65, 34" CvTextArea="671, 440, 22, 14" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="652, 432, 60, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;&#xD;&#xA;&lt;webctrl parentid='divPolice*' tableRow='*' tag='TABLE' /&gt;&#xD;&#xA;&lt;webctrl tableRow='*' tag='INPUT' /&gt;" Guid="b9ec1bfd-3742-460d-ac3e-29b26c098cce" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
-      <imageRef attrName="InformativeScreenshot" originalValue="dc7cd33e09663b007c2aced729915de4.png" xmlns="">0n8bjwrIq_Ei0gOMVPFYDeA</imageRef>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="d69bcbfc-f83c-45c9-8fd9-f63993da7fe2" CvElementArea="650, 430, 65, 34" CvTextArea="671, 440, 22, 14" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="652, 399, 60, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;&lt;webctrl parentid='divPolice*' tableRow='*' tag='TABLE' /&gt;&lt;webctrl tableRow='*' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divPolice1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='OK' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='OK' /&gt;" Guid="b9ec1bfd-3742-460d-ac3e-29b26c098cce" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="684f8026-7632-4a06-b6c0-000ed3f8183a" CvTextArea="370, 344, 94, 14" CvTextArgument="Please Note:" CvType="Text" DesignTimeRectangle="370, 343, 94, 15" ElementType="Text" Guid="2146d2ee-5eb9-452c-9181-74b390b54731" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c316137168af60d3bb865549f3f1ca67.png" xmlns="">0o8or5saH-UaXboWrB3TYSQ</imageRef>
     </TargetAnchorable>
     <x:String x:Key="ActivityType">Click</x:String>
   </ObjectRepositoryTargetData.Data>

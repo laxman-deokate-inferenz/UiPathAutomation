@@ -1,6 +1,5 @@
 <Activity mc:Ignorable="sap sap2010" x:Class="isRecent_Token" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
-    <x:Property Name="in_OwnerPAN" Type="InArgument(x:String)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
   </x:Members>
   <VisualBasic.Settings>
@@ -112,7 +111,7 @@
       <AssemblyReference>System.IO.FileSystem.DriveInfo</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="isRecent_Token" sap:VirtualizedContainerService.HintSize="829,1038" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="isRecent_Token" sap:VirtualizedContainerService.HintSize="837,1038" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="sd:DataRow" Name="recentRow" />
@@ -134,7 +133,7 @@
           <OutArgument x:TypeArguments="sd:DataRow">[recentRow]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="sd:DataRow">[dtTable.AsEnumerable().Where(Function(r) r("OwnerPAN").ToString().Trim() = in_OwnerPAN AndAlso r("Status").ToString().Trim() = "Created" AndAlso Not String.IsNullOrWhiteSpace(r("TokenDate").ToString()) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture) &gt;= DateTime.Today.AddDays(-2)).OrderByDescending(Function(r) DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)).FirstOrDefault()]</InArgument>
+          <InArgument x:TypeArguments="sd:DataRow">[dtTable.AsEnumerable().Where(Function(r) r("OwnerPAN").ToString().Trim() = OwnerPAN AndAlso r("Status").ToString().Trim() = "Created" AndAlso Not String.IsNullOrWhiteSpace(r("TokenDate").ToString()) AndAlso DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture) &gt;= DateTime.Today.AddDays(-2)).OrderByDescending(Function(r) DateTime.ParseExact(r("TokenDate").ToString().Trim(), "dd/MM/yyyy HH:mm:ss", System.Globalization.CultureInfo.InvariantCulture)).FirstOrDefault()]</InArgument>
         </Assign.Value>
       </Assign>
       <If Condition="[recentRow IsNot Nothing]" sap:VirtualizedContainerService.HintSize="452,637" sap2010:WorkflowViewState.IdRef="If_1">

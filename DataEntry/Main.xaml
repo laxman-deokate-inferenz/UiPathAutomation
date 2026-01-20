@@ -131,7 +131,7 @@
       <AssemblyReference>C176851E117_v2_sub_g.DjgJR1OpKiG1SKAaE1n4LAs1</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="777,1659" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence sap:VirtualizedContainerService.HintSize="612,1062" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="TokenTable" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
@@ -141,14 +141,41 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings - Invoke Workflow File (InitAllSettings.xaml)" sap:VirtualizedContainerService.HintSize="486,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="InitAllSettings.xaml">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings - Invoke Workflow File (InitAllSettings.xaml)" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_22" UnSafe="False" WorkflowFileName="InitAllSettings.xaml">
       <ui:InvokeWorkflowFile.Arguments>
         <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile">Data\Documents\Config.xlsx</InArgument>
         <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets">[{"Settings","Constants"}]</InArgument>
         <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_40">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Generate_Token - Invoke Workflow File (Generate_Token.xaml)" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_105" UnSafe="False" WorkflowFileName="Generate_Token.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_43">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_49">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="PropertyDetails - Invoke Workflow File (PropertyDetails.xaml)" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_104" UnSafe="False" WorkflowFileName="PropertyDetails.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_40">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_46">
           <sap:WorkflowViewStateService.ViewState>
@@ -171,7 +198,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_37">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_37">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,25" sap2010:WorkflowViewState.IdRef="Sequence_43">
           <sap:WorkflowViewStateService.ViewState>
@@ -195,7 +222,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_41">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_41">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_47">
           <sap:WorkflowViewStateService.ViewState>
@@ -217,7 +244,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_34">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_34">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_40">
           <sap:WorkflowViewStateService.ViewState>
@@ -240,12 +267,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Generate_Token - Invoke Workflow File (Generate_Token.xaml)" sap:VirtualizedContainerService.HintSize="486,182" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_103" UnSafe="False" WorkflowFileName="Generate_Token.xaml">
-      <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
-      </ui:InvokeWorkflowFile.Arguments>
-    </ui:InvokeWorkflowFile>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_30">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_30">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_36">
           <sap:WorkflowViewStateService.ViewState>
@@ -267,7 +289,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_27">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_33">
           <sap:WorkflowViewStateService.ViewState>
@@ -289,7 +311,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_29">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_29">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_35">
           <sap:WorkflowViewStateService.ViewState>
@@ -311,7 +333,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_32">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_32">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_38">
           <sap:WorkflowViewStateService.ViewState>
@@ -334,7 +356,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out-Login" sap:VirtualizedContainerService.HintSize="486,384" sap2010:WorkflowViewState.IdRef="CommentOut_10">
+    <ui:CommentOut DisplayName="Comment Out-Login" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_10">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_16">
           <sap:WorkflowViewStateService.ViewState>
@@ -351,12 +373,12 @@
       </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out-PV" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="CommentOut_7">
+    <ui:CommentOut DisplayName="Comment Out-PV" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_7">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_12">
           <sap:WorkflowViewStateService.ViewState>
@@ -379,7 +401,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <ui:CommentOut DisplayName="Comment Out-get_GRN" sap:VirtualizedContainerService.HintSize="486,375" sap2010:WorkflowViewState.IdRef="CommentOut_19">
+    <ui:CommentOut DisplayName="Comment Out-get_GRN" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="CommentOut_19">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_25">
           <sap:WorkflowViewStateService.ViewState>
@@ -399,7 +421,7 @@
       </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>

@@ -23,8 +23,6 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Windows.Markup</x:String>
-      <x:String>GlobalVariablesNamespace</x:String>
-      <x:String>GlobalConstantsNamespace</x:String>
       <x:String>System.Runtime.Serialization</x:String>
       <x:String>UiPath.UIAutomationNext.Enums</x:String>
       <x:String>UiPath.UIAutomationCore.Contracts</x:String>
@@ -35,6 +33,8 @@
       <x:String>UiPath.Platform.SyncObjects</x:String>
       <x:String>System.Reflection</x:String>
       <x:String>System.Linq.Expressions</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -93,7 +93,7 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="dropdown" sap:VirtualizedContainerService.HintSize="714,846" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="dropdown" sap:VirtualizedContainerService.HintSize="612,846" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:List(x:String)" Name="Items" />
     </Sequence.Variables>

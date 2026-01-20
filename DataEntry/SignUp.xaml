@@ -168,7 +168,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="857,3194" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="612,3559" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strMiddleName" />
       <Variable x:TypeArguments="x:String" Default="Laxman" Name="strFirstName" />
@@ -210,7 +210,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="522,3171" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="522,3536" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -218,33 +218,33 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SignUp" sap:VirtualizedContainerService.HintSize="520,2733" sap2010:WorkflowViewState.IdRef="Sequence_151">
+        <Sequence DisplayName="SignUp" sap:VirtualizedContainerService.HintSize="520,3098" sap2010:WorkflowViewState.IdRef="Sequence_151">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <x:Boolean x:Key="IsPinned">False</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:GetRobotCredential TimeoutMS="{x:Null}" Username="{x:Null}" AssetName="Password" CacheStrategy="None" DisplayName="Get Credential" FolderPath="UnAttended" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[Password]">
+          <ui:GetRobotCredential TimeoutMS="{x:Null}" Username="{x:Null}" AssetName="Password" CacheStrategy="None" DisplayName="Get Credential" FolderPath="UnAttended" sap:VirtualizedContainerService.HintSize="486,190" sap2010:WorkflowViewState.IdRef="GetRobotCredential_2" Password="[Password]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:GetRobotCredential>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;New Token Process started&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[&quot;New Token Process started&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[&quot;Opening igr Site&quot;]">
+          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="486,179" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[&quot;Opening igr Site&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>

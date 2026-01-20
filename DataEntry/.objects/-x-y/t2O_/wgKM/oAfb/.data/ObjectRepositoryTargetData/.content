@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="v4K1KdLlQ02vDrOLu-Roow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="ceb05868-0cfd-43e0-a911-1071e5693a41" CvElementArea="1128, 390, 178, 27" CvType="InputBox" DesignTimeRectangle="1130, 392, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7ae72c88-281d-4f56-bacb-e1d11a9049d3" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d2158875-f146-4e6f-8bf6-014d4979edbf" CvTextArea="570, 393, 83, 15" CvTextArgument="Attribute 1" CvType="Text" DesignTimeRectangle="571, 392, 86, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Attribute 1' class='labelFont' type='' tag='SPAN' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Attribute 1' /&gt;" Guid="e7aac945-dae9-4eb2-a852-a2f852d5d848" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="042c97b41e178d2e4564def2dc0de54d.png" xmlns="">0__UTVWQVT0ejbQOwOWfaSQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

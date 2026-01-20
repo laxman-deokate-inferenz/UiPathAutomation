@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="uvfwnoAZjkyIFNlef2MW3w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PropertyDetails.aspx" CVScreenId="a22fe23a-3ce1-4ecd-b0b1-5950f9545c6c" CvElementArea="205, 442, 177, 27" CvType="InputBox" DesignTimeRectangle="207, 444, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Enter area in numeric' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f733cff3-b1b6-4c30-b6b7-4a174690c738" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Property Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a22fe23a-3ce1-4ecd-b0b1-5950f9545c6c" CvTextArea="40, 446, 71, 14" CvTextArgument="Unit Area" CvType="Text" DesignTimeRectangle="41, 444, 150, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' tag='TD' aaname='                             Unit Area                         ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Unit Area' /&gt;" Guid="2f9213a7-19c9-493c-a80a-31e3c7a7f39e" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="610f9d7bd411cd58c52b94d0b70244fa.png" xmlns="">0278nQmNKvEGA7VolrdYD4Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
