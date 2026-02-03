@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1ixhPSCsk0-qbOveb5G-xQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="00ee347c-1338-4462-8185-3e7010c5e845" CvElementArea="833, 154, 67, 35" CvTextArea="857, 165, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="835, 156, 64, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='OK' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='OK' /&gt;" Guid="f0f28b1e-acac-4701-a68e-619cc337b740" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Finance Department, Govt. of Maharashtra, India and 3 more pages*' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="00ee347c-1338-4462-8185-3e7010c5e845" CvTextArea="481, 97, 178, 16" CvTextArgument="gras.mahakosh.gov.in says" CvType="Text" DesignTimeRectangle="481, 97, 178, 16" ElementType="Text" Guid="c388447a-ddd3-4ce3-8c4f-41bb30d11c11" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="ab216842b2db23c38dcc099e9e5236e9.png" xmlns="">0cFmXkrng5kWcdj4kHW9_Qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

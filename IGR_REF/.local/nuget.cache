@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "M2gCQ1SCWD0=",
+  "dgSpecHash": "1xTq56St3Ls=",
   "success": true,
   "projectFilePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local\\",
   "expectedPackageFiles": [
@@ -318,7 +318,7 @@
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.excel.activities\\3.3.1\\uipath.excel.activities.3.3.1.nupkg.sha512",
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.imageprocessing\\23.4.0\\uipath.imageprocessing.23.4.0.nupkg.sha512",
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.integration.api.client\\1.172.8\\uipath.integration.api.client.1.172.8.nupkg.sha512",
-    "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.integrationservice.activities\\1.22.0\\uipath.integrationservice.activities.1.22.0.nupkg.sha512",
+    "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.integrationservice.activities\\1.23.0\\uipath.integrationservice.activities.1.23.0.nupkg.sha512",
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.integrationservice.adapters\\1.0.0\\uipath.integrationservice.adapters.1.0.0.nupkg.sha512",
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.integrationservice.client\\1.0.0\\uipath.integrationservice.client.1.0.0.nupkg.sha512",
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.intelligentocr.activities\\6.27.2\\uipath.intelligentocr.activities.6.27.2.nupkg.sha512",
@@ -343,5 +343,230 @@
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.webapi.activities.runtime\\2.3.2\\uipath.webapi.activities.runtime.2.3.2.nupkg.sha512",
     "C:\\Users\\laxman.deokate\\.nuget\\packages\\uipath.wordstonumbers\\1.0.0\\uipath.wordstonumbers.1.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\CreateRepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\objectrepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\obj' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme2' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\LoginAcme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\LoginAcme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme2' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\obj' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\objectrepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\CreateRepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\LoginAcme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme2' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\obj' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\objectrepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\CreateRepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\LoginAcme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library\\Acme2' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\Library' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\obj' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\objectrepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\laxman.deokate\\Documents\\UiPath\\UiPathProjects\\UiPathAutomation\\IGR_REF\\.local",
+      "message": "The local source 'C:\\Users\\laxman.deokate\\Documents\\UiPath\\CreateRepo' doesn't exist.",
+      "libraryId": "UiPath.IntegrationService.Activities"
+    }
+  ]
 }

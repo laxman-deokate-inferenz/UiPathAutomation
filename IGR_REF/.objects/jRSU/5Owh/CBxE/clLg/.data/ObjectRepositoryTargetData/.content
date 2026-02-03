@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Vzu-4BlN10iOAtHGMPP6fA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="d1be639d-0f4c-4c9e-be6c-a6d3494e871d" CvElementArea="210, 554, 173, 25" CvType="InputBox" DesignTimeRectangle="211, 556, 170, 21" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="52d25d0e-e863-42c2-bb98-8a04b0158bca" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d1be639d-0f4c-4c9e-be6c-a6d3494e871d" CvTextArea="43, 557, 154, 15" CvTextArgument="Select Police Station" CvType="Text" DesignTimeRectangle="45, 556, 152, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Select Police Station' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Select Police Station' /&gt;" Guid="9699770c-7f8c-4723-b3e7-f34bf9b61fa2" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="d1be639d-0f4c-4c9e-be6c-a6d3494e871d" CvElementArea="303, 682, 64, 33" CvTextArea="318, 692, 34, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="305, 684, 60, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Save' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Save' /&gt;" Guid="13e002d2-793a-4bb6-a17d-d826d09b3f1f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f8967303b914c21d1fd1cb7ca2326cf8.png" xmlns="">0ZfZjlcqY20WQZTEYwye2xA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

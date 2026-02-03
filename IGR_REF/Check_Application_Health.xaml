@@ -111,7 +111,7 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_Application_Health" sap:VirtualizedContainerService.HintSize="730,1564" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_Application_Health" sap:VirtualizedContainerService.HintSize="737,1743" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="PageText" />
     </Sequence.Variables>
@@ -120,20 +120,21 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="522,1541" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="522,1720" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge efilingigr.maharashtra.gov.ineregfrmErro" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1458" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="24a290f8-57c1-4a56-b08b-797e967a2213" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge efilingigr.maharashtra.gov.ineregfrmErro" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="488,1637" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="24a290f8-57c1-4a56-b08b-797e967a2213" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1264" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="486,1443" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Name="isLoginPage" />
                 <Variable x:TypeArguments="x:String" Name="CurrentUrl" />
                 <Variable x:TypeArguments="x:Boolean" Name="isErrorPage" />
                 <Variable x:TypeArguments="x:Boolean" Name="isLogoutPage" />
@@ -162,12 +163,20 @@
                   <InArgument x:TypeArguments="x:Boolean">[CurrentUrl.ToLower.Contains("frmlogout.aspx")]</InArgument>
                 </Assign.Value>
               </Assign>
+              <Assign sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="Assign_7">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">[isLoginPage]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">[CurrentUrl.ToLower.Contains("MainForm.aspx")]</InArgument>
+                </Assign.Value>
+              </Assign>
               <Assign sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="Assign_4">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:Boolean">[out_IsHealthy]</OutArgument>
                 </Assign.To>
                 <Assign.Value>
-                  <InArgument x:TypeArguments="x:Boolean">[Not (isErrorPage Or isLogoutPage)]</InArgument>
+                  <InArgument x:TypeArguments="x:Boolean">[Not (isErrorPage Or isLogoutPage or isLoginPage)]</InArgument>
                 </Assign.Value>
               </Assign>
               <If Condition="[Not out_IsHealthy]" sap:VirtualizedContainerService.HintSize="452,602" sap2010:WorkflowViewState.IdRef="If_1">
