@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="doxmAKT2vky-8XljGCUhIA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="45cfa924-1c6c-4e27-8c93-3878b6207b3b" CvElementArea="466, 509, 499, 27" CvType="InputBox" DesignTimeRectangle="467, 510, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' type='' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6e1ad21f-9762-464c-841d-11e97978e4c9" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="45cfa924-1c6c-4e27-8c93-3878b6207b3b" CvTextArea="243, 515, 38, 13" CvTextArgument="Taluka" CvType="Text" DesignTimeRectangle="239, 500, 222, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='talukaid' tag='DIV' type='' class='pay-tin-col2' aaname='Taluka' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Taluka' /&gt;" Guid="e5ec9fc6-336d-431e-95a9-b582de189ecd" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2b99ba8f75a50c4f50477b61a73bb6bb.png" xmlns="">0pK9DYQQM_k2rgTke6iS7Gg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

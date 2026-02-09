@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="H_m86bNw1kK9b2bO3tcB6A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" DesignTimeRectangle="467, 454, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' type='' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="82db5b8a-77b3-4602-b89a-8fe7fbce46f5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" DesignTimeRectangle="239, 444, 222, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='talukaid' tag='DIV' type='' class='pay-tin-col2' aaname='Taluka' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Taluka' /&gt;" Guid="365ecadf-4bba-4696-8b30-8c4804a11d59" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2f95f04862280afebbf2b5925ffa9d9c.png" xmlns="">0eH1dFo1x-kS_xHf24oZXhA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

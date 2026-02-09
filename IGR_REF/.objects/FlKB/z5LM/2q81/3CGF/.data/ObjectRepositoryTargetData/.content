@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="7jt9pirDi0i-8j-os3pPLQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="c2c4a8f4-9569-4fa1-bf55-d32d2816802c" CvElementArea="243, 494, 245, 25" CvType="InputBox" DesignTimeRectangle="243, 495, 245, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtCaptcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtCaptcha' tag='INPUT' type='text' class='input-text' placeholder='Input Image Text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="54bc1c6e-054d-425b-aff2-ef91595e7675" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c2c4a8f4-9569-4fa1-bf55-d32d2816802c" CvElementArea="321, 538, 93, 32" CvTextArea="350, 546, 35, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="323, 539, 90, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='body-right-submit' aaname='  Login  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="354d01fa-472a-4809-9040-8456648c6e12" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d75fad9b17f1b3294f2559716060706a.png" xmlns="">0GaZ1pbEBK0yUzKSB1Z-S4Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

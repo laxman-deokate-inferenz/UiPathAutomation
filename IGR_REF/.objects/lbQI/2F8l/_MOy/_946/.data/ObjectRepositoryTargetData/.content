@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="Ah6k3jophkydx_g-HTNq4Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pay2igr.igrmaharashtra.gov.in/PTI" CVScreenId="5612a36d-6e6e-41bf-b38d-f2bf7d3ccdd6" CvElementArea="689, 424, 353, 40" CvType="InputBox" DesignTimeRectangle="691, 425, 351, 38" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='taluka_d' tag='SELECT' type='' class='form-control' aaname='Taluka' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="dd29f2e4-bf18-4511-a1e1-0f61a8bef18a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PTI' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5612a36d-6e6e-41bf-b38d-f2bf7d3ccdd6" CvTextArea="422, 435, 48, 15" CvTextArgument="Taluka" CvType="Text" DesignTimeRectangle="412, 425, 267, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Taluka' tag='LABEL' type='' class='col-sm-2 col-md-5 col-form-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Taluka' /&gt;" Guid="216f6830-1384-46af-b92b-0bde7a1a1238" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2506888dadeb741df93b9b804b97efce.png" xmlns="">0adIFC3qghkeaXHwLD50Y0A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

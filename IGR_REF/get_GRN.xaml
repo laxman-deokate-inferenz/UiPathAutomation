@@ -138,7 +138,7 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="getChallan" sap:VirtualizedContainerService.HintSize="745,11506" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="getChallan" sap:VirtualizedContainerService.HintSize="742,13286" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="captchaText" />
       <Variable x:TypeArguments="x:String" Name="captchaText2" />
@@ -150,15 +150,25 @@
       <Variable x:TypeArguments="x:Boolean" Name="isUpdated" />
       <Variable x:TypeArguments="x:String" Name="TextMessage" />
       <Variable x:TypeArguments="x:String" Name="errorMessage" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="HaveliList" />
+      <Variable x:TypeArguments="scg:List(x:String)" Name="TalukaList" />
+      <Variable x:TypeArguments="x:String" Name="temp" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="InvalidCount" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="700,11483" sap2010:WorkflowViewState.IdRef="TryCatch_5">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="700,13263" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="698,10986" sap2010:WorkflowViewState.IdRef="Sequence_68">
+        <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="698,12766" sap2010:WorkflowViewState.IdRef="Sequence_68">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -213,15 +223,15 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:FilterDataTable>
-          <If Condition="[dtTable.RowCount&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="664,10599" sap2010:WorkflowViewState.IdRef="If_2">
+          <If Condition="[dtTable.RowCount&lt;&gt;0]" sap:VirtualizedContainerService.HintSize="664,12379" sap2010:WorkflowViewState.IdRef="If_2">
             <If.Then>
-              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="662,10231" sap2010:WorkflowViewState.IdRef="Sequence_87">
+              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="662,12011" sap2010:WorkflowViewState.IdRef="Sequence_87">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence sap:VirtualizedContainerService.HintSize="628,10167" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                <Sequence sap:VirtualizedContainerService.HintSize="628,11947" sap2010:WorkflowViewState.IdRef="Sequence_47">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -229,13 +239,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="594,179" sap2010:WorkflowViewState.IdRef="LogMessage_20" Message="[&quot;Login to GRN&quot;]" />
-                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge GRAS-Government Receipt Accounting Syste" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="594,9897" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V2">
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge GRAS-Government Receipt Accounting Syste" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="594,11677" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,9699" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="592,11479" sap2010:WorkflowViewState.IdRef="Sequence_27">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="sd:DataRow" Name="OwnerRow" />
                             <Variable x:TypeArguments="sd:DataRow" Name="TenantRow" />
@@ -245,26 +255,23 @@
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="558,3257" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+                          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="558,1915" sap2010:WorkflowViewState.IdRef="RetryScope_1">
                             <ui:RetryScope.ActivityBody>
                               <ActivityAction>
-                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="556,3046" sap2010:WorkflowViewState.IdRef="Sequence_98">
-                                  <Sequence.Variables>
-                                    <Variable x:TypeArguments="x:Int32" Default="0" Name="InvalidCount" />
-                                  </Sequence.Variables>
+                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="518,1704" sap2010:WorkflowViewState.IdRef="Sequence_98">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence sap:VirtualizedContainerService.HintSize="522,2982" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                                  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="484,1640" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <uix:NCheckState DisplayName="Check App State 'Service Unavailable'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                    <uix:NCheckState DisplayName="Check App State 'Service Unavailable'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                                       <uix:NCheckState.IfExists>
                                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="Sequence_113">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -276,7 +283,7 @@
                                             <uix:NGetText.Target>
                                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="f21b570b-f787-4daa-a17d-a55a2733d415" ContentHash="GKCqH4f1GEG6lyG7DQ70UA" CvType="AnyWordGroup" DesignTimeRectangle="20, 136, 1342, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="43af7d17-5c75-4901-82c1-090b22ab21cb" InformativeScreenshot="a63dca4ffadcba456188def3016a800a.png" Reference="XYDNlefXLUawOcBond9NIg/T-wQ7vWnDUSWEX4kV0v-7Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='503 Service Unavailable' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                                 <uix:TargetAnchorable.Anchors>
-                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                                     <uix:Target CVScreenId="f21b570b-f787-4daa-a17d-a55a2733d415" CvTextArea="19, 195, 339, 17" CvTextArgument="This server is temporarily unable to service requests." CvType="Text" DesignTimeRectangle="19, 195, 338, 17" ElementType="Text" Guid="497e42f7-abdc-455a-8287-7ed5852439e7" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                                   </scg:List>
                                                 </uix:TargetAnchorable.Anchors>
@@ -297,7 +304,7 @@
                                       <uix:NCheckState.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="f21b570b-f787-4daa-a17d-a55a2733d415" ContentHash="yCtDl1HjHU2rznsYUKB8aw" CvTextArea="18, 141, 274, 26" CvTextArgument="Service Unavailable" CvType="Text" DesignTimeRectangle="20, 136, 1342, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" Guid="36dbc227-2fdb-4db0-adc3-20256895bdb8" InformativeScreenshot="a63dca4ffadcba456188def3016a800a.png" Reference="XYDNlefXLUawOcBond9NIg/CAPrkYxxVEye2U52n3hz4A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='503 Service Unavailable' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
-                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                                               <uix:Target CVScreenId="f21b570b-f787-4daa-a17d-a55a2733d415" CvTextArea="19, 195, 339, 17" CvTextArgument="This server is temporarily unable to service requests." CvType="Text" DesignTimeRectangle="19, 195, 338, 17" ElementType="Text" Guid="1c6e24e5-e338-4040-9c3a-00bdbcc92d79" SearchSteps="CV" TargetType="ComputerVisionBased" />
                                             </scg:List>
                                           </uix:TargetAnchorable.Anchors>
@@ -310,7 +317,13 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NCheckState>
-                                    <If Condition="[errorMessage=&quot;Service Unavailable&quot;]" sap:VirtualizedContainerService.HintSize="488,419" sap2010:WorkflowViewState.IdRef="If_8">
+                                    <If Condition="[errorMessage=&quot;Service Unavailable&quot;]" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="If_8">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,182" sap2010:WorkflowViewState.IdRef="Sequence_115">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -331,12 +344,21 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,198" sap2010:WorkflowViewState.IdRef="NClick_55" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Refresh'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_55" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                                       <uix:NClick.Target>
-                                        <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="4f40d992-e627-4376-b89e-7dbad2b70f4b" ContentHash="PKmqyrpppUKVclrzoFPPNg" CvElementArea="52, 49, 24, 24" CvType="Icon" DesignTimeRectangle="48, 46, 32, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Finance Department, Govt. of Maharashtra, India - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="23c1d900-fe35-4370-a7de-fef8f57f95e2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHjSURBVFhH7dW/q3lxHMfx+7+wKIWJkixK5MdmMUgMislClBSDHwMymPwVyiSrKEUpBimk/BiQX+Pr2+eUW9/b2zmfc7vqdjvDo9Trc07PUp/z8Xg88JsoQVKUIClKkBQlSMrfCVqtViiXy/B6vVCr1TAYDPD5fMhkMphMJp/nnE7nf89J+VZQqVSCxWJBoVBAr9cT4g6HA9rtthBkMpmQz+dxv9+hUqnId7wiK+h6vSIajSKdTgu/qTPMer2Gx+NBJBJ5b1AikUAulyO3r06n03uDRqMRzGYzjscjuT+xv5JFPGk0GvLcK9xByWQStVqN3H4Sd5Db7cZwOCS3n8QdpNPpsNlsyE3M5XIRrgZqo3AHsXtmOp2Sm5jZbAa9Xk9uFO4gl8uFwWBAbmI6nY6sy5E7iF2CxWKR3MTE43Fks1lyo3AHzedzaLVaLJdLcqeMx2Phs9Lv98mdwh3EsBs6FArhfD6T+1eBQADhcJjcXpEVxD4XwWAQDocDi8WCPMNst1vEYjH4/X7s93vyzCuygpjb7YZGowGj0YhUKoVWq4XdbidEdLtdVKtVWK1WNJtN4eNKvUOM7KAndidVKhXYbLbPz4Tdbke9XhfiqGd4fDvoXZQgKUqQFCVIihIk5ZcFPfAPNj8x71tZ2vkAAAAASUVORK5CYII=" InformativeScreenshot="0e627a83bfda7afc6824e94d23ee3687.png" Reference="XYDNlefXLUawOcBond9NIg/Uv_BlCo6oUiZvZHHNB7JMw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Finance Department, Govt. of Maharashtra, India and 3 more pages*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
+                                        <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="4f40d992-e627-4376-b89e-7dbad2b70f4b" ContentHash="xYsR4HGA70i9ZY_jAgA3Yg" CvElementArea="52, 49, 24, 24" CvType="Icon" DesignTimeRectangle="48, 46, 32, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Finance Department, Govt. of Maharashtra, India - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='App bar' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" Guid="23c1d900-fe35-4370-a7de-fef8f57f95e2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHjSURBVFhH7dW/q3lxHMfx+7+wKIWJkixK5MdmMUgMislClBSDHwMymPwVyiSrKEUpBimk/BiQX+Pr2+eUW9/b2zmfc7vqdjvDo9Trc07PUp/z8Xg88JsoQVKUIClKkBQlSMrfCVqtViiXy/B6vVCr1TAYDPD5fMhkMphMJp/nnE7nf89J+VZQqVSCxWJBoVBAr9cT4g6HA9rtthBkMpmQz+dxv9+hUqnId7wiK+h6vSIajSKdTgu/qTPMer2Gx+NBJBJ5b1AikUAulyO3r06n03uDRqMRzGYzjscjuT+xv5JFPGk0GvLcK9xByWQStVqN3H4Sd5Db7cZwOCS3n8QdpNPpsNlsyE3M5XIRrgZqo3AHsXtmOp2Sm5jZbAa9Xk9uFO4gl8uFwWBAbmI6nY6sy5E7iF2CxWKR3MTE43Fks1lyo3AHzedzaLVaLJdLcqeMx2Phs9Lv98mdwh3EsBs6FArhfD6T+1eBQADhcJjcXpEVxD4XwWAQDocDi8WCPMNst1vEYjH4/X7s93vyzCuygpjb7YZGowGj0YhUKoVWq4XdbidEdLtdVKtVWK1WNJtN4eNKvUOM7KAndidVKhXYbLbPz4Tdbke9XhfiqGd4fDvoXZQgKUqQFCVIihIk5ZcFPfAPNj8x71tZ2vkAAAAASUVORK5CYII=" InformativeScreenshot="89c1fbaced1730ea2fab5fe95298ce0e.png" Reference="XYDNlefXLUawOcBond9NIg/Uv_BlCo6oUiZvZHHNB7JMw" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Finance Department, Govt. of Maharashtra, India and 3 more pages*' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                          <uix:TargetAnchorable.Anchors>
+                                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                              <uix:Target CVScreenId="b0e76d80-8f29-40c6-81d3-a639db53024f" CvElementArea="15, 49, 25, 24" CvType="Icon" DesignTimeRectangle="8, 46, 36, 32" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='Finance Department, Govt. of Maharashtra, India - Microsoft Edge' role='pane' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='App bar' role='tool bar' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Back' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Back' /&gt;" Guid="7db4487e-50f2-409e-a5cf-60c00f237f4f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACgAAAAkCAYAAAD7PHgWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVFhH7dW7CoNAEIXhvP8L2chqIVjZiIWVIoIIFhtkcUk1wcB2U82ZwJJM8SF4QH7Ey+MZXnSLMWbJAlEWiLJAlAWi/jNwXVf2vIRq4HVd1HUd9X3P7hJqgSEEatuWxnFkdymVwPM8qWkamqaJ3RFwoPee6rqmZVnYHQUFHsdBzjnato3dNYgD932nsiw/R27XIg6844qiEKmqir0m53fv4C3rZzDJ+i1Osv4OJln/SZL0Lx6Ggd0lVAOTeZ7Z8xJfCdRkgSgLRFkgygJRFoiJ9AaLSslbQDe2aQAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, CV" />
+                                            </scg:List>
+                                          </uix:TargetAnchorable.Anchors>
+                                          <uix:TargetAnchorable.PointOffset>
+                                            <uix:PointOffset X="-3" />
+                                          </uix:TargetAnchorable.PointOffset>
+                                        </uix:TargetAnchorable>
                                       </uix:NClick.Target>
                                     </uix:NClick>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registered User Login'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[in_Config(&quot;ChallanUserName&quot;).ToString]" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registered User Login'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,250" sap2010:WorkflowViewState.IdRef="NTypeInto_12" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[in_Config(&quot;ChallanUserName&quot;).ToString]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="439499e4-061f-4b7f-9b6e-62f12551b50d" ContentHash="Llp8ncBiOUKIjWHffkM2lw" CvElementArea="242, 391, 247, 27" CvType="InputBox" DesignTimeRectangle="243, 392, 245, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtUserName' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtUserName' tag='INPUT' type='text' class='' placeholder='Username' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b5323dd-bc83-459d-a9b7-b35772ceb16a" InformativeScreenshot="02c5a6f88319b738bb0f7ba3f2239645.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UMZie-Rz0E-yzt2MmkttLA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -350,7 +372,7 @@
                                         </uix:TargetAnchorable>
                                       </uix:NTypeInto.Target>
                                     </uix:NTypeInto>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registered User Login'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,61" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[in_Config(&quot;ChallanPassword&quot;).ToString]" Version="V5">
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registered User Login'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="NTypeInto_13" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[in_Config(&quot;ChallanPassword&quot;).ToString]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="21692a77-1a29-4f1a-8601-e4d09b25cc71" ContentHash="pwQT5vFJtEeyFovVIaQoTw" CvElementArea="242, 424, 247, 27" CvType="InputBox" DesignTimeRectangle="243, 426, 245, 24" ElementType="InputBoxPassword" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtUserP' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtUserP' tag='INPUT' type='password' class='' placeholder='Password' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="89e45f39-65db-4624-a60f-c63960798a6c" InformativeScreenshot="fe468800cd4e81268bc46db1431856af.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/XcvdlDACZEOFQRoDrY967g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -367,19 +389,99 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="captchaProcess_Challan - Invoke Workflow File (captchaProcess_Challan.xaml)" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="captchaProcess_Challan.xaml">
-                                      <ui:InvokeWorkflowFile.Arguments>
-                                        <OutArgument x:TypeArguments="x:String" x:Key="captchaText">[captchaText]</OutArgument>
-                                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
-                                      </ui:InvokeWorkflowFile.Arguments>
+                                    <Sequence DisplayName="temporary-Captcha" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="Sequence_121">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                    </ui:InvokeWorkflowFile>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT txtCaptcha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[captchaText]" Version="V5">
+                                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="452,127" sap2010:WorkflowViewState.IdRef="Delay_14" />
+                                      <uix:NGetText DisplayName="Get Text 'INPUT txtCaptcha'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="452,147" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" TextString="[temp]" Version="V5">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="c2c4a8f4-9569-4fa1-bf55-d32d2816802c" ContentHash="7jt9pirDi0i-8j-os3pPLQ" CvElementArea="243, 494, 245, 25" CvType="InputBox" DesignTimeRectangle="243, 495, 245, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtCaptcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='txtCaptcha' tag='INPUT' type='text' class='input-text' placeholder='Input Image Text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="54bc1c6e-054d-425b-aff2-ef91595e7675" InformativeScreenshot="d75fad9b17f1b3294f2559716060706a.png" Reference="XYDNlefXLUawOcBond9NIg/3CGFw6DopEK6aouGIhRe4g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="c2c4a8f4-9569-4fa1-bf55-d32d2816802c" CvElementArea="321, 538, 93, 32" CvTextArea="350, 546, 35, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="323, 539, 90, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='submit' class='body-right-submit' aaname='  Login  ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Login' /&gt;" Guid="354d01fa-472a-4809-9040-8456648c6e12" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                      </uix:NGetText>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,179" sap2010:WorkflowViewState.IdRef="LogMessage_31" Message="[&quot;Temp Text= &quot;+temp.ToString]" />
+                                      <If Condition="[temp =&quot;&quot;]" sap:VirtualizedContainerService.HintSize="452,1028" sap2010:WorkflowViewState.IdRef="If_11">
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,481" sap2010:WorkflowViewState.IdRef="Sequence_122">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_32" Message="[&quot;Captcha Process Initiated&quot;]" />
+                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="captchaProcess_Challan - Invoke Workflow File (captchaProcess_Challan.xaml)" sap:VirtualizedContainerService.HintSize="416,186" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="captchaProcess_Challan.xaml">
+                                              <ui:InvokeWorkflowFile.Arguments>
+                                                <OutArgument x:TypeArguments="x:String" x:Key="captchaText">[captchaText]</OutArgument>
+                                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
+                                              </ui:InvokeWorkflowFile.Arguments>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:InvokeWorkflowFile>
+                                            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="CommentOut_33">
+                                              <ui:CommentOut.Body>
+                                                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,233" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                                                  <sap:WorkflowViewStateService.ViewState>
+                                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                    </scg:Dictionary>
+                                                  </sap:WorkflowViewStateService.ViewState>
+                                                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="CaptchaProcess - Invoke Workflow File (CaptchaProcess.xaml)" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="CaptchaProcess.xaml">
+                                                    <ui:InvokeWorkflowFile.Arguments>
+                                                      <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
+                                                      <OutArgument x:TypeArguments="x:String" x:Key="CaptchaText">[out_captchaText]</OutArgument>
+                                                    </ui:InvokeWorkflowFile.Arguments>
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                  </ui:InvokeWorkflowFile>
+                                                </Sequence>
+                                              </ui:CommentOut.Body>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:CommentOut>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_123">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_6">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[captchaText]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[""]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_33" Message="[&quot;Captcha Process Skipped&quot;]" />
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT txtCaptcha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[captchaText]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="590423cb-d807-433e-8b3c-d803246e61ba" ContentHash="oWsTke7oIkqgEv9lgIR-qw" CvElementArea="243, 524, 246, 26" CvType="InputBox" DesignTimeRectangle="243, 525, 245, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtCaptcha' tag='INPUT' /&gt;" Guid="ead5c0c8-31f1-4b57-96cd-e2cdbfc31398" InformativeScreenshot="d8a79cb191a7bf663f45b20f9bcf8ac9.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/9LjS7NuxWUSHthuxtWm7Xg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -396,8 +498,8 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="488,123" sap2010:WorkflowViewState.IdRef="Delay_12" />
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="488,194" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="450,127" sap2010:WorkflowViewState.IdRef="Delay_12" />
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Login'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="450,198" sap2010:WorkflowViewState.IdRef="NClick_35" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="238fc5a9-b13d-48ea-8592-7a5ddf3984dc" ContentHash="zVQLtqBy10KFsMTYGq9K2g" CvElementArea="321, 567, 94, 33" CvTextArea="350, 576, 35, 16" CvTextArgument="Login" CvType="Button" DesignTimeRectangle="323, 569, 90, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='submit' /&gt;" Guid="b4a4028f-4785-4f08-873f-6743175165ba" InformativeScreenshot="f96ceb0131a8ec9274126fdc68b1c189.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/-r_CSNcOT0uH9jiL4Wr6RA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Finance Department, Govt. of Maharashtra, India' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -408,7 +510,7 @@
                                         </uix:TargetAnchorable>
                                       </uix:NClick.Target>
                                     </uix:NClick>
-                                    <Assign sap:VirtualizedContainerService.HintSize="488,179" sap2010:WorkflowViewState.IdRef="Assign_3">
+                                    <Assign sap:VirtualizedContainerService.HintSize="450,179" sap2010:WorkflowViewState.IdRef="Assign_3">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:String">[TextMessage]</OutArgument>
                                       </Assign.To>
@@ -416,7 +518,7 @@
                                         <InArgument x:TypeArguments="x:String">[""]</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <uix:NCheckState DisplayName="Check App State 'OK'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,61" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                    <uix:NCheckState DisplayName="Check App State 'OK'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                                       <uix:NCheckState.IfExists>
                                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,400" sap2010:WorkflowViewState.IdRef="Sequence_99">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -473,7 +575,13 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NCheckState>
-                                    <If Condition="[TextMessage&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="488,1069" sap2010:WorkflowViewState.IdRef="If_4">
+                                    <If Condition="[TextMessage&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="450,61" sap2010:WorkflowViewState.IdRef="If_4">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,832" sap2010:WorkflowViewState.IdRef="Sequence_101">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -526,7 +634,7 @@
                                         </Sequence>
                                       </If.Then>
                                       <If.Else>
-                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_102">
+                                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,94" sap2010:WorkflowViewState.IdRef="Sequence_102">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -535,7 +643,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="488,166" sap2010:WorkflowViewState.IdRef="LogMessage_21" Message="[&quot;Login to GRN Successful&quot;]" />
+                                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,170" sap2010:WorkflowViewState.IdRef="LogMessage_21" Message="[&quot;Login to GRN Successful&quot;]" />
                                   </Sequence>
                                 </Sequence>
                               </ActivityAction>
@@ -543,8 +651,14 @@
                             <ui:RetryScope.Condition>
                               <ActivityFunc x:TypeArguments="x:Boolean" />
                             </ui:RetryScope.Condition>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
                           </ui:RetryScope>
-                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="522,61" sap2010:WorkflowViewState.IdRef="CommentOut_27">
+                          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="CommentOut_27">
                             <ui:CommentOut.Body>
                               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,108" sap2010:WorkflowViewState.IdRef="Sequence_89">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -636,12 +750,12 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make New Payment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make New Payment'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_36" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmRegisterHome.php" CVScreenId="82e67e07-0ef3-482a-bbcb-e5d1147fcbc0" ContentHash="aD4nBv7jk065LcwfelL8_A" CvElementArea="642, 334, 154, 31" CvTextArea="653, 343, 131, 16" CvTextArgument="Make New Payment" CvType="Button" DesignTimeRectangle="644, 336, 149, 28" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Make New Payment ' parentid='level1' tag='A' /&gt;" Guid="0b3ec861-e993-4aff-ab6c-4ed89204144e" InformativeScreenshot="dd1738c00963d02a275e785dea69ebd5.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/9bF2hwI7QU-bMQMvOKo6Nw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Citizen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_37" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Citizen'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_37" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NClick.InteractionMode>
                               <InArgument x:TypeArguments="uix:NChildInteractionMode">
                                 <Literal x:TypeArguments="uix:NChildInteractionMode" sap2010:WorkflowViewState.IdRef="Literal`1_1" />
@@ -651,7 +765,7 @@
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="0b721a72-5d32-4bda-b13b-adca3d91fbd8" ContentHash="oQNkzCLL_EGpxK6kN8M4ug" CvTextArea="268, 394, 42, 13" CvTextArgument="Citizen" CvType="Text" DesignTimeRectangle="209, 384, 907, 34" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Citizen' parentid='level1' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Citizen' parentid='level1' tag='A' type='' class='menuitem submenuheader' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Citizen' /&gt;" Guid="3c58c179-78e5-4a79-9ffd-66c73de670b6" InformativeScreenshot="d44d9471e8696e12e4e710c64095b4ca.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/L25DvPVeqki9AK66yO4z_A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make Payment to Registe…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Make Payment to Registe…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_38" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="79dd73dc-0c1e-4f1c-85db-4cd408314f23" ContentHash="6JjB0ZrY5USkuS3kIJNTsw" CvElementArea="267, 442, 19, 18" CvType="RadioButton" DesignTimeRectangle="270, 490, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='radio' /&gt;" Guid="38c751a6-6eab-450f-ac7f-92abeca6f099" InformativeScreenshot="9479f67469709171e7f792d30ad43119.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/UnMQJAOHqU20rEojejA70A" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -662,7 +776,7 @@
                               </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay Stamp Duty &amp; Regist…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Pay Stamp Duty &amp; Regist…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_39" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmmakepayment.php" CVScreenId="87db77a3-16c4-4550-ba5e-7f82c2c6cb18" ContentHash="Yv0DTVvZbk-Th8ZaNTf9pg" CvElementArea="284, 527, 18, 18" CvType="RadioButton" DesignTimeRectangle="286, 529, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl name='cmbRec_Type' tag='INPUT' type='radio' class='' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d2568435-b7bf-4b92-95a3-70f02fc8ab14" InformativeScreenshot="9d3f6f081a2d730b1ae8c44f0f396a5f.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/EULbe5O_Ykq30phVYH7v1w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -673,7 +787,7 @@
                               </uix:TargetAnchorable>
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NSelectItem DisplayName="Select Item 'District *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,199" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[dtTable.rows(0)(&quot;District&quot;).ToString.ToUpper]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NSelectItem DisplayName="Select Item 'District *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,199" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Item="[dtTable.rows(0)(&quot;District&quot;).ToString.ToUpper]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NSelectItem.Items>
                               <scg:List x:TypeArguments="x:String" Capacity="36">
                                 <x:String>--Select District--</x:String>
@@ -724,24 +838,272 @@
                               </uix:TargetAnchorable>
                             </uix:NSelectItem.Target>
                           </uix:NSelectItem>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PUNE CityPUNE Rural'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
-                            <uix:NClick.Target>
-                              <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="d5b11de2-fb95-461b-ac2c-0aca63a9a66f" ContentHash="p7QNz1KMSE2Xbv9ODs2B_w" CvElementArea="450, 242, 17, 17" CvType="RadioButton" DesignTimeRectangle="452, 244, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='radio' /&gt;" Guid="56063f06-3217-47e0-9ae1-84e27059adee" InformativeScreenshot="676fb5c4b5f36fc204bbe19b2a3fb673.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/vKKCbhFnzk63Bbbhq12Uvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <If Condition="[dtTable.rows(0)(&quot;District&quot;).ToString.ToUpper=&quot;PUNE&quot; OR dtTable.rows(0)(&quot;District&quot;).ToString.ToUpper=&quot;THANE&quot; OR dtTable.rows(0)(&quot;District&quot;).ToString.ToUpper=&quot;NAGPUR&quot;]" DisplayName="If-Pune-Thane-Nagpur" sap:VirtualizedContainerService.HintSize="558,927" sap2010:WorkflowViewState.IdRef="If_13">
+                            <If.Then>
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,177" sap2010:WorkflowViewState.IdRef="Sequence_128">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If Condition="[dtTable.rows(0)(&quot;UrbanRural&quot;).ToString.ToLower=&quot;rural&quot;]" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="If_10">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,452" sap2010:WorkflowViewState.IdRef="Sequence_119">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'THANE Rural'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,198" sap2010:WorkflowViewState.IdRef="NClick_59" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="962a7ce5-5f53-47c4-80eb-d10e5206f66e" ContentHash="9vOkNsdnnkySJa1BfU5P2A" CvElementArea="557, 456, 17, 17" CvType="RadioButton" DesignTimeRectangle="559, 458, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='2' tag='INPUT' type='radio' /&gt;" Guid="4e1713e1-f10b-42d3-9df7-336a21132e6f" InformativeScreenshot="41f105d77305c1fe608b6fccc3b01807.png" Reference="XYDNlefXLUawOcBond9NIg/s3JgBkZ0PEKFLb79VO8LdQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="962a7ce5-5f53-47c4-80eb-d10e5206f66e" CvTextArea="576, 459, 72, 13" CvTextArgument="THANE Rural" CvType="Text" DesignTimeRectangle="576, 459, 72, 13" ElementType="Text" Guid="97390672-3a40-4f2b-b518-9c480f2fa2f3" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                            <uix:TargetAnchorable.PointOffset>
+                                              <uix:PointOffset X="2" Y="-1" />
+                                            </uix:TargetAnchorable.PointOffset>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                      <uix:NSelectItem DisplayName="Select Item 'Taluka'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NSelectItem_4" Item="[dtTable.rows(0)(&quot;Taluka&quot;).ToString.ToUpper]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                        <uix:NSelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="9">
+                                            <x:String>--Select Taluka--</x:String>
+                                            <x:String>BHIWANDI</x:String>
+                                            <x:String>KALYAN</x:String>
+                                            <x:String>MURBAD</x:String>
+                                            <x:String>SHAHAPUR</x:String>
+                                            <x:String>ULHASNAGAR</x:String>
+                                            <x:String>KONKAN BHA</x:String>
+                                            <x:String>AMBERNATH</x:String>
+                                            <x:String>VASHI</x:String>
+                                          </scg:List>
+                                        </uix:NSelectItem.Items>
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="45cfa924-1c6c-4e27-8c93-3878b6207b3b" ContentHash="doxmAKT2vky-8XljGCUhIA" CvElementArea="466, 509, 499, 27" CvType="InputBox" DesignTimeRectangle="467, 510, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' type='' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="6e1ad21f-9762-464c-841d-11e97978e4c9" InformativeScreenshot="2b99ba8f75a50c4f50477b61a73bb6bb.png" Reference="XYDNlefXLUawOcBond9NIg/7SL2yXS4gUa6gcHMzZXo9Q" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="45cfa924-1c6c-4e27-8c93-3878b6207b3b" CvTextArea="243, 515, 38, 13" CvTextArgument="Taluka" CvType="Text" DesignTimeRectangle="239, 500, 222, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='talukaid' tag='DIV' type='' class='pay-tin-col2' aaname='Taluka' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Taluka' /&gt;" Guid="e5ec9fc6-336d-431e-95a9-b582de189ecd" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_120">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <If Condition="[dtTable.rows(0)(&quot;UrbanRural&quot;).ToString.ToLower=&quot;urban&quot;]" sap:VirtualizedContainerService.HintSize="452,52" sap2010:WorkflowViewState.IdRef="If_9">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,253" sap2010:WorkflowViewState.IdRef="Sequence_117">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'PUNE CityPUNE Rural'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_41" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                        <uix:NClick.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="d5b11de2-fb95-461b-ac2c-0aca63a9a66f" ContentHash="p7QNz1KMSE2Xbv9ODs2B_w" CvElementArea="450, 242, 17, 17" CvType="RadioButton" DesignTimeRectangle="452, 244, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='radio' /&gt;" Guid="56063f06-3217-47e0-9ae1-84e27059adee" InformativeScreenshot="676fb5c4b5f36fc204bbe19b2a3fb673.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/vKKCbhFnzk63Bbbhq12Uvw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="d5b11de2-fb95-461b-ac2c-0aca63a9a66f" CvTextArea="467, 245, 145, 13" CvTextArgument="PUNE City PUNE Rural" CvType="Text" DesignTimeRectangle="447, 240, 655, 24" Guid="e0078b74-edbf-4f22-82e4-4814c99742bc" SearchSteps="FuzzySelector, CV">
+                                                  <uix:Target.FuzzySelectorArgument>
+                                                    <InArgument x:TypeArguments="x:String">
+                                                      <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;webctrl id='district_type_id' tag='DIV' type='' class='' aaname='PUNE CityPUNE Rural' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PUNE CityPUNE Rural' /&gt;</Literal>
+                                                    </InArgument>
+                                                  </uix:Target.FuzzySelectorArgument>
+                                                </uix:Target>
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NClick.Target>
+                                      </uix:NClick>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_118">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </If.Then>
+                            <If.Else>
+                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="486,607" sap2010:WorkflowViewState.IdRef="Sequence_129">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <If Condition="[dtTable.rows(0)(&quot;UrbanRural&quot;).ToString.ToLower=&quot;urban&quot;]" DisplayName="If-URBAN" sap:VirtualizedContainerService.HintSize="452,61" sap2010:WorkflowViewState.IdRef="If_14">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,459" sap2010:WorkflowViewState.IdRef="Sequence_130">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" Attribute="items" DisplayName="Get Attribute 'Taluka'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,205" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_2" Result="[TalukaList]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                        <uix:NGetAttributeGeneric.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" ContentHash="H_m86bNw1kK9b2bO3tcB6A" DesignTimeRectangle="467, 454, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' type='' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="82db5b8a-77b3-4602-b89a-8fe7fbce46f5" InformativeScreenshot="2f95f04862280afebbf2b5925ffa9d9c.png" Reference="XYDNlefXLUawOcBond9NIg/g2c_eaKkrEq9RLphPMPmsA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" DesignTimeRectangle="239, 444, 222, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='talukaid' tag='DIV' type='' class='pay-tin-col2' aaname='Taluka' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Taluka' /&gt;" Guid="365ecadf-4bba-4696-8b30-8c4804a11d59" SearchSteps="FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetAttributeGeneric.Target>
+                                      </uix:NGetAttributeGeneric>
+                                      <uix:NSelectItem DisplayName="Select Item 'Taluka(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NSelectItem_5" Item="[TalukaList(1)]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                        <uix:NSelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="17">
+                                            <x:String>--Select Taluka--</x:String>
+                                            <x:String>NANDED</x:String>
+                                            <x:String>BHOKAR</x:String>
+                                            <x:String>BILOLI</x:String>
+                                            <x:String>DEGLUR</x:String>
+                                            <x:String>HADGAON</x:String>
+                                            <x:String>KANDHAR</x:String>
+                                            <x:String>KINWAT</x:String>
+                                            <x:String>MUKHED</x:String>
+                                            <x:String>LOHARA</x:String>
+                                            <x:String>NAIGAON(BA</x:String>
+                                            <x:String>DHARMABAD</x:String>
+                                            <x:String>MAHUR</x:String>
+                                            <x:String>PETH UMRI</x:String>
+                                            <x:String>MUDKHED</x:String>
+                                            <x:String>HIMAYATNAG</x:String>
+                                            <x:String>ARDHAPUR</x:String>
+                                          </scg:List>
+                                        </uix:NSelectItem.Items>
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" ContentHash="H_m86bNw1kK9b2bO3tcB6A" DesignTimeRectangle="467, 454, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' type='' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="82db5b8a-77b3-4602-b89a-8fe7fbce46f5" InformativeScreenshot="2f95f04862280afebbf2b5925ffa9d9c.png" Reference="XYDNlefXLUawOcBond9NIg/g2c_eaKkrEq9RLphPMPmsA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" DesignTimeRectangle="239, 444, 222, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='talukaid' tag='DIV' type='' class='pay-tin-col2' aaname='Taluka' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Taluka' /&gt;" Guid="365ecadf-4bba-4696-8b30-8c4804a11d59" SearchSteps="FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_131">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <If Condition="[dtTable.rows(0)(&quot;UrbanRural&quot;).ToString.ToLower=&quot;rural&quot;]" DisplayName="If-rural" sap:VirtualizedContainerService.HintSize="452,482" sap2010:WorkflowViewState.IdRef="If_15">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,254" sap2010:WorkflowViewState.IdRef="Sequence_133">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uix:NSelectItem DisplayName="Select Item 'Taluka(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,190" sap2010:WorkflowViewState.IdRef="NSelectItem_6" Item="[dtTable.rows(0)(&quot;Taluka&quot;).ToString.ToUpper]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                        <uix:NSelectItem.Items>
+                                          <scg:List x:TypeArguments="x:String" Capacity="17">
+                                            <x:String>--Select Taluka--</x:String>
+                                            <x:String>NANDED</x:String>
+                                            <x:String>BHOKAR</x:String>
+                                            <x:String>BILOLI</x:String>
+                                            <x:String>DEGLUR</x:String>
+                                            <x:String>HADGAON</x:String>
+                                            <x:String>KANDHAR</x:String>
+                                            <x:String>KINWAT</x:String>
+                                            <x:String>MUKHED</x:String>
+                                            <x:String>LOHARA</x:String>
+                                            <x:String>NAIGAON(BA</x:String>
+                                            <x:String>DHARMABAD</x:String>
+                                            <x:String>MAHUR</x:String>
+                                            <x:String>PETH UMRI</x:String>
+                                            <x:String>MUDKHED</x:String>
+                                            <x:String>HIMAYATNAG</x:String>
+                                            <x:String>ARDHAPUR</x:String>
+                                          </scg:List>
+                                        </uix:NSelectItem.Items>
+                                        <uix:NSelectItem.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" ContentHash="H_m86bNw1kK9b2bO3tcB6A" DesignTimeRectangle="467, 454, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmdtaluka_code' tag='SELECT' type='' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="82db5b8a-77b3-4602-b89a-8fe7fbce46f5" InformativeScreenshot="2f95f04862280afebbf2b5925ffa9d9c.png" Reference="XYDNlefXLUawOcBond9NIg/g2c_eaKkrEq9RLphPMPmsA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="e612f4a4-f6b2-49c8-9411-1812bb89abe4" DesignTimeRectangle="239, 444, 222, 55" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='talukaid' tag='DIV' type='' class='pay-tin-col2' aaname='Taluka' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Taluka' /&gt;" Guid="365ecadf-4bba-4696-8b30-8c4804a11d59" SearchSteps="FuzzySelector" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NSelectItem.Target>
+                                      </uix:NSelectItem>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_134">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </If.Else>
+                          </If>
+                          <uix:NGetAttributeGeneric x:TypeArguments="scg:List(x:String)" Attribute="items" DisplayName="Get Attribute 'In which office you wan…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,205" sap2010:WorkflowViewState.IdRef="NGetAttributeGeneric`1_1" Result="[HaveliList]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                            <uix:NGetAttributeGeneric.Target>
+                              <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="446756a1-b6c0-4be0-bbbf-1baca1eaaca0" ContentHash="ymm00u_BTkSRPWu3RYkD8g" CvElementArea="466, 454, 500, 27" CvType="InputBox" DesignTimeRectangle="467, 455, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbddo_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmbddo_code' tag='SELECT' type='' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="10f2ac88-d1f7-4578-858b-147e890c4358" InformativeScreenshot="2b65b62b1f04afbfcaf1b8bed8c47cec.png" Reference="XYDNlefXLUawOcBond9NIg/0CtGQIEh-0ahfIm4fSxm-g" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
                                   <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                    <uix:Target CVScreenId="d5b11de2-fb95-461b-ac2c-0aca63a9a66f" CvTextArea="467, 245, 145, 13" CvTextArgument="PUNE City PUNE Rural" CvType="Text" DesignTimeRectangle="447, 240, 655, 24" Guid="e0078b74-edbf-4f22-82e4-4814c99742bc" SearchSteps="FuzzySelector, CV">
-                                      <uix:Target.FuzzySelectorArgument>
-                                        <InArgument x:TypeArguments="x:String">
-                                          <Literal x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="Literal`1_2">&lt;webctrl id='district_type_id' tag='DIV' type='' class='' aaname='PUNE CityPUNE Rural' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='PUNE CityPUNE Rural' /&gt;</Literal>
-                                        </InArgument>
-                                      </uix:Target.FuzzySelectorArgument>
-                                    </uix:Target>
+                                    <uix:Target DesignTimeRectangle="239, 445, 222, 75" FuzzySelectorArgument="&lt;webctrl class='pay-tin-col2' type='' parentid='frmchallan_entry' tag='DIV' aaname='In which office you want to register your document ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='In which office you want to register your document *' /&gt;" Guid="04c8267b-fee8-4e98-9c96-0e014421b590" SearchSteps="FuzzySelector" />
                                   </scg:List>
                                 </uix:TargetAnchorable.Anchors>
                               </uix:TargetAnchorable>
-                            </uix:NClick.Target>
-                          </uix:NClick>
-                          <uix:NSelectItem DisplayName="Select Item 'In which office you wan…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,204" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="HVL1_HAVELI NO1 SUB REGISTRAR" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                            </uix:NGetAttributeGeneric.Target>
+                          </uix:NGetAttributeGeneric>
+                          <uix:NSelectItem DisplayName="Select Item 'In which office you wan…'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,199" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Item="[HaveliList(1)]" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NSelectItem.Items>
                               <scg:List x:TypeArguments="x:String" Capacity="30">
                                 <x:String>--Select Office--</x:String>
@@ -786,7 +1148,7 @@
                               </uix:TargetAnchorable>
                             </uix:NSelectItem.Target>
                           </uix:NSelectItem>
-                          <uix:NSelectItem DisplayName="Select Item 'Article Code *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,204" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="36A -Leave and Licence Agreement" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NSelectItem DisplayName="Select Item 'Article Code *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,204" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Item="36A -Leave and Licence Agreement" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NSelectItem.Items>
                               <scg:List x:TypeArguments="x:String" Capacity="24">
                                 <x:String>--Select Article Code--</x:String>
@@ -831,7 +1193,7 @@
                               </uix:TargetAnchorable>
                             </uix:NSelectItem.Target>
                           </uix:NSelectItem>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Stamp Duty'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;StampDuty&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Stamp Duty'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;StampDuty&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" ContentHash="83TwJd4qQUuXndr95zgOvg" CvElementArea="561, 339, 176, 27" CvType="InputBox" DesignTimeRectangle="563, 340, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='amount1' tag='INPUT' /&gt;" Guid="eb911f04-eb0f-4b34-9279-25edcb453218" InformativeScreenshot="fc3f92ddb6400e379f70b986d7d9c189.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/YIy7KNb_0UqBmoxy0KxVyg" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -842,7 +1204,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registration Fee'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;Registration&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Registration Fee'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;Registration&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="ff33537f-99c3-4e0c-92ef-a766ddc3f8dd" ContentHash="Nzm-0mT7cEmAhMnEp-7IIQ" CvElementArea="561, 394, 177, 27" CvType="InputBox" DesignTimeRectangle="563, 396, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='amount2' tag='INPUT' /&gt;" Guid="200e6fb7-1255-4bca-93b2-6eb48e992d8e" InformativeScreenshot="c1e2fc12cfd6b6d2fa49d779e9e5ed7a.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/dNXaPnDKLE2K2oxPJI0LUA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -853,7 +1215,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <Assign sap:VirtualizedContainerService.HintSize="522,179" sap2010:WorkflowViewState.IdRef="Assign_1">
+                          <Assign sap:VirtualizedContainerService.HintSize="558,179" sap2010:WorkflowViewState.IdRef="Assign_1">
                             <Assign.To>
                               <OutArgument x:TypeArguments="x:String">[out_GRNAmount]</OutArgument>
                             </Assign.To>
@@ -861,7 +1223,7 @@
                               <InArgument x:TypeArguments="x:String">[(CInt(dtTable.Rows(0)("StampDuty").ToString) + CInt(dtTable.Rows(0)("Registration").ToString)).ToString]</InArgument>
                             </Assign.Value>
                           </Assign>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of Payer *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;Owner&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of Payer *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_4" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;Owner&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="24cfc15d-df80-41ad-87c7-9ad6e93d1c86" ContentHash="IULFM5C6F0SjuiSr-bTYcQ" CvElementArea="447, 442, 579, 26" CvType="InputBox" DesignTimeRectangle="447, 444, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtpartyname' tag='INPUT' /&gt;" Guid="006c6cbe-2106-49cc-8208-12273981a285" InformativeScreenshot="09c00b41ee4a0a9c4ddef3a0e56ecdd2.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/Zx_1ALjdVEKXC5pnr7kSDw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -872,7 +1234,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mobile Number of Payer *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[in_Config(&quot;Mobile&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Mobile Number of Payer *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[in_Config(&quot;Mobile&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="b47dd920-caac-47e8-86c1-0529ab7ae213" ContentHash="7q7gKy2PaEKMICJCowp8kA" CvElementArea="890, 498, 177, 27" CvType="InputBox" DesignTimeRectangle="891, 500, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtMobileNo' tag='INPUT' /&gt;" Guid="63f82568-3874-4326-8cc6-e5d36a5f41be" InformativeScreenshot="16140a518ab16e3f020861f91c9ffa42.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/SlhYgUULN0uDI883MFGnvQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -883,12 +1245,12 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,198" sap2010:WorkflowViewState.IdRef="NClick_52" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK(1)'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,198" sap2010:WorkflowViewState.IdRef="NClick_52" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                             <uix:NClick.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="c1dfe54d-f74f-465b-be47-16ef6caaeece" ContentHash="mEY9Zr-6Q0WAPgaIwSgYwQ" CvElementArea="631, 507, 66, 31" CvTextArea="653, 515, 21, 13" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="631, 507, 65, 31" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='cancel' tableRow='1' tag='INPUT' /&gt;" Guid="04b599b4-f58c-447e-8f26-3344c90f87cd" InformativeScreenshot="fbfcbc4d443342a6e928e183f55e0457.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/qSYLEUzL90GJ7u4BEzj1cQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                             </uix:NClick.Target>
                           </uix:NClick>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of Second Party *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;Tenant&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Name of Second Party *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_6" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;Tenant&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="6335bcbc-891d-4c7a-8921-ee17fc92ea29" ContentHash="3dkMA2LjoEevy7GLQxdCIw" CvElementArea="448, 290, 578, 26" CvType="InputBox" DesignTimeRectangle="447, 292, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl id='txtpartyname2' tag='INPUT' type='text' class='text' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="4d83d9a3-52f7-4a4b-b5c9-c81e7b9ad4fc" InformativeScreenshot="aa084dc4d1a189daeb4e3db11ffaa04a.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/p0OIhb6CWE2N7-w8WCRfbw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -899,7 +1261,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Flat/Survey Number*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;FlatDetails&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Flat/Survey Number*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_7" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;FlatDetails&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="8b896098-68be-4de7-b89a-91f3c6c2918f" ContentHash="2gkrpRjdPE62b484CE6xuA" CvElementArea="446, 438, 580, 26" CvType="InputBox" DesignTimeRectangle="447, 440, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtprimise' tag='INPUT' /&gt;" Guid="d2731163-47f1-4f3d-b1a0-de1973a489b5" InformativeScreenshot="4c1c8acfeb17390b40db8cc863e651e2.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/MIB_OXvxjkORHJYYdr8KQw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -910,7 +1272,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Locality/Road*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.Rows(0)(&quot;Road&quot;).ToString()]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Locality/Road*'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_8" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.Rows(0)(&quot;Road&quot;).ToString()]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="1cf274a1-a38f-485c-9012-b863c418dcb1" ContentHash="p9vQyfWnr0in9CClfbQcRA" CvElementArea="446, 495, 580, 26" CvType="InputBox" DesignTimeRectangle="447, 496, 580, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtroad' tag='INPUT' /&gt;" Guid="cb20055b-03b3-43c3-a074-07d275fb5d70" InformativeScreenshot="23c9cc907c248fe66759fcee270a68b3.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/R9aumrRm40iVeG-TJi1HVw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -921,7 +1283,7 @@
                               </uix:TargetAnchorable>
                             </uix:NTypeInto.Target>
                           </uix:NTypeInto>
-                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Area/City *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="522,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;District&quot;).ToString]" Version="V5">
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'Area/City *'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,250" sap2010:WorkflowViewState.IdRef="NTypeInto_9" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[dtTable.rows(0)(&quot;District&quot;).ToString]" Version="V5">
                             <uix:NTypeInto.Target>
                               <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="167c0d99-ca38-4d72-bf3d-12058539def7" ContentHash="txYcF7lHN0CxJ0nu7X5Ccw" CvElementArea="445, 551, 177, 27" CvType="InputBox" DesignTimeRectangle="447, 552, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='txtdist' tag='INPUT' /&gt;" Guid="68c6a04f-b324-4ec6-86ef-7a5e3994bfba" InformativeScreenshot="5cbeae17025a4306187fb2d17b88ffff.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/qOkIbqm3tUulayFUQNzmFw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                 <uix:TargetAnchorable.Anchors>
@@ -955,35 +1317,92 @@
                             </uix:NClick.Target>
                           </uix:NClick>
                           <Delay Duration="00:00:01" sap:VirtualizedContainerService.HintSize="558,127" sap2010:WorkflowViewState.IdRef="Delay_10" />
-                          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="558,319" sap2010:WorkflowViewState.IdRef="RetryScope_2">
+                          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="558,1394" sap2010:WorkflowViewState.IdRef="RetryScope_2">
                             <ui:RetryScope.ActivityBody>
                               <ActivityAction>
-                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="484,112" sap2010:WorkflowViewState.IdRef="Sequence_112">
+                                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="554,1183" sap2010:WorkflowViewState.IdRef="Sequence_112">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <Sequence DisplayName="Captcha Retry" sap:VirtualizedContainerService.HintSize="450,52" sap2010:WorkflowViewState.IdRef="Sequence_111">
+                                  <Sequence DisplayName="Captcha Retry" sap:VirtualizedContainerService.HintSize="520,1119" sap2010:WorkflowViewState.IdRef="Sequence_111">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="captchaProcess_Challan2 - Invoke Workflow File (captchaProcess_Challan2.xaml)" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="captchaProcess_Challan2.xaml">
-                                      <ui:InvokeWorkflowFile.Arguments>
-                                        <OutArgument x:TypeArguments="x:String" x:Key="captchaText2">[captchaText2]</OutArgument>
-                                        <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
-                                      </ui:InvokeWorkflowFile.Arguments>
+                                    <Sequence DisplayName="temporary-Captcha" sap:VirtualizedContainerService.HintSize="486,605" sap2010:WorkflowViewState.IdRef="Sequence_125">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                    </ui:InvokeWorkflowFile>
-                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT captcha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[captchaText2]" Version="V5">
+                                      <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="416,127" sap2010:WorkflowViewState.IdRef="Delay_15" />
+                                      <uix:NGetText DisplayName="Get Text 'Enter Captcha Code *'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,147" sap2010:WorkflowViewState.IdRef="NGetText_11" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" TextString="[temp]" Version="V5">
+                                        <uix:NGetText.Target>
+                                          <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="096ab76a-5867-43ba-94f3-2986d9cdd254" ContentHash="E7i9kyJawUSyZqI7Cw86Mw" CvElementArea="909, 509, 177, 27" CvType="InputBox" DesignTimeRectangle="911, 510, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='captcha' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="abfc3851-c75c-4eef-bd49-6013ad25a33a" InformativeScreenshot="a90d41247b15b9a951ac9395f47a2b9a.png" Reference="XYDNlefXLUawOcBond9NIg/C6lsn7iSqE6ZrsF7U1MQcA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                            <uix:TargetAnchorable.Anchors>
+                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                <uix:Target CVScreenId="096ab76a-5867-43ba-94f3-2986d9cdd254" CvTextArea="688, 515, 127, 13" CvTextArgument="Enter Captcha Code *" CvType="Text" DesignTimeRectangle="683, 500, 222, 55" FuzzySelectorArgument="&lt;webctrl aaname='Enter Captcha Code  ' class='pay-tin-col2' parentid='frmchallan_entry' tag='DIV' type='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' check:innerText='Enter Captcha Code *' /&gt;" Guid="db5a4854-b970-4d9a-9f66-53a05378ad45" SearchSteps="FuzzySelector, CV" />
+                                              </scg:List>
+                                            </uix:TargetAnchorable.Anchors>
+                                          </uix:TargetAnchorable>
+                                        </uix:NGetText.Target>
+                                      </uix:NGetText>
+                                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_34" Message="[&quot;Temp Text= &quot;+temp.ToString]" />
+                                      <If Condition="[temp =&quot;&quot;]" sap:VirtualizedContainerService.HintSize="416,52" sap2010:WorkflowViewState.IdRef="If_12">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <If.Then>
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="450,420" sap2010:WorkflowViewState.IdRef="Sequence_126">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="LogMessage_35" Message="[&quot;Captcha Process Initiated&quot;]" />
+                                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" DisplayName="captchaProcess_Challan2 - Invoke Workflow File (captchaProcess_Challan2.xaml)" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="captchaProcess_Challan2.xaml">
+                                              <ui:InvokeWorkflowFile.Arguments>
+                                                <OutArgument x:TypeArguments="x:String" x:Key="captchaText2">[captchaText2]</OutArgument>
+                                                <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_config]</InArgument>
+                                              </ui:InvokeWorkflowFile.Arguments>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:InvokeWorkflowFile>
+                                          </Sequence>
+                                        </If.Then>
+                                        <If.Else>
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="450,413" sap2010:WorkflowViewState.IdRef="Sequence_127">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Assign sap:VirtualizedContainerService.HintSize="416,179" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                              <Assign.To>
+                                                <OutArgument x:TypeArguments="x:String">[captchaText]</OutArgument>
+                                              </Assign.To>
+                                              <Assign.Value>
+                                                <InArgument x:TypeArguments="x:String">[""]</InArgument>
+                                              </Assign.Value>
+                                            </Assign>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,170" sap2010:WorkflowViewState.IdRef="LogMessage_36" Message="[&quot;Captcha Process Skipped&quot;]" />
+                                          </Sequence>
+                                        </If.Else>
+                                      </If>
+                                    </Sequence>
+                                    <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" ClipboardMode="Never" DisplayName="Type Into 'INPUT captcha'" EmptyFieldMode="SingleLine" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="NTypeInto_11" InteractionMode="SameAsCard" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Text="[captchaText2]" Version="V5">
                                       <uix:NTypeInto.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="a1f3ef5f-23df-49f7-bfef-7a6c14ef63d5" ContentHash="eI7tvqhUhUqlAPcW-bynsw" CvElementArea="889, 508, 177, 27" CvType="InputBox" DesignTimeRectangle="911, 510, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='captcha' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='captcha' tag='INPUT' type='text' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="d875ae01-404b-47dc-beda-5037189efcfb" InformativeScreenshot="fb124d3ef3da763c22762af44930ea19.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/x4JuKgeWDUGhHZauUviMGA" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
                                           <uix:TargetAnchorable.Anchors>
@@ -1000,15 +1419,15 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NTypeInto>
-                                    <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="Delay_13">
+                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="486,127" sap2010:WorkflowViewState.IdRef="Delay_13">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Delay>
-                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Proceed'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="NClick_43" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                                       <uix:NClick.Target>
                                         <uix:TargetAnchorable BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="a1f3ef5f-23df-49f7-bfef-7a6c14ef63d5" ContentHash="tjbJkQFrq0azzEwemoBeTg" CvElementArea="570, 602, 93, 33" CvTextArea="592, 612, 52, 13" CvTextArgument="Proceed" CvType="Button" DesignTimeRectangle="571, 604, 90, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='INPUT' type='button' /&gt;" Guid="e78784bf-28c1-49f4-85de-ef7a1b858b5b" InformativeScreenshot="f5aa10c04a40d8bc20d128b4f3b71c25.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/kV2P4L2qv0mA-BfA1rTEsw" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                       </uix:NClick.Target>
@@ -1019,7 +1438,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NClick>
-                                    <Assign sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="Assign_4">
+                                    <Assign sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="Assign_4">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:String">[TextMessage]</OutArgument>
                                       </Assign.To>
@@ -1033,7 +1452,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </Assign>
-                                    <uix:NCheckState DisplayName="Check App State 'OK(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
+                                    <uix:NCheckState DisplayName="Check App State 'OK(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="486,61" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="a150bed4-77cf-4671-9a64-3e3c5292468e" Version="V5">
                                       <uix:NCheckState.IfExists>
                                         <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,400" sap2010:WorkflowViewState.IdRef="Sequence_105">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1090,7 +1509,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </uix:NCheckState>
-                                    <If Condition="[TextMessage&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="If_6">
+                                    <If Condition="[TextMessage&lt;&gt;&quot;&quot;]" sap:VirtualizedContainerService.HintSize="486,52" sap2010:WorkflowViewState.IdRef="If_6">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1099,9 +1518,6 @@
                                       </sap:WorkflowViewStateService.ViewState>
                                       <If.Then>
                                         <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="486,832" sap2010:WorkflowViewState.IdRef="Sequence_107">
-                                          <Sequence.Variables>
-                                            <Variable x:TypeArguments="x:Int32" Default="0" Name="InvalidCount" />
-                                          </Sequence.Variables>
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1239,15 +1655,15 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                           </ui:CommentOut>
-                          <Sequence DisplayName="DataEntry-GRN update-ChallanDetailsSheet" sap:VirtualizedContainerService.HintSize="558,61" sap2010:WorkflowViewState.IdRef="Sequence_90">
+                          <Sequence DisplayName="DataEntry-GRN update-ChallanDetailsSheet" sap:VirtualizedContainerService.HintSize="558,1179" sap2010:WorkflowViewState.IdRef="Sequence_90">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="452,124" sap2010:WorkflowViewState.IdRef="ReadRange_8" SheetName="[in_Config(&quot;ChallanDetailsSheet&quot;).ToString]" WorkbookPath="[FilePath]" />
-                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="isUpdated=False&#xA;&#xA;Dim row As DataRow =&#xA;    dtTable.AsEnumerable().&#xA;        Where(Function(r) r(&quot;DocumentID&quot;).ToString.Trim.Equals(DocumentID, StringComparison.OrdinalIgnoreCase)).&#xA;        FirstOrDefault()&#xA;If row IsNot Nothing Then&#xA;&#x9;row(&quot;GRN&quot;)=GRN&#xA;&#x9;row(&quot;GRNDate&quot;)=now.ToString(&quot;dd-MM-yyyy&quot;)&#xA;&#x9;row(&quot;LastUpdated&quot;)=now&#xA;&#x9;isUpdated=True&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="452,201" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="isUpdated=False&#xD;&#xA;&#xD;&#xA;Dim row As DataRow =&#xD;&#xA;    dtTable.AsEnumerable().&#xD;&#xA;        Where(Function(r) r(&quot;DocumentID&quot;).ToString.Trim.Equals(DocumentID, StringComparison.OrdinalIgnoreCase)).&#xD;&#xA;        FirstOrDefault()&#xD;&#xA;If row IsNot Nothing Then&#xD;&#xA;&#x9;row(&quot;GRN&quot;)=GRN&#xD;&#xA;&#x9;row(&quot;GRNDate&quot;)=now&#xD;&#xA;&#x9;row(&quot;LastUpdated&quot;)=now&#xD;&#xA;&#x9;isUpdated=True&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="452,201" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
                               <ui:InvokeCode.Arguments>
                                 <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTable">[dtTable]</InOutArgument>
                                 <OutArgument x:TypeArguments="x:Boolean" x:Key="isUpdated">[isUpdated]</OutArgument>
@@ -1317,7 +1733,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="592,170" sap2010:WorkflowViewState.IdRef="LogMessage_24" Message="[&quot;Please Check Challan Details&quot;]" />
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,170" sap2010:WorkflowViewState.IdRef="LogMessage_24" Message="[&quot;Please Check Challan Details&quot;]" />
               </Sequence>
             </If.Else>
           </If>
@@ -1335,13 +1751,13 @@
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="628,170" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[exception.message]" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="664,170" sap2010:WorkflowViewState.IdRef="LogMessage_14" Message="[exception.message]" />
             </Sequence>
           </ActivityAction>
         </Catch>
       </TryCatch.Catches>
       <TryCatch.Finally>
-        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="626,94" sap2010:WorkflowViewState.IdRef="Sequence_71">
+        <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="698,94" sap2010:WorkflowViewState.IdRef="Sequence_71">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
