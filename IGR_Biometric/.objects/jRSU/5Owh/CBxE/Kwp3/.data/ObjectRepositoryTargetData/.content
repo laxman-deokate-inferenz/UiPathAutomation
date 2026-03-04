@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-1M6gD2UGEy2hLi7FoMlbA" Reference="XYDNlefXLUawOcBond9NIg/Kwp3JP_jdEurr6av1ShJ1g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="a40adfae-5a2c-4a1c-88f6-6f2dd2920a54" CvElementArea="138, 252, 139, 32" CvTextArea="140, 260, 133, 14" CvTextArgument="Save Family Details" CvType="Button" DesignTimeRectangle="140, 253, 134, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" Guid="796130bc-591c-4bdc-aa51-49fca94c2503" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a40adfae-5a2c-4a1c-88f6-6f2dd2920a54" CvElementArea="314, 251, 155, 33" CvTextArea="376, 260, 31, 14" CvTextArgument="New" CvType="Button" DesignTimeRectangle="316, 253, 150, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$repeaterPartyDetails$ctl00$btnNew' type='submit' tag='INPUT' class='' aaname='New' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='New' /&gt;" Guid="cbb69184-f571-4e08-bb21-81510a81192a" SearchSteps="FuzzySelector, CV" />
+          <Target DesignTimeRectangle="43, 331, 279, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='2.licencee/Tenant - Mrs Jadhav Uma Dagadusaheb' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2.licencee/Tenant - Mrs Jadhav Uma Dagadusaheb' /&gt;" Guid="8165a848-2a29-4680-a080-df9d3ae7011b" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="6" Y="2" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="fa26ee3be88676db893ecfce388a0e0f.png" xmlns="">00gfXNePsoEqaR_z09QT3IQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

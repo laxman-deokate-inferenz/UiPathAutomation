@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="b8mSfx9cU0ugvKLdcG6vQg" Reference="XYDNlefXLUawOcBond9NIg/eU7ZQhTz9U2zpZ_drVqa_w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="c2e099f2-eb50-4792-9049-ddee73b116fc" CvElementArea="209, 495, 177, 26" CvType="InputBox" DesignTimeRectangle="211, 496, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="f3589974-e5a5-4555-b94b-f53a5eff7e9a" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c2e099f2-eb50-4792-9049-ddee73b116fc" CvTextArea="44, 498, 65, 14" CvTextArgument="Location" CvType="Text" DesignTimeRectangle="45, 496, 158, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='labelFont' aaname='                                                 Location                                             ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Location' /&gt;" Guid="2ecc50e8-d341-4b08-bcb8-82a94ca1d5db" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="c2e099f2-eb50-4792-9049-ddee73b116fc" CvTextArea="42, 277, 298, 15" CvTextArgument="1.licencee/Tenant - Garud Aniket Ashok" CvType="Text" DesignTimeRectangle="43, 276, 304, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - Garud Aniket Ashok' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - Garud Aniket Ashok' /&gt;" Guid="00030981-26c3-425c-a651-b5eb8b872958" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="930bd08ec23ff6112d287eb77cfab6ae.png" xmlns="">0VcqXFBZSP0uzJiovSdi1iw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

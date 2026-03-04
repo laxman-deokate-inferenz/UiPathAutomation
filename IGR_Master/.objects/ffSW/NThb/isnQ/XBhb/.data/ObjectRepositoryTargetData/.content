@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JJLwu8CSGkmG9bgr3uGIag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg" DesignTimeRectangle="186, 453, 140, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='4' tag='TABLE' /&gt;&lt;webctrl idx='2' tableRow='20' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' type='' tag='SPAN' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="8ba24bb2-a229-4ed5-ba7b-8e6049103a7f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="99ab0bfd-c04a-429f-a6c4-ce1b6d937e4d" CvElementArea="361, 421, 38, 33" CvTextArea="364, 430, 32, 14" CvTextArgument="Next" CvType="Button" DesignTimeRectangle="363, 423, 34, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Click on Next ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next' /&gt;" Guid="53d4a0b2-1c2e-4e0f-ba0b-faea04415794" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="8a7de09d210bb8dcfb21694560b498f4.png" xmlns="">0qlj0-hqZj0G1Zuc287uWMg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EPMPEF_zXEGrCmEVfykPJw" Reference="XYDNlefXLUawOcBond9NIg/2Mouqq03TkyywQnV_wN4aQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="ef57755a-f32b-45b0-804b-6c21205856e6" CvElementArea="303, 587, 64, 33" CvTextArea="318, 597, 34, 14" CvTextArgument="Save" CvType="Button" DesignTimeRectangle="305, 644, 60, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='3' tableRow='9' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="f1f6c693-6bf7-4721-8cc6-93370f010f96" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="43, 577, 161, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Upload Permanent Address Proof' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload Permanent Address Proof' /&gt;" Guid="1af681ed-4708-495d-ba98-da5a05996b37" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="4841e015-6fb3-411f-b6dd-2beae8723fbe" CvTextArea="43, 168, 316, 17" CvTextArgument="1.licencee/Tenant - Bhalerao Sandip Arjun" CvType="Text" DesignTimeRectangle="43, 166, 422, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - *' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - *' /&gt;" Guid="cefed0c8-e2f8-4069-8b63-fd05e1193e8c" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="4841e015-6fb3-411f-b6dd-2beae8723fbe" CvTextArea="43, 241, 156, 14" CvTextArgument="Permanent Address :" CvType="Text" DesignTimeRectangle="45, 239, 158, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Permanent Address : ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Permanent Address :' /&gt;" Guid="16900c3b-402a-4dcb-b0cb-7833f2b61002" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f48131346a0a65745478215e1569945c.png" xmlns="">0MIb6-oK7nUSTzong-lPXjQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

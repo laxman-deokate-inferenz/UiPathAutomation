@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FEnoUB1fKESPUi3igdkCcA" Reference="XYDNlefXLUawOcBond9NIg/yviqRMyy2UyNi8Wg4D6nvQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="f2ecbc78-99a2-4f4d-8b40-a78e65ce21d3" CvElementArea="303, 638, 63, 32" CvTextArea="310, 647, 50, 17" CvTextArgument="Update" CvType="Button" DesignTimeRectangle="568, 520, 48, 24" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='3' tableRow='9' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="bdf4ff07-1594-4da8-865c-51f6a22b1b7f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f1bd6657-a940-4a65-b240-154c7fa5b2d4" CvTextArea="170, 208, 124, 13" CvTextArgument="Permanent Address :" CvType="Text" DesignTimeRectangle="171, 208, 126, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Permanent Address : ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Permanent Address :' /&gt;" Guid="a7da003f-6ebf-49ba-80eb-d762bc2f584c" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="f1bd6657-a940-4a65-b240-154c7fa5b2d4" CvTextArea="171, 142, 279, 15" CvTextArgument="1.licencee/Tenant - Kaware Avinash Ganpatrao" CvType="Text" DesignTimeRectangle="170, 142, 281, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - *' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - Kaware Avinash Ganpatrao' /&gt;" Guid="cefa9fa0-b7e0-4181-8bff-b1410ae7ec9a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-3" Y="-2" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="239e0f6a65ba7faccc5a9c981e62373d.png" xmlns="">0O7fHN3NzE0CJMQTYS4PzQw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UnC4imJiPkSz5iei3EbEzw" Reference="XYDNlefXLUawOcBond9NIg/RanHzdZ21kWRE70NudSiOA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="03a3f2c6-df48-4a93-9ab9-d0d61214082a" DesignTimeRectangle="576, 529, 45, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='3' tableRow='9' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="d839e1d8-9110-477a-b17f-d7fc96ab9b76" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="202, 480, 121, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Upload Permanent Address Proof' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload Permanent Address Proof' /&gt;" Guid="e4cc0e2a-80e7-4a14-a33b-9b825ce6db7e" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="2552d891-d903-4713-80f6-0539a5e09125" DesignTimeRectangle="202, 175, 229, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' matching:class='fuzzy' fuzzylevel:class='0.0' aaname='1.licencee/Tenant - &amp;apos;*&amp;apos;' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - Garud Aniket Ashok' /&gt;" Guid="d2691094-9182-431e-9763-86f8f91e2e1c" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7d888345d2c6ca1e37ac99b939743ab5.png" xmlns="">0kJHmzP-2xkK96MJIrdXmvw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

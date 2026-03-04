@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="1xFhHfd9nEmlUQOHB4oPkQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="8603009a-bbae-4438-af08-0452d7d25ef7" CvElementArea="488, 616, 50, 33" CvTextArea="490, 625, 46, 14" CvTextArgument="Delete" CvType="Button" DesignTimeRectangle="490, 617, 46, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnDelete' tableRow='32' tag='INPUT' /&gt;" Guid="59d07d68-189f-4c36-9f45-13f66f574d63" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="8603009a-bbae-4438-af08-0452d7d25ef7" CvElementArea="538, 615, 133, 32" CvTextArea="540, 625, 129, 14" CvTextArgument="Add : Party Details" CvType="Button" DesignTimeRectangle="540, 617, 129, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnMore' type='submit' tag='INPUT' class='' aaname='Add : Party Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add : Party Details' /&gt;" Guid="0cb8a6fe-01c3-4161-bb54-ffbb22ff34ca" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="3" Y="4" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="6793019e86905918d675440c692557f3.png" xmlns="">07NK9XZrYq0qIaWW6-NBm4w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

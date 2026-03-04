@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JCJ1s9RBWESKCZgma5Pz7A" Reference="XYDNlefXLUawOcBond9NIg/1Odnnke3XUOH1Zo5YXJOLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvElementArea="422, 447, 177, 26" CvType="InputBox" DesignTimeRectangle="423, 448, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="c0cda56c-7122-4cce-8c5c-6c3e680d3df2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvTextArea="474, 324, 70, 15" CvTextArgument="To Month" CvType="Text" DesignTimeRectangle="423, 323, 174, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                 To Month                                             ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='To Month' /&gt;" Guid="1bc62307-9a9b-4d4f-b16b-a13a805b6ead" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvTextArea="354, 453, 20, 14" CvTextArgument="45" CvType="Text" DesignTimeRectangle="355, 451, 19, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='45' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='45' /&gt;" Guid="a4f52c00-5ce2-440b-8748-6fddf8792b67" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1a4f7edc8df5df713ed572401bdb92f1.png" xmlns="">0GXs0gZygoE6BE01haPIWrg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

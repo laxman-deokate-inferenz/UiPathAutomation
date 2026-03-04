@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HReeD06IYkutiVpl46G_ag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="a359f464-9320-4d3c-91c2-dc4b724c6abe" CvElementArea="754, 155, 70, 33" CvTextArea="779, 165, 18, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="755, 156, 68, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='OK' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='OK' /&gt;" Guid="3f67ddea-7873-4f2e-978f-273969a016da" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Party Details Page - Work - Microsoft​ Edge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a359f464-9320-4d3c-91c2-dc4b724c6abe" CvTextArea="480, 97, 226, 16" CvTextArgument="efilingigr.maharashtra.gov.in says" CvType="Text" DesignTimeRectangle="480, 97, 226, 16" ElementType="Text" Guid="050eb76b-1a86-449c-a793-b89302efff0d" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="72aa946d6a6b104ed7ac4c8317aaea9f.png" xmlns="">0uL8Bqcw_o0q861SkyHozfQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="LZoc3TUQ6E2fxc9gZYHA3Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="353a3017-a096-4028-955a-7452e4358f36" CvTextArea="457, 360, 451, 18" CvTextArgument="Stamp Duty and Registration Fee together Saved sucessfully." CvType="Text" DesignTimeRectangle="458, 359, 451, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='44' tag='TABLE' /&gt;&lt;webctrl tableRow='16' tag='SPAN' /&gt;" Guid="f913adfe-610f-45ce-8213-f9fc0b47c2e3" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="353a3017-a096-4028-955a-7452e4358f36" CvElementArea="697, 301, 96, 33" CvTextArea="713, 311, 63, 14" CvTextArgument="Add New" CvType="Button" DesignTimeRectangle="699, 303, 92, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnAddGRNDetails' type='submit' tag='INPUT' class='' aaname='Add New' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add New' /&gt;" Guid="7a1ee156-9e16-4a8f-8540-20a6688f2137" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2c758bd5d19c3f42dfbff2021f4414f4.png" xmlns="">0ckOp0056qkC3kB6W-LS97w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="W6CetC_OmUqvnz7Zpc6xrA" Reference="XYDNlefXLUawOcBond9NIg/zAVMwoMx8kiKyWu-gjE6DA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="5926dca6-bf38-4f46-8333-feeb6ad63297" CvElementArea="209, 657, 177, 26" CvType="InputBox" DesignTimeRectangle="211, 609, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="5d4b4f95-6ca0-44f2-a0ae-968cce485106" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="5926dca6-bf38-4f46-8333-feeb6ad63297" CvTextArea="44, 661, 56, 14" CvTextArgument="District" CvType="Text" DesignTimeRectangle="45, 609, 54, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='District' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='District' /&gt;" Guid="baa7d03c-f35a-4db6-837f-fa3913e3b4f9" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="911d527b-5ba2-4e36-9ee1-9c9856033f0c" CvTextArea="44, 336, 154, 14" CvTextArgument="Permanent Address :" CvType="Text" DesignTimeRectangle="45, 384, 158, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Permanent Address : ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Permanent Address :' /&gt;" Guid="cb30b112-646a-4f54-87f9-f185ddbc55f5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="6d580e47a35f3ce3f1b98dd9d99d8cfe.png" xmlns="">0Pytv22_6ak2a7_xQyVJSvQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

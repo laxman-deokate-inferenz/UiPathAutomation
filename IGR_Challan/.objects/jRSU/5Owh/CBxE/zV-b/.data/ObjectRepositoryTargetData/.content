@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="i0-8SDbh50Wib55125Gfeg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="c5e8e6c5-080b-4a04-abd4-13986c21cb43" CvElementArea="394, 438, 48, 24" CvTextArea="399, 444, 37, 12" CvTextArgument="Update" CvType="Button" DesignTimeRectangle="395, 439, 45, 22" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='6' tableRow='9' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="f6095747-d3c4-438d-9673-e51e2bef907d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c5e8e6c5-080b-4a04-abd4-13986c21cb43" CvElementArea="640, 641, 56, 25" CvTextArea="645, 648, 46, 11" CvTextArgument="Previous" CvType="Button" DesignTimeRectangle="642, 643, 53, 22" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Previous' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Previous' /&gt;" Guid="b62aaf69-b58b-4207-8a0c-4d6962dc5454" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="c5e8e6c5-080b-4a04-abd4-13986c21cb43" CvTextArea="202, 146, 116, 11" CvTextArgument="Permanent Address :" CvType="Text" DesignTimeRectangle="203, 145, 118, 14" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Permanent Address : ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Permanent Address :' /&gt;" Guid="3fb3aeac-2b24-41c6-98fd-4784e4568644" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a6153f4582936bac92fc04e305e52938.png" xmlns="">0BZnwAmrffEiAG_059k8pMQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_741GaQNwEiD1UFU67hVCQ" Reference="XYDNlefXLUawOcBond9NIg/IsI-oaK5jk-kkydpw-JTTQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvElementArea="422, 395, 177, 26" CvType="InputBox" DesignTimeRectangle="423, 396, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="96f13ac0-829c-446e-b953-bc657e648288" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV, SemanticSelector" SemanticSelectorArgument="Input field to specify the 'To Month' for the third varying rent period." Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvTextArea="474, 324, 70, 15" CvTextArgument="To Month" CvType="Text" DesignTimeRectangle="423, 323, 174, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                 To Month                                             ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='To Month' /&gt;" Guid="816c3887-a72b-4835-ac21-05f873d94105" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="1d815fa408ef7c4b8abcd006db1fdade.png" xmlns="">00AZkS1KBbE-bFxMyv8_Qag</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

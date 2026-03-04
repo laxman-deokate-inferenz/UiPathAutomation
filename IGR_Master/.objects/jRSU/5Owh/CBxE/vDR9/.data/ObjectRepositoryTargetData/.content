@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jsB0cJmgikCQWGWH5A-90Q" Reference="XYDNlefXLUawOcBond9NIg/vDR9Va3FAUyZP0b1AD7SUA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="e9443b43-de02-4f3c-aceb-4d1a09ca7321" CvType="AnyWordGroup" DesignTimeRectangle="586, 287, 7, 9" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="d595f0cd-5c73-4251-b496-eb5add7d31e1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e9443b43-de02-4f3c-aceb-4d1a09ca7321" CvTextArea="566, 287, 17, 9" CvTextArgument="Age:" CvType="Text" DesignTimeRectangle="567, 286, 17, 10" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Age:' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Age:' /&gt;" Guid="fd88020b-f640-4746-b444-6d608c3ab1d9" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="e9443b43-de02-4f3c-aceb-4d1a09ca7321" CvElementArea="663, 668, 37, 16" CvTextArea="665, 672, 32, 8" CvTextArgument="Previious" CvType="Button" DesignTimeRectangle="664, 669, 36, 15" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Previous' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Previous' /&gt;" Guid="c026ab1d-96b7-4641-a36c-5205a7dc74c5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fd2b982f20b33cb4f1bbb6649a7074e6.png" xmlns="">04jVRpIWVL0WfJic83qbiiQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

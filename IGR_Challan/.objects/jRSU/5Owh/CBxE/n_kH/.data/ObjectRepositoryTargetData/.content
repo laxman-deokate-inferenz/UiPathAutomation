@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ln7V_sOGRUyrFOmhFJUUag" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="764fab59-a16c-4144-9407-95fe52aa2e16" CvElementArea="245, 645, 138, 20" CvType="InputBox" DesignTimeRectangle="246, 646, 136, 17" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="3458bb7d-78ef-44d1-96e3-daf68f72de6c" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="764fab59-a16c-4144-9407-95fe52aa2e16" CvTextArea="173, 646, 51, 13" CvTextArgument="Relation" CvType="Text" DesignTimeRectangle="175, 646, 49, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Relation' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Relation' /&gt;" Guid="a0ca4202-9f44-4a38-80d9-00ef43e090e1" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="764fab59-a16c-4144-9407-95fe52aa2e16" CvElementArea="245, 683, 109, 25" CvTextArea="246, 688, 106, 12" CvTextArgument="Save Family Details" CvType="Button" DesignTimeRectangle="246, 683, 107, 24" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Save Family Details' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Save Family Details' /&gt;" Guid="a52da323-8b49-4851-9133-07c75ba390ff" SearchSteps="FuzzySelector, CV" />
+          <Target DesignTimeRectangle="170, 136, 228, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='2.licencee/Tenant - *' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2.licencee/Tenant - *' /&gt;" Guid="ab68995c-e9f1-466d-9314-8e42a5ca5680" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="86560f6f1e41601f26b646d7ff5efc6e.png" xmlns="">01L3C_Gh9Q0WXxP1_lpVBCA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

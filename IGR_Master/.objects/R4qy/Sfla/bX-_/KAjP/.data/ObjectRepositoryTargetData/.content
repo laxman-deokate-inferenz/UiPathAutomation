@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0vs68yBt7U-QAm6U1G9kIQ" Reference="XYDNlefXLUawOcBond9NIg/KAjPGkW9k0aSWDBSzHWOLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvElementArea="421, 421, 177, 27" CvType="InputBox" DesignTimeRectangle="423, 422, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="9ce9fa20-6377-493a-94ed-11461e5d6c60" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvTextArea="355, 427, 20, 14" CvTextArgument="34" CvType="Text" DesignTimeRectangle="355, 425, 19, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='' aaname='34' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='34' /&gt;" Guid="d078e12f-1044-4769-af39-2440cf5496f0" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="9b49defd-7b9f-41ac-aca5-32397811380c" CvTextArea="474, 324, 70, 15" CvTextArgument="To Month" CvType="Text" DesignTimeRectangle="423, 323, 174, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                 To Month                                             ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='To Month' /&gt;" Guid="88caaca1-6a23-4cfb-a217-7758c8978674" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="46f44e07e5f024468596c22da1b356ad.png" xmlns="">0StF8J1_WGEugMLIC7bBavw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

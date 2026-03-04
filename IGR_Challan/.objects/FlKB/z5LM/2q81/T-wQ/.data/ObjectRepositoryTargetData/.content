@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GKCqH4f1GEG6lyG7DQ70UA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr" CVScreenId="f21b570b-f787-4daa-a17d-a55a2733d415" CvType="AnyWordGroup" DesignTimeRectangle="20, 136, 1342, 37" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="43af7d17-5c75-4901-82c1-090b22ab21cb" ScopeSelectorArgument="&lt;html app='msedge.exe' title='503 Service Unavailable' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f21b570b-f787-4daa-a17d-a55a2733d415" CvTextArea="19, 195, 339, 17" CvTextArgument="This server is temporarily unable to service requests." CvType="Text" DesignTimeRectangle="19, 195, 338, 17" ElementType="Text" Guid="497e42f7-abdc-455a-8287-7ed5852439e7" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a63dca4ffadcba456188def3016a800a.png" xmlns="">07ayqXdHTK0CGvVuBGmnztw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

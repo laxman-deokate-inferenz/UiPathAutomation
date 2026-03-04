@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="srEDld-HI0-88ImPsWaKLA" Reference="XYDNlefXLUawOcBond9NIg/ZMIC-HAsqkaIUlyBCTSQxw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="798928b6-9ece-4a38-8a37-124377b8d7b9" CvElementArea="273, 573, 103, 24" CvTextArea="274, 579, 99, 11" CvTextArgument="Save Family Details" CvType="Button" DesignTimeRectangle="274, 574, 100, 23" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" Guid="2bd5a2e8-7d95-4714-a571-cd2476d61d29" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="798928b6-9ece-4a38-8a37-124377b8d7b9" DesignTimeRectangle="404, 574, 113, 23" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$repeaterPartyDetails$ctl00$btnNew' type='submit' tag='INPUT' class='' aaname='New' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='New' /&gt;" Guid="7000d1fe-8102-4c81-82d7-0076056479ba" SearchSteps="FuzzySelector" />
+          <Target DesignTimeRectangle="202, 380, 121, 28" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Upload Permanent Address Proof' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload Permanent Address Proof' /&gt;" Guid="f5a57d3c-0aec-498e-8140-32ad68628dec" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="08fc726175b19744c3f2785d84158280.png" xmlns="">0imKd4V2mbEe-g8QlhbrDxg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

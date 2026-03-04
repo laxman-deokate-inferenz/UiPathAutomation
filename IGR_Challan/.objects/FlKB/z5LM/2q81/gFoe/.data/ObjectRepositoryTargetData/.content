@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lO42cfuYuEqqbCpTFMbCow" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="4e8dd9e7-5834-4429-acb0-a8ad4324466e" CvElementArea="834, 154, 67, 35" CvType="Button" DesignTimeRectangle="835, 156, 64, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='push button' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="8ed2b4a5-e1d5-476d-bd35-48afd2beddb4" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='IGR Department - Work - Microsoft​ Edge' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4e8dd9e7-5834-4429-acb0-a8ad4324466e" CvTextArea="481, 125, 190, 13" CvTextArgument="You entered invalid Capcha code" CvType="Text" DesignTimeRectangle="483, 122, 416, 18" ElementType="Text" FuzzySelectorArgument="&lt;ctrl name='gras.mahakosh.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='You entered invalid Capcha code' role='text' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='You entered invalid Capcha code' /&gt;" Guid="fce43c0b-7e93-4dbc-9ca4-c572da655310" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0fd2bfba9cb2fc1e05d5c71bf6c3184a.png" xmlns="">0TpNmgwmYtUeNPGssvDo0zQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

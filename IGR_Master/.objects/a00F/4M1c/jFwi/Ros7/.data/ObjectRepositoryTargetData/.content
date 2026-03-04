@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PS-AWp7DmkC9stn3qOO7nQ" Reference="XYDNlefXLUawOcBond9NIg/Ros7csFeuUyk8m9yBHlU9w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="0d8fde12-1e14-439f-9654-0e755c63c5fb" CvType="AnyWordGroup" DesignTimeRectangle="458, 359, 451, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='23' tag='TABLE' /&gt;&lt;webctrl tableRow='16' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="2c03afe8-0de3-42ef-9095-a8bbc02be537" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0d8fde12-1e14-439f-9654-0e755c63c5fb" CvElementArea="698, 400, 96, 33" CvTextArea="713, 410, 63, 14" CvTextArgument="Add New" CvType="Button" DesignTimeRectangle="699, 303, 92, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnAddGRNDetails' type='submit' tag='INPUT' class='' aaname='Add New' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add New' /&gt;" Guid="f2635d07-990b-4f66-931f-3579752b1041" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2c758bd5d19c3f42dfbff2021f4414f4.png" xmlns="">0X24rsXoTMU2DhMgIJeq7aA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

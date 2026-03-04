@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R1C19UN2FUSYEJQV1ch-9g" Reference="XYDNlefXLUawOcBond9NIg/EjTM4WLBiEy6en1_ftPN0w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="a40adfae-5a2c-4a1c-88f6-6f2dd2920a54" CvElementArea="133, 388, 172, 24" CvType="InputBox" DesignTimeRectangle="134, 390, 170, 21" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="b619a567-1789-4ada-b5fe-eca5edae3725" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a40adfae-5a2c-4a1c-88f6-6f2dd2920a54" CvTextArea="42, 392, 87, 18" CvTextArgument="Nationality:" CvType="Text" DesignTimeRectangle="43, 391, 87, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Nationality:' class='labelFont' type='' tag='SPAN' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Nationality:' /&gt;" Guid="6af8e947-0db4-468a-83d8-36ca88f90157" SearchSteps="FuzzySelector, CV" />
+          <Target DesignTimeRectangle="43, 331, 279, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='2.licencee/Tenant - Mrs Jadhav Uma Dagadusaheb' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2.licencee/Tenant - Mrs Jadhav Uma Dagadusaheb' /&gt;" Guid="31f6af64-d801-485b-821a-d2ec6b68c1a3" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f1fd4e757ae293aa2399e0b16e9a7980.png" xmlns="">0Po-LR2cwA0CNJrFC4OHFqQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

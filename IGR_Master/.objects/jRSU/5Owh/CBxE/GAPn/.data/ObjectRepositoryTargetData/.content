@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pU2RWm4-AkKWUeOUVIIxJw" Reference="XYDNlefXLUawOcBond9NIg/GAPn_RV-bUWCOGMweP3xgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="f0ed2a6a-b9e7-4550-898a-1a9425d56127" CvElementArea="205, 689, 91, 24" CvTextArea="214, 694, 169, 13" CvTextArgument="Choose File No file chosen" CvType="Button" DesignTimeRectangle="207, 691, 253, 21" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='5' tableRow='9' tag='TABLE' /&gt;&lt;webctrl tableRow='28' tag='INPUT' /&gt;" Guid="0cb7bf8f-ffae-4939-9af1-efb7508931e7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="43, 561, 161, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Upload Permanent Address Proof' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload Permanent Address Proof' /&gt;" Guid="acade5e8-9af8-4a46-a84f-187e847d1051" SearchSteps="FuzzySelector" />
+          <Target DesignTimeRectangle="43, 131, 279, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='2.licencee/Tenant - Mrs Jadhav Uma Dagadusaheb' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2.licencee/Tenant - Mrs Jadhav Uma Dagadusaheb' /&gt;" Guid="886fd278-bf86-44f1-b0d6-28be3ac42ae5" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="805d80e9189d5b375a4620c84a952c1c.png" xmlns="">0YDi3L8dBa0CFUO3bBkumPw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

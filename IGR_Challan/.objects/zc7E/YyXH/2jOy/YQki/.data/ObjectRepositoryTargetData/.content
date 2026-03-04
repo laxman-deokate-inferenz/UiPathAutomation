@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="UvPNWao_e0OTKCNgNOM_lw" Reference="XYDNlefXLUawOcBond9NIg/YQkis-3poE-jnpHNmAzRhA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="9dc20df9-505d-4f45-8725-44123664838a" CvElementArea="834, 191, 65, 33" CvTextArea="856, 201, 19, 12" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="755, 156, 68, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' /&gt;&lt;ctrl name='OK' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='OK' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='OK' /&gt;" Guid="4a3d4afe-6b2e-4fce-8340-722d560a7a93" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Party Details Page - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="9dc20df9-505d-4f45-8725-44123664838a" CvTextArea="480, 97, 226, 16" CvTextArgument="efilingigr.maharashtra.gov.in says" CvType="Text" DesignTimeRectangle="480, 97, 226, 16" ElementType="Text" Guid="b20845bf-a58c-4727-a9b0-14d6ca1df8e3" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-6" Y="-4" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="50ccea137ab7a48357527e7be4c8718f.png" xmlns="">0u7CnmdifuUKKy0SMCnuO7w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

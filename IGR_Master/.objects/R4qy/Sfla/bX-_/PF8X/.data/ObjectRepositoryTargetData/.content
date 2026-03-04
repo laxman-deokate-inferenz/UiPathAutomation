@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lyHF-ebNwUeuxy3NoezGUw" Reference="XYDNlefXLUawOcBond9NIg/PF8X0aNZ0EupIF47aPkZoA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="074884fb-327c-4dd6-a517-793fe6922d65" CvElementArea="623, 442, 176, 26" CvType="InputBox" DesignTimeRectangle="625, 443, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='11' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtRent1' tableRow='2' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtRent1' type='text' tag='INPUT' class='textbox' aaname='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="8b3aaf19-4806-48fb-a68c-c80714de78ef" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a2bbf3b7-5107-4d50-92b3-745f89d78a20" CvTextArea="678, 324, 67, 17" CvTextArgument="Rent (Rs)" CvType="Text" DesignTimeRectangle="625, 422, 174, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='11' tag='TABLE' /&gt;&lt;webctrl class='labelFont' tableCol='4' tableRow='1' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='labelFont' type='' aaname='                                                 Rent (Rs)                                             ' tag='TD' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Rent (Rs)' /&gt;" Guid="7d3f0eb6-81ef-46fa-ab46-e0ee85dea2df" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="9b9a9164097bffe2d944e4398b8a510f.png" xmlns="">0nYwIzFaKlkmQEsCAp5sHqw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

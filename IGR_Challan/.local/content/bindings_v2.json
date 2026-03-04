@@ -1,0 +1,139 @@
+{
+  "version": "2.0",
+  "resources": [
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_3",
+      "resource": "Connection",
+      "key": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+      "id": "Connectiond4693297-4791-4bb1-aaa4-35a7e05ac10ad4693297-4791-4bb1-aaa4-35a7e05ac10aFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    },
+    {
+      "activityDisplayName": "Upload Files",
+      "activityId": "UploadFilesConnections_3",
+      "resource": "Connection",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+      "id": "Connection07d2357f-01e7-423f-b76d-b0c7b72314dd07d2357f-01e7-423f-b76d-b0c7b72314ddFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-drive",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Upload Files",
+      "activityId": "UploadFilesConnections_3",
+      "resource": "Property",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload Files",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload FilesDocumentsFalsehttps://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJuFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "Documents",
+          "isExpression": false,
+          "displayName": "Destination folder",
+          "description": "The destination folder where to upload the files. If not specified, it defaults to Google Drive root folder"
+        },
+        "ID": {
+          "defaultValue": "https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu",
+          "isExpression": false,
+          "displayName": "Destination folder URL",
+          "description": "The destination folder where to upload the files. If not specified, it defaults to Google Drive root folder"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Upload Files",
+        "ObjectName": "CuratedFolder",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+      }
+    },
+    {
+      "activityDisplayName": "For Each File or Folder",
+      "activityId": "ForEachFileFolderConnections_1",
+      "resource": "Property",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or Folder",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or FolderDocsFalsehttps://drive.google.com/drive/folders/1s6FS5L7D1g28H_pABE1DBfQI2Icmz-jVFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "Docs",
+          "isExpression": false,
+          "displayName": "In location",
+          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+        },
+        "ID": {
+          "defaultValue": "https://drive.google.com/drive/folders/1s6FS5L7D1g28H_pABE1DBfQI2Icmz-jV",
+          "isExpression": false,
+          "displayName": "In location",
+          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "For Each File or Folder",
+        "ObjectName": "CuratedFolder",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+      }
+    },
+    {
+      "activityDisplayName": "Content Generation",
+      "activityId": "ConnectorActivity_2",
+      "resource": "Connection",
+      "key": "360d1c62-78b5-4c58-9ac9-96ab2e7ea32d",
+      "id": "Connection360d1c62-78b5-4c58-9ac9-96ab2e7ea32d360d1c62-78b5-4c58-9ac9-96ab2e7ea32dFalse",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "360d1c62-78b5-4c58-9ac9-96ab2e7ea32d",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "UseConnectionService": "true",
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-uipath-airdk",
+        "ActivityName": "Content Generation"
+      }
+    },
+    {
+      "activityDisplayName": "Get Credential",
+      "activityId": "GetRobotCredential_2",
+      "resource": "asset",
+      "key": "UnAttended.Password",
+      "id": "assetUnAttended.PasswordUnAttendedFalsePasswordFalse",
+      "value": {
+        "folderPath": {
+          "defaultValue": "UnAttended",
+          "isExpression": false
+        },
+        "name": {
+          "defaultValue": "Password",
+          "isExpression": false
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2"
+      }
+    }
+  ]
+}

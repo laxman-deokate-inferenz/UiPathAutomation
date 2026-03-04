@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xzxjJA4EN0yDz5iy59tBRg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="a68f8327-62b4-4e15-ae21-3acdd676d511" CvType="AnyWordGroup" DesignTimeRectangle="556, 609, 219, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='130' tag='SPAN' /&gt;" Guid="f23c74c1-e5aa-4f32-be2c-e7f38be53112" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a68f8327-62b4-4e15-ae21-3acdd676d511" CvElementArea="726, 629, 55, 33" CvTextArea="728, 637, 50, 17" CvTextArgument="Update" CvType="Button" DesignTimeRectangle="728, 630, 51, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnSaveAll' type='submit' tag='INPUT' class='' aaname='Save Lease Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Update' /&gt;" Guid="c23043a7-d0fe-4bc8-95d5-d25937c9ad62" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b24c5041e378d118cfa0e7054f17ebca.png" xmlns="">0trzLFTxhEUaPUZtkn8UsLg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

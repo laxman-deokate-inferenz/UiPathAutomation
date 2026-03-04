@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FlTynyhACk6EufDJnaRRlg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="epay.sbi.bank.in/secure/upiQRWait.jsp" CVScreenId="6663caef-f553-47ed-ab70-5d91201cb192" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1328, 8, 46, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='SBIePay UPI QR Wait - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" Guid="81ef4962-583c-4f2a-8615-fc7969281a4b" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='SBIePay UPI QR Wait and 1 more page - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6663caef-f553-47ed-ab70-5d91201cb192" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1341, 18, 20, 19" ElementType="Button" Guid="54a3b24b-492e-45a7-afdf-243a1cebacb5" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d6124475ac05afdd6879529ece98e77a.png" xmlns="">0XZDxZyB6OE2QyvMz8vAncQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

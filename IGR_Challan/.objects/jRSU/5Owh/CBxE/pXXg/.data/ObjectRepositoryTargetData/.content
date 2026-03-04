@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="91EXTO31YE2X9CvTHa36yw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="c2d257db-84dc-4017-ae67-9dc8b7621bbe" CvElementArea="245, 532, 109, 25" CvTextArea="246, 538, 106, 12" CvTextArgument="Save Family Details" CvType="Button" DesignTimeRectangle="246, 633, 107, 24" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" Guid="9576ffb4-ee37-4a72-a685-c22dfca045a2" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="c2d257db-84dc-4017-ae67-9dc8b7621bbe" CvElementArea="384, 532, 123, 26" CvTextArea="432, 538, 26, 12" CvTextArgument="New" CvType="Button" DesignTimeRectangle="385, 633, 120, 24" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$repeaterPartyDetails$ctl00$btnNew' type='submit' tag='INPUT' class='' aaname='New' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='New' /&gt;" Guid="4ea8dbf6-54ca-4dd1-930f-1a964361acb7" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="0614740c-1444-493a-b49a-491e8b76c6d2" CvTextArea="170, 101, 253, 16" CvTextArgument="1.licencee/Tenant - Bhalerao Sandip Arjun" CvType="Text" DesignTimeRectangle="170, 101, 338, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - *' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - *' /&gt;" Guid="7a1266d1-0494-4dda-9a51-e76814a67737" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="cafa4dff34a4e2f06f7fd8c1a9cfc564.png" xmlns="">0S-_9vdxgZUOdJ-7BhFr6lA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

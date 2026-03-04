@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jvhpBRqasEKTP-1VU6mFsg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="6f0fff32-ac36-4b85-b253-cd6d0a42f21e" CvElementArea="318, 566, 116, 17" CvType="InputBox" DesignTimeRectangle="320, 568, 113, 14" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="41f35eeb-323b-4071-981c-0f13055831ed" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="6f0fff32-ac36-4b85-b253-cd6d0a42f21e" CvTextArea="259, 568, 42, 11" CvTextArgument="Relation" CvType="Text" DesignTimeRectangle="260, 568, 41, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Relation' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Relation' /&gt;" Guid="59ddbaf1-9d02-46d9-a74e-946af689135a" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="6f0fff32-ac36-4b85-b253-cd6d0a42f21e" CvTextArea="256, 144, 233, 12" CvTextArgument="1.licencee/Tenant - Kaware Avinash Ganpatrao" CvType="Text" DesignTimeRectangle="256, 144, 234, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - Kaware Avinash Ganpatrao' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - Kaware Avinash Ganpatrao' /&gt;" Guid="b6402424-7423-4499-b1a0-7f5b961a4c55" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="607d8b6c9ab66d3eeecd93c766e985b5.png" xmlns="">0u9_NyZXSOUyMjm2-DCDg7A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SelectItem</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
