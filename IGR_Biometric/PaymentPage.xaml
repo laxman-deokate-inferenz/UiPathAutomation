@@ -116,7 +116,7 @@
       <AssemblyReference>CA7E05AC10A_v2_sub_g.rzua4UX5bR1Ujsrv2u6EzV2</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="840,2537" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Sequence" sap:VirtualizedContainerService.HintSize="739,2603" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="TextMessage" />
     </Sequence.Variables>
@@ -126,13 +126,13 @@
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_6" Message="[&quot;Entered into Payment Page&quot;]" />
-    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge SBIePay(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,2339" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge SBIePay(1)" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="452,2405" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2145" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2211" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:TimeSpan" Name="delayTime" />
             </Sequence.Variables>
@@ -233,24 +233,7 @@
               </Assign.Value>
             </Assign>
             <Delay Duration="[delayTime]" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="Delay_3" />
-            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
-              <ui:CommentOut.Body>
-                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,174" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,114" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Payment Confirmed&quot;]" />
-                </Sequence>
-              </ui:CommentOut.Body>
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-            </ui:CommentOut>
+            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="416,123" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Payment Confirmed&quot;]" />
             <uix:NCheckState DisplayName="Check App State 'Close'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="d55909ae-15ff-49ca-be1f-c5538540ca1e" Version="V5">
               <uix:NCheckState.IfExists>
                 <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_5">
@@ -284,7 +267,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="epay.sbi.bank.in/secure/upiQRWait.jsp" CVScreenId="6663caef-f553-47ed-ab70-5d91201cb192" ContentHash="FlTynyhACk6EufDJnaRRlg" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1328, 8, 46, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='SBIePay UPI QR Wait - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" Guid="81ef4962-583c-4f2a-8615-fc7969281a4b" InformativeScreenshot="d6124475ac05afdd6879529ece98e77a.png" Reference="XYDNlefXLUawOcBond9NIg/FNv5i_tVxk6a00POjYBdRQ" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='SBIePay UPI QR Wait and 1 more page - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="6663caef-f553-47ed-ab70-5d91201cb192" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1341, 18, 20, 19" ElementType="Button" Guid="54a3b24b-492e-45a7-afdf-243a1cebacb5" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>
@@ -330,7 +313,7 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="sbiepay.sbi/secure/upiQRWait.jsp" CVScreenId="5cdc86ce-4fc6-46c4-9505-25f9ad009d30" ContentHash="Q1Z8C3EGVkuVISds93V1VQ" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1328, 8, 46, 40" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='SBIePay UPI QR Wait - Microsoft Edge' role='pane' /&gt;&lt;ctrl name='Close' role='push button' /&gt;" Guid="e565578c-0d63-45a7-beb7-4311f5f01c48" InformativeScreenshot="d6124475ac05afdd6879529ece98e77a.png" Reference="XYDNlefXLUawOcBond9NIg/GYUdWKvnnEeKMD3idT5HKg" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='SBIePay UPI QR Wait - Work - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
                   <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
                       <uix:Target CVScreenId="5cdc86ce-4fc6-46c4-9505-25f9ad009d30" CvElementArea="1341, 18, 20, 19" CvType="CloseButton" DesignTimeRectangle="1341, 18, 20, 19" ElementType="Button" Guid="85b37f3f-ac81-47c3-a9f9-f4f18229a870" SearchSteps="CV" TargetType="ComputerVisionBased" />
                     </scg:List>
                   </uix:TargetAnchorable.Anchors>

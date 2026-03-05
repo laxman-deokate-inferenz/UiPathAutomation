@@ -1,9 +1,10 @@
 {
-  "name": "IGR_REF",
+  "name": "IGR_Biometric",
   "projectId": "2fbc0cf8-56e9-4ff9-a015-ed95040a7348",
-  "description": "IGR_REF",
+  "description": "IGR_Biometric",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.Azure.Activities": "[1.6.3]",
     "UiPath.DocumentUnderstanding.Activities": "[2.17.2]",
     "UiPath.Excel.Activities": "[3.3.1]",
     "UiPath.FTP.Activities": "[3.0.0]",
@@ -15,7 +16,7 @@
     "UiPath.PDF.Activities": "[3.25.2]",
     "UiPath.System.Activities": "[25.12.0-preview]",
     "UiPath.Testing.Activities": "[25.10.0]",
-    "UiPath.UIAutomation.Activities": "[25.10.25]",
+    "UiPath.UIAutomation.Activities": "[25.10.26]",
     "UiPath.WebAPI.Activities": "[2.3.2]"
   },
   "webServices": [],

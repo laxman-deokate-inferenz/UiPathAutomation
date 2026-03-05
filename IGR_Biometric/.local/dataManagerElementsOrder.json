@@ -3,7 +3,9 @@
     {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "displayList&StateMachine_1"
+      ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
@@ -26,14 +28,6 @@
     },
     {
       "Path": "Framework/SetTransactionStatus.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Process_PDF.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -73,36 +67,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "SignUp.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "PartyDetails.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "PartyIndex&Sequence_113",
-        "getPAN&Sequence_1",
-        "Count&Sequence_1",
-        "delCount&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Framework/InitAllSettings.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Identifier.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -130,65 +95,12 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Check_pdfProcessed_Status.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "get_pdfProcessed_Status.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "get_OwnerCount.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "get_TenantCount.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "get_GRN.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "CountInvalid&Sequence_101",
-        "FilePath&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Challan_Process.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "isDHC&Sequence_1",
         "FilePath&Sequence_1",
         "out_GRN&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "get_DHC.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "FilePath&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
@@ -227,42 +139,6 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "PoliceVerification.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "PropertyDetails.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "getPincode.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "Flag&Sequence_7"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "getVillage.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "VillageName&Sequence_3"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
       "Path": "Biometric_Secugen.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": null,
@@ -271,33 +147,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "getPropertyPoliceStation.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
       "Path": "getPAN.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Sequence.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "dtTemp&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "PoliceVerification_Direct.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": null,

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="M8zGn1LCpkGezeCD5-JxnQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="d9088548-ed8d-4694-a034-db18261fcc58" CvElementArea="622, 401, 87, 33" CvTextArea="624, 411, 82, 17" CvTextArgument="Verify eKYC" CvType="Button" DesignTimeRectangle="624, 403, 83, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='19' tableRow='5' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='INPUT' /&gt;" Guid="28a1acef-5a81-474d-8dc6-53549341a446" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="d9088548-ed8d-4694-a034-db18261fcc58" CvElementArea="765, 404, 62, 29" CvTextArea="781, 411, 29, 14" CvTextArgument="Exit" CvType="Button" DesignTimeRectangle="767, 406, 58, 25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnexit' type='submit' tag='INPUT' class='' aaname='Exit' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Exit' /&gt;" Guid="3ce8aa92-e40b-46ec-aaff-68cb180e366a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="3d23847a8638b444d631e552c85d9575.jpg" xmlns="">0Hp53mCAN0Eax4rzxZnpmNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

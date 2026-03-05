@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ND-SVGZOgUm5rhpWZgyS0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="0699c3de-041e-4757-bfd7-f8ec86518ff5" CvTextArea="54, 373, 40, 13" CvTextArgument="Select" CvType="Text" DesignTimeRectangle="55, 373, 37, 15" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='4' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='A' /&gt;" Guid="e1864b5a-5503-4f1e-b6ef-260e0cb54df8" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0699c3de-041e-4757-bfd7-f8ec86518ff5" CvTextArea="212, 373, 121, 13" CvTextArgument="Dhamale Vikas Vilas" CvType="Text" DesignTimeRectangle="213, 372, 190, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' aaname='*' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='*' /&gt;" Guid="d1563495-f466-4f1b-8317-354e2e7ce3ec" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="0699c3de-041e-4757-bfd7-f8ec86518ff5" CvTextArea="100, 373, 96, 13" CvTextArgument="licensor/Owner" CvType="Text" DesignTimeRectangle="101, 372, 112, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' class='' aaname='licensor/Owner' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='licensor/Owner' /&gt;" Guid="36b1649c-db8c-49e9-a875-7abf151b21a6" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset Y="5" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="78a8463b85cbd483343654e50ca90855.jpg" xmlns="">073CLefRzXECYDsJwt0gtdg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

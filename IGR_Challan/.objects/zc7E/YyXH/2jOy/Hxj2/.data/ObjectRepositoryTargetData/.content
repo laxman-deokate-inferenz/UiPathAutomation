@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="fk7jvqil20iTFU2uQMV0AA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="b3c1ea8f-a242-4a09-aaec-873eef7d7d15" CvElementArea="682, 616, 183, 32" CvTextArea="683, 625, 178, 14" CvTextArgument="Next: Rent &amp; Other Terms" CvType="Button" DesignTimeRectangle="683, 617, 179, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;table' idx='2' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' tableRow='29' tag='INPUT' /&gt;" Guid="0af2c4b3-c016-4951-b2c1-029e6b55456b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b3c1ea8f-a242-4a09-aaec-873eef7d7d15" CvElementArea="520, 616, 160, 32" CvTextArea="521, 625, 158, 14" CvTextArgument="Add : Identifier Details" CvType="Button" DesignTimeRectangle="521, 617, 158, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnMore' type='submit' tag='INPUT' class='' aaname='Add : Identifier Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add : Identifier Details' /&gt;" Guid="a2cd3dd7-16f5-43c9-9dd7-df9995c28fbe" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="54c1d2ee6fc3d77b82ebfe94089f27a3.png" xmlns="">0_3q7Etc8l0GYClVVS5VEnQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

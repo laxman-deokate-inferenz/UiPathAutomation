@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TdMd2czq-kesYit8gKfLiw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="bd187ee7-1d8f-4646-ac8d-4ec087956b9c" CvElementArea="602, 410, 73, 32" CvTextArea="609, 418, 57, 17" CvTextArgument="Capture" CvType="Button" DesignTimeRectangle="603, 411, 70, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl id='btnCapture' tableRow='3' tag='INPUT' /&gt;" Guid="a9b25953-7931-4a28-abbd-874a0032428f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bd187ee7-1d8f-4646-ac8d-4ec087956b9c" CvElementArea="678, 409, 103, 32" CvTextArea="680, 417, 98, 18" CvTextArgument="Verify &amp; Close" CvType="Button" DesignTimeRectangle="680, 411, 99, 29" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='submit' aaname='Verify &amp;amp; Close' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Verify &amp;amp; Close' /&gt;" Guid="1558f164-c3d8-44bc-b9a9-87946110ef84" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="d31a034de416f098d55e40d2a353729d.jpg" xmlns="">0-dqADtUtg02ms6jBsPEkxA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

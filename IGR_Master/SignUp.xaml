@@ -168,7 +168,7 @@
       <AssemblyReference>System.Memory.Data</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="854,4115" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Property" sap:VirtualizedContainerService.HintSize="673,4599" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="strMiddleName" />
       <Variable x:TypeArguments="x:String" Default="Laxman" Name="strFirstName" />
@@ -211,7 +211,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,4092" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="630,4576" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -219,7 +219,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Sequence DisplayName="SignUp" sap:VirtualizedContainerService.HintSize="628,3658" sap2010:WorkflowViewState.IdRef="Sequence_151">
+        <Sequence DisplayName="SignUp" sap:VirtualizedContainerService.HintSize="628,4142" sap2010:WorkflowViewState.IdRef="Sequence_151">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -250,10 +250,10 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="594,3072" sap2010:WorkflowViewState.IdRef="RetryScope_1">
+          <ui:RetryScope LogRetriedExceptions="{x:Null}" RetriedExceptionsLogLevel="{x:Null}" DisplayName="Retry Scope" sap:VirtualizedContainerService.HintSize="594,3556" sap2010:WorkflowViewState.IdRef="RetryScope_1">
             <ui:RetryScope.ActivityBody>
               <ActivityAction>
-                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="592,2874" sap2010:WorkflowViewState.IdRef="Sequence_178">
+                <Sequence DisplayName="Action" sap:VirtualizedContainerService.HintSize="592,3358" sap2010:WorkflowViewState.IdRef="Sequence_178">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="TextMessage" />
                   </Sequence.Variables>
@@ -262,32 +262,21 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="558,219" sap2010:WorkflowViewState.IdRef="CommentOut_3">
-                    <ui:CommentOut.Body>
-                      <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_187">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                        <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="KillProcess_7" ProcessName="msedge">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                        </ui:KillProcess>
-                      </Sequence>
-                    </ui:CommentOut.Body>
-                  </ui:CommentOut>
-                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Main Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,2595" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V2">
+                  <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="558,57" sap2010:WorkflowViewState.IdRef="KillProcess_8" ProcessName="msedge">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:KillProcess>
+                  <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Main Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="558,3241" sap2010:WorkflowViewState.IdRef="NApplicationCard_12" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Always]" ScopeGuid="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
                           <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                         </ActivityAction.Argument>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,2401" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="556,3047" sap2010:WorkflowViewState.IdRef="Sequence_124">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:String" Name="out_captchaText" />
                             <Variable x:TypeArguments="x:String" Name="aiText" />
@@ -298,22 +287,22 @@
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Sequence-SignUP" sap:VirtualizedContainerService.HintSize="522,2341" sap2010:WorkflowViewState.IdRef="Sequence_136">
+                          <Sequence DisplayName="Sequence-SignUP" sap:VirtualizedContainerService.HintSize="522,2987" sap2010:WorkflowViewState.IdRef="Sequence_136">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <uix:NCheckState DisplayName="Check App State 'Button(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V5">
+                            <uix:NCheckState DisplayName="Check App State 'Button(1)'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="488,680" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V5">
                               <uix:NCheckState.IfExists>
-                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,253" sap2010:WorkflowViewState.IdRef="Sequence_154">
+                                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,245" sap2010:WorkflowViewState.IdRef="Sequence_154">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,189" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V5">
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Button'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="NClick_27" InteractionMode="SameAsCard" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="76c68b4e-9d93-4ff4-92f6-68816f9707a6" Version="V5">
                                     <uix:NClick.Target>
                                       <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/MainForm.aspx" CVScreenId="a9fa78b1-909e-42d4-8059-72f5723a329a" ContentHash="aWEgVwTmD0KG-0By4dIKYA" CvElementArea="1188, 177, 21, 21" CvType="CloseButton" DesignTimeRectangle="1192, 172, 13, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;&#xA;&lt;webctrl parentid='MessageModal2' tag='BUTTON' type='button' /&gt;" Guid="3e6b3229-d05d-421b-9b3f-82e3c2fa118f" InformativeScreenshot="f70e33500d47e0916f3ffc9872bcc986.png" Reference="zHM_MHonYECrlrhSQ6-q1Q/NjyCEA_lp06O3pQOL6Gj_w" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Main Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive" />
                                     </uix:NClick.Target>
@@ -321,7 +310,7 @@
                                 </Sequence>
                               </uix:NCheckState.IfExists>
                               <uix:NCheckState.IfNotExists>
-                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,94" sap2010:WorkflowViewState.IdRef="Sequence_155">
+                                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_155">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -334,7 +323,7 @@
                               </uix:NCheckState.Target>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
