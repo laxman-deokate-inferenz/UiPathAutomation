@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="jZ0KDXOxeEC48Nk8lzEJDA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="08ca3cb9-e085-474a-8b79-12a6a67905ee" CvElementArea="682, 408, 177, 27" CvType="InputBox" DesignTimeRectangle="684, 409, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$txtEmailId' type='text' tag='INPUT' class='textbox' aaname='Enter Email Id' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="022783b7-643b-4f25-8be6-51baa0b91c99" IsResponsive="True" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="08ca3cb9-e085-474a-8b79-12a6a67905ee" CvTextArea="605, 410, 61, 15" CvTextArgument="Email Id" CvType="Text" DesignTimeRectangle="606, 409, 59, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Email Id' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Email Id' /&gt;" Guid="a45dfeac-e45f-4c8a-82bb-b41ca517411d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="43c2efff1d93dfd344a272771e6cf2fa.png" xmlns="">0_vtR0GGCbUWr_x1BLnFIwQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">SetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

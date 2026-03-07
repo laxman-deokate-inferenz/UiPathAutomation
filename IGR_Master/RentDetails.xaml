@@ -151,7 +151,7 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="804,5520" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="708,6014" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:Boolean" Name="updatedToken" />
@@ -171,13 +171,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="662,5497" sap2010:WorkflowViewState.IdRef="Sequence_39">
+    <Sequence sap:VirtualizedContainerService.HintSize="662,5991" sap2010:WorkflowViewState.IdRef="Sequence_39">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="628,5414" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="628,5908" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,7 +185,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="626,4744" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="626,5238" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DocumentID" />
             </Sequence.Variables>
@@ -2213,7 +2213,7 @@
                                         </Sequence>
                                       </If.Else>
                                     </If>
-                                    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[{ fileResource }]" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected &lt;/SPAN&gt;&lt;SPAN&gt;Sir/Madam,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Please find attached &lt;/SPAN&gt;&lt;SPAN&gt;Draft &lt;/SPAN&gt;&lt;SPAN&gt;of Rent Agreement&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;from,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;Laxman Deokate&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;9011092282&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[{ Email2 }]" ConnectionId="8c6e332c-054b-4d91-acdf-550e7c2d278e" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,493" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Registered Rent Agreement for Token: &quot;+dtTable.rows(0)(&quot;Token&quot;).ToString]" To="[{ Email }]" UseConnectionService="True">
+                                    <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[{ fileResource }]" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected &lt;/SPAN&gt;&lt;SPAN&gt;Sir/Madam,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Please find attached &lt;/SPAN&gt;&lt;SPAN&gt;Draft &lt;/SPAN&gt;&lt;SPAN&gt;of Rent Agreement&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;from,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;Laxman Deokate&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;9011092282&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[{ Email2 }]" ConnectionId="332032d4-3934-4c35-9d9d-430082ee5d80" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,493" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Registered Rent Agreement for Token: &quot;+dtTable.rows(0)(&quot;Token&quot;).ToString]" To="[{ Email }]" UseConnectionService="True">
                                       <uga:SendEmailConnections.AttachmentsBackup>
                                         <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
                                           <usau:BackupSlot.BackupValues>
@@ -3728,18 +3728,18 @@
                 </If.Else>
               </If>
             </Sequence>
-            <Sequence DisplayName="Google Drive upload" sap:VirtualizedContainerService.HintSize="592,57" sap2010:WorkflowViewState.IdRef="Sequence_177">
+            <Sequence DisplayName="Google Drive upload" sap:VirtualizedContainerService.HintSize="592,551" sap2010:WorkflowViewState.IdRef="Sequence_177">
               <Sequence.Variables>
                 <Variable x:TypeArguments="upr:ILocalResource" Name="fileResource" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" PathType="File" Resource="[fileResource]" />
-              <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_2" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
+              <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_2" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
                 <uga:UploadFilesConnections.FilesBackup>
                   <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
                     <usau:BackupSlot.BackupValues>

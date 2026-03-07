@@ -1,33 +1,23 @@
 {
   "Workflows": [
     {
+      "Path": "PropertyDetails.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": null,
+      "AddedNamespaces": null
+    },
+    {
       "Path": "Main.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "displayList&StateMachine_1"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Framework/KillAllProcesses.xaml",
-      "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/InitAllApplications.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Framework/SetTransactionStatus.xaml",
+      "Path": "Biometric_Secugen.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -51,7 +41,7 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/GetTransactionData.xaml",
+      "Path": "CaptchaProcess.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": null,
@@ -62,94 +52,6 @@
       "Path": "Login.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Framework/InitAllSettings.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Check_Application_Health.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "isLoginPage&Sequence_3"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "RentDetails.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "Token&Sequence_51"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Challan_Process.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "isDHC&Sequence_1",
-        "FilePath&Sequence_1",
-        "out_GRN&Sequence_2"
-      ],
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "PaymentPage.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "CaptchaProcess.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "captchaProcess_Challan.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "captchaProcess_Challan2.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Biometric_Secugen.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
-      "ArgumentsSectionElementsOrder": null,
-      "ConstantsSectionElementsOrder": null,
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "getPAN.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": null,
       "ArgumentsSectionElementsOrder": null,
       "ConstantsSectionElementsOrder": null,
       "AddedNamespaces": null

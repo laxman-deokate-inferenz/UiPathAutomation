@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="P5totLqiCk-rSQpGggxkSA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx" DesignTimeRectangle="483, 139, 416, 36" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl role='text' automationid='' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' /&gt;" Guid="a0daa4ab-e655-4ec9-b3a1-a9ed93eb42a1" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.a*' /&gt;" SearchSteps="FuzzySelector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="dad66173-4130-4f8a-b443-1de3e90b3edc" CvElementArea="859, 206, 42, 34" CvTextArea="868, 215, 23, 15" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="860, 207, 39, 32" ElementType="Button" FuzzySelectorArgument="&lt;ctrl name='efilingigr.maharashtra.gov.in says' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='OK' role='push button' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='OK' /&gt;" Guid="c0dcddd4-aea9-4d01-bf84-6edbc1cda386" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="40193833ae43f9f1eccb579f44b3939b.jpg" xmlns="">0j14mIzGvhEGNDjtu74nx_w</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

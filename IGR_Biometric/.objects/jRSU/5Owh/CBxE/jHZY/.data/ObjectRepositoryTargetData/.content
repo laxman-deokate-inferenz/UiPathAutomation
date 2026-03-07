@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ukyVQZnCs0aBuNW5DhfoNg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx" CVScreenId="a381c4ae-c4b0-4c74-8efc-ae9311a086e8" CvElementArea="420, 631, 95, 36" CvTextArea="432, 641, 69, 15" CvTextArgument="Show PDF" CvType="Button" DesignTimeRectangle="421, 632, 93, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' /&gt;&lt;webctrl id='btnShowPDF' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnShowPDF' type='submit' tag='INPUT' class='btn btn-default' aaname='Show PDF' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Show PDF' /&gt;" Guid="63cc58da-9cd8-46bd-b8a2-635aea9539da" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx?auth=568cba6a-0fdc-4179-becc-c94a60e3cbbd' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a381c4ae-c4b0-4c74-8efc-ae9311a086e8" CvElementArea="282, 631, 140, 36" CvTextArea="296, 641, 113, 15" CvTextArgument="Police Verification" CvType="Button" DesignTimeRectangle="284, 632, 137, 34" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnPoliceVerification' type='submit' tag='INPUT' class='btn btn-default' aaname='Police Verification' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Police Verification' /&gt;" Guid="54f5cb76-787d-4d5b-a489-c035ee3b9df8" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="c0294dbec8cc6eef980031a96365ffe6.jpg" xmlns="">0GJXzoT5Dd0-LsuAfQ5Jh-Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

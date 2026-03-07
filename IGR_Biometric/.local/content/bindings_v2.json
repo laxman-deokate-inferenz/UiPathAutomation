@@ -3,7 +3,7 @@
   "resources": [
     {
       "activityDisplayName": "Content Generation",
-      "activityId": "ConnectorActivity_3",
+      "activityId": "ConnectorActivity_1",
       "resource": "Connection",
       "key": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
       "id": "Connectiond4693297-4791-4bb1-aaa4-35a7e05ac10ad4693297-4791-4bb1-aaa4-35a7e05ac10aFalse",
@@ -69,70 +69,51 @@
       }
     },
     {
-      "activityDisplayName": "For Each File or Folder",
-      "activityId": "ForEachFileFolderConnections_1",
+      "activityDisplayName": "Download File",
+      "activityId": "DownloadFileConnections_4",
+      "resource": "Connection",
+      "key": "c3bfc534-a117-4513-8158-794a805a8753",
+      "id": "Connectionc3bfc534-a117-4513-8158-794a805a8753c3bfc534-a117-4513-8158-794a805a8753False",
+      "value": {
+        "ConnectionId": {
+          "defaultValue": "c3bfc534-a117-4513-8158-794a805a8753",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.2",
+        "Connector": "uipath-google-drive",
+        "UseConnectionService": "True"
+      }
+    },
+    {
+      "activityDisplayName": "Download File",
+      "activityId": "DownloadFileConnections_4",
       "resource": "Property",
-      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or Folder",
-      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or FolderDocsFalsehttps://drive.google.com/drive/folders/1s6FS5L7D1g28H_pABE1DBfQI2Icmz-jVFalse",
+      "key": "c3bfc534-a117-4513-8158-794a805a8753.Download File",
+      "id": "Propertyc3bfc534-a117-4513-8158-794a805a8753.Download FileDataEntry.xlsxFalsehttps://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=trueFalse",
       "value": {
         "FullName": {
-          "defaultValue": "Docs",
+          "defaultValue": "DataEntry.xlsx",
           "isExpression": false,
-          "displayName": "In location",
-          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+          "displayName": "File to download",
+          "description": "The file to download"
         },
         "ID": {
-          "defaultValue": "https://drive.google.com/drive/folders/1s6FS5L7D1g28H_pABE1DBfQI2Icmz-jV",
+          "defaultValue": "https://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=true",
           "isExpression": false,
-          "displayName": "In location",
-          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+          "displayName": "File to download",
+          "description": "The URL or ID of the file to download"
         }
       },
       "metadata": {
         "BindingsVersion": "2.1",
-        "ActivityName": "For Each File or Folder",
-        "ObjectName": "CuratedFolder",
+        "ActivityName": "Download File",
+        "ObjectName": "CuratedFile",
         "DisplayLabel": "FullName",
-        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
-      }
-    },
-    {
-      "activityDisplayName": "Content Generation",
-      "activityId": "ConnectorActivity_2",
-      "resource": "Connection",
-      "key": "360d1c62-78b5-4c58-9ac9-96ab2e7ea32d",
-      "id": "Connection360d1c62-78b5-4c58-9ac9-96ab2e7ea32d360d1c62-78b5-4c58-9ac9-96ab2e7ea32dFalse",
-      "value": {
-        "ConnectionId": {
-          "defaultValue": "360d1c62-78b5-4c58-9ac9-96ab2e7ea32d",
-          "isExpression": false
-        }
-      },
-      "metadata": {
-        "UseConnectionService": "true",
-        "BindingsVersion": "2.2",
-        "Connector": "uipath-uipath-airdk",
-        "ActivityName": "Content Generation"
-      }
-    },
-    {
-      "activityDisplayName": "Get Credential",
-      "activityId": "GetRobotCredential_2",
-      "resource": "asset",
-      "key": "UnAttended.Password",
-      "id": "assetUnAttended.PasswordUnAttendedFalsePasswordFalse",
-      "value": {
-        "folderPath": {
-          "defaultValue": "UnAttended",
-          "isExpression": false
-        },
-        "name": {
-          "defaultValue": "Password",
-          "isExpression": false
-        }
-      },
-      "metadata": {
-        "BindingsVersion": "2.2"
+        "ParentResourceKey": "Connection.c3bfc534-a117-4513-8158-794a805a8753"
       }
     }
   ]

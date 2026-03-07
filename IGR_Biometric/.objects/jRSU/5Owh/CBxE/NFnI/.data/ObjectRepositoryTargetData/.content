@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="SNjsiEWaYEqEfW2pl6gJQw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx" CVScreenId="478fb2db-2f60-4bad-b5e1-5c1ac883ade0" CvElementArea="790, 631, 227, 36" CvTextArea="803, 642, 200, 16" CvTextArgument="Submit without Digital Signature" CvType="Button" DesignTimeRectangle="791, 632, 225, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' /&gt;&lt;webctrl id='btnupload' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnupload' type='submit' tag='INPUT' class='btn btn-default' aaname='Submit without Digital Signature' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Submit without Digital Signature' /&gt;" Guid="cbc60b6b-8f06-43a9-aecd-6a6bb5eb14b0" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx?auth=568cba6a-0fdc-4179-becc-c94a60e3cbbd' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="478fb2db-2f60-4bad-b5e1-5c1ac883ade0" CvElementArea="720, 630, 72, 37" CvTextArea="734, 642, 45, 13" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="722, 632, 69, 34" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnDigitalSign' type='submit' tag='INPUT' class='btn btn-default' aaname='Submit' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Submit' /&gt;" Guid="097af16e-28a1-450b-aba0-3224600795a0" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="039718284aa549c91fdaa06a22ec48df.jpg" xmlns="">06zmkskPRRk2h4-AY8fnRZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
