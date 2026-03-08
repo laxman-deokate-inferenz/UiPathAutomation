@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="FYpdEbRS4UevaeF3TOnoPg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="a3c9f4c8-ab22-4e99-b7fc-29cfa2192650" CvTextArea="94, 265, 82, 17" CvTextArgument="Oldentifier" CvType="Text" DesignTimeRectangle="95, 267, 13, 13" ElementType="RadioButton" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Identifier' type='radio' tag='INPUT' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="c3e0a1ec-a58d-4369-97b2-8c50d428b2e4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a3c9f4c8-ab22-4e99-b7fc-29cfa2192650" DesignTimeRectangle="108, 265, 67, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl tableRow='1' tag='TABLE' /&gt;&lt;webctrl aaname='Identifier' tableRow='1' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Identifier' type='' tag='LABEL' class='' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Identifier' /&gt;" Guid="5ec7772b-8079-4837-9c63-4ab73dd040f7" SearchSteps="Selector, FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b2372e145413974f71df29d66e6c5a62.png" xmlns="">09Kbza4IDH02_7J2s93eZGg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

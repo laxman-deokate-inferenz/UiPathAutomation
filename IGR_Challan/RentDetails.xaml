@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="RentDetails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="RentDetails" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd2="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugam="clr-namespace:UiPath.GSuite.Activities.Models;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_TransactionItem" Type="InArgument(sd:DataRow)" />
     <x:Property Name="in_Config" Type="InArgument(scg:Dictionary(x:String, x:Object))" />
@@ -151,7 +151,7 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="739,748" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="815,3896" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:Boolean" Name="updatedToken" />
@@ -164,20 +164,21 @@
       <Variable x:TypeArguments="x:Boolean" Name="isUpdated" />
       <Variable x:TypeArguments="sd:DataTable" Name="dtRent" />
       <Variable x:TypeArguments="x:Int32" Default="0" Name="CurrentIndex" />
-      <Variable x:TypeArguments="x:Int32" Name="rowNumber" />
+      <Variable x:TypeArguments="x:Int32" Default="0" Name="rowNumber" />
+      <Variable x:TypeArguments="x:String" Name="StampDuty" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="520,725" sap2010:WorkflowViewState.IdRef="Sequence_39">
+    <Sequence sap:VirtualizedContainerService.HintSize="626,3873" sap2010:WorkflowViewState.IdRef="Sequence_39">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="486,642" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="592,3790" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -185,7 +186,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="484,222" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="590,3370" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DocumentID" />
             </Sequence.Variables>
@@ -194,7 +195,7 @@
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_50" Message="[&quot;In RentEntry_Page&quot;]">
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,57" sap2010:WorkflowViewState.IdRef="LogMessage_50" Message="[&quot;In RentEntry_Page&quot;]">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -202,7 +203,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:LogMessage>
-            <Assign sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Assign_35">
+            <Assign sap:VirtualizedContainerService.HintSize="556,57" sap2010:WorkflowViewState.IdRef="Assign_35">
               <Assign.To>
                 <OutArgument x:TypeArguments="x:String">[DocumentID]</OutArgument>
               </Assign.To>
@@ -216,22 +217,114 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </Assign>
-            <Sequence DisplayName="Update Challan Table with updated Stamp charges" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_135">
+            <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" DisplayName="Edge Lease Details Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="556,368" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="1cb5cb51-bc01-4685-808c-fa5cf1adcfef" Version="V2">
+              <uix:NApplicationCard.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,165" sap2010:WorkflowViewState.IdRef="Sequence_144">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NCheckState DisplayName="Check App State 'Stamp Duty'" HealingAgentBehavior="Disabled" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="1cb5cb51-bc01-4685-808c-fa5cf1adcfef" Version="V5">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,194" sap2010:WorkflowViewState.IdRef="Sequence_145">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGetText DisplayName="Get Text 'Stamp Duty'" HealingAgentBehavior="SameAsCard" sap:VirtualizedContainerService.HintSize="416,134" sap2010:WorkflowViewState.IdRef="NGetText_12" ScopeIdentifier="1cb5cb51-bc01-4685-808c-fa5cf1adcfef" TextString="[StampDuty]" Version="V5">
+                            <uix:NGetText.Target>
+                              <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="55543a08-fae6-4de5-a55a-a88e97123a6a" ContentHash="sNcrTVE_7UaS21YAPfDoXw" CvElementArea="509, 441, 177, 27" CvType="InputBox" DesignTimeRectangle="511, 443, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Calculated Stamp Duty' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="782bcdb9-9f38-4adc-be9a-fd6af300b740" InformativeScreenshot="d62bb0c366584dedc7d11e5a48901def.png" IsResponsive="True" Reference="XYDNlefXLUawOcBond9NIg/LgIC5DlxlEut9JRi6s-zuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="55543a08-fae6-4de5-a55a-a88e97123a6a" CvTextArea="308, 448, 87, 17" CvTextArgument="Stamp Duty" CvType="Text" DesignTimeRectangle="309, 443, 200, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='labelFont' aaname='                             Stamp Duty                                     ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Stamp Duty' /&gt;" Guid="ab282cc7-3b5d-4bbd-91b9-cfc4165dd400" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NGetText.Target>
+                          </uix:NGetText>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,90" sap2010:WorkflowViewState.IdRef="Sequence_146">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="55543a08-fae6-4de5-a55a-a88e97123a6a" ContentHash="sNcrTVE_7UaS21YAPfDoXw" CvElementArea="509, 441, 177, 27" CvType="InputBox" DesignTimeRectangle="511, 443, 174, 24" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='text' tag='INPUT' class='textbox' aaname='Calculated Stamp Duty' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="782bcdb9-9f38-4adc-be9a-fd6af300b740" InformativeScreenshot="d62bb0c366584dedc7d11e5a48901def.png" IsResponsive="True" Reference="XYDNlefXLUawOcBond9NIg/LgIC5DlxlEut9JRi6s-zuQ" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CVScreenId="55543a08-fae6-4de5-a55a-a88e97123a6a" CvTextArea="308, 448, 87, 17" CvTextArgument="Stamp Duty" CvType="Text" DesignTimeRectangle="309, 443, 200, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' class='labelFont' aaname='                             Stamp Duty                                     ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Stamp Duty' /&gt;" Guid="ab282cc7-3b5d-4bbd-91b9-cfc4165dd400" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </uix:NCheckState>
+                    <Assign sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="Assign_36">
+                      <Assign.To>
+                        <OutArgument x:TypeArguments="x:String">[StampDuty]</OutArgument>
+                      </Assign.To>
+                      <Assign.Value>
+                        <InArgument x:TypeArguments="x:String">[Math.Ceiling(Double.Parse(StampDuty)).ToString]</InArgument>
+                      </Assign.Value>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Assign>
+                  </Sequence>
+                </ActivityAction>
+              </uix:NApplicationCard.Body>
+              <uix:NApplicationCard.OCREngine>
+                <ActivityFunc x:TypeArguments="sd1:Image, scg:IEnumerable(scg:KeyValuePair(sd2:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd1:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                </ActivityFunc>
+              </uix:NApplicationCard.OCREngine>
+              <uix:NApplicationCard.TargetApp>
+                <uix:TargetApp Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="Rn5HbPDOVUOZrlIBkr445A" IconBase64="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" InformativeScreenshot="cf4e0f7a8a5ee083b73d4236fa139f08.jpg" Reference="XYDNlefXLUawOcBond9NIg/nlnhEf0UHkW-uzSwx0nIiw" Selector="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" Url="[in_Config(&quot;URL&quot;).ToString]" Version="V2">
+                  <uix:TargetApp.Arguments>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.Arguments>
+                  <uix:TargetApp.WorkingDirectory>
+                    <InArgument x:TypeArguments="x:String" />
+                  </uix:TargetApp.WorkingDirectory>
+                </uix:TargetApp>
+              </uix:NApplicationCard.TargetApp>
+            </uix:NApplicationCard>
+            <Sequence DisplayName="Update Challan Table with updated Stamp charges" sap:VirtualizedContainerService.HintSize="556,2828" sap2010:WorkflowViewState.IdRef="Sequence_135">
               <Sequence.Variables>
-                <Variable x:TypeArguments="x:String" Name="StampDuty" />
                 <Variable x:TypeArguments="x:String" Name="Registration" />
                 <Variable x:TypeArguments="x:String" Name="DHCAmount" />
               </Sequence.Variables>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="522,57" sap2010:WorkflowViewState.IdRef="ReadRange_19" SheetName="[in_Config(&quot;ChallanDetailsSheet&quot;).ToString]" WorkbookPath="[FilePath]">
+              <ui:ReadRange Range="{x:Null}" WorkbookPathResource="{x:Null}" AddHeaders="True" DataTable="[dtTable]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="522,120" sap2010:WorkflowViewState.IdRef="ReadRange_19" SheetName="[in_Config(&quot;ChallanDetailsSheet&quot;).ToString]" WorkbookPath="[FilePath]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -269,7 +362,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:FilterDataTable>
-              <If Condition="[dtTable.RowCount&lt;&gt;0]" DisplayName="If-Challan isCompleted" sap:VirtualizedContainerService.HintSize="522,1761" sap2010:WorkflowViewState.IdRef="If_35">
+              <If Condition="[dtTable.RowCount&lt;&gt;0 AndAlso dtTable.rows(0)(&quot;StampDuty&quot;).ToString&lt;&gt;StampDuty]" DisplayName="If-Challan isCompleted" sap:VirtualizedContainerService.HintSize="522,2430" sap2010:WorkflowViewState.IdRef="If_35">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -277,7 +370,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
                 <If.Then>
-                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,1541" sap2010:WorkflowViewState.IdRef="Sequence_141">
+                  <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="520,2210" sap2010:WorkflowViewState.IdRef="Sequence_141">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -390,7 +483,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:InvokeCode>
-                    <If Condition="[isUpdated]" sap:VirtualizedContainerService.HintSize="486,48" sap2010:WorkflowViewState.IdRef="If_34">
+                    <If Condition="[isUpdated]" sap:VirtualizedContainerService.HintSize="486,57" sap2010:WorkflowViewState.IdRef="If_34">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -426,6 +519,57 @@
                         </Sequence>
                       </If.Else>
                     </If>
+                    <Sequence DisplayName="Google Drive upload" sap:VirtualizedContainerService.HintSize="486,660" sap2010:WorkflowViewState.IdRef="Sequence_147">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="upr:ILocalResource" Name="fileResource" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" PathType="File" Resource="[fileResource]" />
+                      <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_1" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
+                        <uga:UploadFilesConnections.FilesBackup>
+                          <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
+                            <usau:BackupSlot.BackupValues>
+                              <scg:Dictionary x:TypeArguments="ugade:FilesInputMode, scg:List(x:Object)" />
+                            </usau:BackupSlot.BackupValues>
+                          </usau:BackupSlot>
+                        </uga:UploadFilesConnections.FilesBackup>
+                        <uga:UploadFilesConnections.Folder>
+                          <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="Documents" FullPathHint="My Drive/Data/Documents" InputMode="Browse">
+                            <ugam:DriveItemArgument.Backup>
+                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                                <usau:BackupSlot.BackupValues>
+                                  <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                                </usau:BackupSlot.BackupValues>
+                              </usau:BackupSlot>
+                            </ugam:DriveItemArgument.Backup>
+                            <ugam:DriveItemArgument.ParentIdFullPathHint>
+                              <InArgument x:TypeArguments="x:String">
+                                <Literal x:TypeArguments="x:String" Value="" />
+                              </InArgument>
+                            </ugam:DriveItemArgument.ParentIdFullPathHint>
+                          </ugam:DriveItemArgument>
+                        </uga:UploadFilesConnections.Folder>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </uga:UploadFilesConnections>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,166" sap2010:WorkflowViewState.IdRef="LogMessage_51" Message="[&quot;DataEntry File Uploded to Google Drive&quot;]">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:LogMessage>
+                    </Sequence>
                   </Sequence>
                 </If.Then>
                 <If.Else>
@@ -447,13 +591,13 @@
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="484,165" sap2010:WorkflowViewState.IdRef="Sequence_41">
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="590,165" sap2010:WorkflowViewState.IdRef="Sequence_41">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[exception.Message]">
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="556,57" sap2010:WorkflowViewState.IdRef="LogMessage_5" Message="[exception.Message]">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -461,13 +605,13 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:LogMessage>
-                <Rethrow sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Rethrow_3" />
+                <Rethrow sap:VirtualizedContainerService.HintSize="556,48" sap2010:WorkflowViewState.IdRef="Rethrow_3" />
               </Sequence>
             </ActivityAction>
           </Catch>
         </TryCatch.Catches>
         <TryCatch.Finally>
-          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="484,90" sap2010:WorkflowViewState.IdRef="Sequence_42">
+          <Sequence DisplayName="Finally" sap:VirtualizedContainerService.HintSize="590,90" sap2010:WorkflowViewState.IdRef="Sequence_42">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
