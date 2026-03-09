@@ -5,11 +5,11 @@
       "activityDisplayName": "Content Generation",
       "activityId": "ConnectorActivity_1",
       "resource": "Connection",
-      "key": "08a15877-de1f-4f2c-9584-8b2529fccac3",
-      "id": "Connection08a15877-de1f-4f2c-9584-8b2529fccac308a15877-de1f-4f2c-9584-8b2529fccac3False",
+      "key": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
+      "id": "Connectiond4693297-4791-4bb1-aaa4-35a7e05ac10ad4693297-4791-4bb1-aaa4-35a7e05ac10aFalse",
       "value": {
         "ConnectionId": {
-          "defaultValue": "08a15877-de1f-4f2c-9584-8b2529fccac3",
+          "defaultValue": "d4693297-4791-4bb1-aaa4-35a7e05ac10a",
           "isExpression": false
         }
       },
@@ -22,13 +22,13 @@
     },
     {
       "activityDisplayName": "Download File",
-      "activityId": "DownloadFileConnections_6",
+      "activityId": "DownloadFileConnections_8",
       "resource": "Connection",
-      "key": "c3bfc534-a117-4513-8158-794a805a8753",
-      "id": "Connectionc3bfc534-a117-4513-8158-794a805a8753c3bfc534-a117-4513-8158-794a805a8753False",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
+      "id": "Connection07d2357f-01e7-423f-b76d-b0c7b72314dd07d2357f-01e7-423f-b76d-b0c7b72314ddFalse",
       "value": {
         "ConnectionId": {
-          "defaultValue": "c3bfc534-a117-4513-8158-794a805a8753",
+          "defaultValue": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
           "isExpression": false,
           "displayName": "Connection",
           "description": "The connection to be used"
@@ -42,10 +42,10 @@
     },
     {
       "activityDisplayName": "Download File",
-      "activityId": "DownloadFileConnections_6",
+      "activityId": "DownloadFileConnections_8",
       "resource": "Property",
-      "key": "c3bfc534-a117-4513-8158-794a805a8753.Download File",
-      "id": "Propertyc3bfc534-a117-4513-8158-794a805a8753.Download FileDataEntry.xlsxFalsehttps://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=trueFalse",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Download File",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Download FileDataEntry.xlsxFalsehttps://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=trueFalse",
       "value": {
         "FullName": {
           "defaultValue": "DataEntry.xlsx",
@@ -54,7 +54,7 @@
           "description": "The file to download"
         },
         "ID": {
-          "defaultValue": "https://docs.google.com/spreadsheets/d/1YKKnM8b5X9xuvScNTTf5TiRUiG-osewP/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=true",
+          "defaultValue": "https://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=true",
           "isExpression": false,
           "displayName": "File to download",
           "description": "The URL or ID of the file to download"
@@ -65,15 +65,15 @@
         "ActivityName": "Download File",
         "ObjectName": "CuratedFile",
         "DisplayLabel": "FullName",
-        "ParentResourceKey": "Connection.c3bfc534-a117-4513-8158-794a805a8753"
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
       }
     },
     {
       "activityDisplayName": "For Each File or Folder",
-      "activityId": "ForEachFileFolderConnections_3",
+      "activityId": "ForEachFileFolderConnections_4",
       "resource": "Property",
-      "key": "c3bfc534-a117-4513-8158-794a805a8753.For Each File or Folder",
-      "id": "Propertyc3bfc534-a117-4513-8158-794a805a8753.For Each File or FolderPVFalsehttps://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzjFalse",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or Folder",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or FolderPVFalsehttps://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzjFalse",
       "value": {
         "FullName": {
           "defaultValue": "PV",
@@ -93,7 +93,7 @@
         "ActivityName": "For Each File or Folder",
         "ObjectName": "CuratedFolder",
         "DisplayLabel": "FullName",
-        "ParentResourceKey": "Connection.c3bfc534-a117-4513-8158-794a805a8753"
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
       }
     },
     {
@@ -140,8 +140,8 @@
       "activityDisplayName": "Upload Files",
       "activityId": "UploadFilesConnections_3",
       "resource": "Property",
-      "key": "c3bfc534-a117-4513-8158-794a805a8753.Upload Files",
-      "id": "Propertyc3bfc534-a117-4513-8158-794a805a8753.Upload FilesDocumentsFalsehttps://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJuFalse",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload Files",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload FilesDocumentsFalsehttps://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJuFalse",
       "value": {
         "FullName": {
           "defaultValue": "Documents",
@@ -161,7 +161,7 @@
         "ActivityName": "Upload Files",
         "ObjectName": "CuratedFolder",
         "DisplayLabel": "FullName",
-        "ParentResourceKey": "Connection.c3bfc534-a117-4513-8158-794a805a8753"
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
       }
     }
   ]
