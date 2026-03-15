@@ -151,7 +151,7 @@
       <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="746,3578" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RentDetails" sap:VirtualizedContainerService.HintSize="827,4744" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:Boolean" Name="updatedToken" />
@@ -173,13 +173,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="732,3555" sap2010:WorkflowViewState.IdRef="Sequence_39">
+    <Sequence sap:VirtualizedContainerService.HintSize="732,4721" sap2010:WorkflowViewState.IdRef="Sequence_39">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="698,3472" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="698,4638" sap2010:WorkflowViewState.IdRef="TryCatch_2">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -187,7 +187,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="696,2802" sap2010:WorkflowViewState.IdRef="Sequence_40">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="696,3968" sap2010:WorkflowViewState.IdRef="Sequence_40">
             <Sequence.Variables>
               <Variable x:TypeArguments="x:String" Name="DocumentID" />
             </Sequence.Variables>
@@ -453,7 +453,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:FilterDataTable>
-            <If Condition="[RentUpdated AndAlso dtTemp.RowCount=0]" sap:VirtualizedContainerService.HintSize="662,2203" sap2010:WorkflowViewState.IdRef="If_55">
+            <If Condition="[RentUpdated AndAlso dtTemp.RowCount=0]" sap:VirtualizedContainerService.HintSize="662,3369" sap2010:WorkflowViewState.IdRef="If_55">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -478,13 +478,13 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="660,1965" sap2010:WorkflowViewState.IdRef="Sequence_228">
+                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="660,3131" sap2010:WorkflowViewState.IdRef="Sequence_228">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <Sequence DisplayName="Rent Details" sap:VirtualizedContainerService.HintSize="626,1905" sap2010:WorkflowViewState.IdRef="Sequence_220">
+                  <Sequence DisplayName="Rent Details" sap:VirtualizedContainerService.HintSize="626,3071" sap2010:WorkflowViewState.IdRef="Sequence_220">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -548,7 +548,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:FilterDataTable>
                     </Sequence>
-                    <If Condition="[dtTable.RowCount&lt;&gt;0]" DisplayName="If-isCompleted is False" sap:VirtualizedContainerService.HintSize="592,1603" sap2010:WorkflowViewState.IdRef="If_6">
+                    <If Condition="[dtTable.RowCount&lt;&gt;0]" DisplayName="If-isCompleted is False" sap:VirtualizedContainerService.HintSize="592,2769" sap2010:WorkflowViewState.IdRef="If_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -556,7 +556,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="590,1181" sap2010:WorkflowViewState.IdRef="Sequence_44">
+                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="590,2347" sap2010:WorkflowViewState.IdRef="Sequence_44">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -619,7 +619,7 @@
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:FilterDataTable>
                           </Sequence>
-                          <If Condition="[dtTemp.RowCount&lt;&gt;0]" DisplayName="If-RentDetails " sap:VirtualizedContainerService.HintSize="556,1064" sap2010:WorkflowViewState.IdRef="If_10">
+                          <If Condition="[dtTemp.RowCount&lt;&gt;0]" DisplayName="If-RentDetails " sap:VirtualizedContainerService.HintSize="556,2230" sap2010:WorkflowViewState.IdRef="If_10">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -627,7 +627,7 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="554,708" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                              <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="554,1874" sap2010:WorkflowViewState.IdRef="Sequence_59">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -641,13 +641,13 @@
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
                                 </ui:LogMessage>
-                                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" ContinueOnError="True" DisplayName="Edge Lease Details Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,368" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V2">
+                                <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[UiPath.UIAutomationNext.Enums.NAppCloseMode.Never]" ContinueOnError="True" DisplayName="Edge Lease Details Page" HealingAgentBehavior="Job" sap:VirtualizedContainerService.HintSize="520,1534" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="[UiPath.UIAutomationNext.Enums.NAppOpenMode.Never]" ScopeGuid="ec31e5fc-16e2-46e2-a725-a4590480c918" Version="V2">
                                   <uix:NApplicationCard.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
                                         <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                                       </ActivityAction.Argument>
-                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="484,165" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                                      <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="518,1331" sap2010:WorkflowViewState.IdRef="Sequence_3">
                                         <Sequence.Variables>
                                           <Variable x:TypeArguments="x:String" Default="11" Name="strDuration" />
                                           <Variable x:TypeArguments="x:String" Default="21/12/2025" Name="startDate" />
@@ -659,7 +659,7 @@
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
-                                        <Sequence DisplayName="Fill Rent Details" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                                        <Sequence DisplayName="Fill Rent Details" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="Sequence_18">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1763,10 +1763,10 @@
                                             </sap:WorkflowViewStateService.ViewState>
                                           </uix:NSelectItem>
                                         </Sequence>
-                                        <Sequence DisplayName="View &amp; Save Draft" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_124">
+                                        <Sequence DisplayName="View &amp; Save Draft" sap:VirtualizedContainerService.HintSize="484,1214" sap2010:WorkflowViewState.IdRef="Sequence_124">
                                           <sap:WorkflowViewStateService.ViewState>
                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
@@ -2157,6 +2157,57 @@
                                               </If.Else>
                                             </If>
                                           </Sequence>
+                                          <Sequence DisplayName="Google Drive upload" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_232">
+                                            <Sequence.Variables>
+                                              <Variable x:TypeArguments="upr:ILocalResource" Name="fileResource" />
+                                            </Sequence.Variables>
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="PathExists_5" Path="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" PathType="File" Resource="[fileResource]" />
+                                            <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_3" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
+                                              <uga:UploadFilesConnections.FilesBackup>
+                                                <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
+                                                  <usau:BackupSlot.BackupValues>
+                                                    <scg:Dictionary x:TypeArguments="ugade:FilesInputMode, scg:List(x:Object)" />
+                                                  </usau:BackupSlot.BackupValues>
+                                                </usau:BackupSlot>
+                                              </uga:UploadFilesConnections.FilesBackup>
+                                              <uga:UploadFilesConnections.Folder>
+                                                <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="Documents" FullPathHint="My Drive/Data/Documents" InputMode="Browse">
+                                                  <ugam:DriveItemArgument.Backup>
+                                                    <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                                                      <usau:BackupSlot.BackupValues>
+                                                        <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                                                      </usau:BackupSlot.BackupValues>
+                                                    </usau:BackupSlot>
+                                                  </ugam:DriveItemArgument.Backup>
+                                                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                                                    <InArgument x:TypeArguments="x:String">
+                                                      <Literal x:TypeArguments="x:String" Value="" />
+                                                    </InArgument>
+                                                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                                                </ugam:DriveItemArgument>
+                                              </uga:UploadFilesConnections.Folder>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </uga:UploadFilesConnections>
+                                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_51" Message="[&quot;DataEntry File Uploded to Google Drive&quot;]">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </ui:LogMessage>
+                                          </Sequence>
                                           <Sequence DisplayName="Send Draft Email" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_210">
                                             <Sequence.Variables>
                                               <Variable x:TypeArguments="x:String" Name="attachmentFilePath" />
@@ -2330,7 +2381,7 @@
                                                 </Sequence>
                                               </If.Else>
                                             </If>
-                                            <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[{ fileResource }]" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected &lt;/SPAN&gt;&lt;SPAN&gt;Sir/Madam,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Please find attached &lt;/SPAN&gt;&lt;SPAN&gt;Draft &lt;/SPAN&gt;&lt;SPAN&gt;of Rent Agreement&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;from,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;Laxman Deokate&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;9011092282&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[{ Email2 }]" ConnectionId="332032d4-3934-4c35-9d9d-430082ee5d80" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,493" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Registered Rent Agreement for Token: &quot;+dtTable.rows(0)(&quot;Token&quot;).ToString]" To="[{ Email }]" UseConnectionService="True">
+                                            <uga:SendEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Bcc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" TextBody="{x:Null}" AttachmentInputMode="UseExisting" Attachments="[{ fileResource }]" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Respected &lt;/SPAN&gt;&lt;SPAN&gt;Sir/Madam,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;Please find attached &lt;/SPAN&gt;&lt;SPAN&gt;Draft &lt;/SPAN&gt;&lt;SPAN&gt;of Rent Agreement&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;from,&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;Laxman Deokate&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;&lt;STRONG&gt;9011092282&lt;/STRONG&gt;&lt;/SPAN&gt;&lt;/P&gt;&quot;)]" Cc="[{ Email2 }]" ConnectionId="8c6e332c-054b-4d91-acdf-550e7c2d278e" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="SendEmailConnections_3" Importance="Normal" InputType="HTML" SaveAsDraft="False" Subject="[&quot;Registered Rent Agreement for Token: &quot;+dtTable.rows(0)(&quot;Token&quot;).ToString]" To="[{ Email }]" UseConnectionService="True">
                                               <uga:SendEmailConnections.AttachmentsBackup>
                                                 <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
                                                   <usau:BackupSlot.BackupValues>
@@ -2347,7 +2398,7 @@
                                               </uga:SendEmailConnections.InputTypeBackup>
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
@@ -2596,7 +2647,7 @@
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:ReadRange>
-                                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="isUpdated=False&#xD;&#xA;Dim row As DataRow =&#xD;&#xA;    dtTable.AsEnumerable().&#xD;&#xA;        Where(Function(r) r(&quot;DocumentID&quot;).ToString.Trim.Equals(DocumentID, StringComparison.OrdinalIgnoreCase)).&#xD;&#xA;        FirstOrDefault()&#xD;&#xA;&#x9;&#x9;&#xD;&#xA;If row IsNot Nothing Then&#xD;&#xA;&#xD;&#xA;&#x9;row(&quot;CurrentStep&quot;)=&quot;PV&quot;&#xD;&#xA;&#x9;row(&quot;LastUpdated&quot;)=now&#xD;&#xA;&#x9;isUpdated=True&#xD;&#xA;&#x9;Console.WriteLine(&quot;CurrentStep Rent&quot;+DocumentID)&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="InvokeCode_11">
+                                  <ui:InvokeCode ContinueOnError="{x:Null}" Code="isUpdated=False&#xA;Dim row As DataRow =&#xA;    dtTable.AsEnumerable().&#xA;        Where(Function(r) r(&quot;DocumentID&quot;).ToString.Trim.Equals(DocumentID, StringComparison.OrdinalIgnoreCase)).&#xA;        FirstOrDefault()&#xA;&#x9;&#x9;&#xA;If row IsNot Nothing Then&#xA;&#xA;&#x9;row(&quot;CurrentStep&quot;)=&quot;PV&quot;&#xA;&#x9;row(&quot;LastUpdated&quot;)=now&#xA;&#x9;isUpdated=True&#xA;&#x9;Console.WriteLine(&quot;CurrentStep Rent&quot;+DocumentID)&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="InvokeCode_11">
                                     <ui:InvokeCode.Arguments>
                                       <InOutArgument x:TypeArguments="sd:DataTable" x:Key="dtTable">[dtTemp]</InOutArgument>
                                       <OutArgument x:TypeArguments="x:Boolean" x:Key="isUpdated">[isUpdated]</OutArgument>
@@ -3863,7 +3914,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                       <ui:PathExists Exists="{x:Null}" DisplayName="Get Local File or Folder" sap:VirtualizedContainerService.HintSize="416,174" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[Path.Combine(in_Config(&quot;DocsPath&quot;).ToString,in_Config(&quot;DataEntryFileName&quot;).ToString)]" PathType="File" Resource="[fileResource]" />
-                      <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID0}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="c3bfc534-a117-4513-8158-794a805a8753" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_2" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
+                      <uga:UploadFilesConnections AllResults="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" DestinationFolder="{x:Null}" FilesList="{x:Null}" FirstResult="{x:Null}" FolderIdBackup="{x:Reference __ReferenceID1}" ManualFolderId="{x:Null}" OverwriteExistingFile="{x:Null}" SingleFileToUpload="{x:Null}" AuthScopesInvalid="False" BrowseFolderId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" Convert="False" DisplayName="Upload Files" FilesInputMode="MultipleByVariable" FolderInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="UploadFilesConnections_2" MultipleFilesToUpload="[{fileResource}]" SaveToFolderName="Documents" UseConnectionService="True">
                         <uga:UploadFilesConnections.FilesBackup>
                           <usau:BackupSlot x:TypeArguments="ugade:FilesInputMode" StoredValue="MultipleByVariable">
                             <usau:BackupSlot.BackupValues>
@@ -3874,7 +3925,7 @@
                         <uga:UploadFilesConnections.Folder>
                           <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" DriveId="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJu" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="Documents" FullPathHint="My Drive/Data/Documents" InputMode="Browse">
                             <ugam:DriveItemArgument.Backup>
-                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
+                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="Browse">
                                 <usau:BackupSlot.BackupValues>
                                   <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
                                 </usau:BackupSlot.BackupValues>

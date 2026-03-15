@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="R7xDvn0tIESVoeUDU9UDmg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="2b86ec5b-0ccf-452b-83be-4f71ad5acf2d" CvElementArea="602, 427, 73, 32" CvTextArea="609, 434, 57, 19" CvTextArgument="Capture" CvType="Button" DesignTimeRectangle="603, 428, 70, 29" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;form&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;center&amp;gt;div&amp;gt;div&amp;gt;table' tag='TABLE' /&gt;&lt;webctrl id='btnCapture' tableRow='3' tag='INPUT' /&gt;" Guid="6069310e-378a-491c-8bf4-857b61cf872a" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2b86ec5b-0ccf-452b-83be-4f71ad5acf2d" CvElementArea="678, 426, 104, 32" CvTextArea="680, 434, 98, 18" CvTextArgument="Verify &amp; Close" CvType="Button" DesignTimeRectangle="680, 428, 99, 29" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='' tag='INPUT' type='submit' aaname='Verify &amp;amp; Close' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Verify &amp;amp; Close' /&gt;" Guid="bbed6db4-16bb-4fb0-bdc7-6d4ffe3d5a2f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-6" Y="7" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="188b33634c3fc44c48740df575aae9c5.jpg" xmlns="">01EVxRr7NC0y7s3UDvUPB8g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -6017,7 +6017,7 @@
           }
         }
       },
-      "UiPath.GSuite.Activities/3.6.10": {
+      "UiPath.GSuite.Activities/3.7.10": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Calendar.v3": "1.55.0.2554",
@@ -6044,7 +6044,7 @@
           "UiPath.CodedWorkflows": "24.10.0",
           "UiPath.ConnectionClient": "2.0.9",
           "UiPath.Platform": "24.12.3",
-          "UiPath.Plugin.Activities.Tracing": "0.3.0-ActivityTracingLibrary.21790",
+          "UiPath.Plugin.Activities.Tracing": "0.5.0",
           "UiPath.Telemetry.Client": "2.1.3"
         },
         "compile": {
@@ -7584,7 +7584,7 @@
           }
         }
       },
-      "UiPath.Plugin.Activities.Tracing/0.3.0-ActivityTracingLibrary.21790": {
+      "UiPath.Plugin.Activities.Tracing/0.5.0": {
         "type": "package",
         "compile": {
           "lib/net8.0-windows7.0/_._": {}
@@ -14363,7 +14363,7 @@
           }
         }
       },
-      "UiPath.GSuite.Activities/3.6.10": {
+      "UiPath.GSuite.Activities/3.7.10": {
         "type": "package",
         "dependencies": {
           "Google.Apis.Calendar.v3": "1.55.0.2554",
@@ -14390,7 +14390,7 @@
           "UiPath.CodedWorkflows": "24.10.0",
           "UiPath.ConnectionClient": "2.0.9",
           "UiPath.Platform": "24.12.3",
-          "UiPath.Plugin.Activities.Tracing": "0.3.0-ActivityTracingLibrary.21790",
+          "UiPath.Plugin.Activities.Tracing": "0.5.0",
           "UiPath.Telemetry.Client": "2.1.3"
         },
         "compile": {
@@ -15930,7 +15930,7 @@
           }
         }
       },
-      "UiPath.Plugin.Activities.Tracing/0.3.0-ActivityTracingLibrary.21790": {
+      "UiPath.Plugin.Activities.Tracing/0.5.0": {
         "type": "package",
         "compile": {
           "lib/net8.0-windows7.0/_._": {}
@@ -29009,10 +29009,10 @@
         "uipath.ftp.activities.nuspec"
       ]
     },
-    "UiPath.GSuite.Activities/3.6.10": {
-      "sha512": "0IE2bGuM2xo8psZatHrg6FZ5g1w8ab3iUhz7TOWRIbQ/UujaV+NM+Ct6otfpAh56lwjinvcGbfirsI/psR8NAw==",
+    "UiPath.GSuite.Activities/3.7.10": {
+      "sha512": "uE+HZ2/x5BJUedmbza9M8s2NVDRPOqDv0GFAUjF3IUvQ3XlSZJWkZOLXylj/SxRdjvfOVbJRqkkW4wIih65t7Q==",
       "type": "package",
-      "path": "uipath.gsuite.activities/3.6.10",
+      "path": "uipath.gsuite.activities/3.7.10",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -29097,7 +29097,7 @@
         "lib/net6.0/zh-TW/UiPath.GSuite.resources.dll",
         "lib/net6.0/zu/UiPath.GSuite.Activities.resources.dll",
         "lib/net6.0/zu/UiPath.GSuite.resources.dll",
-        "uipath.gsuite.activities.3.6.10.nupkg.sha512",
+        "uipath.gsuite.activities.3.7.10.nupkg.sha512",
         "uipath.gsuite.activities.nuspec"
       ]
     },
@@ -31481,10 +31481,10 @@
         "uipath.platform.nuspec"
       ]
     },
-    "UiPath.Plugin.Activities.Tracing/0.3.0-ActivityTracingLibrary.21790": {
-      "sha512": "pVLgRX8oGxjvFVQQM66FMx/YIZh/KTKeW8Yw2U8i7XJr7jhufo5ep4K/QNIdFsp3P6CMc1/nyYnc4n/V8AbU+A==",
+    "UiPath.Plugin.Activities.Tracing/0.5.0": {
+      "sha512": "7JYkwv5hlwQUBAPu/2Oh5mGQcP+mGaYLegZbgogc4+aQ8ubJBzm33+fnxQgdAVqGyG6YN8+IR7HLvLblxf3Y+A==",
       "type": "package",
-      "path": "uipath.plugin.activities.tracing/0.3.0-activitytracinglibrary.21790",
+      "path": "uipath.plugin.activities.tracing/0.5.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -31493,7 +31493,7 @@
         "lib/net6.0/UiPath.Plugin.Activities.Tracing.dll",
         "lib/net8.0-windows7.0/UiPath.Plugin.Activities.Tracing.dll",
         "lib/net8.0/UiPath.Plugin.Activities.Tracing.dll",
-        "uipath.plugin.activities.tracing.0.3.0-activitytracinglibrary.21790.nupkg.sha512",
+        "uipath.plugin.activities.tracing.0.5.0.nupkg.sha512",
         "uipath.plugin.activities.tracing.nuspec"
       ]
     },
@@ -32730,7 +32730,7 @@
       "UiPath.DocumentUnderstanding.Activities >= 2.17.2 <= 2.17.2",
       "UiPath.Excel.Activities >= 3.3.1 <= 3.3.1",
       "UiPath.FTP.Activities >= 3.0.0 <= 3.0.0",
-      "UiPath.GSuite.Activities >= 3.6.10 <= 3.6.10",
+      "UiPath.GSuite.Activities >= 3.7.10 <= 3.7.10",
       "UiPath.IntegrationService.Activities >= 1.23.0 <= 1.23.0",
       "UiPath.IntelligentOCR.Activities >= 6.27.2 <= 6.27.2",
       "UiPath.MicrosoftOffice365.Activities >= 3.5.10 <= 3.5.10",
@@ -32749,9 +32749,9 @@
     "restore": {
       "projectUniqueName": "IGR_Master",
       "projectName": "IGR_Master",
-      "projectPath": "D:\\UiPathProjects\\UiPathAutomation\\UiPathAutomation\\IGR_Master\\.local",
+      "projectPath": "D:\\UiPathProjects\\UiPathAutomation\\IGR_Master\\.local",
       "packagesPath": "C:\\Users\\laxma\\.nuget\\packages\\",
-      "outputPath": "D:\\UiPathProjects\\UiPathAutomation\\UiPathAutomation\\IGR_Master\\.local",
+      "outputPath": "D:\\UiPathProjects\\UiPathAutomation\\IGR_Master\\.local",
       "UsingMicrosoftNETSdk": false,
       "restoreAuditProperties": {
         "enableAudit": "False"
@@ -32778,7 +32778,7 @@
           "UiPath.GSuite.Activities": {
             "include": "Runtime",
             "target": "Package",
-            "version": "[3.6.10, 3.6.10]"
+            "version": "[3.7.10, 3.7.10]"
           },
           "UiPath.IntegrationService.Activities": {
             "include": "Runtime",
@@ -32826,7 +32826,7 @@
             "version": "[2.3.2, 2.3.2]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\laxma\\AppData\\Local\\Programs\\UiPathPlatform\\Studio\\26.0.188-cloud.22248\\PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\laxma\\AppData\\Local\\Programs\\UiPathPlatform\\Studio\\26.0.188-cloud.22252\\PortableRuntimeIdentifierGraph.json"
       }
     },
     "runtimes": {

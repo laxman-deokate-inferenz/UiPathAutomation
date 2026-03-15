@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yqFepKTe3USCS_B04VZpig" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="85f9f1a8-728b-4832-98f2-ace471fbef37" CvElementArea="707, 426, 62, 28" CvTextArea="723, 433, 29, 14" CvTextArgument="Exit" CvType="Button" DesignTimeRectangle="709, 428, 58, 25" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableCol='23' tableRow='4' tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnexit' tableRow='2' tag='INPUT' /&gt;" Guid="ddc34a39-80b4-445e-a74f-eccfe7a2267b" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="85f9f1a8-728b-4832-98f2-ace471fbef37" CvElementArea="622, 423, 87, 33" CvTextArea="623, 432, 84, 18" CvTextArgument="Verify eKYC" CvType="Button" DesignTimeRectangle="624, 425, 83, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Click here to upload Photo and Thumb impression' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Verify eKYC' /&gt;" Guid="7cb28958-0c08-4a16-931d-505d40aeedb5" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="24db77fba69929f65d6cd4ccaf3d624e.jpg" xmlns="">0qGkFnrYFp0i9QvaAMsMSlQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

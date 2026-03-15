@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f1GcUDJUhkiBJMfT8KB1AA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="68db4714-5246-4f68-87f7-eff8f349553c" CvType="AnyWordGroup" DesignTimeRectangle="934, 279, 131, 19" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='26031399900034' parentid='divLink' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divLink' tag='SPAN' type='' class='' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="c4c8cfc1-3b7c-4ea3-ad8b-6e72da3a1cd1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="68db4714-5246-4f68-87f7-eff8f349553c" CvTextArea="852, 280, 78, 15" CvTextArgument="Token No:" CvType="Text" DesignTimeRectangle="854, 279, 75, 19" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='divLink' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='divLink' tag='SPAN' type='' class='' aaname='Token No:' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Token No:' /&gt;" Guid="14f0631f-12f1-4464-93f8-4c4978866436" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f33737b44004b9910b3bb9e5578c81d5.png" xmlns="">0KjntFaUH_EyedCpWqU--HQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

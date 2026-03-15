@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ss8RRXK0Ok62YA5RHjLqjA" Reference="XYDNlefXLUawOcBond9NIg/J4vzuyg0WEusNzdAT1wowg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="9e1a4138-2bd5-48a2-b906-3a5aa41d0562" DesignTimeRectangle="208, 414, 200, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl tag='TABLE' tableRow='*' /&gt;&lt;webctrl tag='TR' idx='&quot; &amp; (i+1).ToString &amp; &quot;' /&gt;&lt;webctrl tag='TD' idx='3' /&gt;&quot;]" Guid="f41149ef-0d87-4d5f-a99a-07dc47fa60fd" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="9e1a4138-2bd5-48a2-b906-3a5aa41d0562" DesignTimeRectangle="55, 415, 36, 15" ElementType="Text" FullSelectorArgument="[&quot;&lt;webctrl tag='TABLE' tableRow='*' /&gt;&lt;webctrl tag='TR' idx='&quot; &amp; (i+1).ToString &amp; &quot;' /&gt;&lt;webctrl tag='A' innertext='Select' /&gt;&quot;]" Guid="4c89940b-b2b5-4e8a-849c-0ccebb2e0ed0" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0dlKTErEwJ0mFV6DmjVxSOg" xmlns="">0dlKTErEwJ0mFV6DmjVxSOg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

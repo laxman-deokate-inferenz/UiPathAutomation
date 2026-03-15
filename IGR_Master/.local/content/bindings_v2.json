@@ -22,7 +22,7 @@
     },
     {
       "activityDisplayName": "Upload Files",
-      "activityId": "UploadFilesConnections_3",
+      "activityId": "UploadFilesConnections_1",
       "resource": "Connection",
       "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd",
       "id": "Connection07d2357f-01e7-423f-b76d-b0c7b72314dd07d2357f-01e7-423f-b76d-b0c7b72314ddFalse",
@@ -42,7 +42,7 @@
     },
     {
       "activityDisplayName": "Upload Files",
-      "activityId": "UploadFilesConnections_3",
+      "activityId": "UploadFilesConnections_1",
       "resource": "Property",
       "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload Files",
       "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Upload FilesDocumentsFalsehttps://drive.google.com/drive/folders/1oXKJkMDYVzc0YRKCG7U7BMsXItdMuWJuFalse",
@@ -64,6 +64,62 @@
         "BindingsVersion": "2.1",
         "ActivityName": "Upload Files",
         "ObjectName": "CuratedFolder",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+      }
+    },
+    {
+      "activityDisplayName": "Get File or Folder List",
+      "activityId": "GetFileListConnections_1",
+      "resource": "Property",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Get File or Folder List",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Get File or Folder ListDocsFalsehttps://drive.google.com/drive/folders/1s6FS5L7D1g28H_pABE1DBfQI2Icmz-jVFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "Docs",
+          "isExpression": false,
+          "displayName": "In location",
+          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+        },
+        "ID": {
+          "defaultValue": "https://drive.google.com/drive/folders/1s6FS5L7D1g28H_pABE1DBfQI2Icmz-jV",
+          "isExpression": false,
+          "displayName": "In location",
+          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Get File or Folder List",
+        "ObjectName": "CuratedFolder",
+        "DisplayLabel": "FullName",
+        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
+      }
+    },
+    {
+      "activityDisplayName": "Download File",
+      "activityId": "DownloadFileConnections_6",
+      "resource": "Property",
+      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.Download File",
+      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.Download FileDataEntry.xlsxFalsehttps://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=trueFalse",
+      "value": {
+        "FullName": {
+          "defaultValue": "DataEntry.xlsx",
+          "isExpression": false,
+          "displayName": "File to download",
+          "description": "The file to download"
+        },
+        "ID": {
+          "defaultValue": "https://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&ouid=107487902836653202635&rtpof=true&sd=true",
+          "isExpression": false,
+          "displayName": "File to download",
+          "description": "The URL or ID of the file to download"
+        }
+      },
+      "metadata": {
+        "BindingsVersion": "2.1",
+        "ActivityName": "Download File",
+        "ObjectName": "CuratedFile",
         "DisplayLabel": "FullName",
         "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
       }
@@ -97,22 +153,23 @@
       }
     },
     {
-      "activityDisplayName": "Content Generation",
-      "activityId": "ConnectorActivity_2",
+      "activityDisplayName": "Send Email",
+      "activityId": "SendEmailConnections_3",
       "resource": "Connection",
-      "key": "360d1c62-78b5-4c58-9ac9-96ab2e7ea32d",
-      "id": "Connection360d1c62-78b5-4c58-9ac9-96ab2e7ea32d360d1c62-78b5-4c58-9ac9-96ab2e7ea32dFalse",
+      "key": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
+      "id": "Connection8c6e332c-054b-4d91-acdf-550e7c2d278e8c6e332c-054b-4d91-acdf-550e7c2d278eFalse",
       "value": {
         "ConnectionId": {
-          "defaultValue": "360d1c62-78b5-4c58-9ac9-96ab2e7ea32d",
-          "isExpression": false
+          "defaultValue": "8c6e332c-054b-4d91-acdf-550e7c2d278e",
+          "isExpression": false,
+          "displayName": "Connection",
+          "description": "The connection to be used"
         }
       },
       "metadata": {
-        "UseConnectionService": "true",
         "BindingsVersion": "2.2",
-        "Connector": "uipath-uipath-airdk",
-        "ActivityName": "Content Generation"
+        "Connector": "uipath-google-gmail",
+        "UseConnectionService": "True"
       }
     },
     {

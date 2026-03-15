@@ -182,7 +182,7 @@
       <AssemblyReference>C2529FCCAC3_v2_sub_g.8xUXm2UrsgA1Gbyblh43bg4</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="773,5935" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Check_Registered" sap:VirtualizedContainerService.HintSize="894,5212" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtTable" />
       <Variable x:TypeArguments="x:String" Name="out_captchaText" />
@@ -232,14 +232,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="592,5912" sap2010:WorkflowViewState.IdRef="Sequence_73">
+    <Sequence sap:VirtualizedContainerService.HintSize="592,5189" sap2010:WorkflowViewState.IdRef="Sequence_73">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="558,5829" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+      <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="558,5106" sap2010:WorkflowViewState.IdRef="TryCatch_3">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -247,21 +247,21 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
         <TryCatch.Try>
-          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="556,5168" sap2010:WorkflowViewState.IdRef="Sequence_72">
+          <Sequence DisplayName="Try" sap:VirtualizedContainerService.HintSize="556,4445" sap2010:WorkflowViewState.IdRef="Sequence_72">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="522,1280" sap2010:WorkflowViewState.IdRef="Sequence_239">
+            <Sequence DisplayName="Download Google Drive Data" sap:VirtualizedContainerService.HintSize="522,557" sap2010:WorkflowViewState.IdRef="Sequence_239">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&amp;ouid=107487902836653202635&amp;rtpof=true&amp;sd=true" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="DataEntry.xlsx" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="452,185" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_8" UseConnectionService="True">
+              <uga:DownloadFileConnections ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" ManualEntryFileId="{x:Null}" ManualFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" BrowserFileId="https://docs.google.com/spreadsheets/d/1gJiU2x_xDk0qLndF4pxSYGGrXx1rjU0c/edit?usp=drivesdk&amp;ouid=107487902836653202635&amp;rtpof=true&amp;sd=true" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileFriendlyName="DataEntry.xlsx" FileInputMode="Browse" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_8" UseConnectionService="True">
                 <uga:DownloadFileConnections.FileIdBackup>
                   <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID0" StoredValue="Browse">
                     <usau:BackupSlot.BackupValues>
@@ -279,7 +279,7 @@
                   </ugam:DriveItemArgument>
                 </uga:DownloadFileConnections.Item>
               </uga:DownloadFileConnections>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,175" sap2010:WorkflowViewState.IdRef="LogMessage_117" Message="[&quot;DataEntry File Downloaded from google drive&quot;]">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,175" sap2010:WorkflowViewState.IdRef="LogMessage_117" Message="[&quot;DataEntry File Downloaded from google drive&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -287,125 +287,165 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:LogMessage>
-              <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="452,780" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_4" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
-                <uga:ForEachFileFolderConnections.Body>
-                  <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem, x:Int32">
-                    <ActivityAction.Argument1>
-                      <DelegateInArgument x:TypeArguments="ugdm:GDriveRemoteItem" Name="CurrentItem" />
-                    </ActivityAction.Argument1>
-                    <ActivityAction.Argument2>
-                      <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItemIndex" />
-                    </ActivityAction.Argument2>
-                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,587" sap2010:WorkflowViewState.IdRef="Sequence_234">
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_28">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_247">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uga:ForEachFileFolderConnections ConnectionAccountName="{x:Null}" ExistingLocation="{x:Null}" Filter="{x:Null}" FolderIdBackup="{x:Null}" Length="{x:Null}" ManualEntryLocation="{x:Null}" QueryFilter="{x:Null}" AllLabels="W10=" AuthScopesInvalid="False" BrowserLocation="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" CurrentItemVariableName="CurrentItem" DisplayName="For Each File or Folder" FilterSelectionMode="ConditionBuilder" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="ForEachFileFolderConnections_4" LocationFriendlyName="PV" LocationInputMode="Browse" MaxResults="200" StarredOnly="False" UseConnectionService="True" WhatToReturn="FilesAndFolders">
+                      <uga:ForEachFileFolderConnections.Body>
+                        <ActivityAction x:TypeArguments="ugdm:GDriveRemoteItem, x:Int32">
+                          <ActivityAction.Argument1>
+                            <DelegateInArgument x:TypeArguments="ugdm:GDriveRemoteItem" Name="CurrentItem" />
+                          </ActivityAction.Argument1>
+                          <ActivityAction.Argument2>
+                            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItemIndex" />
+                          </ActivityAction.Argument2>
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,587" sap2010:WorkflowViewState.IdRef="Sequence_234">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\PV&quot;]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_9" ManualFileId="[CurrentItem.ID]" UseConnectionService="True">
+                              <uga:DownloadFileConnections.FileIdBackup>
+                                <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
+                                  <usau:BackupSlot.BackupValues>
+                                    <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                                      <InArgument x:TypeArguments="x:String" />
+                                      <InArgument x:TypeArguments="x:String" />
+                                    </scg:List>
+                                  </usau:BackupSlot.BackupValues>
+                                </usau:BackupSlot>
+                              </uga:DownloadFileConnections.FileIdBackup>
+                              <uga:DownloadFileConnections.Item>
+                                <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FullPathHint="[Nothing]" IdOrUrl="[CurrentItem.ID]" InputMode="UrlOrId">
+                                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                                </ugam:DriveItemArgument>
+                              </uga:DownloadFileConnections.Item>
+                            </uga:DownloadFileConnections>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_127" Message="[&quot;File Downloaded: &quot;+CurrentItem.Name]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:LogMessage>
+                            <uga:DeleteFileOrFolderConnections BrowserFileOrFolderId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FileOrFolder="{x:Null}" FileOrFolderFriendlyName="{x:Null}" FileOrFolderIdBackup="{x:Reference __ReferenceID2}" AuthScopesInvalid="False" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DisplayName="Delete File or Folder" FileOrFolderInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="DeleteFileOrFolderConnections_1" ManualEntryFileOrFolderId="[CurrentItem.ID]" PermanentlyDelete="False" UseConnectionService="True">
+                              <uga:DeleteFileOrFolderConnections.Item>
+                                <ugam:DriveItemArgument BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[CurrentItem.ID]" InputMode="UrlOrId">
+                                  <ugam:DriveItemArgument.Backup>
+                                    <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
+                                      <usau:BackupSlot.BackupValues>
+                                        <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
+                                          <x:Null />
+                                          <x:Null />
+                                        </scg:List>
+                                      </usau:BackupSlot.BackupValues>
+                                    </usau:BackupSlot>
+                                  </ugam:DriveItemArgument.Backup>
+                                  <ugam:DriveItemArgument.FullPathHint>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugam:DriveItemArgument.FullPathHint>
+                                  <ugam:DriveItemArgument.ParentIdFullPathHint>
+                                    <InArgument x:TypeArguments="x:String">
+                                      <Literal x:TypeArguments="x:String" Value="" />
+                                    </InArgument>
+                                  </ugam:DriveItemArgument.ParentIdFullPathHint>
+                                </ugam:DriveItemArgument>
+                              </uga:DeleteFileOrFolderConnections.Item>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uga:DeleteFileOrFolderConnections>
+                            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_128" Message="[&quot;File Deleted from Drive: &quot;+CurrentItem.Name]">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:LogMessage>
+                          </Sequence>
+                        </ActivityAction>
+                      </uga:ForEachFileFolderConnections.Body>
+                      <uga:ForEachFileFolderConnections.FilterSelectionBackup>
+                        <usau:BackupSlot x:TypeArguments="ugae:FilterMode" StoredValue="ConditionBuilder">
+                          <usau:BackupSlot.BackupValues>
+                            <scg:Dictionary x:TypeArguments="ugae:FilterMode, scg:List(x:Object)" />
+                          </usau:BackupSlot.BackupValues>
+                        </usau:BackupSlot>
+                      </uga:ForEachFileFolderConnections.FilterSelectionBackup>
+                      <uga:ForEachFileFolderConnections.Item>
+                        <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="PV" FullPathHint="My Drive/Data/Documents/PV" InputMode="Browse">
+                          <ugam:DriveItemArgument.Backup>
+                            <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="Browse">
+                              <usau:BackupSlot.BackupValues>
+                                <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                              </usau:BackupSlot.BackupValues>
+                            </usau:BackupSlot>
+                          </ugam:DriveItemArgument.Backup>
+                          <ugam:DriveItemArgument.ParentIdFullPathHint>
+                            <InArgument x:TypeArguments="x:String">
+                              <Literal x:TypeArguments="x:String" Value="" />
+                            </InArgument>
+                          </ugam:DriveItemArgument.ParentIdFullPathHint>
+                        </ugam:DriveItemArgument>
+                      </uga:ForEachFileFolderConnections.Item>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uga:DownloadFileConnections BrowserFileId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" File="{x:Null}" FileFriendlyName="{x:Null}" ManualEntryFileId="{x:Null}" NewResult="{x:Null}" Result="{x:Null}" AuthScopesInvalid="False" ConflictResolution="Replace" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DestinationPath="[in_Config(&quot;DocsPath&quot;).ToString+&quot;\PV&quot;]" DisplayName="Download File" DownloadDocumentAs="Word" DownloadDrawingAs="Jpeg" DownloadPresentationAs="Ppt" DownloadSpreadsheetAs="Xlsx" FileInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,185" sap2010:WorkflowViewState.IdRef="DownloadFileConnections_9" ManualFileId="[CurrentItem.ID]" UseConnectionService="True">
-                        <uga:DownloadFileConnections.FileIdBackup>
-                          <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID1" StoredValue="UrlOrId">
-                            <usau:BackupSlot.BackupValues>
-                              <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
-                                <InArgument x:TypeArguments="x:String" />
-                                <InArgument x:TypeArguments="x:String" />
-                              </scg:List>
-                            </usau:BackupSlot.BackupValues>
-                          </usau:BackupSlot>
-                        </uga:DownloadFileConnections.FileIdBackup>
-                        <uga:DownloadFileConnections.Item>
-                          <ugam:DriveItemArgument Backup="{x:Reference __ReferenceID1}" BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FullPathHint="[Nothing]" IdOrUrl="[CurrentItem.ID]" InputMode="UrlOrId">
-                            <ugam:DriveItemArgument.ParentIdFullPathHint>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ugam:DriveItemArgument.ParentIdFullPathHint>
-                          </ugam:DriveItemArgument>
-                        </uga:DownloadFileConnections.Item>
-                      </uga:DownloadFileConnections>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_127" Message="[&quot;File Downloaded: &quot;+CurrentItem.Name]">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:LogMessage>
-                      <uga:DeleteFileOrFolderConnections BrowserFileOrFolderId="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" FileOrFolder="{x:Null}" FileOrFolderFriendlyName="{x:Null}" FileOrFolderIdBackup="{x:Reference __ReferenceID2}" AuthScopesInvalid="False" ConnectionId="07d2357f-01e7-423f-b76d-b0c7b72314dd" DisplayName="Delete File or Folder" FileOrFolderInputMode="UrlOrId" sap:VirtualizedContainerService.HintSize="416,237" sap2010:WorkflowViewState.IdRef="DeleteFileOrFolderConnections_1" ManualEntryFileOrFolderId="[CurrentItem.ID]" PermanentlyDelete="False" UseConnectionService="True">
-                        <uga:DeleteFileOrFolderConnections.Item>
-                          <ugam:DriveItemArgument BrowserId="{x:Null}" ConnectionDescriptor="{x:Null}" ConnectionKey="{x:Null}" Existing="{x:Null}" FriendlyName="{x:Null}" FullPath="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" IdOrUrl="[CurrentItem.ID]" InputMode="UrlOrId">
-                            <ugam:DriveItemArgument.Backup>
-                              <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" x:Name="__ReferenceID2" StoredValue="UrlOrId">
-                                <usau:BackupSlot.BackupValues>
-                                  <scg:List x:TypeArguments="x:Object" x:Key="Browse" Capacity="2">
-                                    <x:Null />
-                                    <x:Null />
-                                  </scg:List>
-                                </usau:BackupSlot.BackupValues>
-                              </usau:BackupSlot>
-                            </ugam:DriveItemArgument.Backup>
-                            <ugam:DriveItemArgument.FullPathHint>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ugam:DriveItemArgument.FullPathHint>
-                            <ugam:DriveItemArgument.ParentIdFullPathHint>
-                              <InArgument x:TypeArguments="x:String">
-                                <Literal x:TypeArguments="x:String" Value="" />
-                              </InArgument>
-                            </ugam:DriveItemArgument.ParentIdFullPathHint>
-                          </ugam:DriveItemArgument>
-                        </uga:DeleteFileOrFolderConnections.Item>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </uga:DeleteFileOrFolderConnections>
-                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_128" Message="[&quot;File Deleted from Drive: &quot;+CurrentItem.Name]">
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:LogMessage>
-                    </Sequence>
-                  </ActivityAction>
-                </uga:ForEachFileFolderConnections.Body>
-                <uga:ForEachFileFolderConnections.FilterSelectionBackup>
-                  <usau:BackupSlot x:TypeArguments="ugae:FilterMode" StoredValue="ConditionBuilder">
-                    <usau:BackupSlot.BackupValues>
-                      <scg:Dictionary x:TypeArguments="ugae:FilterMode, scg:List(x:Object)" />
-                    </usau:BackupSlot.BackupValues>
-                  </usau:BackupSlot>
-                </uga:ForEachFileFolderConnections.FilterSelectionBackup>
-                <uga:ForEachFileFolderConnections.Item>
-                  <ugam:DriveItemArgument ConnectionDescriptor="{x:Null}" Existing="{x:Null}" FullPath="{x:Null}" IdOrUrl="{x:Null}" ParentId="{x:Null}" ParentIdFriendlyName="{x:Null}" RelativePath="{x:Null}" BrowserId="https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj" ConnectionKey="c3bfc534-a117-4513-8158-794a805a8753" FriendlyName="PV" FullPathHint="My Drive/Data/Documents/PV" InputMode="Browse">
-                    <ugam:DriveItemArgument.Backup>
-                      <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="Browse">
-                        <usau:BackupSlot.BackupValues>
-                          <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
-                        </usau:BackupSlot.BackupValues>
-                      </usau:BackupSlot>
-                    </ugam:DriveItemArgument.Backup>
-                    <ugam:DriveItemArgument.ParentIdFullPathHint>
-                      <InArgument x:TypeArguments="x:String">
-                        <Literal x:TypeArguments="x:String" Value="" />
-                      </InArgument>
-                    </ugam:DriveItemArgument.ParentIdFullPathHint>
-                  </ugam:DriveItemArgument>
-                </uga:ForEachFileFolderConnections.Item>
-              </uga:ForEachFileFolderConnections>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="452,48" sap2010:WorkflowViewState.IdRef="LogMessage_109" Message="[&quot;PV downlaoded from google drive&quot;]">
+                    </uga:ForEachFileFolderConnections>
+                  </Sequence>
+                </ui:CommentOut.Body>
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-              </ui:LogMessage>
+              </ui:CommentOut>
+              <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="CommentOut_29">
+                <ui:CommentOut.Body>
+                  <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,108" sap2010:WorkflowViewState.IdRef="Sequence_248">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_109" Message="[&quot;PV downlaoded from google drive&quot;]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:LogMessage>
+                  </Sequence>
+                </ui:CommentOut.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:CommentOut>
             </Sequence>
             <Sequence DisplayName="Sequence-Read Token" sap:VirtualizedContainerService.HintSize="522,1487" sap2010:WorkflowViewState.IdRef="Sequence_149">
               <sap:WorkflowViewStateService.ViewState>
@@ -2811,7 +2851,7 @@ latestTwoFiles.All(Function(f) _
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim matchedRow = dtTable.AsEnumerable().&#xD;&#xA;    FirstOrDefault(Function(r) r(&quot;DocumentID&quot;).ToString.Trim = row(&quot;DocumentID&quot;).ToString.Trim)&#xD;&#xA;&#xD;&#xA;If matchedRow IsNot Nothing Then&#xD;&#xA;&#x9;&#xD;&#xA;    Console.WriteLine(&quot;Matched DocumentID: &quot; &amp; matchedRow(&quot;DocumentID&quot;).ToString)&#xD;&#xA;    Console.WriteLine(&quot;Matched Status: &quot; &amp; matchedRow(&quot;Status&quot;).ToString)&#xD;&#xA;&#xD;&#xA;    row(&quot;Status&quot;) = matchedRow(&quot;Status&quot;).ToString&#xD;&#xA;    row(&quot;CurrentStep&quot;) = matchedRow(&quot;Status&quot;).ToString&#xD;&#xA;&#x9;row(&quot;RegisteredDate&quot;)=now.Date&#xD;&#xA;&#x9;row(&quot;LastUpdated&quot;)=now&#xD;&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
+                            <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim matchedRow = dtTable.AsEnumerable().&#xA;    FirstOrDefault(Function(r) r(&quot;DocumentID&quot;).ToString.Trim = row(&quot;DocumentID&quot;).ToString.Trim)&#xA;&#xA;If matchedRow IsNot Nothing Then&#xA;&#x9;&#xA;    Console.WriteLine(&quot;Matched DocumentID: &quot; &amp; matchedRow(&quot;DocumentID&quot;).ToString)&#xA;    Console.WriteLine(&quot;Matched Status: &quot; &amp; matchedRow(&quot;Status&quot;).ToString)&#xA;&#xA;    row(&quot;Status&quot;) = matchedRow(&quot;Status&quot;).ToString&#xA;    row(&quot;CurrentStep&quot;) = matchedRow(&quot;Status&quot;).ToString&#xA;&#x9;row(&quot;RegisteredDate&quot;)=now.Date&#xA;&#x9;row(&quot;LastUpdated&quot;)=now&#xA;End If" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="416,188" sap2010:WorkflowViewState.IdRef="InvokeCode_3">
                               <ui:InvokeCode.Arguments>
                                 <InArgument x:TypeArguments="sd:DataTable" x:Key="dtTable">[dtTable]</InArgument>
                                 <InArgument x:TypeArguments="sd:DataRow" x:Key="row">[row]</InArgument>

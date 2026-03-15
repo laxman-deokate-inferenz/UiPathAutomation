@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PD9nrlcZE0WT6i8DfF93Zg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx" CVScreenId="7891c55e-c842-47e8-8099-7ed5bcbd7d9d" CvElementArea="790, 631, 227, 36" CvTextArea="803, 641, 201, 17" CvTextArgument="Submit without Digital Signature" CvType="Button" DesignTimeRectangle="791, 632, 225, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' /&gt;&lt;webctrl id='btnupload' tableRow='1' tag='INPUT' /&gt;" Guid="eb72bb4c-6fbc-4716-a1f3-5084b3a2d4de" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx?auth=7c74dc73-e011-46ca-a485-3016339ff55b' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="7891c55e-c842-47e8-8099-7ed5bcbd7d9d" CvElementArea="720, 631, 72, 36" CvTextArea="733, 641, 47, 15" CvTextArgument="Submit" CvType="Button" DesignTimeRectangle="722, 632, 69, 34" ElementType="Button" FullSelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' /&gt;&lt;webctrl id='btnDigitalSign' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnDigitalSign' type='submit' tag='INPUT' class='btn btn-default' aaname='Submit' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Submit' /&gt;" Guid="c96cb9fe-595b-460d-8610-5a6d8bcfc6e0" SearchSteps="Selector, FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2259522580bf4a6069dbefdfc9f20f4e.jpg" xmlns="">0f2XMFim3jku_8hSDtBxaQQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

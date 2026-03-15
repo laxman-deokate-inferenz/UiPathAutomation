@@ -69,34 +69,6 @@
       }
     },
     {
-      "activityDisplayName": "For Each File or Folder",
-      "activityId": "ForEachFileFolderConnections_4",
-      "resource": "Property",
-      "key": "07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or Folder",
-      "id": "Property07d2357f-01e7-423f-b76d-b0c7b72314dd.For Each File or FolderPVFalsehttps://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzjFalse",
-      "value": {
-        "FullName": {
-          "defaultValue": "PV",
-          "isExpression": false,
-          "displayName": "In location",
-          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
-        },
-        "ID": {
-          "defaultValue": "https://drive.google.com/drive/folders/1Fci64g1befPEfON3qZfpd3uIuKMElfzj",
-          "isExpression": false,
-          "displayName": "In location",
-          "description": "The location where to search for files and folders. If left blank, it searches anywhere in Google Drive"
-        }
-      },
-      "metadata": {
-        "BindingsVersion": "2.1",
-        "ActivityName": "For Each File or Folder",
-        "ObjectName": "CuratedFolder",
-        "DisplayLabel": "FullName",
-        "ParentResourceKey": "Connection.07d2357f-01e7-423f-b76d-b0c7b72314dd"
-      }
-    },
-    {
       "activityDisplayName": "Get Asset",
       "activityId": "GetRobotAsset_1",
       "resource": "asset",

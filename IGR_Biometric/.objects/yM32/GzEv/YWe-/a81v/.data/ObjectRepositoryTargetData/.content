@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="YZUXKYbe6EeSyeenkP_ceg" Reference="XYDNlefXLUawOcBond9NIg/a81vNMQ9B0W-gG03o4Iw1Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmAdmissionidentifiers.aspx" CVScreenId="bd4778ff-fa04-41d4-929a-cf9f92f238c1" CvType="AnyWordGroup" DesignTimeRectangle="408, 414, 184, 17" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="[&quot;&lt;webctrl tableRow='5' tag='TABLE' /&gt;&lt;webctrl tableRow='&quot; &amp; i.ToString() &amp; &quot;' tag='TD' idx='4' /&gt;&quot;]" Guid="db37d17c-5677-4723-ad34-db48cc378675" ScopeSelectorArgument="&lt;html app='msedge.exe' title='E-Registration' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="bd4778ff-fa04-41d4-929a-cf9f92f238c1" CvTextArea="207, 414, 146, 15" CvTextArgument="Deshmukh Anand Satish" CvType="Text" DesignTimeRectangle="208, 414, 200, 17" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' class='' tag='TD' aaname='Deshmukh Anand Satish' matching:isleaf='fuzzy' fuzzylevel:isleaf='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Deshmukh Anand Satish' /&gt;" Guid="46a2ccf7-f362-4f2d-8834-07a75b0aab1a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="0a0bc1d4fb972d24c8149d08937a7438.jpg" xmlns="">0bQ_EyESY4EqaM8Jmz2DwsQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
