@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xwkt_pRyS0mCTb1ZPghb9g" Reference="XYDNlefXLUawOcBond9NIg/KZpH2qxPYkKu17_4Cb4yOQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="epay.sbi.bank.in/secure/AggregatorHostedListener" CVScreenId="b79d434d-d234-40a1-9ce4-bcb25dd27d7f" CvType="AnyWordGroup" DesignTimeRectangle="1024, 447, 206, 24" ElementType="Text" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl parentid='collapseOrderSummary' tag='DIV' type='' class='txt subtxt' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="17f3ac88-3b1c-4e53-ae84-b3cfeb3e7fac" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="b79d434d-d234-40a1-9ce4-bcb25dd27d7f" CvTextArea="1023, 426, 78, 16" CvTextArgument="Order No.:" CvType="Text" DesignTimeRectangle="1024, 423, 206, 24" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Order No.:' parentid='collapseOrderSummary' tag='DIV' type='' class='sub txt headtxt' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Order No.:' /&gt;" Guid="01fe07d5-a48d-4ab6-87f4-ad583497fde7" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="bc73ae2d22e1c757fde475f0129f215f.png" xmlns="">0U7WRvSPPM0aRzHKibDXRNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HeiXYMOBHkWLZzoZbjaUHA" Reference="XYDNlefXLUawOcBond9NIg/Nks-y29bE0234xUkOO7pWg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="66d1cc4d-0f56-4e1e-8514-4a4d61224736" CvType="AnyWordGroup" DesignTimeRectangle="646, 395, 236, 20" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='41' tag='TABLE' /&gt;&lt;webctrl tableRow='12' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="6219b12f-c95c-4956-9b88-40adbc384c8e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="66d1cc4d-0f56-4e1e-8514-4a4d61224736" CvTextArea="501, 486, 102, 18" CvTextArgument="Verify &amp; Save" CvType="Text" DesignTimeRectangle="712, 371, 104, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='' aaname='Verify &amp;amp; Save' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Verify &amp;amp; Save' /&gt;" Guid="b51e0ad8-c183-470e-9485-41d4d873d346" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="610b344e16c9d648ce6ca7abc0a07abc.png" xmlns="">0QgkCO-swzk-8x-2ILo_SRw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

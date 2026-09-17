@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="xrkhdHJdw0egBrMtGrc0FQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx" CVScreenId="53ef390a-65ae-4980-b50b-61c156d22bed" CvElementArea="51, 631, 67, 36" CvTextArea="68, 642, 33, 13" CvTextArgument="Back" CvType="Button" DesignTimeRectangle="52, 632, 65, 34" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' /&gt;&lt;webctrl id='btnBack' tableRow='1' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnBack' type='submit' tag='INPUT' class='btn btn-default' aaname='Back' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Back' /&gt;" Guid="b0199af5-75bc-4932-9e0b-2047f6dbbff6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='efilingigr.maharashtra.gov.in/ereg/Reports/rptLeaveAndLicenses.aspx?auth=5c2ab672-b57e-41cf-86d8-2d565878b13f' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="53ef390a-65ae-4980-b50b-61c156d22bed" CvElementArea="115, 631, 79, 36" CvTextArea="129, 642, 52, 13" CvTextArgument="Execute" CvType="Button" DesignTimeRectangle="117, 632, 77, 34" ElementType="Button" FuzzySelectorArgument="&lt;webctrl parentid='form1' tag='TABLE' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' /&gt;&lt;webctrl id='btnExecute' type='submit' tag='INPUT' class='btn btn-default' aaname='Execute' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Execute' /&gt;" Guid="55698230-9f52-4292-8143-443eb9feb96a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="844ef525623fa466ed8fdf8b312198dd.png" xmlns="">0C1XOzCZd_kWW_W8GeGALrw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

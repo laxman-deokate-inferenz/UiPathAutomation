@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kRvFq7vkiUeXBI2oyzYtOg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="823783e3-a4aa-4b8f-8fda-86c273af7b27" CvElementArea="781, 595, 104, 33" CvTextArea="783, 603, 98, 14" CvTextArgument="Next: Execute" CvType="Button" DesignTimeRectangle="782, 596, 100, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnViewHtmlreport0' tableRow='110' tag='INPUT' /&gt;" Guid="8190cb46-2208-47bc-a455-e54f18795a6d" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="823783e3-a4aa-4b8f-8fda-86c273af7b27" CvElementArea="727, 595, 55, 32" CvTextArea="728, 603, 50, 17" CvTextArgument="Update" CvType="Button" DesignTimeRectangle="728, 596, 51, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnSaveAll' type='submit' tag='INPUT' class='' aaname='Save Lease Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Update' /&gt;" Guid="8c5fc977-07aa-4c76-82c5-d8424a5f1979" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="-5" Y="-6" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="8f016cb5f4cb020cf0489adbdc131346.png" xmlns="">0bZULiHIXdUacB0JrSI2Lmg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

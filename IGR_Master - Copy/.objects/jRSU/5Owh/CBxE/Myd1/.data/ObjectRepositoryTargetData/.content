@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_NOAUmp48UmOarr6-sLTQQ" Reference="XYDNlefXLUawOcBond9NIg/Myd1KAzwikO_8tv0ekEpNQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="7ecd6d2c-c5e2-48d8-a0fa-b0f9cef32120" CvElementArea="245, 673, 110, 26" CvTextArea="246, 679, 106, 12" CvTextArgument="Save Family Details" CvType="Button" DesignTimeRectangle="246, 674, 107, 24" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tableRow='3' tag='TABLE' /&gt;&lt;webctrl tableRow='6' tag='INPUT' /&gt;" Guid="87e8cf2a-e6a2-4d5a-b5ed-b669882debd1" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="4009d1ac-a43c-49af-af1d-9cb1a840141c" CvElementArea="654, 636, 60, 27" CvTextArea="659, 643, 49, 12" CvTextArgument="Previous" CvType="Button" DesignTimeRectangle="655, 638, 57, 24" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='submit' tag='INPUT' class='' aaname='Previous' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Previous' /&gt;" Guid="ad17bc60-6f41-4f12-bc5b-1422948f54dc" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="4009d1ac-a43c-49af-af1d-9cb1a840141c" CvElementArea="384, 573, 123, 26" CvTextArea="432, 579, 26, 12" CvTextArgument="New" CvType="Button" DesignTimeRectangle="385, 574, 120, 24" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$repeaterPartyDetails$ctl00$btnNew' type='submit' tag='INPUT' class='' aaname='New' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='New' /&gt;" Guid="8d4c11e3-ec3f-4152-8bf1-f4bb1d15a89a" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.PointOffset>
+        <PointOffset X="2" Y="8" />
+      </TargetAnchorable.PointOffset>
+      <imageRef attrName="InformativeScreenshot" originalValue="894c1612fbee3748675f3c5f7741401c.png" xmlns="">0i5YFqOF5d0ujaI6UI-nrtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

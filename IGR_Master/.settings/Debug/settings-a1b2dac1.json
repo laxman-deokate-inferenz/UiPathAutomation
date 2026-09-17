@@ -51,5 +51,15 @@
   "UiPath.UIAutomationNext.Activities.ClosePopup.PopupAppearTimeout": "30",
   "UiPath.UIAutomationNext.Activities.Logging.TargetSearchLogLevel": "Off",
   "UiPath.UIAutomationNext.Activities.Logging.TargetSearchPerformanceLogLevel": "Off",
-  "UiPath.UIAutomationNext.Activities.Logging.AuditLogLevel": "Trace"
+  "UiPath.UIAutomationNext.Activities.Logging.AuditLogLevel": "Trace",
+  "UiPath.UIAutomationNext.Activities.UITask.UITaskTraceAttachMode": "OnFailure",
+  "UiPath.UIAutomationNext.Activities.SemanticActivities.ExtractUIDataIsDOMEnabled": "True",
+  "UiPath.UIAutomationNext.Activities.SemanticActivities.ExtractUIDataAgentType": "GPT41",
+  "UiPath.UIAutomationNext.Activities.SemanticActivities.SetValueAgentType": "GPT41",
+  "UiPath.UIAutomationNext.Activities.SemanticActivities.ExtractFormDataAgentType": "GPT41",
+  "UiPath.UIAutomationNext.Activities.SemanticActivities.FillFormAgentType": "GPT41",
+  "UiPath.UIAutomationNext.Activities.SemanticSelector.SemanticSelectorLegacyModel": "GeminiFlash25",
+  "UiPath.UIAutomationNext.Activities.SemanticSelector.SemanticSelectorDomModel": "PathMini",
+  "UiPath.UIAutomationNext.Activities.SemanticSelector.SemanticSelectorImageModel": "PathMini",
+  "UiPath.UIAutomationNext.Activities.Logging.EnableActivityTracing": "False"
 }

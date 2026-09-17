@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="bZHdIaz30ESpDNV6P_7GjA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="ecb11e1a-7b87-447e-8476-4311cec6c02e" CvTextArea="525, 706, 13, 11" CvTextArgument="32" CvType="Text" DesignTimeRectangle="526, 605, 12, 13" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl idx='4' tableRow='9' tag='TABLE' /&gt;&lt;webctrl aaname='32' tableRow='1' tag='SPAN' /&gt;" Guid="88fed813-33f2-48af-b8ba-fb8bfef524e7" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="ecb11e1a-7b87-447e-8476-4311cec6c02e" CvTextArea="495, 704, 28, 16" CvTextArgument="Age:" CvType="Text" DesignTimeRectangle="496, 604, 27, 15" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Age:' type='' tag='SPAN' class='labelFont' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Age:' /&gt;" Guid="3b608c0a-5b23-4bb0-b60e-32e162bf2223" SearchSteps="FuzzySelector, CV" />
+          <Target DesignTimeRectangle="170, 597, 228, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='2.licencee/Tenant -*' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='2.licencee/Tenant - *' /&gt;" Guid="a243bc84-c04c-4c7a-9877-72f5fcd759a9" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="fe8ea30cfa8a5aa938d615e29e99c72a.png" xmlns="">0_fW2B9M15EGxYCY16ujPoQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

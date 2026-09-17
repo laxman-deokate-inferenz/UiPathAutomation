@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="plXI_Tl2pkOhBFDv3-pXeg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="39ff582d-50fb-4a57-9b13-831c7b5b5791" CvElementArea="544, 405, 63, 32" CvTextArea="550, 415, 51, 17" CvTextArgument="Update" CvType="Button" DesignTimeRectangle="546, 607, 60, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl aaname='Select Delete Sr.No Family Type Name Relation Age' tableRow='9' tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='INPUT' /&gt;" Guid="c6e5f1cb-f410-46e6-88ad-ff5d626a06e5" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a08f47ff-13b8-40f8-bfba-0f50cc22e13e" CvElementArea="462, 551, 84, 33" CvTextArea="479, 561, 50, 17" CvTextArgument="Upload" CvType="Button" DesignTimeRectangle="464, 553, 80, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl class='btn btn-primary' tag='INPUT' type='submit' aaname='Upload' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Upload' /&gt;" Guid="6cfcf8a3-ee4e-4171-bb5e-2144f289e322" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="697bc1d790d975f9f65bb92b37da0c8c.png" xmlns="">0Qwh4-bj_xUS2PGVRrz4weA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

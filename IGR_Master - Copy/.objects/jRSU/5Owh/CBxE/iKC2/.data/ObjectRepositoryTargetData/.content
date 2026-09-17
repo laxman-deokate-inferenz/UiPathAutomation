@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="c8Ddo5SYs0ODQtBN0flALQ" Reference="XYDNlefXLUawOcBond9NIg/iKC2CTa0tk2Y9KIUPWXFGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="f42af660-45b9-4319-bdfa-bc7c465ba367" CvElementArea="133, 505, 172, 23" CvType="InputBox" DesignTimeRectangle="134, 506, 170, 21" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="0207ca4e-f230-4d19-a2ef-dd9f83aa6af6" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f42af660-45b9-4319-bdfa-bc7c465ba367" CvTextArea="42, 509, 88, 17" CvTextArgument="Nationality:" CvType="Text" DesignTimeRectangle="43, 507, 87, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl aaname='Nationality:' class='labelFont' type='' tag='SPAN' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='Nationality:' /&gt;" Guid="b2162eca-d547-4b90-bc9c-93bec767074c" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="f42af660-45b9-4319-bdfa-bc7c465ba367" CvTextArea="42, 468, 317, 17" CvTextArgument="1.licencee/Tenant - Bhalerao Sandip Arjun" CvType="Text" DesignTimeRectangle="43, 466, 422, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - *' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - *' /&gt;" Guid="2db9621b-e693-4cb5-b508-2b8727d1ec3f" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="f42af660-45b9-4319-bdfa-bc7c465ba367" CvTextArea="41, 488, 127, 15" CvTextArgument="Current Address:" CvType="Text" DesignTimeRectangle="43, 487, 126, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Current Address:' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Current Address:' /&gt;" Guid="8301a7f3-a8e7-477b-8b3e-153345ebf83f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="364ba5784a8e8a140a20f69fb47d408b.png" xmlns="">0YMcpi9nzG0qU7HyS7ida4g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

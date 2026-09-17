@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryScreenData ContentHash="NaAiOfbCRkKeq7tLzDcs7Q" Reference="XYDNlefXLUawOcBond9NIg/4rwOTRiHbkeCRtkKz_0rcQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryScreenData.Data>
+    <TargetApp x:Key="TargetApp" Area="-8, -8, 1382, 736" BrowserType="Edge" ContentHash="EdPb8b2CjE6uS4xt5jaBgw" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVDhPrZOxDcIwEEXTZgAG8UJswCCIBaJQsgPUFAxAm4Y2DQu4IPxvXwKJvx0KTnpSfP/uK7bP1TI2u7sDDeiAN/jNnLOyNCDWoAUvMGSgxpra2mIwAa5ANSlY+zHBgq6qsEQ7NnPPpd/OwR5HAx6OKviFhgY8YSUO2+MjoDSjowGvKRHZOEbBxP/FILuF0+0ZUJoRtpA9xP25DyjNCIeYvcYVg3iNNgtykFYM4iAxsJCjXDCYjzKDCTB7TMKAWvqYvgPi9JwPl94Tfltu8Zyr6g2l6wbPCopiLQAAAABJRU5ErkJggg==" Reference="XYDNlefXLUawOcBond9NIg/4rwOTRiHbkeCRtkKz_0rcQ" Selector="&lt;html app='msedge.exe' title='SBIePay' /&gt;" Url="[in_Config(&quot;PaymentPageURL&quot;).ToString]" Version="V2">
+      <TargetApp.Arguments>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.Arguments>
+      <TargetApp.WorkingDirectory>
+        <p:InArgument x:TypeArguments="x:String" />
+      </TargetApp.WorkingDirectory>
+      <imageRef attrName="InformativeScreenshot" originalValue="9b12c8ffdbb98a90ae9cf67df874d82c.jpg" xmlns="">0v5A48XM16UuwD9gJ95ptWA</imageRef>
+    </TargetApp>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1" />
+  </ObjectRepositoryScreenData.Data>
+</ObjectRepositoryScreenData>

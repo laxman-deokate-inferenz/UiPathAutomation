@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="pJ7Mj4QYgkWAS3VrtqyAqg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/PartyDetails.aspx" CVScreenId="e2a0b8d2-48a0-41d4-b740-54fcec51b5db" CvElementArea="538, 616, 133, 32" CvTextArea="540, 625, 128, 14" CvTextArgument="Add : Party Details" CvType="Button" DesignTimeRectangle="540, 617, 129, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnMore' type='submit' tag='INPUT' class='' aaname='Add : Party Details' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Add : Party Details' /&gt;" Guid="8fc33cea-8c26-44cd-ace8-2ea5cb6e946f" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Party Details Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="e2a0b8d2-48a0-41d4-b740-54fcec51b5db" CvElementArea="671, 616, 183, 32" CvTextArea="674, 625, 178, 14" CvTextArgument="Next: Rent &amp; Other Terms" CvType="Button" DesignTimeRectangle="673, 617, 180, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnNext' type='submit' tag='INPUT' class='' aaname='Next: Rent &amp;amp; Other Terms' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='Next: Rent &amp;amp; Other Terms' /&gt;" Guid="97014367-fffe-42c2-86f2-86575bdae8ce" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="97b506b851fc3970fb8459ca6ff4b172.png" xmlns="">0RU_zu0bYkkaULSvOHxZxAg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

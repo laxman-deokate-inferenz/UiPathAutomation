@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2NIwdotf8kC77VMsKmTjSw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="f43dd34c-bf64-4931-81da-7754b3b42634" CvElementArea="139, 485, 172, 25" CvType="InputBox" DesignTimeRectangle="320, 568, 113, 14" ElementType="DropDown" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SELECT' class='ddlColor' aaname='' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="7daf2085-0af0-4b5a-8776-66b4c3b0a773" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="f43dd34c-bf64-4931-81da-7754b3b42634" CvTextArea="49, 489, 63, 15" CvTextArgument="Relation" CvType="Text" DesignTimeRectangle="260, 568, 41, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Relation' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Relation' /&gt;" Guid="d25c325d-bfba-4b40-9bd8-24a1593e0ada" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="754ab099-4b54-4f98-8110-4d06c4f5c838" CvTextArea="256, 87, 214, 11" CvTextArgument="1.licensor/Owner - Gokhale Prasad Prakash" CvType="Text" DesignTimeRectangle="256, 87, 214, 12" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licensor/Owner - Gokhale  Prasad Prakash ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licensor/Owner - Gokhale Prasad Prakash' /&gt;" Guid="8aa8c456-c53d-4339-b7b7-c095d1281e5d" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="16914bf2209c1e99717bb0904949e4de.png" xmlns="">0GbabTI8cH02mkJr9tbNfdA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

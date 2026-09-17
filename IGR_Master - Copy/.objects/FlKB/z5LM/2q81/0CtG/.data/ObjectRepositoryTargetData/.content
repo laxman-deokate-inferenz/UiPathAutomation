@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="ymm00u_BTkSRPWu3RYkD8g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="gras.mahakosh.gov.in/echallan/igr/challan/views/frmBusinessInfoNewEntry.php" CVScreenId="446756a1-b6c0-4be0-bbbf-1baca1eaaca0" CvElementArea="466, 454, 500, 27" CvType="InputBox" DesignTimeRectangle="467, 455, 500, 25" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='cmbddo_code' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='cmbddo_code' tag='SELECT' type='' class='' aaname='' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="10f2ac88-d1f7-4578-858b-147e890c4358" ScopeSelectorArgument="&lt;html app='msedge.exe' title='IGR Department' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="239, 445, 222, 75" FuzzySelectorArgument="&lt;webctrl class='pay-tin-col2' type='' parentid='frmchallan_entry' tag='DIV' aaname='In which office you want to register your document ' matching:class='fuzzy' fuzzylevel:class='0.0' matching:parentid='fuzzy' fuzzylevel:parentid='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='In which office you want to register your document *' /&gt;" Guid="04c8267b-fee8-4e98-9c96-0e014421b590" SearchSteps="FuzzySelector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="2b65b62b1f04afbfcaf1b8bed8c47cec.png" xmlns="">0KQ0f-Edfu0aI3gj8kKV2PA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="4tIDlALH8kylZBzd5NbsvQ" Reference="XYDNlefXLUawOcBond9NIg/0-S6eJyhmUCjDoE4f7zWRA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="89616f40-1c33-4a0e-8bff-ddbf37b78649" CvElementArea="205, 351, 91, 24" CvTextArea="214, 356, 169, 13" CvTextArgument="Choose File No file chosen" CvType="Button" DesignTimeRectangle="207, 653, 253, 21" ElementType="InputBox" ElementVisibilityArgument="Interactive" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='file' tag='INPUT' class='' aaname='Upload your address proof of Permanent Address' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' /&gt;" Guid="cd9b817b-3930-4d73-b5ea-c45f8332089e" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Police Verification Page' /&gt;" SearchSteps="FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="43, 687, 161, 38" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='Upload Permanent Address Proof' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='Upload Permanent Address Proof' /&gt;" Guid="f81a270e-5240-4dc2-8849-2233aeb93737" SearchSteps="FuzzySelector" />
+          <Target CVScreenId="c2e099f2-eb50-4792-9049-ddee73b116fc" CvTextArea="42, 277, 298, 15" CvTextArgument="1.licencee/Tenant - Garud Aniket Ashok" CvType="Text" DesignTimeRectangle="43, 276, 304, 19" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='labelFont' aaname='1.licencee/Tenant - Garud Aniket Ashok' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:innerText='1.licencee/Tenant - Garud Aniket Ashok' /&gt;" Guid="2d1c2b59-53d3-46d8-ac9c-6af89c5a0401" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="7ac387c1c449f41ee2fe2c295bdef389.png" xmlns="">0rBpl8WLog0agaFRRpUA3Qw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

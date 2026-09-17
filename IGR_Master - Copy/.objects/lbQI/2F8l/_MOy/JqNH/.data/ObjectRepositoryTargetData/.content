@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="_X2HyPLEV0GTDNfjf8uZmQ" Reference="XYDNlefXLUawOcBond9NIg/JqNHxjJhcES2aHEXR_e5AQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="pay2igr.igrmaharashtra.gov.in/PTI" CVScreenId="0426a52d-468b-453d-bbac-a761c1e886b1" CvElementArea="689, 376, 353, 40" CvType="InputBox" DesignTimeRectangle="691, 407, 351, 38" ElementType="DropDown" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl id='jdr_d' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='jdr_d' tag='SELECT' type='' class='form-control' aaname='JDR Office *' matching:id='fuzzy' fuzzylevel:id='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' fuzzylevel:aaname='0.0' /&gt;" Guid="0c92437e-5aa6-4186-b099-adb006589659" ScopeSelectorArgument="&lt;html app='msedge.exe' title='PTI' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="0426a52d-468b-453d-bbac-a761c1e886b1" CvTextArea="422, 387, 90, 15" CvTextArgument="JDR Office *" CvType="Text" DesignTimeRectangle="412, 407, 267, 48" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='JDR Office ' tag='LABEL' type='' class='col-sm-2 col-md-5 col-form-label' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' check:innerText='JDR Office *' /&gt;" Guid="f363b899-0160-4cb3-87b8-3f6139b69d9f" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="b5b8d91cdc368548592ae65444cdb7b7.png" xmlns="">0n17j4x1VfEqnchH9sMewdQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetAttributeGeneric</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

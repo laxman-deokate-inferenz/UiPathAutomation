@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MclCgAbtYkSTqp6k6cxwxg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="epay.sbi.bank.in/secure/upiQRWait.jsp" CVScreenId="33ec285a-a9ef-4576-8770-65301c0ec65a" CvType="AnyWordGroup" DesignTimeRectangle="606, 210, 155, 34" ElementType="Text" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='res-title' matching:class='fuzzy' fuzzylevel:class='0.0' /&gt;" Guid="a972772a-5165-42bf-9bed-439bd7e624e4" ScopeSelectorArgument="&lt;html app='msedge.exe' title='SBIePay UPI QR Wait' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="33ec285a-a9ef-4576-8770-65301c0ec65a" CvTextArea="599, 135, 180, 44" CvTextArgument="' SBIePay" CvType="Text" DesignTimeRectangle="590, 138, 188, 40" ElementType="Icon" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" Guid="b56e0706-2018-446f-8ea2-ef1b47111f91" SearchSteps="Selector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="08abfe3a01fc7774cbe5200b894b5e2b.png" xmlns="">0bJziJx0bEkK5zzxdpSVspg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

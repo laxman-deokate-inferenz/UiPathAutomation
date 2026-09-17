@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="yIwbgmuciEqEkSQA2rmcLg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/frmPoliceVerification.aspx" CVScreenId="79282b2b-7631-49b9-b11a-e8a84db187ca" CvElementArea="751, 229, 80, 35" CvTextArea="761, 240, 59, 14" CvTextArgument="Continue" CvType="Button" DesignTimeRectangle="753, 231, 77, 32" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;ctrl name='Resubmit the form?' role='dialog' /&gt;&lt;ctrl name='Continue' role='push button' /&gt;" Guid="0bc18d60-8a1d-47a4-a576-2b88f9a76ea0" ScopeSelectorArgument="&lt;wnd app='msedge.exe' cls='Chrome_WidgetWin_1' title='Police Verification Page - Personal - Microsoft​ Edge' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="79282b2b-7631-49b9-b11a-e8a84db187ca" CvTextArea="482, 106, 180, 18" CvTextArgument="Resubmit the form?" CvType="Text" DesignTimeRectangle="483, 101, 416, 28" FuzzySelectorArgument="&lt;ctrl name='Resubmit the form?' role='dialog' matching:name='fuzzy' fuzzylevel:name='0.0' /&gt;&lt;ctrl name='Resubmit the form?' role='grouping' automationid='' matching:name='fuzzy' fuzzylevel:name='0.0' matching:automationid='fuzzy' fuzzylevel:automationid='0.0' check:text='Resubmit the form?' /&gt;" Guid="4e37fe6a-0a2c-4dd8-81c2-ef5d0e588679" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="470c88d4a760b0cf6146a75640eef130.png" xmlns="">0NYOmFFhD90a5Mype3pCn0Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

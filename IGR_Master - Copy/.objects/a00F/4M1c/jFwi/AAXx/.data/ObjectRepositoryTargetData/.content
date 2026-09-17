@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="dT0LEos9MEa77Fs1XTmTyg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="efilingigr.maharashtra.gov.in/ereg/LeaseDetails.aspx" CVScreenId="a68f8327-62b4-4e15-ae21-3acdd676d511" CvElementArea="726, 629, 55, 33" CvTextArea="728, 637, 50, 17" CvTextArgument="Update" CvType="Button" DesignTimeRectangle="728, 630, 51, 30" ElementType="Button" ElementVisibilityArgument="Interactive" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnSaveAll' tableRow='131' tag='INPUT' /&gt;" Guid="d9e0a8a4-494c-429f-8275-6cbea80b0289" ScopeSelectorArgument="&lt;html app='msedge.exe' title='Lease Details Page' /&gt;" SearchSteps="Selector, CV" Version="V6" WaitForReadyArgument="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="a68f8327-62b4-4e15-ae21-3acdd676d511" CvElementArea="574, 628, 152, 32" CvTextArea="576, 637, 148, 14" CvTextArgument="View Draft Document" CvType="Button" DesignTimeRectangle="576, 630, 148, 30" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl name='ctl00$ContentPlaceHolder1$btnViewreport' type='submit' tag='INPUT' class='' aaname='View Draft Document' matching:name='fuzzy' fuzzylevel:name='0.0' matching:class='fuzzy' fuzzylevel:class='0.0' matching:aaname='fuzzy' fuzzylevel:aaname='0.0' check:text='View Draft Document' /&gt;" Guid="db73e825-d25e-4930-9aa4-aa40e2104b46" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="f51128e9d9b0ba56ffc917667a21da48.png" xmlns="">0-Rn7tsHP3Uiglztj3kbcNQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
